@@ -1,0 +1,3114 @@
+<!DOCTYPE html>
+<!-- saved from url=(0087)https://techmaster.vn/posts/34357/iot-so-sanh-4-mo-hinh-truyen-thong-trong-he-thong-iot -->
+<html class="fixedsticky-withoutfixedfixed"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:title" content="[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT">
+    <meta property="og:description" content="Bài toán truyền thông trong IoT chủ yếu liên quan tới những vấn đề phát sinh trong việc truyền thông giữa 3 nhóm: thiết  ...">
+    <meta name="Description" content="Bài toán truyền thông trong IoT chủ yếu liên quan tới những vấn đề phát sinh trong việc truyền thông giữa 3 nhóm: thiết  ...">
+    <meta property="og:image" content="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAJOAAAAJDI0MzYzNzM2LWIwNjMtNDZhMi05MTBkLWY1NDUwZTRlOTY1OA.png">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="315">
+    <meta property="og:url" content="https://techmaster.vn/posts/34357/iot-so-sanh-4-mo-hinh-truyen-thong-trong-he-thong-iot">
+    <meta property="og:type" content="article">
+    <meta property="fb:app_id" content="290270177727593">
+    <meta property="og:site_name" content="techmaster.vn">
+    <meta property="og:locale" content="vi_VN">
+    <title>[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT</title>
+    
+    <link rel="stylesheet" href="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/css" rel="stylesheet">
+    <link href="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/css(1)" rel="stylesheet">
+
+    
+    
+    
+    <script src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/all.js.download" async="" crossorigin="anonymous"></script><script type="text/javascript" async="" src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/f.txt"></script><script id="facebook-jssdk" src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/xfbml.customerchat.js.download"></script><script async="" src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/follow.js.download" charset="UTF-8" crossorigin="*"></script><script async="" src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/fbevents.js.download"></script><script async="" src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/analytics.js.download"></script><script src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/platform.js.download" defer="" gapi_processed="true"></script>
+    <link rel="shortcut icon" type="image/png" href="https://techmaster.vn/resources/image/favicon.ico">
+
+    
+
+    
+    
+    
+
+    
+    <script async="">
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-31629610-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    
+
+    
+    <script async="">
+        window.onLoadCallback = function(){
+            gapi.auth2.init({
+                client_id: "1088344376413-1aveeq4dk7b3tsu0dmof1vh2idv6n3jk.apps.googleusercontent.com"
+            });
+        }
+    </script>
+    
+
+    
+    <script async="" src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'AW-988398741');
+    </script>
+
+    
+    <script async="">
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/vi_VN/fbevents.js');
+        fbq('init', '1043327282441146');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1043327282441146&ev=PageView&noscript=1" />
+    </noscript>
+    
+
+
+    <style>
+        *{box-sizing:border-box}:focus{outline:0!important}.techmaster-font-open-sans{font-family:'Open Sans',sans-serif}html{font-family:Roboto,sans-serif;font-size:16px;color:#464646;background-color:#f4f7fa}body{font-family:Roboto,sans-serif;font-size:16px;color:#464646;overflow-y:scroll;background-color:#f4f7fa}.footer{font-size:14px}.container{max-width:1250px}.body-content{padding-top:3rem;padding-bottom:3rem}.btn-green{outline:0;box-shadow:0 2px 2px rgba(0,0,0,.25);-webkit-box-shadow:0 2px 2px rgba(0,0,0,.25);color:#fff;background-color:#26a69a;transition:.5s;text-align:center;border-radius:4px}.btn-green:hover{color:#fff;background-color:#26a69ac7}.btn-red{outline:0;box-shadow:0 2px 2px rgba(0,0,0,.25);-webkit-box-shadow:0 2px 2px rgba(0,0,0,.25);color:#fff;background-color:#f44336;transition:.5s;text-align:center;border-radius:4px}.btn-red:hover{color:#fff;background-color:#f44336bf}.btn-white{outline:0;box-shadow:0 2px 2px rgba(0,0,0,.25);-webkit-box-shadow:0 2px 2px rgba(0,0,0,.25);color:#464646;background-color:#fff;transition:.5s;text-align:center;border-radius:4px;border:1px solid #e5e5e5}.btn-white:hover{background-color:#f9f9f9}.btn-blue{outline:0;box-shadow:0 2px 2px rgba(0,0,0,.25);-webkit-box-shadow:0 2px 2px rgba(0,0,0,.25);color:#fff;background-color:#3c78e8;transition:.5s;text-align:center;border-radius:4px}.btn-blue:hover{color:#fff;background-color:#3c78e8de}.btn-green{outline:0;box-shadow:0 2px 2px rgba(0,0,0,.25);-webkit-box-shadow:0 2px 2px rgba(0,0,0,.25);color:#fff;background-color:#66bb6a;transition:.5s;text-align:center;border-radius:4px}.btn-green:hover{color:#fff;background-color:#66bb6ade}#header{background-color:#34465c;box-shadow:0 4px 4px 0 rgba(0,0,0,.25)}.breadcrum-div{margin-bottom:15px}.breadcrum-div a{color:#464646;font-size:1rem}.breadcrum-div .bc{padding:0 1rem;font-size:.6rem}
+    </style>
+<link href="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/all.min.css" rel="stylesheet" type="text/css"><link href="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/toastr.min.css" rel="stylesheet" type="text/css"><link href="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/carouseller.css" rel="stylesheet" type="text/css"><link href="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/jquery.fancybox.min.css" rel="stylesheet" type="text/css"><link href="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/style.css" rel="stylesheet" type="text/css"><script src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/f(1).txt"></script><style type="text/css" data-fbcssmodules="css:fb.css.basecss:fb.css.dialog css:fb.css.iframewidget css:fb.css.customer_chat_plugin_iframe">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}
+.fb_mpn_mobile_landing_page_slide_in{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_in;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_out{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_out_from_left{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out_from_left;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_up{animation-duration:500ms;animation-name:fb_mpn_landing_page_slide_up;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_in{animation-duration:300ms;animation-name:fb_mpn_bounce_in;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out{animation-duration:300ms;animation-name:fb_mpn_bounce_out;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_bounce_in_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_from_left{animation-duration:300ms;animation-name:fb_bounce_in_from_left;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_from_left{animation-duration:300ms;animation-name:fb_bounce_out_from_left;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_v2_mobile_chat_started{animation-duration:300ms;animation-name:fb_bounce_in_v2_mobile_chat_started;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2_mobile_chat_started{animation-duration:300ms;animation-name:fb_bounce_out_v2_mobile_chat_started;transition-timing-function:ease-in}.fb_customer_chat_bubble_pop_in{animation-duration:250ms;animation-name:fb_customer_chat_bubble_bounce_in_animation}.fb_customer_chat_bubble_animated_no_badge{box-shadow:0 3px 12px rgba(0, 0, 0, .15);transition:box-shadow 150ms linear}.fb_customer_chat_bubble_animated_no_badge:hover{box-shadow:0 5px 24px rgba(0, 0, 0, .3)}.fb_customer_chat_bubble_animated_with_badge{box-shadow:-5px 4px 14px rgba(0, 0, 0, .15);transition:box-shadow 150ms linear}.fb_customer_chat_bubble_animated_with_badge:hover{box-shadow:-5px 8px 24px rgba(0, 0, 0, .2)}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}.fb_mobile_overlay_active{background-color:#fff;height:100%;overflow:hidden;position:fixed;visibility:hidden;width:100%}.fb_new_ui_mobile_overlay_active{overflow:hidden}@keyframes fb_mpn_landing_page_slide_in{0%{border-radius:50%;margin:0 24px;width:60px}40%{border-radius:18px}100%{margin:0 12px;width:100% - 24px}}@keyframes fb_mpn_landing_page_slide_in_from_left{0%{border-radius:50%;left:12px;margin:0 24px;width:60px}40%{border-radius:18px}100%{left:12px;margin:0 12px;width:100% - 24px}}@keyframes fb_mpn_landing_page_slide_out{0%{margin:0 12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;margin:0 24px;width:60px}}@keyframes fb_mpn_landing_page_slide_out_from_left{0%{left:12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;left:12px;width:60px}}@keyframes fb_mpn_landing_page_slide_up{0%{bottom:0;opacity:0}100%{bottom:24px;opacity:1}}@keyframes fb_mpn_bounce_in{0%{opacity:.5;top:100%}100%{opacity:1;top:0}}@keyframes fb_mpn_bounce_out{0%{opacity:1;top:0}100%{opacity:.5;top:100%}}@keyframes fb_bounce_in_v2{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}50%{transform:scale(1.03, 1.03);transform-origin:bottom right}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}}@keyframes fb_bounce_in_from_left{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}50%{transform:scale(1.03, 1.03);transform-origin:bottom left}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}}@keyframes fb_bounce_in_v2_mobile_chat_started{0%{opacity:0;top:20px}100%{opacity:1;top:0}}@keyframes fb_bounce_out_v2{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}}@keyframes fb_bounce_out_from_left{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}}@keyframes fb_bounce_out_v2_mobile_chat_started{0%{opacity:1;top:0}100%{opacity:0;top:20px}}@keyframes fb_customer_chat_bubble_bounce_in_animation{0%{bottom:6pt;opacity:0;transform:scale(0, 0);transform-origin:center}70%{bottom:18pt;opacity:1;transform:scale(1.2, 1.2)}100%{transform:scale(1, 1)}}</style><style type="text/css">/*style-recomment*/.box-rcm #rcm-hireme{transition: all 0.6s ease-in-out; font-family: 'Roboto', sans-serif; overflow: hidden; height: 0;}.box-rcm div.rcm-jobs-multi.x-rcm{padding: 0}.box-rcm div.rcm-jobs-multi.tagged{line-height: 140%;}.box-rcm div.rcm-jobs-multi.j-orange{background-position: center 3px;}.box-rcm div.rcm-jobs-multi.blue, div.rcm-jobs-multi.j-orange {background-image: none!important;}.box-rcm div.rcm-jobs-multi {color: #333;font-family: Roboto,Helvetica,Verdana,Arial,sans-serif;font-size: 12px;text-align: left;line-height: 130%;padding: 2px;margin: 12px 0 1.5em;clear: both;background-repeat: no-repeat;background-position: 0 0;box-sizing: border-box;}.box-rcm div.rcm-jobs-multi.x-rcm.j-orange>a.header-top {background-color: #d94127; background-image: linear-gradient(to right,rgba(214,67,48,.9) 0,rgba(255,200,200,.9) 100%), url(https://topdev.vn/assets/img/logo_white.png); background-position-x: center; background-size: auto 100%;}.box-rcm div.rcm-jobs-multi.x-rcm>a.header-top {line-height: 50px;height: 50px;position: relative;background-repeat: no-repeat;}.box-rcm div.rcm-jobs-multi>a.header-top {width: 100%;display: block;color: #efefef;text-align: left; padding-left: 15px; font-size: 20px;line-height: 42px;text-decoration: none;}.box-rcm div.rcm-jobs-multi.x-rcm>.ljobs-rcm {padding: 0px 0px 10px 10px !important;border: 1px solid #e4e6e8;border-top: none; border-bottom: 2px solid #d94127}.box-rcm div.rcm-jobs-multi>.ljobs-rcm {background: #fff;}.box-rcm div.rcm-jobs-multi>.ljobs-rcm>ul {margin: 0;padding: 0;list-style: none;display: block;}.box-rcm div.rcm-jobs-multi.x-rcm>.ljobs-rcm>ul li {border-top-color: #eff0f1;margin-left: 0;}.box-rcm div.rcm-jobs-multi>.ljobs-rcm>ul>li:first-child {border-top: none; position: relative;}.box-rcm div.rcm-jobs-multi>.ljobs-rcm>ul>li {border-top: 1px solid #d6d9dc;position: relative; list-style: none;}.box-rcm div.rcm-jobs-multi.x-rcm>.ljobs-rcm>ul .job-wrap {padding-left: 0;padding-right: 0;}.box-rcm div.rcm-jobs-multi>.ljobs-rcm>ul .job-wrap:first-child {border-top: none;}.box-rcm div.rcm-jobs-multi>.ljobs-rcm>ul .job-wrap {overflow: hidden;margin: 0;padding: 5px 12px;position: relative;}.box-rcm div.rcm-jobs-multi>.ljobs-rcm>ul .job-wrap a.job {display: block;cursor: pointer;text-decoration: none; float: left; width: 70%; }.box-rcm div.rcm-jobs-multi>.ljobs-rcm>ul .job-wrap .title {font-weight: 700;font-size: 13px;display: block;cursor: pointer;text-decoration: none;color: #be5656;padding-right: 12px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}.box-rcm div.rcm-jobs-multi>.ljobs-rcm>ul .job-wrap div {margin: 3px 0; line-height: 26px;}.box-rcm div.rcm-jobs-multi>.ljobs-rcm>ul .job-wrap .company {font-weight: 700;color: #505050;margin-right: 7px; font-size: 12px;}.box-rcm div.rcm-jobs-multi>.ljobs-rcm>ul .job-wrap .location, .j-salary {color: #505050;font-style: italic; font-size:12px; display: inline-block; margin-right: 7px;}.box-rcm div.rcm-jobs-multi>.ljobs-rcm>ul .job-wrap .location svg, .j-salary svg {height: 12px;width: 12px;position: relative;top: 1px;fill: #b5b7b8;display: inline-block;}.box-rcm div.rcm-jobs-multi>.ljobs-rcm>ul .job-wrap .location>span, .j-salary>span {display: inline-block;}.box-rcm div.rcm-jobs-multi>.ljobs-rcm>ul .job-wrap .post-tag {text-align: center;color: #000;background-color: #f5f5f5;padding: .25em .5em;margin: 0 2px 2px 0!important;text-decoration: none;font-size: 12px;line-height: 1.4;white-space: nowrap;display: inline-block;border-radius: 0;border: 1px solid #ddd;float: none;font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;}.box-rcm div.rcm-jobs-multi>.ljobs-rcm>ul .job-wrap .thumbnail{float: left; width: 10%; margin-right: 2%;  margin-left: 2%; overflow: hidden; display: flex; align-items: center; justify-content: center;}.box-rcm div.rcm-jobs-multi>.ljobs-rcm>ul .job-wrap .thumbnail .item-logo{width:80% !important; height: auto !important; border:none; margin: 0px; padding: 10px 0px 0px 0px;}.box-rcm div.rcm-jobs-multi>.ljobs-rcm>ul .job-wrap .thumbnail-hr{float: right; width: 13%; overflow: hidden; display: flex; justify-content: flex-end;}.box-rcm div.rcm-jobs-multi>.ljobs-rcm>ul .job-wrap .thumbnail-hr .item-logo{width: 10% !important; position: absolute; top: 0; right: 0;}@media screen and (min-width: 320px) and (max-width: 800px) {.box-rcm div.rcm-jobs-multi>.ljobs-rcm>ul li{margin-left:0px;}.box-rcm div.rcm-jobs-multi>.ljobs-rcm>ul .job-wrap .thumbnail{display: none}.box-rcm div.rcm-jobs-multi>.ljobs-rcm>ul .job-wrap a.job {width: 100%;}}</style></head>
+
+<body data-new-gr-c-s-check-loaded="14.990.0" data-gr-ext-installed="">
+    
+    <script type="text/javascript" async="">
+        (function(){
+            var s1=document.createElement('script'),s0=document.getElementsByTagName('script')[0];
+            s1.async=true;
+            s1.src='//tr.topdevvn.com/js/follow.js';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+    
+
+    <script>
+        (function() {
+            
+            
+            
+            
+            
+
+            var cssFontawesome = document.createElement('link');
+            cssFontawesome.href = '/resources/fontawesome/all.min.css';
+            cssFontawesome.rel = 'stylesheet';
+            cssFontawesome.type = 'text/css';
+            document.head.appendChild(cssFontawesome);
+
+            var cssToastr = document.createElement('link');
+            cssToastr.href = '/resources/toastr/toastr.min.css';
+            cssToastr.rel = 'stylesheet';
+            cssToastr.type = 'text/css';
+            document.head.appendChild(cssToastr);
+
+            var cssCarouseller = document.createElement('link');
+            cssCarouseller.href = '/resources/carouseller/carouseller.css';
+            cssCarouseller.rel = 'stylesheet';
+            cssCarouseller.type = 'text/css';
+            document.head.appendChild(cssCarouseller);
+
+            var cssFancyBox = document.createElement('link');
+            cssFancyBox.href = '/resources/css/jquery.fancybox.min.css';
+            cssFancyBox.rel = 'stylesheet';
+            cssFancyBox.type = 'text/css';
+            document.head.appendChild(cssFancyBox);
+
+            var cssTechmasterMedia = document.createElement('link');
+            cssTechmasterMedia.href = 'https://techmaster.vn/media/resources/css/style.css';
+            cssTechmasterMedia.rel = 'stylesheet';
+            cssTechmasterMedia.type = 'text/css';
+            document.head.appendChild(cssTechmasterMedia);
+
+        })();
+    </script>
+
+    <script src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/jquery-3.4.1.min.js.download"></script>
+    <script src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/bootstrap.min.js.download"></script>
+    <script src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/toastr.min.js.download"></script>
+    <script src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/carouseller.min.js.download"></script>
+    <script src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/moment.min.js.download"></script>
+    <script src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/vi.js.download"></script>
+
+    <script src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/popper.min.js.download"></script>
+    <script src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/bootbox.min.js.download"></script>
+    <script src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/bootbox.locales.min.js.download"></script>
+
+    <script src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/jquery.toc.min.js.download"></script>
+
+    
+    <script>
+        $(function () {
+			var e = document.createElement('script'); e.async = true;
+			e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+			document.getElementById('fb-root').appendChild(e);
+            toastr.options.preventDuplicates = true;
+		})
+
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '290270177727593',
+                autoLogAppEvents: true,
+                xfbml: true,
+                version: 'v3.2',
+                channelURL : '',
+				status     : true,
+				cookie     : true,
+				oauth      : true,
+            });
+        };
+
+        
+        
+        
+        
+        
+        
+        
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'))
+    </script>
+
+    
+    <div id="fb-root" class=" fb_reset"><script async="" src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/all.js(1).download"></script><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div><div class="fb-customerchat fb_invisible_flow fb_iframe_widget" logged_in_greeting="Xin chào! Chúng tôi có thể giúp gì cho bạn ?" logged_out_greeting="Xin chào! Chúng tôi có thể giúp gì cho bạn ?" page_id="224779447588038" greeting_dialog_display="hide" theme_color="#0084ff" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=290270177727593&amp;container_width=0&amp;greeting_dialog_display=hide&amp;locale=vi_VN&amp;logged_in_greeting=Xin%20ch%C3%A0o!%20Ch%C3%BAng%20t%C3%B4i%20c%C3%B3%20th%E1%BB%83%20gi%C3%BAp%20g%C3%AC%20cho%20b%E1%BA%A1n%20%3F&amp;logged_out_greeting=Xin%20ch%C3%A0o!%20Ch%C3%BAng%20t%C3%B4i%20c%C3%B3%20th%E1%BB%83%20gi%C3%BAp%20g%C3%AC%20cho%20b%E1%BA%A1n%20%3F&amp;page_id=224779447588038&amp;request_time=1609056268785&amp;sdk=joey&amp;theme_color=%230084ff"><span style="vertical-align: bottom; width: 1000px; height: 0px;"><iframe name="f2400c7da5e8958" width="1000px" height="1000px" title="" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/customerchat.html" style="padding: 0px; position: fixed; z-index: 2147483646; border-radius: 16px; top: auto; width: 399px; max-height: 0px; background: none; bottom: 85px; right: 4px; margin-right: 12px; visibility: visible; min-height: 0px;" class=" fb_customer_chat_bounce_out_v2" data-testid="dialog_iframe"></iframe></span></div><div class="fb_dialog  fb_dialog_advanced" style="overflow: visible; z-index: 2147483644;"><div class="fb_dialog_content"><iframe name="blank_f2001f435b8d9" width="60px" tabindex="-1" data-testid="bubble_iframe" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/bubble.html" style="margin: 0px 12px; padding: 0px; position: fixed; z-index: 2147483644; bottom: 24px; top: auto; height: 60px; width: 60px; border-radius: 29px; box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px 0px; background: none; display: block; right: 12px;"></iframe><iframe name="unread_f2001f435b8d9" tabindex="-1" data-testid="unread_iframe" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/bubble(1).html" style="bottom: 68px; position: fixed; width: 20px; height: 24px; z-index: 2147483645; border-radius: 4pt; background: none; right: 22px;"></iframe></div></div><div class="fb_dialog  fb_dialog_advanced" style="overflow: visible; z-index: 2147483644;"><div class="fb_dialog_content"><iframe name="blank_f2400c7da5e8958" width="60px" tabindex="-1" data-testid="bubble_iframe" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/bubble(2).html" style="margin: 0px 12px; padding: 0px; position: fixed; z-index: 2147483644; bottom: 24px; top: auto; height: 60px; width: 60px; border-radius: 29px; box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px 0px; background: none; display: block; right: 12px;"></iframe><iframe name="unread_f2400c7da5e8958" tabindex="-1" data-testid="unread_iframe" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/bubble(3).html" style="bottom: 68px; position: fixed; width: 20px; height: 24px; z-index: 2147483645; border-radius: 4pt; background: none; right: 22px;"></iframe></div></div></div>
+    
+
+    
+    <div class="container-fluid" id="header">
+        
+<header>
+	<style type="text/css">
+		.navbar {
+			border: none!important;
+			padding-top: 0;
+			padding-bottom: 0;
+			justify-content: space-between!important
+		}
+
+		.logo-brand img {
+			width: 120px
+		}
+
+		.parent-menu.desktop {
+			height: 100%;
+			flex: initial
+		}
+
+		.parent-menu.desktop .list-menu {
+			margin-bottom: 0!important;
+			list-style-type: none;
+			display: flex;
+			align-items: center
+		}
+
+		.desktop.parent-menu .parent-menu-item {
+			color: #fff;
+			margin: 0 10px 0 10px;
+			text-transform: uppercase;
+			position: relative;
+			min-height: 60px;
+			display: flex;
+			align-items: center;
+			cursor: pointer;
+			font-size: 1.1rem
+		}
+
+		.nav-indicator {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 5px;
+			background-color: #fff
+		}
+
+		.nav-padding {
+			padding: 0 3px
+		}
+
+		.desktop.parent-menu li:last-child {
+			margin-right: 0
+		}
+
+		.shopping-cart-top-menu {
+			font-size: 1.4rem!important;
+			padding-right: 1rem;
+			cursor: pointer
+		}
+
+		.user-top-menu {
+			padding-left: 1rem;
+			font-size: 1.4rem!important;
+			cursor: pointer
+		}
+
+		.parent-menu a {
+			color: #fff
+		}
+
+		.desktop.parent-menu li:hover>a {
+			text-decoration: none;
+			color: #c4c4c4
+		}
+
+		.parent-menu .dropdown-menu a {
+			color: #464646;
+			text-decoration: none;
+		}
+
+		.parent-menu .dropdown-menu li:hover a {
+			color: #fff
+		}
+
+		.navbar-toggler {
+			outline: 0!important
+		}
+
+		.count-cart-item {
+			position: absolute;
+			top: -10px;
+			left: 20px;
+			background-color: #26a69a
+		}
+
+		.dropdown-menu.active {
+			display: flex
+		}
+
+		.track-menu.active {
+			display: flex
+		}
+
+		.modal-dialog {
+			margin-top: 5%
+		}
+		#advisory-modal .modal-banner {
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+			background-color: #1cb2ed;
+			position: relative;
+		}
+		#advisory-modal .modal-banner .close {
+			position: absolute;
+			top: 4px;
+			right: 4px;
+			border: 1px solid #000;
+			width: 30px;
+			height: 30px;
+			line-height: 20px;
+			border-radius: 50%;
+			cursor: pointer;
+		}
+		#advisory-modal .modal-header {
+			padding: 1rem 1.5rem;
+			border-bottom: none;
+		}
+		#advisory-modal h5 {
+			margin-top: 0 !important;
+		}
+		#advisory-modal .modal__main-title{
+			font-size: 24px !important;
+		}
+		#advisory-modal .modal__sub-title{
+			font-size: 1rem;
+			font-weight: 400;
+			display: block;
+    		margin: .5rem 0;
+		}
+		#advisory-modal .modal-body {
+			padding: 1rem 1.5rem;
+			padding-top: 0;
+		}
+		#advisory-modal .modal-body input {
+			width: 100%;
+			border: 1px solid #ccc;
+			height: 40px;
+			line-height: 40px;
+			padding: 0 1rem;
+			transition: all .3s ease-out;
+			color: #464646;
+		}
+		#advisory-modal .modal-body textarea {
+			width: 100%;
+			min-height: 200px;
+			border: 1px solid #ccc;
+			user-select: none;
+			resize: none;
+			padding: 1rem;
+			color: #464646;
+			transition: all .3s ease-out;
+		}
+		#advisory-modal .modal-body input:focus, #advisory-modal .modal-body textarea:focus {
+			border: 1px solid #34465c;
+		}
+		#advisory-modal .advisory__btns {
+			margin-top: 1rem;
+		}
+		#advisory-modal .advisory__btns button {
+			display: inline-block;
+			outline: none;
+			cursor: pointer;
+			text-decoration: none !important;
+			position: relative;
+			z-index: 20;
+			overflow: hidden;
+		}
+		#advisory-modal .advisory__btns .btn {
+			font-size: 12px;
+			font-weight: 400;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			-webkit-border-radius: 2px;
+			-moz-border-radius: 2px;
+			-ms-border-radius: 2px;
+			border-radius: 2px;
+			-webkit-transition: 0.5s;
+			-o-transition: 0.5s;
+			transition: 0.5s;
+			padding: 8px 25px !important;
+			box-shadow: none;
+			border: none;
+		}
+		#advisory-modal .advisory__btns button:nth-child(1) {
+			border: 1px solid #34465c;
+			color: #34465c;
+		}
+		#advisory-modal .advisory__btns button:nth-child(2) {
+			position: relative;
+			border: 1px solid #34465c;
+			background-color: #34465c;
+			color: #fff;
+			margin-left: .5rem;
+		}
+		#advisory-modal .advisory__btns button:nth-child(2):after {
+			background: #fff;
+			content: "";
+			height: 155px;
+			left: -75px;
+			opacity: .2;
+			position: absolute;
+			top: -50px;
+			transform: rotate(35deg);
+			transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+			width: 50px;
+			z-index: -10;
+		}
+		#advisory-modal .advisory__btns button:nth-child(2):hover {
+			color: #fff;
+		}
+		#advisory-modal .advisory__btns button:nth-child(2):hover:after {
+			left: 120%;
+			transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+		}
+		::placeholder {
+			font-size: 14px;
+		}
+		.input__row {
+		position: relative;
+		margin-bottom: 10px;
+		}
+
+		.input__row.success input {
+		border-color: #2ecc71;
+		}
+
+		.input__row.error input {
+		border-color: #e74c3c;
+		}
+
+		.input__row i {
+		visibility: hidden;
+		position: absolute;
+		top: 13px;
+		right: 10px;
+		}
+
+		.input__row.success i.fa-check-circle {
+		color: #2ecc71;
+		visibility: visible;
+		}
+
+		.input__row.error i.fa-exclamation-circle {
+		color: #e74c3c;
+		visibility: visible;
+		}
+
+		.input__row small {
+		color: #e74c3c;
+		position: absolute;
+		bottom: -6px;
+		left: 0;
+		visibility: hidden;
+		}
+
+		.input__row.error small {
+		visibility: visible;
+		}
+		#forgot-password .modal-content,
+		#sign-in-div,
+		#sign-up-div {
+			padding: 3rem
+		}
+
+		#modal-signin .nav-tabs .nav-link {
+			border-top-left-radius: 2px;
+			border-top-right-radius: 2px;
+			text-align: center;
+			color: #464646;
+			background-color: #1e3c740f;
+			padding: 1rem
+		}
+
+		#modal-signin .nav-tabs .nav-link.active {
+			background-color: #fff
+		}
+
+		.modal-login-item {
+			margin-bottom: 2rem
+		}
+
+		.modal-login-item input {
+			border: none;
+			border-bottom: 1px solid #9e9e9e;
+			width: 100%
+		}
+
+		.modal-login-item-half {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 5px
+		}
+
+		.btn-login-modal {
+			letter-spacing: .5px;
+			border-radius: 4px;
+			padding: .5rem 1rem;
+			width: 100%;
+			text-transform: uppercase
+		}
+
+		#overlay {
+			position: fixed;
+			background-color: #000;
+			opacity: .7;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 998;
+			display: none;
+			transition: 1s;
+			transition-timing-function: ease
+		}
+
+		.mobile {
+			display: none
+		}
+
+		#forgot-password {
+			display: none
+		}
+
+		.checkbox-remember-me {
+			display: block;
+			position: relative;
+			padding-left: 25px;
+			margin-bottom: 12px
+		}
+
+		.checkbox-remember-me input {
+			position: absolute;
+			opacity: 0;
+			cursor: pointer;
+			height: 0;
+			width: 0
+		}
+
+		.checkmark {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 20px;
+			width: 20px;
+			background-color: #1e3c741f
+		}
+
+		.checkbox-remember-me input:checked~.checkmark {
+			background-color: #3c78e8
+		}
+
+		.checkmark:after {
+			content: "";
+			position: absolute;
+			display: none
+		}
+
+		.checkbox-remember-me input:checked~.checkmark:after {
+			display: block
+		}
+
+		.checkbox-remember-me .checkmark:after {
+			left: 8px;
+			top: 4px;
+			width: 5px;
+			height: 10px;
+			border: solid #fff;
+			border-width: 0 3px 3px 0;
+			transform: rotate(45deg)
+		}
+
+		#sign-in-div .fab {
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			color: #fff;
+			overflow: hidden;
+			margin: 0 10px 0 10px
+		}
+
+		#sign-in-div .fab img {
+			height: 100%;
+			width: 40px
+		}
+
+		.user-dropdown-avatar {
+			overflow: hidden;
+			padding-left: 1rem;
+			cursor: pointer;
+			width: 3rem;
+			height: 2rem
+		}
+
+		.user-dropdown-avatar img {
+			width: 2rem;
+			height: 2rem;
+			border-radius: 50%
+		}
+
+		.dropdown-menu {
+			top: 100%;
+			position: absolute;
+			left: auto;
+			right: 0;
+			display: none;
+			flex-flow: column;
+			width: 200px;
+			padding: 0;
+			box-shadow: rgba(0, 0, 0, .15) 0 0 10px;
+			border: none;
+			margin-top: .25rem
+		}
+
+		.dropdown-menu a,
+		.track-menu a {
+			text-decoration: none
+		}
+
+		.dropdown-menu li {
+			width: 100%;
+			text-align: center;
+			color: #464646!important;
+			padding: .7rem 1rem;
+			cursor: pointer;
+			text-transform: none
+		}
+
+		.dropdown-menu li:hover {
+			background-color: #c4c4c4;
+			color: #fff!important
+		}
+
+		.track-menu {
+			border-radius: 4px;
+			background-color: #fff;
+			margin-top: .25rem;
+			background-clip: padding-box;
+			list-style: none;
+			text-align: left;
+			font-size: 1rem;
+			float: left;
+			z-index: 1000;
+			top: 100%;
+			width: 500px;
+			position: absolute;
+			display: none;
+			flex-flow: column;
+			padding: .5rem 0;
+			box-shadow: rgba(0, 0, 0, .15) 0 0 10px
+		}
+
+		.track-menu li {
+			width: 100%;
+			padding: .7rem 1rem;
+			cursor: pointer;
+			text-transform: none
+		}
+
+		.track-menu a {
+			color: #464646!important
+		}
+
+		.track-menu a:hover {
+			color: #3c78e8!important
+		}
+
+		.shopping-cart-mobile {
+			cursor: pointer;
+			position: fixed;
+			height: 45pt;
+			width: 45pt;
+			padding: 0;
+			z-index: 900;
+			text-align: center;
+			bottom: 70pt;
+			right: 18pt;
+			color: #fff;
+			border-radius: 50%;
+			background-color: #26a69a;
+			box-shadow: 0 3px 12px rgba(0, 0, 0, .15);
+			-webkit-box-shadow: 0 3px 12px rgba(0, 0, 0, .15)
+		}
+
+		.shopping-cart-mobile .fa-shopping-cart {
+			position: absolute;
+			top: 14pt;
+			right: 9pt;
+			font-size: 30px
+		}
+
+		.count-cart-item-mobile {
+			position: absolute;
+			font-size: 1.2rem;
+			top: -15pt;
+			right: -2pt;
+			color: #464646;
+			background-color: transparent
+		}
+
+		.parent-menu a {
+			font-size: .95rem!important
+		}
+
+		.fb_customer_chat_bounce_in_v2 {
+			bottom: 113pt!important
+		}
+
+		@media (max-width:1199px) {
+			.desktop.parent-menu .parent-menu-item {
+				margin: 0 5px 0 5px
+			}
+		}
+
+		@media (max-width:1366px) {
+			.logo-brand img {
+				width: 100px
+			}
+			.desktop.parent-menu .parent-menu-item {
+				min-height: 54px
+			}
+			.nav-indicator {
+				height: 4px
+			}
+			.parent-menu a {
+				font-size: .9rem!important
+			}
+		}
+
+		@media (max-width:991px) {
+			.navbar {
+				padding: 15px 10px
+			}
+			.user-dropdown-avatar {
+				padding-left: 0;
+				text-align: center
+			}
+			.logo-brand {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%)
+			}
+			.parent-menu.mobile {
+				font-size: 1rem;
+				position: fixed;
+				width: 250px;
+				height: 100%;
+				left: -250px;
+				z-index: 999;
+				background-color: #fff;
+				top: 0;
+				align-items: center;
+				transition: .4s
+			}
+			.parent-menu.mobile ul {
+				padding: 0
+			}
+			.parent-menu.mobile li {
+				height: 60px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				padding: 10px 25px
+			}
+			.parent-menu.mobile a {
+				color: #464646
+			}
+			.parent-menu.mobile .active {
+				background-color: #c4c4c4
+			}
+			.parent-menu.mobile .active a {
+				color: #fff
+			}
+			.parent-menu.mobile a:hover {
+				text-decoration: none
+			}
+			.desktop,
+			.nav-indicator {
+				display: none
+			}
+			.mobile {
+				display: block
+			}
+		}
+
+		@media (min-width:576px) {
+			#modal-signin .modal-dialog {
+				max-width: 400px
+			}
+		}
+
+		@media (max-width:576px) {
+			.shopping-cart-mobile {
+				width: 50px;
+				height: 50px
+			}
+			.shopping-cart-mobile .fa-shopping-cart {
+				position: absolute;
+				top: 11pt;
+				right: 7pt;
+				font-size: 27px
+			}
+		}
+
+		#advisory-modal input {
+			border: none;
+			border-bottom: 1px solid #dee2e6;
+			width: 100%
+		}
+
+		#advisory-modal input:not(:last-child) {
+			margin-bottom: 1rem
+		}
+
+		.admin-page,
+		.teacher-page {
+			display: none
+		}
+
+		.required-info-body {
+			padding: 1.5rem;
+			border-radius: 4px;
+			background-color: #f2f8fd;
+			text-align: center
+		}
+
+		.required-info-footer {
+			padding: .5rem 1.5rem;
+			border-top: 1px solid #dedede
+		}
+
+		.required-info-icon {
+			color: grey;
+			margin-bottom: .4rem
+		}
+
+		#required-info-input {
+			margin-top: 1.5rem
+		}
+	</style>
+
+	
+	<div class="nav-bar">
+		<nav class="navbar navbar-expand-lg">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01">
+				<i class="fas fa-bars" style="color: white"></i>
+			</button>
+			<div class="logo-brand">
+				<a href="https://techmaster.vn/">
+					<img src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/new_logo.png" alt="logo">
+				</a>
+			</div>
+
+			<div class="user-nav mobile">
+				
+				<i class="fas fa-user user-top-menu" data-toggle="modal" data-target="#modal-signin" style="color: white"></i>
+				
+			</div>
+			<div class="btn mobile shopping-cart-mobile" style="display:none">
+				<a href="https://techmaster.vn/gio-hang" style="color: white">
+					<div style="position: relative; line-height: 75px">
+						<i class="fas fa-shopping-cart"></i>
+						<span class="count-cart-item count-cart-item-mobile">0</span>
+					</div>
+				</a>
+			</div>
+			<div class="parent-menu desktop">
+				<ul class="list-menu">
+					
+					
+					<li class="parent-menu-item" onclick="ShowSubMenu(this)" data-dropdown="submenu-dropdown-0">
+						<a class="nav-padding">
+							<span>Lộ trình <i class="fas fa-caret-down"></i></span>
+						</a>
+						
+						<ul class="dropdown-menu" id="submenu-dropdown-0" style="display: none;">
+							
+							<a href="https://techmaster.vn/lo-trinh/foundation" target="_blank">
+								<li><span>Lập trình căn bản</span></li>
+							</a>
+							
+							<a href="https://techmaster.vn/lo-trinh/front-end" target="_blank">
+								<li><span>Front End + React</span></li>
+							</a>
+							
+							<a href="https://techmaster.vn/lo-trinh/mobile" target="_blank">
+								<li><span>Di động React Native</span></li>
+							</a>
+							
+							<a href="https://java.techmaster.vn/" target="_blank">
+								<li><span>Java Spring Boot FullStack</span></li>
+							</a>
+							
+							<a href="https://devops.techmaster.vn/" target="_blank">
+								<li><span>Lộ trình DevOps</span></li>
+							</a>
+							
+							<a href="https://testing.techmaster.vn/" target="_blank">
+								<li><span>Software Testing</span></li>
+							</a>
+							
+						</ul>
+						
+					</li>
+					
+					
+					
+					<li class="parent-menu-item" onclick="GoToSite(this)" data-href="/khoa-hoc/phong-lab">
+						<a href="https://techmaster.vn/khoa-hoc/phong-lab" class="nav-padding">
+							<span>Phòng lab</span>
+						</a>
+						
+					</li>
+					
+					
+					
+					<li class="parent-menu-item" onclick="GoToSite(this)" data-href="/khoa-hoc/truc-tuyen">
+						<a href="https://techmaster.vn/khoa-hoc/truc-tuyen" class="nav-padding">
+							<span>Trực tuyến</span>
+						</a>
+						
+					</li>
+					
+					
+					
+					<li class="parent-menu-item" onclick="GoToSite(this)" data-href="/san-pham-hoc-vien">
+						<a href="https://techmaster.vn/san-pham-hoc-vien" class="nav-padding">
+							<span>Sản phẩm học viên</span>
+						</a>
+						
+					</li>
+					
+					
+					
+					<li class="parent-menu-item" onclick="GoToSite(this)" data-href="/trungtam/lich-khai-giang">
+						<a href="https://techmaster.vn/trungtam/lich-khai-giang" class="nav-padding">
+							<span>Khai giảng</span>
+						</a>
+						
+					</li>
+					
+					
+					
+					<li class="parent-menu-item" onclick="GoToSite(this)" data-href="/posts">
+						<a href="https://techmaster.vn/posts" class="nav-padding">
+							<span>Blog</span>
+						</a>
+						
+					</li>
+					
+					
+					
+					<li class="parent-menu-item" onclick="GoToSite(this)" data-href="/trai-nghiem">
+						<a href="https://techmaster.vn/trai-nghiem" class="nav-padding">
+							<span>Trải nghiệm</span>
+						</a>
+						
+					</li>
+					
+					
+					
+					<li class="parent-menu-item" onclick="GoToSite(this)" data-href="/viec-lam">
+						<a href="https://techmaster.vn/viec-lam" class="nav-padding">
+							<span>Việc làm</span>
+						</a>
+						
+					</li>
+					
+					
+					
+					<li class="parent-menu-item" onclick="ShowSubMenu(this)" data-dropdown="submenu-dropdown-8">
+						<a class="nav-padding">
+							<span>Chúng tôi <i class="fas fa-caret-down"></i></span>
+						</a>
+						
+						<ul class="dropdown-menu" id="submenu-dropdown-8" style="display: none;">
+							
+							<a href="https://techmaster.vn/trungtam/trung-tam" target="_blank">
+								<li><span>Trung tâm</span></li>
+							</a>
+							
+							<a href="https://techmaster.vn/trungtam/quy-dinh-chung" target="_blank">
+								<li><span>Quy định chung</span></li>
+							</a>
+							
+							<a href="https://techmaster.vn/trungtam/giang-vien" target="_blank">
+								<li><span>Giảng viên</span></li>
+							</a>
+							
+							<a href="https://techmaster.vn/trungtam/huong-dan-mua-khoa-hoc" target="_blank">
+								<li><span>Hướng dẫn đăng ký học</span></li>
+							</a>
+							
+						</ul>
+						
+					</li>
+					
+					
+					<li class="parent-menu-item">
+						<div style="position: relative;">
+							<a href="https://techmaster.vn/gio-hang">
+								<i class="fas fa-shopping-cart shopping-cart-top-menu"></i>
+							</a>
+							<span class="badge badge-success count-cart-item">0</span>
+						</div>
+						
+						<i class="fas fa-user user-top-menu" data-toggle="modal" data-target="#modal-signin"></i>
+						
+					</li>
+				</ul>
+			</div>
+
+			<div class="modal fade" id="modal-signin" tabindex="-1" role="dialog">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<ul class="nav nav-tabs" role="tablist">
+							<li class="nav-item" style="flex: 1">
+								<a class="nav-link active" id="sign-in-tab" data-toggle="tab" href="https://techmaster.vn/posts/34357/iot-so-sanh-4-mo-hinh-truyen-thong-trong-he-thong-iot#sign-in-div" role="tab">Đăng nhập</a>
+							</li>
+							<li class="nav-item" style="flex: 1">
+								<a class="nav-link" id="sign-up-tab" data-toggle="tab" href="https://techmaster.vn/posts/34357/iot-so-sanh-4-mo-hinh-truyen-thong-trong-he-thong-iot#sign-up-div" role="tab">Đăng ký</a>
+							</li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane fade show active" id="sign-in-div" role="tabpanel">
+								<form>
+									<div class="modal-login-item">
+										<input type="text" placeholder="Email" id="sign-in-email" required="">
+									</div>
+									<div class="modal-login-item">
+										<input type="password" placeholder="Password" id="sign-in-password" required="">
+									</div>
+									<div class="modal-login-item-half">
+										<label style="display:none" class="checkbox-remember-me">Nhớ tài khoản
+											<input type="checkbox" id="sign-in-remember">
+											<span class="checkmark"></span>
+										</label>
+										<div style="cursor: pointer;" onclick="openForgotPassword()">
+											<i class="fas fa-question-circle"></i> Quên mật khẩu</div>
+									</div>
+									<div style="margin-bottom: 2rem;">
+										<button type="button" class="btn btn-green btn-login-modal" id="btn-sign-in">Đăng nhập</button>
+									</div>
+									<div class="text-center" style="margin-bottom: 1rem;">
+										Hoặc đăng nhập bằng
+									</div>
+									<div class="text-center">
+										<div class="fab google-sign-in">
+											<img src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/google.png" alt="google_sign_in">
+										</div>
+										<div class="fab facebook-sign-in">
+											<img src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/facebook.png" alt="facebook_sign_in">
+										</div>
+										<div class="fab github-sign-in">
+											<img src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/github-sign.svg" alt="github_sign_in">
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="tab-pane fade show" id="sign-up-div" role="tabpanel">
+								<form>
+									<div class="modal-login-item">
+										<input type="text" placeholder="Họ tên" id="sign-up-fullname" required="">
+									</div>
+									<div class="modal-login-item">
+										<input type="text" placeholder="Email" id="sign-up-email" required="">
+									</div>
+									<div class="modal-login-item">
+										<input type="text" placeholder="Điện thoại" id="sign-up-phone" required="">
+									</div>
+									<div class="modal-login-item">
+										<input type="password" placeholder="Mật khẩu" id="sign-up-password" required="">
+									</div>
+									<div class="modal-login-item">
+										<input type="password" placeholder="Nhập lại mật khẩu" id="sign-up-retype-password" required="">
+									</div>
+									<div class="modal-login-item">
+										<button type="button" class="btn btn-green btn-login-modal" id="btn-sign-up">Đăng ký</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal fade" id="forgot-password" tabindex="-1" role="dialog">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<form class="modal-login-form">
+							<div style="padding-top: 1px" class="modal-login-item text-center">
+								<h2>Quên mật khẩu</h2>
+							</div>
+							<div class="modal-login-item">
+								<input type="text" placeholder="Email" id="forgot-password-email" required="">
+							</div>
+							<button type="button" class="btn btn-green btn-login-modal" id="btn-forgot-password">Gửi
+								mail trợ giúp</button>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="parent-menu mobile" id="mySidenav" style="overflow-y: auto">
+				<ul>
+					<li class="parent-menu-item">
+						<a href="https://techmaster.vn/">
+							<span>Trang chủ</span>
+						</a>
+					</li>
+					
+					
+					<li class="parent-menu-item" onclick="ShowSubMenu(this)" data-dropdown="submenu-dropdown-mobile-0">
+						<a>
+							<span>Lộ trình <i class="fas fa-caret-down"></i></span>
+						</a>
+					</li>
+					
+					<li class="parent-menu-item" style="height: auto; padding-top: 0; display: none;" id="submenu-dropdown-mobile-0" data-name="submenu-dropdown-mobile">
+						<div style="padding-left: 1.5rem">
+							
+							<a href="https://techmaster.vn/lo-trinh/foundation">
+								<div style="padding-bottom: 1.5rem;">
+									<span>Lập trình căn bản</span>
+								</div>
+							</a>
+							
+							<a href="https://techmaster.vn/lo-trinh/front-end">
+								<div style="padding-bottom: 1.5rem;">
+									<span>Front End + React</span>
+								</div>
+							</a>
+							
+							<a href="https://techmaster.vn/lo-trinh/mobile">
+								<div style="padding-bottom: 1.5rem;">
+									<span>Di động React Native</span>
+								</div>
+							</a>
+							
+							<a href="https://java.techmaster.vn/">
+								<div style="padding-bottom: 1.5rem;">
+									<span>Java Spring Boot FullStack</span>
+								</div>
+							</a>
+							
+							<a href="https://devops.techmaster.vn/">
+								<div style="padding-bottom: 1.5rem;">
+									<span>Lộ trình DevOps</span>
+								</div>
+							</a>
+							
+							<a href="https://testing.techmaster.vn/">
+								<div style="padding-bottom: 1.5rem;">
+									<span>Software Testing</span>
+								</div>
+							</a>
+							
+						</div>
+					</li>
+					
+				
+					
+					
+					<li class="parent-menu-item">
+						<a href="https://techmaster.vn/khoa-hoc/phong-lab">
+							<span>Phòng lab </span>
+						</a>
+					</li>
+					
+				
+					
+					
+					<li class="parent-menu-item">
+						<a href="https://techmaster.vn/khoa-hoc/truc-tuyen">
+							<span>Trực tuyến </span>
+						</a>
+					</li>
+					
+				
+					
+					
+					<li class="parent-menu-item">
+						<a href="https://techmaster.vn/san-pham-hoc-vien">
+							<span>Sản phẩm học viên </span>
+						</a>
+					</li>
+					
+				
+					
+					
+					<li class="parent-menu-item">
+						<a href="https://techmaster.vn/trungtam/lich-khai-giang">
+							<span>Khai giảng </span>
+						</a>
+					</li>
+					
+				
+					
+					
+					<li class="parent-menu-item">
+						<a href="https://techmaster.vn/posts">
+							<span>Blog </span>
+						</a>
+					</li>
+					
+				
+					
+					
+					<li class="parent-menu-item">
+						<a href="https://techmaster.vn/trai-nghiem">
+							<span>Trải nghiệm </span>
+						</a>
+					</li>
+					
+				
+					
+					
+					<li class="parent-menu-item">
+						<a href="https://techmaster.vn/viec-lam">
+							<span>Việc làm </span>
+						</a>
+					</li>
+					
+				
+					
+					
+					<li class="parent-menu-item" onclick="ShowSubMenu(this)" data-dropdown="submenu-dropdown-mobile-8">
+						<a>
+							<span>Chúng tôi <i class="fas fa-caret-down"></i></span>
+						</a>
+					</li>
+					
+					<li class="parent-menu-item" style="height: auto; padding-top: 0; display: none;" id="submenu-dropdown-mobile-8" data-name="submenu-dropdown-mobile">
+						<div style="padding-left: 1.5rem">
+							
+							<a href="https://techmaster.vn/trungtam/trung-tam">
+								<div style="padding-bottom: 1.5rem;">
+									<span>Trung tâm</span>
+								</div>
+							</a>
+							
+							<a href="https://techmaster.vn/trungtam/quy-dinh-chung">
+								<div style="padding-bottom: 1.5rem;">
+									<span>Quy định chung</span>
+								</div>
+							</a>
+							
+							<a href="https://techmaster.vn/trungtam/giang-vien">
+								<div style="padding-bottom: 1.5rem;">
+									<span>Giảng viên</span>
+								</div>
+							</a>
+							
+							<a href="https://techmaster.vn/trungtam/huong-dan-mua-khoa-hoc">
+								<div style="padding-bottom: 1.5rem;">
+									<span>Hướng dẫn đăng ký học</span>
+								</div>
+							</a>
+							
+						</div>
+					</li>
+					
+				
+					
+				</ul>
+			</div>
+		</nav>
+
+		<div class="blank_block" id="overlay">
+		</div>
+	</div>
+
+	<div class="modal fade" id="advisory-modal" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-banner">
+					<img src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/new_logo.png" alt="logo_hoc_la_co_viec">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+				</div>
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">
+						<span class="modal__main-title">
+							Tư vấn khoá học
+						</span>
+						<span class="modal__sub-title">
+							Điền và gửi thông tin cá nhân để được tư vấn miễn phí về các chương trình học.
+						</span>						
+					</h5>
+				</div>
+				<div class="modal-body">
+					<div class="input__row">
+						<input type="text" placeholder="Họ tên" id="advisory-name" required="">
+						<i class="fas fa-check-circle"></i>
+						<i class="fas fa-exclamation-circle"></i>
+						<small>Error message</small>
+					</div>
+					<div class="input__row">
+						<input type="email" placeholder="Email" id="advisory-email" required="">
+						<i class="fas fa-check-circle"></i>
+						<i class="fas fa-exclamation-circle"></i>
+						<small>Error message</small>
+					</div><div class="input__row">
+						<input type="phone" placeholder="Số điện thoại" id="advisory-phone" required="">
+						<i class="fas fa-check-circle"></i>
+						<i class="fas fa-exclamation-circle"></i>
+						<small>Error message</small>
+					</div><div class="input__row">
+						<textarea placeholder="Ghi chú" id="advisory-note"></textarea>
+						<i class="fas fa-check-circle"></i>
+						<i class="fas fa-exclamation-circle"></i>
+						<small>Error message</small>
+					</div>
+					<div style="text-align: right" class="advisory__btns">
+						<button type="button" class="btn btn-white" data-dismiss="modal">Huỷ</button>
+						<button type="button" class="btn btn-blue btn-submit-advisory" id="btn-submit-advisory">Gửi</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="required-info-update" tabindex="-1" role="dialog" data-backdrop="static" data-keyboard="false">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="required-info-body">
+					<i class="far fa-user-circle fa-3x required-info-icon"></i>
+					<div class="text-center" style="font-size: 1.1rem">Cập nhật profile cá nhân</div>
+					<div class="text-center" style="font-weight: 300">Vui lòng nhập số điện thoại để xác thực tài khoản của bạn</div>
+					<input id="required-info-input" class="form-control" type="text" placeholder="Số điện thoại">
+				</div>
+				<div class="required-info-footer text-right">
+					<button class="btn btn-success btn-sm required-info-btn">Cập nhật</button>
+				</div>
+			</div>
+		</div>
+	</div>
+ 	<script>
+		
+		$(document).on('click', function (e) {
+			let target = e.target;
+			if (!$(target.closest('.parent-menu-item')).attr('data-dropdown')) {
+				$('.dropdown-menu').hide()
+				$('.track-menu').hide()
+			}
+
+			if ($(target.closest('.parent-menu-item')).attr('data-dropdown') == 'submenu-dropdown-1') {
+				$('.dropdown-menu').hide()
+			}
+
+			if ($(target.closest('.parent-menu-item')).attr('data-dropdown') == 'submenu-dropdown-6') {
+				$('.track-menu').hide()
+				$('.parent-menu.desktop .user-dropdown-avatar').next('.dropdown-menu').hide()
+			}
+		})
+
+		$('[data-toggle="popover"]').popover()
+
+		$(document).ready(function () {
+			if ($('.navbar-user-avatar-img').attr('src') == "") {
+				$('.navbar-user-avatar-img').attr('src', '/resources/image/anonymous-user.jpg')
+			}
+		})
+
+		 
+		document.addEventListener('DOMContentLoaded', function () {
+			var current = window.location.pathname;
+			
+			var items = $(".parent-menu-item")
+			for (let item of items) {
+				if ($(item).attr('data-href') !== undefined && $(item).attr('data-href') === current && current !== "/gio-hang" && current !== "/") {
+					$(item).addClass("active")
+					$(item).append(`
+						<span class="nav-indicator"></span>
+					`)
+				}
+			}
+		}, false)
+
+		function ShowSubMenu(elem) {
+			let dropdown = $(elem).children('.dropdown-menu');
+			let trackMenu = $(elem).children('.track-menu');
+			let mobileDropdown = $(elem).next('.parent-menu-item');
+			$(dropdown).toggle();
+			$(trackMenu).toggle();
+			if ($(mobileDropdown).attr('data-name') !== undefined) {
+				$(mobileDropdown).toggle();
+			}
+		}
+
+		function ShowUserMenu(elem) {
+			id = $(elem).data("dropdown")
+			if ($('#' + id).css('display') == 'none') {
+				$.ajax({
+					url: "/get-site-can-access",
+					type: "GET",
+					success: function (data) {
+						if (data.Teacher) {
+							$('.teacher-page').show()
+						}
+						if (data.Admin) {
+							$('.admin-page').show()
+						}
+						$('#' + id).css('display', 'flex');
+					},
+					error: function (data) {
+						$('#' + id).css('display', 'flex');
+					}
+				});
+			} else {
+				$('.admin-page').hide()
+				$('.teacher-page').hide()
+				$('#' + id).hide();
+			}
+		}
+
+		$('.navbar-toggler').click(function () {
+			$('#overlay').show()
+			$('#mySidenav').css("left", "0")
+		})
+
+		$('#overlay').click(function (e) {
+			$("#mySidenav").css("left", "-250px")
+			$('#sign-up').hide()
+			$('#sign-in').hide()
+			$('#forgot-password').hide()
+			$('#overlay').hide()
+		})
+
+		function openForgotPassword() {
+			$('#modal-signin').modal('hide')
+			$('#forgot-password').modal()
+		}
+
+		/*------------------ Đăng nhập, đăng ký, quên mật khẩu, đăng xuất ---------------------*/
+		$('#btn-sign-in').click(function (event) {
+			signInFunc()
+		})
+
+		$('#btn-sign-up').click(function () {
+			email = $('#sign-up-email').val()
+			phone = $('#sign-up-phone').val()
+			password = $('#sign-up-password').val()
+			retype = $('#sign-up-retype-password').val()
+			fullname = $('#sign-up-fullname').val()
+			if (!validateEmail(email)) {
+				toastr.warning('Định dạng email không hợp lệ')
+				return
+			}
+			if (!validatePhone(phone)) {
+				toastr.warning('Định dạng số điện thoại không hợp lệ')
+				return
+			}
+			if (password.length == 0) {
+				toastr.warning('Vui lòng nhập mật khẩu')
+				return
+			}
+			if (retype.length == 0) {
+				toastr.warning('Vui lòng gõ lại mật khẩu')
+				return
+			}
+			if (retype != password) {
+				toastr.warning('Mật khẩu gõ lại chưa trùng khớp')
+				return
+			}
+			if (fullname.length == 0) {
+				toastr.warning('Vui lòng nhập họ tên')
+				return
+			}
+			var req = {
+				Email: email,
+				Password: password,
+				FullName: fullname,
+				Phone: phone,
+			};
+			var myJSON = JSON.stringify(req);
+			$.ajax({
+				url: "/sign-up",
+				type: "POST",
+				contentType: "application/json; charset=utf-8",
+				data: myJSON,
+				dataType: "json",
+				success: function (data) {
+					toastr.success("Đăng ký tài khoản thành công. Một email kích hoạt đã được gửi vào hòm thư của bạn.")
+					$('#sign-up-email').val('')
+					$('#sign-up-phone').val('')
+					$('#sign-up-password').val('')
+					$('#sign-up-retype-password').val('')
+					$('#sign-up-fullname').val('')
+					$('#modal-signin').modal('hide')
+				},
+				error: function (xhr) {
+					toastr.warning(xhr.responseJSON.message)
+				}
+			});
+		})
+
+		$('#btn-forgot-password').click(function () {
+			email = $('#forgot-password-email').val()
+			if (!validateEmail(email)) {
+				toastr.warning('Định dạng email không hợp lệ')
+				return
+			}
+			var req = {
+				Email: email,
+			};
+			var myJSON = JSON.stringify(req);
+			$.ajax({
+				url: "/forgot-password",
+				type: "POST",
+				contentType: "application/json; charset=utf-8",
+				data: myJSON,
+				dataType: "json",
+				success: function (data) {
+					toastr.success("Một email hướng dẫn sẽ được gửi đến bạn trong vài phút tới. Vui lòng kiểm tra email.")
+					$('#forgot-password').modal('hide')
+					$("#forgot-password-email").val("")
+				},
+				error: function (xhr) {
+					toastr.warning(xhr.responseJSON.message)
+				}
+			});
+		})
+
+		$('.choose-sign-out').click(function (event) {
+			event.preventDefault()
+			$.ajax({
+				url: "/logout",
+				type: "GET",
+				contentType: "application/json; charset=utf-8",
+				success: function (data) {
+					window.location.replace("/");
+				},
+				error: function (xhr) {
+					toastr.warning(xhr.responseJSON.message)
+				}
+			});
+		})
+
+		// $('#sign-in-email').keyup(function (event) {
+		// 	value = $(this).val()
+		// 	$(this).val(value.toLowerCase().replace(" ", ""))
+		// })
+
+		$('#sign-up-email').keyup(function (event) {
+			value = $(this).val()
+			$(this).val(value.toLowerCase().replace(" ", ""))
+		})
+
+		function signInFunc() {
+			event.preventDefault()
+			email = $('#sign-in-email').val()
+			password = $('#sign-in-password').val()
+			if (!validateEmail(email)) {
+				toastr.warning('Định dạng email không hợp lệ')
+				return
+			}
+			if (password.length == 0) {
+				toastr.warning('Vui lòng nhập mật khẩu')
+				return
+			}
+			var req = {
+				Email: email,
+				Password: password,
+				Remember: $('#sign-in-remember').prop('checked'),
+			};
+			var myJSON = JSON.stringify(req);
+			$.ajax({
+				url: "/login",
+				type: "POST",
+				contentType: "application/json; charset=utf-8",
+				data: myJSON,
+				dataType: "json",
+				success: function (data) {
+					$('#modal-signin').modal('hide')
+						toastr.success("Đăng nhập thành công")
+						setTimeout(function() {
+							location.reload();
+						}, 500)
+					// if (data == true) {
+					// 	$('#modal-signin').modal('hide')
+					// 	toastr.success("Đăng nhập thành công")
+					// 	setTimeout(function() {
+					// 		location.reload();
+					// 	}, 500)
+					// } else {
+					// 	$('#modal-signin').modal('hide')
+					// 	$('#required-info-update').modal('show')
+					// }			
+				},
+				error: function (xhr) {
+					toastr.warning(xhr.responseJSON.message)
+				}
+			});
+		}
+
+		$('.required-info-btn').click(function() {
+			var phone = $('#required-info-input').val()
+			if (!validatePhone(phone)) {
+				toastr.warning('Định dạng số điện thoại không hợp lệ')
+				return
+			}
+			var req = {
+				Phone: phone,
+			};
+			var myJSON = JSON.stringify(req);
+			$.ajax({
+				url: "/update-required-info",
+				type: "POST",
+				contentType: "application/json; charset=utf-8",
+				data: myJSON,
+				dataType: "json",
+				success: function (data) {
+					toastr.success("Cập nhật thành công")
+					setTimeout(function() {
+						location.reload();
+					}, 500)
+				},
+				error: function (xhr) {
+					toastr.warning("Đã có lỗi xảy ra. Bạn vui lòng truy vào profile để thực hiện cập nhật.")
+				}
+			});
+		})
+
+		$('#sign-in-email, #sign-in-password').bind("enterKey", function (e) {
+			signInFunc()
+		});
+		$('#sign-in-email, #sign-in-password').keyup(function (e) {
+			if (e.keyCode == 13) {
+				$(this).trigger("enterKey");
+			}
+		});
+
+		/*----------------- Chuyển site -------------------*/
+		function GoToSite(li) {
+			window.location.replace($(li).data('href'))
+		}
+
+		function GoToAdminSite() {
+			window.location.replace("/admin");
+		}
+
+		function GoToTeacherSite() {
+			window.location.replace("/teacher");
+		}
+
+		$('.choose-user-profile').click(function (event) {
+			window.location.replace("/user/dashboard");
+		})
+
+		$('.choose-user-classes').click(function (event) {
+			window.location.replace("/user/dashboard/khoa-hoc");
+		})
+
+		$('.choose-active-order').click(function (event) {
+			window.location.replace("/kich-hoat-don-hang");
+		})
+
+		$('.choose-user-profile').click(function (event) {
+			window.location.replace("/user/dashboard/profile");
+		})
+
+		/*--------------- Đăng nhập bên thứ 3 -----------------*/
+		$('.github-sign-in').click(function () {
+			window.location.href = 'https://github.com/login/oauth/authorize?client_id=Iv1.cd5b5722dbe9629b'
+		})
+
+		$('.facebook-sign-in').click(function () {
+			FB.getLoginStatus(function (r) {
+				if (r.status === 'connected') {
+					var req = {
+						AccessToken: r.authResponse.accessToken,
+					};
+					var myJSON = JSON.stringify(req);
+					$.ajax({
+						url: "/login-facebook",
+						type: "POST",
+						contentType: "application/json; charset=utf-8",
+						data: myJSON,
+						dataType: "json",
+						success: function (data) {
+							location.reload();
+							// if (data == true) {
+							// 	location.reload();
+							// } else {
+							// 	$('#modal-signin').modal('hide')
+							// 	$('#required-info-update').modal('show')
+							// }	
+						},
+						error: function (xhr) {
+							toastr.warning(xhr.responseJSON.message)
+							closeModal()
+						}
+					});
+				} else {
+					FB.login(function (response) {
+						if (response.authResponse) {
+							var req = {
+								AccessToken: response.authResponse.accessToken,
+							};
+							var myJSON = JSON.stringify(req);
+							$.ajax({
+								url: "/login-facebook",
+								type: "POST",
+								contentType: "application/json; charset=utf-8",
+								data: myJSON,
+								dataType: "json",
+								success: function (data) {
+									location.reload();
+								},
+								error: function (xhr) {
+									toastr.warning(xhr.responseJSON.message)
+									closeModal()
+								}
+							});
+						} else {
+							closeModal()
+						}
+					}, { scope: 'email' });
+				}
+			});
+		})
+
+		$('.google-sign-in').click(function () {
+			gapi.load('auth2', function(){
+				gapi.auth2.authorize({
+					client_id: `1088344376413-1aveeq4dk7b3tsu0dmof1vh2idv6n3jk.apps.googleusercontent.com`,
+					scope: 'profile email',
+					response_type: 'id_token permission'
+				}, function (response) {
+					if (response.error) {
+						toastr.warning("Lỗi không thể đăng nhập Google")
+						return;
+					}
+					var req = {
+						AccessToken: response.access_token,
+					};
+					var myJSON = JSON.stringify(req);
+					$.ajax({
+						url: "/login-google",
+						type: "POST",
+						contentType: "application/json; charset=utf-8",
+						data: myJSON,
+						dataType: "json",
+						success: function (data) {
+							location.reload();
+							// if (data == true) {
+							// 	location.reload();
+							// } else {
+							// 	$('#modal-signin').modal('hide')
+							// 	$('#required-info-update').modal('show')
+							// }	
+						},
+						error: function (xhr) {
+							toastr.warning(xhr.responseJSON.message)
+							closeModal()
+						}
+					});
+				});
+			})
+		})
+
+	// -------
+	const c_username = document.getElementById('advisory-name');
+	const c_email = document.getElementById('advisory-email');
+	const c_phone = document.getElementById('advisory-phone');
+	const c_note = document.getElementById('advisory-note');
+	const c_btn = document.getElementById('btn-submit-advisory');
+	const c_input = document.getElementsByClassName('input__row')
+
+	var id_schedules, data_type
+	
+	$('body').on('click','#btn_register_advisory-modal', function() {
+		id_schedules = $(this).parents('.class-info').find('.class-title a').attr('data-id')
+		data_type = $(this).parents('.class-info').find('.class-title a').attr('data-type')
+	});
+
+	// -------
+
+	c_btn.addEventListener('click', function(e) {
+		e.preventDefault();
+		let isValid = checkInputs();
+
+		if (isValid) {
+			let id, type
+			let pathname = window.location.pathname
+			if(pathname === "/trungtam/lich-khai-giang") {
+				id = id_schedules
+				type = parseInt(data_type)
+
+			} else {
+				let pathnameArr = pathname.split('/')
+				if(pathnameArr[1] === "khoa-hoc") {
+					id = pathnameArr[2]
+					type = 1
+				}
+			}
+
+			let usernameValue = c_username.value
+			let emailValue = c_email.value
+			let phoneValue = c_phone.value
+			let noteValue = c_note.value
+			
+			let req = {
+				FullName: usernameValue,
+				Email : emailValue,
+				Phone : phoneValue,
+				Info : noteValue,
+				Link : window.location.href,
+				ItemId : id,
+				Type : type
+			};
+
+			let myJSON = JSON.stringify(req);
+
+			// console.log(req);
+
+			$.ajax({
+				url: "/submit-advisory",
+				type: "POST",
+				contentType: "application/json; charset=utf-8",
+				data: myJSON,
+				dataType: "json",
+				success: function (data) {
+					$('#advisory-name, #advisory-email, #advisory-phone, #advisory-note').val("");
+					$('.input__row').removeClass('success');
+					toastr.success(data);
+					$('#advisory-modal').modal('hide');
+
+					// Track ads iOS
+					if (id == 25554) {
+						gtag_report_conversion_for_advisory();
+					}
+				},
+				error: function (result) {
+					toastr.error(result.responseJSON.message)
+				}
+			});
+		}
+	});
+	//-----
+	function checkInputs() {
+		const usernameValue = c_username.value.trim();
+		const emailValue = c_email.value.trim();
+		const phoneValue = c_phone.value.trim();
+
+		let isValid = true
+
+		if (usernameValue === '') {
+			setErrorFor(c_username, 'Tên không được để trống.');
+			isValid = false
+		} else {
+			setSuccessFor(c_username);
+		}
+
+		if (emailValue === '') {
+			setErrorFor(c_email, 'Email không được để trống');
+			isValid = false
+		} else if (!isEmail(emailValue)) {
+			setErrorFor(c_email, 'Email không đúng định dạng');
+			isValid = false
+		} else {
+			setSuccessFor(c_email);
+		}
+
+		if (phoneValue === '') {
+			setErrorFor(c_phone, 'Số điện thoại không được để trống');
+			isValid = false
+		} else {
+			setSuccessFor(c_phone);
+		}
+
+		return isValid
+
+	}
+
+	//-----
+	function setErrorFor(input, message) {
+		const formInput = input.parentElement;
+		const small = formInput.querySelector('small');
+		formInput.className = 'input__row error';
+		small.innerText = message;
+	}
+
+	function setSuccessFor(input) {
+		const formInput = input.parentElement;
+		formInput.className = 'input__row success';
+	}
+
+	function isEmail(email) {
+		return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+	}
+	</script>
+</header>
+
+    </div>
+
+    <div class="body-part">
+         <script src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/prism.js.download"></script>
+<script src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/prism-line.js.download"></script>
+<link rel="stylesheet" href="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/prism.css">
+<link rel="stylesheet" href="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/prism-line.css">
+
+<div class="container body-content media-css">
+    <a href="https://techmaster.vn/posts/34357/iot-so-sanh-4-mo-hinh-truyen-thong-trong-he-thong-iot#" id="back-to-top" title="Back to top" class="show"><i class="fas fa-angle-up fa-3x"></i></a>
+    <div class="row">
+        <div class="col-12 breadcrum-div">
+            <a href="https://techmaster.vn/">Trang chủ</a>
+            <span class="bc"><i class="fas fa-chevron-right"></i></span>
+            <a href="https://techmaster.vn/posts">Blog</a>
+            <span class="bc"><i class="fas fa-chevron-right"></i></span>
+            <a href="https://techmaster.vn/posts/34357/iot-so-sanh-4-mo-hinh-truyen-thong-trong-he-thong-iot">[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT</a>
+        </div>
+    </div>
+    
+    <div class="row main-post media-table">
+        <div class="col-lg-9 post">
+            <div itemprop="image" itemscope="" itemtype="https://schema.org/ImageObject">
+                <meta itemprop="url" content="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAJOAAAAJDI0MzYzNzM2LWIwNjMtNDZhMi05MTBkLWY1NDUwZTRlOTY1OA.png">
+                <meta itemprop="width" content="800">
+                <meta itemprop="height" content="800">
+            </div>
+            <h1 class="margin-bottom-15">[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT</h1>
+            <div class="margin-bottom-15">
+                07 tháng 06, 2017
+            </div>
+            
+            <div class="categories margin-bottom-15">
+                
+                <a href="https://techmaster.vn/posts?keyword=&amp;category=444" style="text-decoration: none">
+                    <span class="badge category">lập trình</span>
+                </a>
+                
+            </div>
+            
+            <div class="techmaster-font-open-sans post-content">
+                <p>Bài toán truyền thông trong IoT chủ yếu liên quan tới những vấn đề phát sinh trong việc truyền thông giữa 3 nhóm: thiết bị, gateways và Cloud. Cụ thể hơn thì quá trình truyền thông đó chủ yếu liên quan tới trao đổi message(thông điệp). Việc trao đổi message thường tuân theo một mô hình truyền thông nhất định. Và với mỗi mô hình truyền thông thì cách trao đổi message lại khác nhau đôi chút. Để lựa chọn được giải pháp truyền thông phù hợp cho sản phẩm IoT, chúng ta nên xem xét đầy đủ các mô hình truyền thông IoT.</p>
+
+<p>Dựa vào cách thức trao đổi message, ta có thể chia các mô hình truyền thông IoT thành 4 nhóm như sau:</p>
+
+<ul>
+	<li><strong>Telemetry</strong>: dữ liệu (message) di chuyển 1 chiều từ thiết bị đến hệ thống. Mục đích là gửi trạng thái của thiết bị lên phía hệ thống.</li>
+	<li><strong>Inquiry</strong>: gửi các request của device lên hệ thống, các request này liên quan tới việc thu thập các thông tin mà thiết bị hiện tại không thu thập được. Các thông tin đó được dùng để kích hoạt một sự kiện nào đó được mô tả từ trước.</li>
+	<li><strong>Command</strong>: gửi mệnh lệnh từ hệ thống tới thiết bị hoặc 1 nhóm thiết bị để bắt các thiết bị đó thực thi một công việc cụ thể, đồng thời yêu cầu trả về trạng thái thực thi công việc</li>
+	<li><strong>Notification</strong>: gần giống với Telemetry, ở mô hình này, thông tin cũng di chuyển 1 chiều, nhưng là từ hệ thống tới các thiết bị (chiều ngược lại so với Telemetry),</li>
+</ul>
+
+<p>Ta có thể hình dung một cách trực quan về 4 mô hình này như sau:</p>
+
+<p style="text-align:center"><img alt="" src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/5415468-screen-shot-2017-05-26-at-103100-am.png" style="max-width: 100%; margin: auto;"></p>
+
+<p>Mỗi mô hình trên có thể cần đến việc lưu trữ dữ liệu. Khi đó, các cơ chế store &amp; forward (lưu trữ và chuyên tiếp) sẽ được tận dụng (ví dụ: hàng đợi, topic/subscription trong các broker). Nếu bên gửi và bên nhận cùng online, ta có thể dùng các giải pháp direct message.</p>
+
+<p>Cơ chế store &amp; forward thường được áp dụng trong mô hình Command. Bởi vì khi gửi lệnh cho một device thì device đó có thể không online... Tình huống này lại phát sinh ra một giải pháp khác, đó là sử dụng thuộc tính TTL cho message (Time To Live). Khi device trở lại trạng thái online, TTL giúp device tránh được việc thực thi các lệnh quá cũ. Direct message thì lại được áp dụng cho mô hình Telemetry (mặc dù đôi khi lưu trữ các dữ liệu gửi bằng mô hình Telemetry vẫn có ích).</p>
+
+<p>&nbsp;
+</p><span id="toc--1-m-h-nh-telemetry"></span><h3><strong>#1 Mô hình Telemetry</strong></h3>
+<p></p>
+
+<p>Giao thức HTTP có thể implement mô hình này theo 2 cách: hoạt động như một client, gửi PUT/POST request chứa các thông tin trạng thái cần cập nhật sang một hệ thống khác hoặc hoạt động như một server, nhận GET requests từ các hệ thống khác để thu thập dữ liệu. Trong bất kì trường hợp nào, việc implement này xoay quanh 2 hành động chính là request / reply.</p>
+
+<p>Có 2 hạn chế&nbsp; đáng chú ý ở đây</p>
+
+<p>HTTP là giao thức text-based, dài dòng và không hỗ trợ QoS - Quality of Service.</p>
+
+<p>Khi hoạt động với vai trò là server, HTTP gặp vấn đề về kết nối với thiết bị trong mạng nếu có NAT hoặc roaming(mạng điện thoại di động)</p>
+
+<div style="text-align:center">
+<figure class="image" style="display:inline-block"><img alt="" src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/Screen-Shot-2014-10-22-at-12.21.07.png" style="max-width: 100%; margin: auto;">
+<figcaption>Minh họa về mô hình MQTT với 3 thành phần chính: Broker - subscriber và Publisher</figcaption>
+</figure>
+</div>
+
+<p>Giao thức triển khai mô hình Telemetry phổ biến nhất chính là MQTT. MQTT implement luôn cả mô hình publish/subscribe. Với MQTT, các device được xem như publisher - người xuất bản. Nội dung xuất bản là các dữ liệu mà device đó thu thập hoặc xử lý được. Đích đến của các dữ liệu đó là các broker. Để gom nhóm các dữ liệu thành 1 "kênh", MQTT sử dụng khái niệm topic.&nbsp; Các hệ thống/thiết bị khác muốn lấy thông tin thì sẽ hoạt động như subscriber - người theo dõi. Hành động theo dõi này và các message tương ứng được giới hạn theo từng topic.</p>
+
+<p>MQTT hỗ trợ đầy đủ các QoS level.</p>
+
+<p>Nói về nhược điểm, MQTT không hỗ trợ xử lý logic. Vì không hỗ trợ xử lý logic nên một broker có thể bị quá tải (flooded) bởi các message mà không làm cách nào để dừng nhận các message này.</p>
+
+<p style="text-align:center"><img alt="" src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/5415470-screen-shot-2017-05-26-at-103206-am.png" style="max-width: 100%; margin: auto;"></p>
+
+<p>&nbsp;Một giao thức đáng chú ý khác cũng implement mô hình này, đó là AMQP. AMQP cung cấp cả 2 phương pháp trao đổi message là request/reply và publish/subscribe.</p>
+
+<p>So với MQTT, AMQP có một lợi thế lớn. Đó là khả năng thiết đặt một luồng logic điều khiển cho 2 mức khác nhau: mức byte và mức message.</p>
+
+<p>&nbsp;</p>
+
+<div class="marker" style="background-color:#ff0;padding:1px 15px;"><span class="marker" style="background-color:#ff0"><strong>Thực hành xây dựng sản phẩm IoT trong khóa học <a href="https://techmaster.vn/khoa-hoc/25544/full-stack-nodejs-2017">Node JS Fullstack</a></strong></span></div>
+
+<p>&nbsp;</p>
+
+<span id="toc--2-inquiry"></span><h3><strong>#2 Inquiry</strong></h3>
+
+<p>Sử dụng HTTP để implement mô hình này khá đơn giản vì bản thân giao thức HTTP đã hoạt động dưới hình thức gửi request - nhận response. Do đó, khi implement theo mô hình Inquiry, việc trao đổi thông điệp với HTTP chỉ xoay quanh các GET request từ device lên hệ thống để lấy thông tin.</p>
+
+<p>Việc implement MQTT theo mô hình Inquiry khó khăn hơn vì ta sẽ phải define các ngữ nghĩa mới ở tầng ứng dụng để đảm bảo việc truyền thông giữa device và hệ thống tuân thủ đúng mô hình Inquiry.</p>
+
+<p>Device cần subscribe một topic để nhận thông tin. Tuy nhiên không phải là nhận một cách thụ động! Khi nào device có nhu cầu thì device mới gửi request lên hệ thống. Và khi đó thì device lại đóng vai trò là publisher. Vì vậy, với giao thức MQTT, ta cần tạo thêm một mối tương quan trong hành động gửi request và reply tại tầng ứng dụng.</p>
+
+<p>Khác với MQTT và HTTP, AMQP đáp ứng tốt yêu cầu của việc implement mô hình Inquiry.</p>
+
+<p>Điều đáng chú ý là các AMQP message (message được tạo theo chuẩn của giao thức AMQP) đều chứa nhiều thông tin hữu ích (dưới dạng metadata). Đầu tiên có thể kể đến message ID và thuộc tính reply-to. Do đó, khi device gửi yêu cầu cho hệ thống, nó có thể đưa thêm thông tin về địa điểm nhận message (address). Hệ thống sẽ hồi đáp bằng một message khác kèm theo ID tương ứng (có thể sử dụng message ID của request).</p>
+
+<p>Một điểm mạnh của AMQP khi implement mô hình Inquiry là tính asynchronous của giao thức này. Nhờ đặc tính asynch vốn có, các thông điệp hồi đáp từ phía hệ thống có thể đến device theo bất kỳ thứ tự nào mà không làm mất đi sự tương quan của message hồi đáp với request yêu cầu nó.</p>
+
+<div style="text-align:center">
+<figure class="image" style="display:inline-block"><img alt="" src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/AAEAAQAAAAAAAAJOAAAAJDI0MzYzNzM2LWIwNjMtNDZhMi05MTBkLWY1NDUwZTRlOTY1OA.png" style="max-width: 100%; margin: auto;">
+<figcaption>So sánh vui MQTT vs AMQP</figcaption>
+</figure>
+</div>
+
+<span id="toc--3-m-h-nh-command"></span><h3><strong>#3 Mô hình Command</strong></h3>
+
+<p>Mô hình này hơi ngược so với Inquiry, bên bắt đầu quá trình truyền thông lại là hệ thống chứ không phải device.</p>
+
+<p>Với giao thức HTTP, mô hình này có thể implement bằng cách cho device nhận một trong 2 vai trò: client hoặc server. Nếu device hoạt động như một server, hệ thống sẽ gửi POST request và chờ đợi response tương ứng (synchronous) từ phía device để biết quá trình thực thi mệnh lệnh có diễn ra suôn sẻ không... Nếu device hoạt dộng như client, device sẽ gửi GET request lên hệ thống để hỏi xem có mệnh lệnh nào cần thực thi không. Nếu không có lệnh nào, client sẽ phải đợi (synchronous). Sau khi nhận và thực thi lệnh, device sẽ gửi POST request lên hệ thống để thông báo kết quả thực thi mệnh lệnh.</p>
+
+<p>Với giao thức MQTT, nếu muốn implement theo mô hình Command, ta cũng phải đưa ra một số ngữ nghĩa mới ở tầng ứng dụng.</p>
+
+<p>Bản thân MQTT không hỗ trợ kiểu truyền thông request/reply nên ta cần đưa ra một số ngữ nghĩa mới như: thiết bị subscribe một topic để nhận command, hệ thông sẽ gửi command vào topic đó. Phần payload của command (từ phía hệ thống) sẽ phải chứa request ID. Sau khi thực thi mệnh lệnh, device publish kết quả kèm theo request ID tương ứng.</p>
+
+<p>Nếu device offline, ta có thể dùng "retain" flag, nhờ đó, mệnh lệnh cuối cùng từ phía hệ thống sẽ được chuyển đến khi device online trở lại.</p>
+
+<p>&nbsp;</p>
+
+<p style="text-align:center"><img alt="" src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/5415473-screen-shot-2017-05-26-at-103436-am.png" style="max-width: 100%; margin: auto;"></p>
+
+<p>Một lần nữa, AMQP lại tỏ ra vượt trội hơn khi implement mô hình Command.</p>
+
+<p>Hệ thống có thể gửi message chứa mệnh lệnh, kèm theo message ID và thuộc tính reply-to. Sau khi thực thi mệnh lệnh, device gửi kết quả trong một message khác, kèm theo ID tương ứng với message ID của mệnh lệnh từ phía hệ thống. Message từ phía device sẽ được gửi đúng về địa chỉ mà hệ thống mong muốn nhờ thuộc tính reply-to. Việc truyền thông này cũng diễn ra không đồng bộ (asynchronous), do đó hệ thống có thể gửi hàng loạt mệnh lệnh mà vẫn nhận được response tương ứng của từng mệnh lệnh đã gửi.</p>
+
+<p>Nếu device offline và ta chỉ muốn nó thực thi mệnh lệnh mới nhất từ phía hệ thống? Để giải quyết tình huống này, hãy sử dụng thuộc tính TTL (Time To Live) cho các mệnh lệnh gửi đi từ hệ thống.</p>
+
+<p>&nbsp;</p>
+
+<p style="text-align:center"><img alt="" src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/5415479-screen-shot-2017-05-26-at-103511-am.png" style="max-width: 100%; margin: auto;"></p>
+
+<p>&nbsp;</p>
+
+<span id="toc--4-m-h-nh-notification"></span><h3><strong>#4 Mô hình Notification</strong></h3>
+
+<p>Mô hình này ngược với Telemetry, luồng lưu thông message thì lại gần giống với mô hình Command, tuy nhiên việc trao đổi message theo mô hình Notification không cần reply cho mỗi message nhận được.</p>
+
+<p style="text-align:center"><img alt="" src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/Notifications-730x280.jpg" style="max-width: 100%; margin: auto;"></p>
+
+<p>Với giao thức HTTP, device nhận notification từ hệ thống. Trong quá trình truyền thông với device, hệ thống hoạt động như một server (hệ thống sẽ gửi POST request) hoặc client (hệ thống sẽ gửi GET request). Nếu hệ thống hoạt động như một client, nó chỉ có thể reply khi notification từ phía thiết bị đã sẵn sàng (long polling) hoặc reply ngay lập tức. (device has to poll the server aditional times). Tất nhiên, khi sử dụng HTTP, các vấn đề liên quan tới NAT và roaming đưa ra ở đầu bài viết là không thể tránh khỏi.</p>
+
+<p>Với giao thức MQTT, device sẽ subscribe một topic. Server publish notification vào topic đó. Mọi thứ diễn ra suôn sẻ vì mô hình Notification này rất gần với cơ chế publish/subscribe của MQTT. Tuy nhiên, nếu ta không define thêm phần logic xử lý ở tầng ứng dụng, device có thể bị quá tải do liên tục nhận các notification từ topic đang subscribe.</p>
+
+<p>Cuối cùng, với AMQP, device vừa có thể nhận notificaiton vừa có thêm phần logic xử lý giúp device ngừng nhận notification khi không đủ khả năng xử lý.</p>
+
+<p style="text-align:center"><img alt="" src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/TBC_logo_twitter-facebook__400x400.jpg" style="max-width: 100%; margin: auto;"></p>
+
+<p><em>Như vậy, với 4 mô hình truyền thông IoT nêu trên, AMQP tỏ ra khá linh hoạt khi có thể implement tốt cả 4, đồng thời khắc phục được một số nhược điểm của MQTT và HTTP. Hãy đón đọc các bài viết tiếp theo của Techmaster về AMQP cũng như cách áp dụng giao thức này vào quá trình xây dựng các sản phẩm IoT.</em></p>
+
+<p>&nbsp;</p>
+
+<p><em>Techmaster via <a href="https://dzone.com/articles/strengths-and-weaknesses-of-iot-communication-patterns">Dzone</a></em></p>
+
+<p>&nbsp;
+</p><p>&nbsp;</p>
+<p></p>
+
+<p>&nbsp;</p>
+
+            </div>
+
+            
+            <div class="post-comments">
+                <h1 class="title-comments-box">Bình luận</h1>
+                
+                <div class="list-cmt">
+                    
+                </div>
+
+                
+                <div class="comments-box" id="writeComment">
+                    
+                    <span class="note">* Vui lòng <span class="show-modal-login">đăng nhập</span> trước khi bình luận.</span>
+                    <div class="comment">
+                        <div class="comment-author-avatar">                       
+                            <img src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/logo.jpg" alt="Ảnh đại diện">                        
+                        </div>
+                        <div class="comment-author-content">
+                            <textarea class="cmts-area" placeholder="Viết bình luận..." data-autoresize="" onkeyup="UpdateContentCmt(this,e)" disabled=""></textarea>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            
+
+            <div class="interaction-div-mobile">
+                <div class="interaction-div-mobile-item">
+                    <span class="liked-post-mobile interaction-like" onclick="LikePost()">
+                        <i class="fas fa-thumbs-up" style="color: #5E5E5E;"></i>
+                    </span>
+                    &nbsp;<span class="vote-score" style="font-size: 1rem">0</span> Thích
+                </div>
+                <div class="interaction-div-mobile-item">
+                    <a class="share-facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://techmaster.vn/posts/34357/iot-so-sanh-4-mo-hinh-truyen-thong-trong-he-thong-iot">
+                        <button class="btn btn-primary" style="background-color: #2b4d8d; padding: 0.25rem 0.75rem"><i class="fab fa-facebook-square"></i> &nbsp;Chia sẻ</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 post-info fixedsticky">
+            <a href="https://techmaster.vn/posts?author=312" style="color: #464646; text-decoration: none">
+                <div class="author">
+                    <div class="author-avatar">
+                        <img src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/312.png" alt="Đinh Công Minh">
+                    </div>
+                    <div class="author-info">
+                        <div class="author-name">
+                            <b>Đinh Công Minh</b>
+                        </div>
+                        <div class="count-post">
+                            61 bài viết
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="heading-article heading-article--highlight">
+                <h4 class="margin-bottom-15">
+                    Đầu mục bài viết
+                </h4>
+                <div id="toc"><ul><li class="toc-h3 toc-active" style="margin-left: 0px;"><a href="https://techmaster.vn/posts/34357/iot-so-sanh-4-mo-hinh-truyen-thong-trong-he-thong-iot#toc--1-m-h-nh-telemetry">#1 Mô hình Telemetry</a></li><li class="toc-h3" style="margin-left: 0px;"><a href="https://techmaster.vn/posts/34357/iot-so-sanh-4-mo-hinh-truyen-thong-trong-he-thong-iot#toc--2-inquiry">#2 Inquiry</a></li><li class="toc-h3" style="margin-left: 0px;"><a href="https://techmaster.vn/posts/34357/iot-so-sanh-4-mo-hinh-truyen-thong-trong-he-thong-iot#toc--3-m-h-nh-command">#3 Mô hình Command</a></li><li class="toc-h3" style="margin-left: 0px;"><a href="https://techmaster.vn/posts/34357/iot-so-sanh-4-mo-hinh-truyen-thong-trong-he-thong-iot#toc--4-m-h-nh-notification">#4 Mô hình Notification</a></li></ul></div>
+                
+            </div>
+            <div class="related-posts heading-article--highlight">
+                <h4 class="margin-bottom-15">
+                    Bài viết liên quan
+                </h4>
+                
+                <div class="related-item">
+                    <a href="https://techmaster.vn/posts/36181/10-hieu-lam-tai-hai-ve-lap-trinh" target="_blank">
+                        10 hiểu lầm tai hại về lập trình
+                    </a>
+                </div>
+                
+                <div class="related-item">
+                    <a href="https://techmaster.vn/posts/36128/chuyen-nghiep-hon-bang-chung-chi-chuan-ky-su-cntt-nhat-ban-fe" target="_blank">
+                        Chuyên nghiệp hơn bằng chứng chỉ chuẩn kỹ sư CNTT Nhật Bản (FE)
+                    </a>
+                </div>
+                
+                <div class="related-item">
+                    <a href="https://techmaster.vn/posts/36029/techmaster-dua-iot-thanh-mot-mon-hoc-trong-khoa-hoc-lap-trinh-can-ban" target="_blank">
+                        Techmaster đưa IOT thành một môn học trong Khoá học "Lập trình căn bản"
+                    </a>
+                </div>
+                
+                <div class="related-item">
+                    <a href="https://techmaster.vn/posts/35982/junior-developer-thuong-mac-3-loi-react-function-component-state-nay" target="_blank">
+                        Junior Developer thường mắc 3 lỗi  React Function Component State này
+                    </a>
+                </div>
+                
+                <div class="related-item">
+                    <a href="https://techmaster.vn/posts/35959/techmaster-khai-giang-nhieu-lop-stem-arduino-scratch-cho-tre-em" target="_blank">
+                        Techmaster khai giảng nhiều lớp STEM Arduino Scratch cho trẻ em 
+                    </a>
+                </div>
+                
+            </div>
+            <div class="related-courses heading-article--highlight">
+                <h4 class="margin-bottom-15">
+                    Khoá học hay
+                </h4>
+                
+                <div class="related-item">
+                    <a href="https://techmaster.vn/khoa-hoc/25561/docker-qua-vi-du-thuc-te" target="_blank">
+                        Docker qua ví dụ thực tế
+                    </a>
+                </div>
+                
+                <div class="related-item">
+                    <a href="https://techmaster.vn/khoa-hoc/r7w/spring-boot-web-back-end" target="_blank">
+                        Spring Boot - Web Back End
+                    </a>
+                </div>
+                
+                <div class="related-item">
+                    <a href="https://techmaster.vn/khoa-hoc/25567/thanh-thao-react-native-qua-3-ung-dung-thuc-te" target="_blank">
+                        Thành thạo React Native qua 3 ứng dụng thực tế
+                    </a>
+                </div>
+                
+                <div class="related-item">
+                    <a href="https://techmaster.vn/khoa-hoc/l9y/sql-cho-nguoi-moi-bat-dau" target="_blank">
+                        SQL cho người mới bắt đầu
+                    </a>
+                </div>
+                
+                <div class="related-item">
+                    <a href="https://techmaster.vn/khoa-hoc/25544/full-stack-node-js-2019-step-by-step-project-base-training" target="_blank">
+                        Full Stack Node.js 2019 (step by step project base training)
+                    </a>
+                </div>
+                
+                <div class="related-item">
+                    <a href="https://techmaster.vn/khoa-hoc/08r/khoa-hoc-kubernetes-can-ban-qua-cac-vi-du" target="_blank">
+                        Khoá học Kubernetes căn bản qua các ví dụ
+                    </a>
+                </div>
+                
+                <div class="related-item">
+                    <a href="https://techmaster.vn/khoa-hoc/yne/thuc-hanh-networking" target="_blank">
+                        Thực hành Networking
+                    </a>
+                </div>
+                
+                <div class="related-item">
+                    <a href="https://techmaster.vn/khoa-hoc/e2l/java-can-ban" target="_blank">
+                        Java căn bản
+                    </a>
+                </div>
+                
+                <div class="related-item">
+                    <a href="https://techmaster.vn/khoa-hoc/25608/thiet-ke-lap-trinh-co-so-du-lieu" target="_blank">
+                        Thiết kế - Lập trình cơ sở dữ liệu
+                    </a>
+                </div>
+                
+                <div class="related-item">
+                    <a href="https://techmaster.vn/khoa-hoc/25572/hoc-lap-trinh-java-truc-tuyen" target="_blank">
+                        Học lập trình Java trực tuyến
+                    </a>
+                </div>
+                
+            </div>
+            <div style="margin-top: 2rem">
+                <div class="ml-rcm" rc-type="job" rc-layout="bjobs" rc-li="3" rc-for="url" rc-title="Những việc làm hấp dẫn" token-site="aSiWdrlopWgURBvaU7f%2F1kA%2BUJvdFhC4h7JaqdsgiCfXzOaq30WLBnGN9WJk9uXcGqwT41Zlj8joUzWeeMcNJg%3D%3D" animate="off"><div class="box-rcm"><div class="j-orange tagged x-rcm rcm-jobs-multi" id="rcm-hireme" style="height: auto !important"><a class="header-top" href="https://topdev.vn/" target="_blank"><span>Những việc làm hấp dẫn</span></a><div class="ljobs-rcm"><ul class="jobs"><li class="item-job"><img src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/image.gif" style="width: 1px !important; display: none !important;"><div class="job-wrap"><a class="thumbnail" href="https://topdev.vn/partners/detail-jobs/full-stack-lavarel-team-leader-stratavo-2-2021707/?utm_source=techmaster.vn&amp;utm_medium=jrec&amp;utm_term=Full-stack+Lavarel+Team+Leader&amp;token=aSiWdrlopWgURBvaU7f%2F1kA%2BUJvdFhC4h7JaqdsgiCfXzOaq30WLBnGN9WJk9uXcGqwT41Zlj8joUzWeeMcNJg%3D%3D"><img class="item-logo" src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/2699cb01dfaf5bc7218e5f774d10e88a-2UsFE.jpg"></a><a class="job" title="Full-stack Lavarel Team Leader" href="https://topdev.vn/partners/detail-jobs/full-stack-lavarel-team-leader-stratavo-2-2021707/?utm_source=techmaster.vn&amp;utm_medium=jrec&amp;utm_term=Full-stack+Lavarel+Team+Leader&amp;token=aSiWdrlopWgURBvaU7f%2F1kA%2BUJvdFhC4h7JaqdsgiCfXzOaq30WLBnGN9WJk9uXcGqwT41Zlj8joUzWeeMcNJg%3D%3D" target="_blank"><div class="title">Full-stack Lavarel Team Leader</div><div><span class="company">Stratavo</span><span class="location"><svg viewBox="0 0 12 12"><path d="M6 5.7c.4 0 .7-.1.9-.4.3-.3.4-.6.4-.9 0-.4-.1-.7-.4-.9-.2-.3-.5-.4-.9-.4s-.7.1-.9.4c-.3.2-.4.5-.4.9s.1.7.4.9c.2.3.5.4.9.4zm0-5c1 0 1.9.4 2.6 1.1.7.7 1.1 1.6 1.1 2.6 0 .5-.1 1.1-.4 1.8s-.5 1.3-.9 1.9c-.4.5-.7 1.1-1.1 1.6-.4.5-.7.9-.9 1.2l-.4.4c-.1-.1-.2-.3-.4-.5s-.5-.6-.9-1.2c-.4-.5-.8-1-1.1-1.6s-.7-1.1-.9-1.8c-.3-.7-.4-1.3-.4-1.8 0-1 .4-1.9 1.1-2.6S5 .7 6 .7z"></path></svg><span>ĐN</span></span><span class="j-salary"><svg viewBox="0 0 12 12"><path d="M6 9.8L3.9 7.7c1.3-.9 3-.9 4.2 0L6 9.8zm3-3a4.81 4.81 0 0 0-6 0L2.2 6c2.2-1.8 5.5-1.8 7.7 0l-.9.8zm1.7-1.7a7.27 7.27 0 0 0-9.4 0l-.9-.8c3.2-2.8 7.9-2.8 11.1 0l-.8.8z"></path></svg><span>2,000 - 4,000 USD</span></span></div><span class="post-tag">Laravel</span><span class="post-tag">Full-Stack</span><span class="post-tag">ReactJS</span><span class="post-tag">VueJS</span><span class="post-tag">AngularJS</span></a></div></li><li class="item-job"><img src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/image(1).gif" style="width: 1px !important; display: none !important;"><div class="job-wrap"><a class="thumbnail" href="https://topdev.vn/partners/detail-jobs/senior-english-speaking-business-analyst-requirements-stratavo-2-2021938/?utm_source=techmaster.vn&amp;utm_medium=jrec&amp;utm_term=Senior+English+Speaking+Business+Analyst+%28Requirements%29&amp;token=aSiWdrlopWgURBvaU7f%2F1kA%2BUJvdFhC4h7JaqdsgiCfXzOaq30WLBnGN9WJk9uXcGqwT41Zlj8joUzWeeMcNJg%3D%3D"><img class="item-logo" src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/2699cb01dfaf5bc7218e5f774d10e88a-2UsFE.jpg"></a><a class="job" title="Senior English Speaking Business Analyst (Requirements)" href="https://topdev.vn/partners/detail-jobs/senior-english-speaking-business-analyst-requirements-stratavo-2-2021938/?utm_source=techmaster.vn&amp;utm_medium=jrec&amp;utm_term=Senior+English+Speaking+Business+Analyst+%28Requirements%29&amp;token=aSiWdrlopWgURBvaU7f%2F1kA%2BUJvdFhC4h7JaqdsgiCfXzOaq30WLBnGN9WJk9uXcGqwT41Zlj8joUzWeeMcNJg%3D%3D" target="_blank"><div class="title">Senior English Speaking Business Analyst (Requirements)</div><div><span class="company">Stratavo</span><span class="location"><svg viewBox="0 0 12 12"><path d="M6 5.7c.4 0 .7-.1.9-.4.3-.3.4-.6.4-.9 0-.4-.1-.7-.4-.9-.2-.3-.5-.4-.9-.4s-.7.1-.9.4c-.3.2-.4.5-.4.9s.1.7.4.9c.2.3.5.4.9.4zm0-5c1 0 1.9.4 2.6 1.1.7.7 1.1 1.6 1.1 2.6 0 .5-.1 1.1-.4 1.8s-.5 1.3-.9 1.9c-.4.5-.7 1.1-1.1 1.6-.4.5-.7.9-.9 1.2l-.4.4c-.1-.1-.2-.3-.4-.5s-.5-.6-.9-1.2c-.4-.5-.8-1-1.1-1.6s-.7-1.1-.9-1.8c-.3-.7-.4-1.3-.4-1.8 0-1 .4-1.9 1.1-2.6S5 .7 6 .7z"></path></svg><span>ĐN, HCM</span></span><span class="j-salary"><svg viewBox="0 0 12 12"><path d="M6 9.8L3.9 7.7c1.3-.9 3-.9 4.2 0L6 9.8zm3-3a4.81 4.81 0 0 0-6 0L2.2 6c2.2-1.8 5.5-1.8 7.7 0l-.9.8zm1.7-1.7a7.27 7.27 0 0 0-9.4 0l-.9-.8c3.2-2.8 7.9-2.8 11.1 0l-.8.8z"></path></svg><span>Negotiable</span></span></div><span class="post-tag">Business Analyst</span><span class="post-tag">Business Analyst</span></a></div></li><li class="item-job"><img src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/image(2).gif" style="width: 1px !important; display: none !important;"><div class="job-wrap"><a class="thumbnail" href="https://topdev.vn/partners/detail-jobs/tuyen-gap-03-vi-tri-lap-trinh-vien-web-mobile-trung-tam-cong-nghe-thong-tin-mobifone-2-2021973/?utm_source=techmaster.vn&amp;utm_medium=jrec&amp;utm_term=Tuy%E1%BB%83n+G%E1%BA%A5p+03+v%E1%BB%8B+tr%C3%AD+L%E1%BA%ADp+tr%C3%ACnh+vi%C3%AAn+Web%2FMobile&amp;token=aSiWdrlopWgURBvaU7f%2F1kA%2BUJvdFhC4h7JaqdsgiCfXzOaq30WLBnGN9WJk9uXcGqwT41Zlj8joUzWeeMcNJg%3D%3D"><img class="item-logo" src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/Afzra3tRjfgvuURQcqVpkUSfQLJsW5P3.jpg"></a><a class="job" title="Tuyển Gấp 03 vị trí Lập trình viên Web/Mobile" href="https://topdev.vn/partners/detail-jobs/tuyen-gap-03-vi-tri-lap-trinh-vien-web-mobile-trung-tam-cong-nghe-thong-tin-mobifone-2-2021973/?utm_source=techmaster.vn&amp;utm_medium=jrec&amp;utm_term=Tuy%E1%BB%83n+G%E1%BA%A5p+03+v%E1%BB%8B+tr%C3%AD+L%E1%BA%ADp+tr%C3%ACnh+vi%C3%AAn+Web%2FMobile&amp;token=aSiWdrlopWgURBvaU7f%2F1kA%2BUJvdFhC4h7JaqdsgiCfXzOaq30WLBnGN9WJk9uXcGqwT41Zlj8joUzWeeMcNJg%3D%3D" target="_blank"><div class="title">Tuyển Gấp 03 vị trí Lập trình viên Web/Mobile</div><div><span class="company">Trung Tâm Công nghệ thông tin Mobifone</span><span class="location"><svg viewBox="0 0 12 12"><path d="M6 5.7c.4 0 .7-.1.9-.4.3-.3.4-.6.4-.9 0-.4-.1-.7-.4-.9-.2-.3-.5-.4-.9-.4s-.7.1-.9.4c-.3.2-.4.5-.4.9s.1.7.4.9c.2.3.5.4.9.4zm0-5c1 0 1.9.4 2.6 1.1.7.7 1.1 1.6 1.1 2.6 0 .5-.1 1.1-.4 1.8s-.5 1.3-.9 1.9c-.4.5-.7 1.1-1.1 1.6-.4.5-.7.9-.9 1.2l-.4.4c-.1-.1-.2-.3-.4-.5s-.5-.6-.9-1.2c-.4-.5-.8-1-1.1-1.6s-.7-1.1-.9-1.8c-.3-.7-.4-1.3-.4-1.8 0-1 .4-1.9 1.1-2.6S5 .7 6 .7z"></path></svg><span>HN</span></span><span class="j-salary"><svg viewBox="0 0 12 12"><path d="M6 9.8L3.9 7.7c1.3-.9 3-.9 4.2 0L6 9.8zm3-3a4.81 4.81 0 0 0-6 0L2.2 6c2.2-1.8 5.5-1.8 7.7 0l-.9.8zm1.7-1.7a7.27 7.27 0 0 0-9.4 0l-.9-.8c3.2-2.8 7.9-2.8 11.1 0l-.8.8z"></path></svg><span>15,000,000 - 22,000,000 VND</span></span></div><span class="post-tag">PHP</span><span class="post-tag">Android</span><span class="post-tag">iOS</span><span class="post-tag">.NET</span><span class="post-tag">Mobile</span></a></div></li></ul></div></div></div></div>
+            </div>
+        </div>
+        <div class="interaction-div">
+            <div class="interaction-div-child">
+                <div class="interaction-item vote-score" style="background-color: transparent;">
+                    0
+                </div>
+                <div class="interaction-item interaction-like" onclick="LikePost()">
+                    <i class="fas fa-thumbs-up" style="color: #5E5E5E;"></i>
+                </div>
+            </div>
+            <div class="interaction-div-child">
+                <a class="share-facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://techmaster.vn/posts/34357/iot-so-sanh-4-mo-hinh-truyen-thong-trong-he-thong-iot">
+                    <div class="interaction-item">
+                        <i class="fab fa-facebook-f" style="color: #3F51B5;"></i>
+                    </div>
+                </a>
+                <div class="interaction-item expand-div">
+                    <i class="fas fa-expand" style="color: #5E5E5E;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/fixedsticky.js.download"></script>
+<link rel="stylesheet" href="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/post.css">
+
+<style>
+    .heading-article--highlight:first-child {
+        margin-top: 2rem;
+    }
+    .heading-article--highlight h4 {
+        display: inline-block;
+        position: relative;
+        padding: 10px 20px 10px 20px;
+        background-color: #2c98f0;
+        color: #fff;
+        line-height: 1.1em;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+        margin-bottom: 1.5rem;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    .heading-article--highlight h4:after {
+        display: block;
+        width: 10px;
+        height: 0px;
+        position: absolute;
+        bottom: -10px;
+        left: 0px;
+        content: "";
+        border-bottom: 10px solid transparent;
+        border-right: 10px solid #2c98f0;
+    }
+</style>
+
+<script src="./[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT_files/moment.min.js.download"></script>
+
+<script>
+    var score =  0 
+    var url = window.location.href;
+    $(".share-facebook").attr("href", "https://www.facebook.com/sharer/sharer.php?u=" + url);
+
+    $(".expand-div").click(function () {
+        if ($('.post').hasClass("col-lg-9")) {
+            $('.post').removeClass('col-lg-9').addClass('col-lg-12')
+            $('.post-info').hide()
+            $('#header').hide()
+            $('#footer').hide()
+            $('.breadcrum-div').hide()
+            $(this).html('<i class="fas fa-compress" style="color: #5E5E5E;"></i>')
+        } else {
+            $('.post').removeClass('col-lg-12').addClass('col-lg-9')
+            $('.post-info').show()
+            $('#header').show()
+            $('#footer').show()
+            $('.breadcrum-div').show()
+            $(this).html('<i class="fas fa-expand" style="color: #5E5E5E;"></i>')
+        }
+    })
+
+    function LikePost() {
+        $.ajax({
+            url: "/like-post/34357",
+            contentType: "application/json; charset=utf-8",
+            type: "POST",
+            success: function (data) {
+                score++
+                $('.vote-score').text("+" + score)
+            },
+            error: function (result) {
+                toastr.error(result.responseJSON.message)
+            }
+        });
+    }
+
+    
+    $('.show-modal-login').click(function() {
+        $('#modal-signin').modal('show')
+    })
+    
+    $('.cmts-area').focus(function () {
+        $(this).next().show(300)
+        addAutoResize()
+    })
+
+    $('.input-reply-cmt').focus(function () {
+            $(this).parent().next().show(300)
+            addAutoResize()
+        })
+
+    function UpdateContentCmt(btn,e) {
+        let content = $(btn).val()
+        if (e.keyCode == 13) {
+            content = content + "\n";
+        }
+        return content
+    }
+
+    
+    $('.btn-send-cmt').click(function () {
+        
+        $('#modal-signin').modal('show')
+        
+    })
+
+    
+    $('body').on("click", ".btn-send-cmt-reply", function () {
+        
+        $('#modal-signin').modal('show')
+        
+    })
+
+    
+    function checkHasCommentReply(id) {
+        let count = $(".post-comments").find(`[data-item-id='${id}']`).find('.cmt-item-reply').length
+        return count > 0 ? true : false
+    }
+
+    
+    function RemoveItem(id,btn) {
+        bootbox.confirm({
+            message: "Bạn muốn chắc chắn xóa bình luận này không?",
+            buttons: {
+                confirm: {
+                    label: 'Có',
+                    className: 'btn-accept'
+                },
+                cancel: {
+                    label: 'Không',
+                    className: 'btn-cancel'
+                }
+            },
+            callback: function (result) {
+                if(result) {
+                    $.ajax({
+                        url: '/comment/delete/' + id,
+                        contentType: "application/json; charset=utf-8",
+                        type: "DELETE",
+                        success: function (data) {
+                            if(checkHasCommentReply(id)) {
+                                messageCommentDeleted = `<p class="comment-is-deleted">
+                                                            <i class="fas fa-exclamation-circle"></i>
+                                                            Bình luận này đã bị xóa
+                                                        <p>`
+
+                                $(btn).parent().parent().find('.comtent-author-cmt:first').remove()
+                                $(btn).parent().parent().find('.time-author-cmt:first').after(messageCommentDeleted)
+                                $(btn).parent().remove()
+
+                            } else {
+                                $('.list-cmt').find(`[data-item-id='${id}']`).remove()
+                            }      
+                        },
+                        error: function (result) {
+                            toastr.error(result.responseJSON.message)
+                        }
+                    });
+                } 
+            }
+        });
+    }
+
+    //update comment effect
+    function UpdateItem(ele) {
+        $('.btn-cancel-cmt').click()
+        let idCmt = $(ele).parent().parent().parent().attr('data-item-id')
+        let cmtActionAfterUpdate = `<div class="cmt-action-after-update">
+                                        <button class="btn-updated-cmt" onclick="UpdateContent('${idCmt}',this)">Cập nhật</button>
+                                        <button class="btn-cancel-cmt">Hủy</button>
+                                    </div>`
+        
+        let content = $(ele).parent().parent().find('.comtent-author-cmt:first').text()
+        let formUpdateCmt = `<form class="form-update-cmt">
+                                <textarea class="input-update-cmt" data-autoresize>${content}</textarea>
+                            </form>`
+        $(ele).parent().parent().find('.comtent-author-cmt:first').hide()
+        $(ele).parent().parent().find('.cmt-action:first').hide()
+        $(ele).parent().after(cmtActionAfterUpdate)
+        $(ele).parent().before(formUpdateCmt)
+    }
+
+    //cancel write comment
+    $('body').on("click", ".btn-cancel-cmt", function () {
+        $(this).parent().parent().find('.comtent-author-cmt').show()
+        $(this).parent().parent().find('.form-update-cmt').remove()
+        $(this).parent().parent().find('.cmt-action').show()
+        $(this).parent().parent().find('.cmt-action-after-update').remove()
+    })
+
+    
+    function UpdateContent(id, btn) {
+        let content = $(btn).parent().parent().find('.input-update-cmt').val()
+
+        if (content === '') {
+            toastr.error('Bình luận không được để trống.')
+            return
+        }
+
+        let req = {
+            Id : id,
+            Content: content
+        }
+
+        var myJSON = JSON.stringify(req);
+        $.ajax({
+            url: "/comment/update/" + id,
+            contentType: "application/json; charset=utf-8",
+            data: myJSON,
+            type: "PUT",
+            statusCode : {
+                200 : function (data) {
+                    let messageUpdated = `<span class="message-updated"><i class="fas fa-pencil-alt"></i></span>` 
+                    $(btn).parent().parent().find('.comtent-author-cmt').text(data.Content)
+                    $(btn).parent().parent().find('.time-author-cmt').text(ConvertTime(data.ModifiedAt))
+                    $(btn).parent().parent().find('.time-author-cmt').after(messageUpdated)
+                    $(btn).parent().parent().find('.comtent-author-cmt').show()
+                    $(btn).parent().parent().find('.form-update-cmt').remove()
+                    $(btn).parent().parent().find('.cmt-action').show()
+                    $(btn).parent().parent().find('.cmt-action-after-update').remove()
+                }
+            }
+        });
+    }
+
+
+    $('body').on("click", ".btn-reply", function () {
+        $(this).parent().parent().find('.div-hide').slideToggle()
+    })
+
+    
+    function ConvertTime(time) {
+        moment.locale('vi')
+        let dateTime = moment(time).startOf().fromNow();
+        return dateTime
+    }
+
+    
+    function addAutoResize() {
+        document.querySelectorAll('[data-autoresize]').forEach(function (element) {
+            element.style.boxSizing = 'border-box';
+            var offset = element.offsetHeight - element.clientHeight;
+            document.addEventListener('input', function (event) {
+                event.target.style.height = 'auto';
+                event.target.style.height = event.target.scrollHeight + offset + 'px';
+            });
+            element.removeAttribute('data-autoresize');
+        });
+    }
+
+    
+    $('body').on("click",".btn-reset", function () {
+        $(this).parent().parent().find('.cmts-area').val('')
+        $(this).parent().slideUp()
+        $(this).parent().parent().find('.cmts-area').css({
+            height: "4em"
+        })
+    })
+
+    $('body').on("click",".btn-reset-reply", function () {
+        $(this).parent().parent().find('.input-reply-cmt').val('')
+        $(this).parent().parent().slideUp()
+        $(this).parent().parent().find('.input-reply-cmt').css({
+            height: "4em"
+        })
+    })
+
+    $(document).ready(function () {
+        
+        let images = $('.post-content img')
+        Array.from(images).map(image => {
+            console.log($(image).css('float'));
+            if($(image).css('float') == 'left') {
+                $(image).css('margin-right', '2rem')
+            } else if($(image).css('float') == 'right') {
+                $(image).css('margin-left', '2rem')
+            } else {
+                $(image).css('margin', 'auto')
+            }
+        })
+        
+        
+       $('#toc').toc({
+           'selectors': 'h2,h3',
+           'container': '.post-content'
+       })
+
+       if($('.post-content').find('h2').length == 0) {
+           $('#toc .toc-h3').css("margin-left","0")
+       }
+
+       if($('#toc').find('li').length == 0) {
+           $('.heading-article').remove()
+       }
+
+       
+        $("#toc a").on('click', function (event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 300, function () {
+                    window.location.hash = hash;
+                });
+            }
+        });
+
+       
+       $('.main-post .post-info').fixedsticky();
+
+       
+        $('.time-author-cmt').each(function (index, element) {
+            time = $(element).text()
+            $(element).text(ConvertTime(time))
+        });
+    
+        let comments =  null 
+        let userInfo = {"Authenticated":false,"UserId":"","UserFullName":"","UserEmail":"","UserAvatar":"","Roles":null,"UserPhone":"","CountCartItem":0,"GithubClientId":"Iv1.cd5b5722dbe9629b","GoogleClientId":"1088344376413-1aveeq4dk7b3tsu0dmof1vh2idv6n3jk.apps.googleusercontent.com","FacebookClientId":"290270177727593","AdminMenu":false}
+        
+        if(comments && comments.length > 0) {
+            
+            let notOwnComment = comments.filter((comment, index) => {
+                return comment.UserId !== userInfo.UserId
+            })
+            notOwnComment.map((comment, index) => {
+                $('.list-cmt').find(`[data-item-id='${comment.Id}']`).find('.cmt-action .btn-update-cmt:first, .cmt-action .btn-delete-cmt:first').remove()
+                $('.list-cmt').find(`[data-item-id='${comment.Id}']`).find('.cmt-action-after-update:first').remove()
+            })
+
+            
+            let commentsReplyArr = comments.map(comment => comment.ReplyComment)
+            commentsReplySingle = [].concat(...commentsReplyArr)
+            let notOwnCommentsReplySingle = commentsReplySingle.filter(comment => comment.user_id !== userInfo.UserId && comment.id != '')
+            notOwnCommentsReplySingle.map((comment, index) => {
+                $('.list-cmt-reply').find(`[data-item-id='${comment.id}']`).find('.cmt-action').remove()
+                $('.list-cmt-reply').find(`[data-item-id='${comment.id}']`).find('.cmt-action-after-update').remove()
+            })
+
+            
+            let commentIsDeleted = comments.filter((comment, index) => {
+                return comment.UserId !== userInfo.UserId
+            })
+        }
+        
+        
+        $('.cmt-reply-author-avatar').attr("src", userInfo.UserAvatar);
+
+        
+        if ($('#back-to-top').length) {
+            var scrollTrigger = 200, 
+                backToTop = function () {
+                    var scrollTop = $(window).scrollTop();
+                    if (scrollTop > scrollTrigger) {
+                        $('#back-to-top').addClass('show');
+                    } else {
+                        $('#back-to-top').removeClass('show');
+                    }
+                };
+            backToTop();
+            $(window).on('scroll', function () {
+                backToTop();
+            });
+            $('#back-to-top').on('click', function (e) {
+                e.preventDefault();
+                $('html,body').animate({
+                    scrollTop: 0
+                }, 700);
+            });
+        }
+    })
+
+
+    
+    $('#techmaster-join-jitsi-meeting').click(function(room) {
+        let jitsi_room = $(this).data("room");
+        if ( false ) {
+            var req = {
+                IsLogin: true,
+                AccessToken: "",
+                Room: jitsi_room
+            };
+            var myJSON = JSON.stringify(req);
+            $.ajax({
+				url: "/join-jitsi-meeting",
+				type: "POST",
+				contentType: "application/json; charset=utf-8",
+				data: myJSON,
+				dataType: "json",
+				success: function (data) {
+					location.href = data;
+				},
+				error: function (xhr) {
+					toastr.warning(xhr.responseJSON.message)
+				}
+			});
+        } else {
+            gapi.load('auth2', function(){
+				gapi.auth2.authorize({
+					client_id: "1088344376413-1aveeq4dk7b3tsu0dmof1vh2idv6n3jk.apps.googleusercontent.com",
+					scope: 'profile email',
+					response_type: 'id_token permission'
+				}, function (response) {
+					if (response.error) {
+						toastr.warning("Lỗi không thể đăng nhập Google")
+						return;
+					}
+                    var req = {
+                        IsLogin: false,
+                        AccessToken: response.access_token,
+                        Room: jitsi_room
+                    };
+                    var myJSON = JSON.stringify(req);
+                    $.ajax({
+                        url: "/join-jitsi-meeting",
+                        type: "POST",
+                        contentType: "application/json; charset=utf-8",
+                        data: myJSON,
+                        dataType: "json",
+                        success: function (data) {
+                            location.href = data;
+                        },
+                        error: function (xhr) {
+                            toastr.warning(xhr.responseJSON.message)
+                        }
+                    });
+				});
+			})
+        }
+    })
+</script>
+    </div>
+
+    <div style="background-color:#464646" class="container-fluid" id="footer">
+        <div class="container footer">
+            
+<footer>
+	<style type="text/css">
+		footer{padding:3rem 0 3rem 0;line-height:2.5em}footer h4{color:#fff;font-size:18px}footer,footer a{color:#919294}.social-links ul{list-style-type:none}.desktop.social-links li{float:left;margin-left:1rem;margin-right:.5rem;font-size:1rem}.desktop.social-links{height:50px;display:flex;justify-content:flex-start;margin:auto}.footer-info li a:hover{color:#919294}.mobile.social-links{display:none}@media (max-width:575px){.footer-info{text-align:center}.desktop.social-links{display:none}.mobile.social-links{height:50px;display:flex;justify-content:space-evenly;margin:auto}}.list-inline.social-links .fab{border-radius:0}
+	</style>
+	<div class="">
+		<div class="row">
+			
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<ul class="footer-info list-unstyled nav-list">
+					<h4>Chủ sở hữu website</h4>
+					
+					<li>
+						
+						<a href="https://techmaster.vn/about" target="_blank"> Công ty TNHH TechMaster Vietnam Ltd </a>
+						
+						
+						
+							
+
+					</li>
+
+					
+					<li>
+						
+						
+						
+							
+							<span> Số ĐKDN: 0105392153 </span>
+							
+
+					</li>
+
+					
+					<li>
+						
+						
+						
+							
+							<span> Ngày cấp: 4-7-2011 </span>
+							
+
+					</li>
+
+					
+					<li>
+						
+						
+						
+							
+							<span> Nơi cấp: Sở kế hoạch - đầu tư Hà nội </span>
+							
+
+					</li>
+
+					
+					<li>
+						
+						
+						
+							
+							<span> Người đại diện pháp luật: Lê Minh Thu </span>
+							
+
+					</li>
+
+					
+					<li>
+						
+						
+						
+							
+							<span> Phụ trách nội dung: Trịnh Minh Cường </span>
+							
+
+					</li>
+
+					
+					
+				</ul>
+			</div>
+			
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<ul class="footer-info list-unstyled nav-list">
+					<h4>Giới thiệu</h4>
+					
+					<li>
+						
+						<a href="https://techmaster.vn/trungtam/trung-tam" target="_blank"> Học viện CNTT Techmaster </a>
+						
+						
+						
+							
+
+					</li>
+
+					
+					<li>
+						
+						<a href="https://techmaster.vn/trungtam/giang-vien" target="_blank"> Giảng viên </a>
+						
+						
+						
+							
+
+					</li>
+
+					
+					<li>
+						
+						<a href="https://techmaster.vn/trungtam/quy-dinh-chung" target="_blank"> Quy định </a>
+						
+						
+						
+							
+
+					</li>
+
+					
+					<li>
+						
+						<a href="https://techmaster.vn/trungtam/huong-dan-mua-khoa-hoc" target="_blank"> Hướng dẫn mua khóa học </a>
+						
+						
+						
+							
+
+					</li>
+
+					
+					<li>
+						
+						<a href="https://techmaster.vn/trungtam/uu-dai-va-hoan-tra-hoc-phi" target="_blank"> Ưu đãi và hoàn trả học phí </a>
+						
+						
+						
+							
+
+					</li>
+
+					
+					<li>
+						
+						<a href="https://techmaster.vn/trungtam/bao-ve-thong-tin-khach-hang" target="_blank"> Bảo vệ thông tin khách hàng </a>
+						
+						
+						
+							
+
+					</li>
+
+					
+					
+				</ul>
+			</div>
+			
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<ul class="footer-info list-unstyled nav-list">
+					<h4>Tư vấn tuyển sinh</h4>
+					
+					<li>
+						
+						
+						
+							
+							<span> Tư vấn viên : </span>
+							
+
+					</li>
+                <li>
+                    <a href="tel:0382416368" target="_blank"> 1. Nguyễn Thanh Hương - 0382416368 </a>
+                </li>
+                <li>
+                    <a href="mailto:huong@techmaster.vn" target="_blank"> huong@techmaster.vn </a>
+                </li>
+                <li>		
+                    <a href="tel:0967983563" target="_blank"> 2. Trương Minh Thúy - 0967983563 </a>
+                </li>
+                <li>
+                    <a href="mailto:support@techmaster.vn" target="_blank"> support@techmaster.vn </a>
+                </li>
+            
+
+					
+					
+
+					
+					<a href="mailto:support@techmaster.vn" target="_blank">
+
+					
+					</a>
+
+					
+					<a href="mailto:huong@techmaster.vn" target="_blank">
+
+					
+					</a><li><a href="mailto:huong@techmaster.vn" target="_blank">
+						
+						
+						</a><a href="tel:0963023185" target="_blank"> 3. Phạm Thị Mẫn - 0963023185 </a>
+						
+						
+							
+
+					</li>
+
+					
+					<li>
+						
+						
+						
+						<a href="mailto:manpham@techmaster.vn" target="_blank"> manpham@techmaster.vn 
+							
+							
+
+					</a></li><a href="mailto:manpham@techmaster.vn" target="_blank">
+
+					
+					</a><li><a href="mailto:manpham@techmaster.vn" target="_blank">
+						
+						
+						</a><a href="tel:0902209011" target="_blank"> Tư vấn đào tạo doanh nghiệp: 090 220 9011 </a>
+						
+						
+							
+
+					</li>
+
+					
+					<li>
+						
+						
+						
+						<a href="mailto:cuong@techmaster.vn" target="_blank"> cuong@techmaster.vn 
+							
+							
+
+					</a></li><a href="mailto:cuong@techmaster.vn" target="_blank">
+
+					
+					
+				</a></ul><a href="mailto:cuong@techmaster.vn" target="_blank">
+			</a></div><a href="mailto:cuong@techmaster.vn" target="_blank">
+			
+			</a><div class="col-xs-12 col-sm-6 col-md-3"><a href="mailto:cuong@techmaster.vn" target="_blank">
+				</a><ul class="footer-info list-unstyled nav-list"><a href="mailto:cuong@techmaster.vn" target="_blank">
+					<h4>Địa chỉ</h4>
+					
+					</a><li><a href="mailto:cuong@techmaster.vn" target="_blank">
+						
+						</a><a href="https://www.google.com/maps/place/48+T%E1%BB%91+H%E1%BB%AFu,+Trung+V%C4%83n,+T%E1%BB%AB+Li%C3%AAm,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@20.998034,105.7924504,17z/data=!3m1!4b1!4m5!3m4!1s0x3135acba8ad197a5:0xa55e51322131e722!8m2!3d20.998029!4d105.7946391" target="_blank"> Cơ sở Tố Hữu: Tầng 12A, tòa nhà Viwaseen Tower, số 48, Tố Hữu, Lê Văn Lương kéo dài, Hà Nội </a>
+						
+						
+						
+							
+
+					</li>
+
+					
+					<li>
+						
+						<a href="https://www.google.com/maps/place/48+T%E1%BB%91+H%E1%BB%AFu,+Trung+V%C4%83n,+T%E1%BB%AB+Li%C3%AAm,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@20.998034,105.7924504,17z/data=!3m1!4b1!4m5!3m4!1s0x3135acba8ad197a5:0xa55e51322131e722!8m2!3d20.998029!4d105.7946391" target="_blank"> Cơ sở Nguyễn Đình Chiểu: 14 ngõ 4, Nguyễn Đình Chiểu, Quận Hai Bà Trưng, Hà Nội </a>
+						
+						
+						
+							
+
+					</li>
+
+					
+					
+					<ul class="desktop list-inline social-links" style="margin-top: 10px;">
+							<li><a class="facebook" href="https://www.facebook.com/techmastervn/?fref=ts" target="_blank"><i class="fab fa-facebook-square fa-2x"></i>
+								</a></li>
+							<li><a class="youtube" href="https://www.youtube.com/user/TechMasterVN" target="_blank"><i class="fab fa-youtube-square fa-2x"></i>
+								</a></li>
+							<li><a class="github" href="https://github.com/arrowjs" target="_blank"><i class="fab fa-github-square fa-2x"></i>
+								</a></li>
+					</ul>
+					<ul class="mobile list-inline social-links" style="margin-top: 10px;">
+						<li><a class="facebook" href="https://www.facebook.com/techmastervn/?fref=ts" target="_blank"><i class="fab fa-facebook-square fa-2x"></i>
+							</a></li>
+						<li><a class="youtube" href="https://www.youtube.com/user/TechMasterVN" target="_blank"><i class="fab fa-youtube-square fa-2x"></i>
+							</a></li>
+						<li><a class="github" href="https://github.com/arrowjs" target="_blank"><i class="fab fa-github-square fa-2x"></i>
+							</a></li>
+					</ul>
+					
+				</ul>
+			</div>
+			
+		</div>
+	</div>
+</footer>
+
+        </div>
+    </div>
+
+    <div id="overlay"></div>
+    
+    <script async="">    
+        function validateEmail(email) {
+            var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(String(email).toLowerCase());
+        }
+
+        function validatePhone(phone) {
+            if (phone.length <= 8 || phone.length > 20) return false
+            var re = /^\d+$/
+            return re.test(phone)
+        }
+
+        toastr.options = {
+            "closeButton": true,
+            "debug": false,
+            "newestOnTop": false,
+            "progressBar": false,
+            "positionClass": "toast-top-center",
+            "preventDuplicates": true,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "5000",
+            "timeOut": "5000",
+            "width": "700px",
+            "extendedTimeOut": "5000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut",
+        }
+        $('.techmaster-price').each(function (index, element) {
+            money = $(element).text()
+            $(element).text(money.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ","))
+        });
+
+        
+        $(document).ready(function () {
+            document.title = "[IoT] So sánh 4 mô hình truyền thông trong hệ thống IoT";
+        });
+        
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            let goal = $('.footer footer .row .col-xs-12:nth-child(3) .footer-info li:nth-child(2)')
+            let supporter_name_1 = $('.footer footer .row .col-xs-12:nth-child(3) .footer-info li:nth-child(3)')
+            let supporter_email_1 = $('.footer footer .row .col-xs-12:nth-child(3) .footer-info li:nth-child(4)')
+            let supporter_name_2 = $('.footer footer .row .col-xs-12:nth-child(3) .footer-info li:nth-child(6)')
+            let supporter_email_2 = $('.footer footer .row .col-xs-12:nth-child(3) .footer-info li:nth-child(7)')
+
+            let content = `
+                <li>
+                    <a href="tel:0382416368" target="_blank"> 1. Nguyễn Thanh Hương - 0382416368 </a>
+                </li>
+                <li>
+                    <a href="mailto:huong@techmaster.vn" target="_blank"> huong@techmaster.vn </a>
+                </li>
+                <li>		
+                    <a href="tel:0967983563" target="_blank"> 2. Trương Minh Thúy - 0967983563 </a>
+                </li>
+                <li>
+                    <a href="mailto:support@techmaster.vn" target="_blank"> support@techmaster.vn </a>
+                </li>
+            `
+
+            function randomNumber() {
+                return Math.random() - 0.5
+            }
+
+            function switchSupporter() {
+                if (randomNumber() > 0) {
+                    $(supporter_name_1).remove()
+                    $(supporter_email_1).remove()
+                    $(supporter_name_2).remove()
+                    $(supporter_email_2).remove()
+                    $(goal).after(content)
+                }
+            }
+
+            switchSupporter()
+        });
+    </script>
+
+    <style>
+        .fb_dialog.fb_dialog_advanced.fb_customer_chat_bubble_animated_no_badge.fb_customer_chat_bubble_pop_in {
+            bottom: 70pt !important;
+        }
+
+        @media (min-width: 768px) {
+            .fb-customerchat iframe {
+                max-height: 0px !important; 
+            }
+        }
+        
+    </style>
+
+
+</body></html>

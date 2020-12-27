@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+
+<html lang="en-us" prefix="og:http://ogp.me/ns# fb:http://ogp.me/ns/fb#" itemscope itemtype="https://schema.org/WebPage">
+<head>
+<meta charset="UTF-8">
+<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+<meta content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width" name="viewport">
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta name="referrer" content="unsafe-url">
+<meta name="apple-mobile-web-app-title" content="The Next Web">
+<meta name="msvalidate.01" content="EBA9DC0DD4E376AF9708F73323680AB1" />
+
+<title>Media News | The Next Web</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="stylesheet" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/css/style.css?v=1606324555" type="text/css" />
+<link rel="dns-prefetch" href="//cdn0.tnwcdn.com/">
+<link rel="dns-prefetch" href="//www.googletagmanager.com">
+<link rel="preconnect" href="//cdn0.tnwcdn.com/">
+<link rel="preconnect" href="//www.googletagmanager.com">
+<link rel="apple-touch-icon" sizes="57x57" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/apple-touch-icon-57x57.png?v=1606324525">
+<link rel="apple-touch-icon" sizes="60x60" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/apple-touch-icon-60x60.png?v=1606324525">
+<link rel="apple-touch-icon" sizes="72x72" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/apple-touch-icon-72x72.png?v=1606324525">
+<link rel="apple-touch-icon" sizes="76x76" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/apple-touch-icon-76x76.png?v=1606324525">
+<link rel="apple-touch-icon" sizes="114x114" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/apple-touch-icon-114x114.png?v=1606324525">
+<link rel="apple-touch-icon" sizes="120x120" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/apple-touch-icon-120x120.png?v=1606324525">
+<link rel="apple-touch-icon" sizes="144x144" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/apple-touch-icon-144x144.png?v=1606324525">
+<link rel="apple-touch-icon" sizes="152x152" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/apple-touch-icon-152x152.png?v=1606324525">
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/apple-touch-icon-180x180.png?v=1606324525">
+<link rel="icon" type="image/png" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/favicon-32x32.png?v=1606324525" sizes="32x32">
+<link rel="icon" type="image/png" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/favicon-194x194.png?v=1606324525" sizes="194x194">
+<link rel="icon" type="image/png" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/favicon-96x96.png?v=1606324525" sizes="96x96">
+<link rel="icon" type="image/png" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/android-chrome-192x192.png?v=1606324525" sizes="192x192">
+<link rel="icon" type="image/png" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/favicon-16x16.png?v=1606324525" sizes="16x16">
+<link rel="shortcut icon" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/favicon.png?v=1606324525">
+<link rel="alternate" type="application/rss+xml" title="The Next Web RSS Feed" href="https://feeds2.feedburner.com/thenextweb">
+
+
+<meta name="description" content="Our collection of stories about the media industry, websites and sometimes stories about business to business developments." />
+<link rel="canonical" href="https://thenextweb.com/media/" />
+<link rel="next" href="https://thenextweb.com/media/page/2/" /><meta property="og:locale" content="en_US" />
+<meta property="og:type" content="object" />
+<meta property="og:title" content="Media News | The Next Web" />
+<meta property="og:description" content="Our collection of stories about the media industry, websites and sometimes stories about business to business developments." />
+<meta property="og:url" content="https://thenextweb.com/media/" />
+<meta property="og:site_name" content="The Next Web" />
+<meta property="og:image" content="https://img-cdn.tnwcdn.com/image/tnw?filter_last=1&#038;fit=1280%2C640&#038;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F06%2Fog-image.png&#038;signature=2f28782eb922702aa38156b17e95e0f6" />
+<meta property="og:image:secure_url" content="https://img-cdn.tnwcdn.com/image/tnw?filter_last=1&#038;fit=1280%2C640&#038;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F06%2Fog-image.png&#038;signature=2f28782eb922702aa38156b17e95e0f6" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="600" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Our collection of stories about the media industry, websites and sometimes stories about business to business developments." />
+<meta name="twitter:title" content="Media News | The Next Web" />
+<meta name="twitter:site" content="@thenextweb" />
+<meta name="twitter:image" content="https://img-cdn.tnwcdn.com/image/tnw?filter_last=1&#038;fit=1280%2C640&#038;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F06%2Fog-image.png&#038;signature=2f28782eb922702aa38156b17e95e0f6" />
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://thenextweb.com/#organization","name":"TNW","url":"https://thenextweb.com/","sameAs":["https://www.facebook.com/thenextweb","https://instagram.com/thenextweb/","https://www.linkedin.com/company/the-next-web","https://www.youtube.com/user/thenextweb","https://www.pinterest.com/thenextweb/","https://twitter.com/thenextweb"],"logo":{"@type":"ImageObject","@id":"https://thenextweb.com/#logo","url":"https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/tnw-logo-black-284x60.png","width":284,"height":60,"caption":"TNW"},"image":{"@id":"https://thenextweb.com/#logo"}},{"@type":"WebSite","@id":"https://thenextweb.com/#website","url":"https://thenextweb.com/","name":"The Next Web","publisher":{"@id":"https://thenextweb.com/#organization"},"potentialAction":{"@type":"SearchAction","target":"https://thenextweb.com/?q={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"CollectionPage","@id":"https://thenextweb.com/media/#webpage","url":"https://thenextweb.com/media/","inLanguage":"en-US","name":"Media News | The Next Web","isPartOf":{"@id":"https://thenextweb.com/#website"},"description":"Our collection of stories about the media industry, websites and sometimes stories about business to business developments.","breadcrumb":{"@id":"https://thenextweb.com/media/#breadcrumb"}},{"@type":"BreadcrumbList","@id":"https://thenextweb.com/media/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://thenextweb.com/","url":"https://thenextweb.com/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://thenextweb.com/media/","url":"https://thenextweb.com/media/","name":"Media"}}]}]}</script>
+
+<link rel='dns-prefetch' href='//js.hs-scripts.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="The Next Web &raquo; Media Category Feed" href="https://thenextweb.com/media/feed/" />
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='elasticpress-facets-css' href='https://thenextweb.com/wp-content/plugins/elasticpress/dist/css/facets.min.css?ver=3.0.3' type='text/css' media='all' />
+<script type="1676d7e1dd0d3ef17d52d505-text/javascript" src='https://thenextweb.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type="1676d7e1dd0d3ef17d52d505-text/javascript" src='https://thenextweb.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type="1676d7e1dd0d3ef17d52d505-text/javascript" src='https://thenextweb.com/wp-content/plugins/wordlift-tnw/public/js/wordlift-tnw-public.js?ver=1.5.0-dev'></script>
+<link rel='https://api.w.org/' href='https://thenextweb.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://thenextweb.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://thenextweb.com/wp-includes/wlwmanifest.xml" />
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@id":"#Breadcrumb","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/thenextweb.com\/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"name":"media","@id":"https:\/\/thenextweb.com\/cyberdelia\/media"}}]}</script>
+
+<script type="application/ld+json">[]</script>
+<script type="1676d7e1dd0d3ef17d52d505-text/javascript">
+  (function (s,o,n,a,r,i,z,e) {s['StackSonarObject']=r;s[r]=s[r]||function(){
+  (s[r].q=s[r].q||[]).push(arguments)},s[r].l=1*new Date();i=o.createElement(n),
+  z=o.getElementsByTagName(n)[0];i.async=1;i.src=a;z.parentNode.insertBefore(i,z)
+  })(window,document,'script','https://www.stack-sonar.com/ping.js','stackSonar');
+
+  stackSonar('stack-connect-wp', "xbcLoqGe2L037SCrJ_Im4A");
+</script>
+
+<meta property="twitter:account_id" content="10876852">
+<meta property="fb:app_id" content="378011798897423">
+<link href="https://plus.google.com/115081025762845243709/" rel="publisher">
+<meta property="fb:pages" content="106976563522">
+<meta property="fb:pages" content="136548879865026">
+<meta property="fb:pages" content="252857631761065">
+<meta property="fb:pages" content="665773266831844">
+<meta name="yandex-verification" content="66df89eec58f9170">
+<script data-ad-client="ca-pub-6316654596230913" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" type="1676d7e1dd0d3ef17d52d505-text/javascript"></script>
+<script type="1676d7e1dd0d3ef17d52d505-text/javascript">
+    var msTag = {"site":"tnw","page":"unknown","cyberdelia_page_type":"category","data":{"sponsorName":false,"isSponsoredCategory":false}}</script>
+<script src="//massariuscdn.com/pubs/tnw/tnw_hb_setup.js" type="1676d7e1dd0d3ef17d52d505-text/javascript"></script>
+<script type="1676d7e1dd0d3ef17d52d505-text/javascript">
+	var googletag = googletag || {};
+	googletag.cmd = googletag.cmd || [];
+
+	window.dataLayer = window.dataLayer || [];
+</script>
+<script type="1676d7e1dd0d3ef17d52d505-text/javascript">
+
+    var IS_MOBILE = false;
+    var APP_LOCALE = {"country":"VN","region":"AS","city":""};
+    dataLayer.push({
+        'location': [
+            APP_LOCALE
+        ]
+    });
+</script>
+
+<script type="1676d7e1dd0d3ef17d52d505-text/javascript">dataLayer.push({"version":"4 \/ 4.9.16","page":[{"template":"category","ads":[{"siteskin":0,"sponsored":0}]}],"user":[{"shares":[{"fb":0,"tw":0,"li":0,"go":0,"re":0}]}]});</script>
+
+<script type="1676d7e1dd0d3ef17d52d505-text/javascript">
+	(function (w, d, s, l, i) {
+		w[l] = w[l] || [];
+		w[l].push({
+			'gtm.start': new Date().getTime(), event: 'gtm.js'
+		});
+		var f = d.getElementsByTagName(s)[0],
+			j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+		j.async = true;
+		j.src =
+			'//www.googletagmanager.com/gtm.js?id=' + i + dl;
+		f.parentNode.insertBefore(j, f);
+	})(window, document, 'script', 'dataLayer', 'GTM-MHDDSC');
+</script>
+
+
+<noscript>
+	<iframe height="0" src="//www.googletagmanager.com/ns.html?id=GTM-MHDDSC" style="display: none; visibility: hidden;" width="0"></iframe>
+</noscript>
+
+<script type="1676d7e1dd0d3ef17d52d505-text/javascript">
+    !function(n,e,o,r,i){if(!e){e=e||{},window.permutive=e,e.q=[],e.config=i||{},e.config.projectId=o,e.config.apiKey=r,e.config.environment=e.config.environment||"production";for(var t=["addon","identify","track","trigger","query","segment","segments","ready","on","once","user","consent"],c=0;c<t.length;c++){var f=t[c];e[f]=function(n){return function(){var o=Array.prototype.slice.call(arguments,0);e.q.push({functionName:n,arguments:o})}}(f)}}}(document,window.permutive,"970c370e-66b5-4cc7-ad17-1d370e11bf75","d6c42980-42e9-4537-93f1-f2c3fd326c4a",{});  
+    window.googletag=window.googletag||{},window.googletag.cmd=window.googletag.cmd||[],window.googletag.cmd.push(function(){if(0===window.googletag.pubads().getTargeting("permutive").length){var g=window.localStorage.getItem("_pdfps");window.googletag.pubads().setTargeting("permutive",g?JSON.parse(g):[])}});
+
+    permutive.addon('web', {})
+    </script>
+<script async src="https://cdn.permutive.com/970c370e-66b5-4cc7-ad17-1d370e11bf75-web.js" type="1676d7e1dd0d3ef17d52d505-text/javascript"></script>
+<script type="1676d7e1dd0d3ef17d52d505-text/javascript">
+/* Modernizr 2.8.3 (Custom Build) | MIT & BSD
+ * Build: http://modernizr.com/download/#-touch-cssclasses-teststyles-prefixes
+ */
+;window.Modernizr=function(a,b,c){function w(a){j.cssText=a}function x(a,b){return w(m.join(a+";")+(b||""))}function y(a,b){return typeof a===b}function z(a,b){return!!~(""+a).indexOf(b)}function A(a,b,d){for(var e in a){var f=b[a[e]];if(f!==c)return d===!1?a[e]:y(f,"function")?f.bind(d||b):f}return!1}var d="2.8.3",e={},f=!0,g=b.documentElement,h="modernizr",i=b.createElement(h),j=i.style,k,l={}.toString,m=" -webkit- -moz- -o- -ms- ".split(" "),n={},o={},p={},q=[],r=q.slice,s,t=function(a,c,d,e){var f,i,j,k,l=b.createElement("div"),m=b.body,n=m||b.createElement("body");if(parseInt(d,10))while(d--)j=b.createElement("div"),j.id=e?e[d]:h+(d+1),l.appendChild(j);return f=["&#173;",'<style id="s',h,'">',a,"</style>"].join(""),l.id=h,(m?l:n).innerHTML+=f,n.appendChild(l),m||(n.style.background="",n.style.overflow="hidden",k=g.style.overflow,g.style.overflow="hidden",g.appendChild(n)),i=c(l,a),m?l.parentNode.removeChild(l):(n.parentNode.removeChild(n),g.style.overflow=k),!!i},u={}.hasOwnProperty,v;!y(u,"undefined")&&!y(u.call,"undefined")?v=function(a,b){return u.call(a,b)}:v=function(a,b){return b in a&&y(a.constructor.prototype[b],"undefined")},Function.prototype.bind||(Function.prototype.bind=function(b){var c=this;if(typeof c!="function")throw new TypeError;var d=r.call(arguments,1),e=function(){if(this instanceof e){var a=function(){};a.prototype=c.prototype;var f=new a,g=c.apply(f,d.concat(r.call(arguments)));return Object(g)===g?g:f}return c.apply(b,d.concat(r.call(arguments)))};return e}),n.touch=function(){var c;return"ontouchstart"in a||a.DocumentTouch&&b instanceof DocumentTouch?c=!0:t(["@media (",m.join("touch-enabled),("),h,")","{#modernizr{top:9px;position:absolute}}"].join(""),function(a){c=a.offsetTop===9}),c};for(var B in n)v(n,B)&&(s=B.toLowerCase(),e[s]=n[B](),q.push((e[s]?"":"no-")+s));return e.addTest=function(a,b){if(typeof a=="object")for(var d in a)v(a,d)&&e.addTest(d,a[d]);else{a=a.toLowerCase();if(e[a]!==c)return e;b=typeof b=="function"?b():b,typeof f!="undefined"&&f&&(g.className+=" "+(b?"":"no-")+a),e[a]=b}return e},w(""),i=k=null,e._version=d,e._prefixes=m,e.testStyles=t,g.className=g.className.replace(/(^|\s)no-js(\s|$)/,"$1$2")+(f?" js "+q.join(" "):""),e}(this,this.document);
+</script>
+</head>
+<body class="is-branded-channel ">
+<nav class="nav">
+<div class="nav-logo">
+<a href="/" title="The Next Web" data-event-category="Top" data-event-action="Navigation" data-event-label="News" data-event-non-interaction="true">
+<img alt="The Next Web" src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg">
+</a>
+<ul class="nav-logo-popout">
+<li><a class="is-active" href="/" data-event-category="Top" data-event-action="Navigation" data-event-label="News" data-event-non-interaction="true">News</a></li>
+<li><a href="/conference" ref="" target="_blank" data-event-category="Top" data-event-action="Navigation" data-event-label="Conference" data-event-non-interaction="true">Events</a>
+</li>
+<li><a href="https://index.co/" rel="noopener" target="_blank" data-event-category="Top" data-event-action="Navigation" data-event-label="Index" data-event-non-interaction="true">Index</a>
+</li>
+<li><a href="https://thenextweb.com/spaces" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Navigation" data-event-label="Spaces" data-event-non-interaction="true">Spaces</a></li>
+<li><a href="https://deals.thenextweb.com/?utm_source=thenextweb.com&amp;utm_medium=referral&amp;utm_campaign=navbar" rel="noopener" target="_blank" data-event-category="Top" data-event-action="Navigation" data-event-label="Deals" data-event-non-interaction="true">Deals</a>
+</li>
+<li><a href="https://answers.thenextweb.com/" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Navigation" data-event-label="Answers" data-event-non-interaction="true">Answers</a>
+</li>
+<li><a href="/programs" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Navigation" data-event-label="Programs" data-event-non-interaction="true">TNW Programs</a>
+</li>
+</ul>
+</div>
+<ul class="nav-tnw" role="navigation">
+<li><a class="is-active" href="/" data-event-category="Top" data-event-action="Navigation" data-event-label="News" data-event-non-interaction="true">News</a></li>
+<li><a href="/conference" target="_blank" data-event-category="Top" data-event-action="Navigation" data-event-label="Conference" data-event-non-interaction="true">Events ▾</a>
+<ul class="nav-tnw-dropdown-menu">
+<li>
+<a href="/conference">TNW2020</a>
+</li>
+<li>
+<a href="https://thenextweb.com/events">Couch Conferences</a>
+</li>
+</ul>
+</li>
+<li><a href="https://index.co/" target="_blank" data-event-category="Top" data-event-action="Navigation" data-event-label="Business" data-event-non-interaction="true">Business
+▾</a>
+<ul class="nav-tnw-dropdown-menu">
+<li>
+<a href="https://index.co/">Index</a>
+</li>
+<li>
+<a href="/programs">Programs</a>
+</li>
+</ul>
+</li>
+<li><a href="https://answers.thenextweb.com/" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Navigation" data-event-label="Answers" data-event-non-interaction="true">AMAs</a></li>
+<li><a href="https://thenextweb.com/spaces" rel="noopener" target="_blank" data-event-category="Top" data-event-action="Navigation" data-event-label="Spaces" data-event-non-interaction="true">Spaces</a></li>
+<li><a href="/terms-and-conditions/" rel="noopener" target="_blank" data-event-category="Top" data-event-action="Navigation" data-event-label="Terms and Conditions" data-event-non-interaction="true">Terms
+& Conditions</a></li>
+<div class="nav-company">
+<li><a href="/about/" data-event-category="Top" data-event-action="Navigation" data-event-label="About" data-event-non-interaction="true">About</a>
+</li>
+<li><a href="/advertise" data-event-category="Top" data-event-action="Navigation" data-event-label="Advertise" data-event-non-interaction="true">Advertise</a>
+</li>
+<li><a href="https://thenextweb.homerun.co/" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Navigation" data-event-label="Jobs" data-event-non-interaction="true">Jobs</a></li>
+<li><a href="/about/#contact" data-event-category="Top" data-event-action="Navigation" data-event-label="Contact" data-event-non-interaction="true">Contact</a>
+</li>
+</div>
+</ul>
+<div class="u-clear" role="navigation">
+<ul class="nav-sections">
+<li class="nav-sections-section"><a href="/latest/" data-event-category="Top" data-event-action="Channels" data-event-label="Latest" data-event-non-interaction="true">Latest</a></li>
+<li class="nav-sections-section"><a href="/hardfork/" data-event-category="Top" data-event-action="Channels" data-event-label="Hard Fork" data-event-non-interaction="true">Hard Fork</a></li>
+<li class="nav-sections-section"><a href="/plugged/" data-event-category="Top" data-event-action="Channels" data-event-label="Plugged" data-event-non-interaction="true">Plugged</a></li>
+<li class="nav-sections-section"><a href="/readme/" data-event-category="Top" data-event-action="Channels" data-event-label="ReadMe" data-event-non-interaction="true">ReadMe</a></li>
+<li class="nav-sections-section"><a href="/growth-quarters/" data-event-category="Top" data-event-action="Channels" data-event-label="Growth Quarters" data-event-non-interaction="true">Growth Quarters</a></li>
+<li class="nav-sections-section"><a href="/shift/" data-event-category="Top" data-event-action="Channels" data-event-label="Shift" data-event-non-interaction="true">Shift</a></li>
+<li class="nav-sections-section"><a href="/neural/" data-event-category="Top" data-event-action="Channels" data-event-label="Neural" data-event-non-interaction="true">Neural</a></li>
+</ul>
+<ul class="nav-icons">
+<li class="cookieConsent">
+<a href="#"><i class="icon icon--cookie"></i></a>
+<div class="cookieConsent-popOut">
+<header>
+<h2>Have a cookie</h2>
+</header>
+<main>
+<p>
+TNW uses cookies to personalize content and ads to
+make our site easier for you to use.
+We do also share that information with third parties for
+advertising &amp; analytics.
+</p>
+</main>
+<footer>
+<a class="button button--small" onclick="if (!window.__cfRLUnblockHandlers) return false; cookiesAccepted();" data-event-category="Top" data-event-action="Cookies" data-event-label="OK" data-event-non-interaction="true" data-cf-modified-1676d7e1dd0d3ef17d52d505-="">Got
+it!</a>
+<span>
+or <a href="/cookie-statement/" data-event-category="Top" data-event-action="Cookies" data-event-label="More information" data-event-non-interaction="true">More
+info</a>
+</span>
+</footer>
+</div>
+</li>
+<li><a id="search--open" href="#"><i class="icon icon--search--dark"></i></a>
+<li>
+<a class="nav-mob-toggle" id="nav-mob-toggle" href="#">
+<span></span>
+<span></span>
+<span></span>
+</a>
+</li>
+</ul>
+</div>
+<div class="nav-mob">
+<div class="nav-mob-content">
+<ul class="nav-mob-follow">
+<li><a data-modal="modalStayTuned" href="#"><i class="icon icon--mail--light"></i></a>
+<li><a href="https://www.facebook.com/thenextweb" title="Follow us on Facebook" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Social" data-event-label="Facebook" data-event-non-interaction="true"><i class="icon icon--facebook--light"></i></a></li><li><a href="https://twitter.com/thenextweb" title="Follow us on Twitter" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Social" data-event-label="Twitter" data-event-non-interaction="true"><i class="icon icon--twitter--light"></i></a></li><li><a href="https://www.linkedin.com/company/the-next-web" title="Follow us on LinkedIn" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Social" data-event-label="LinkedIn" data-event-non-interaction="true"><i class="icon icon--linkedin--light"></i></a></li><li><a href="https://www.youtube.com/user/thenextweb" title="Watch our videos on YouTube" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Social" data-event-label="YouTube" data-event-non-interaction="true"><i class="icon icon--youtube--light"></i></a></li><li><a href="https://pinterest.com/thenextweb" title="Follow us on Pinterest" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Social" data-event-label="Pinterest" data-event-non-interaction="true"><i class="icon icon--pinterest--light"></i></a></li><li><a href="https://instagram.com/thenextweb" title="Follow us on Instagram" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Social" data-event-label="Instagram" data-event-non-interaction="true"><i class="icon icon--instagram--light"></i></a></li><li><a href="https://feeds2.feedburner.com/thenextweb" title="Read our RSS feed" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Social" data-event-label="RSS Feed" data-event-non-interaction="true"><i class="icon icon--rss--light"></i></a></li> </ul>
+<div class="u-row">
+<div class="u-col-xs-6">
+<h5>Sections</h5>
+<ul class="nav-mob-menu">
+<li><a href="/latest/" data-event-category="Top" data-event-action="Sections" data-event-label="Latest" data-event-non-interaction="true">Latest</a>
+</li>
+<li><a href="/section/insights" data-event-category="Top" data-event-action="Sections" data-event-label="Insights" data-event-non-interaction="true">Insights</a>
+</li>
+<li><a href="/plugged/" data-event-category="Top" data-event-action="Sections" data-event-label="Plugged" data-event-non-interaction="true">Plugged</a>
+</li>
+<li><a href="/hardfork/" data-event-category="Top" data-event-action="Sections" data-event-label="Hard Fork" data-event-non-interaction="true">Hard Fork</a>
+</li>
+<li><a href="/readme/" data-event-category="Top" data-event-action="Sections" data-event-label="ReadMe" data-event-non-interaction="true">ReadMe</a>
+</li>
+<li><a href="/growth-quarters/" data-event-category="Top" data-event-action="Sections" data-event-label="Growth Quarters" data-event-non-interaction="true">Growth
+Quarters</a></li>
+<li><a href="/shift/" data-event-category="Top" data-event-action="Sections" data-event-label="Shift" data-event-non-interaction="true">Shift</a>
+</li>
+<li><a href="/neural/" data-event-category="Top" data-event-action="Sections" data-event-label="Neural" data-event-non-interaction="true">Neural</a>
+</li>
+</ul>
+</div>
+<div class="u-col-xs-6">
+<h5>About TNW</h5>
+<ul class="nav-mob-menu">
+<li><a href="/about/" data-event-category="Top" data-event-action="Navigation" data-event-label="About" data-event-non-interaction="true">About</a></li><li><a href="https://tnwads.typeform.com/to/ofLLXt" data-event-category="Top" data-event-action="Navigation" data-event-label="Advertise" data-event-non-interaction="true">Advertise</a></li><li><a href="/jobs" data-event-category="Top" data-event-action="Navigation" data-event-label="Jobs" data-event-non-interaction="true">Jobs</a></li><li><a href="/about/#contact" data-event-category="Top" data-event-action="Navigation" data-event-label="Contact" data-event-non-interaction="true">Contact</a></li><li><a href="/terms-and-conditions/" data-event-category="Top" data-event-action="Navigation" data-event-label="Terms & Conditions" data-event-non-interaction="true">Terms & Conditions</a></li> </ul>
+<h5>TNW Sites</h5>
+<ul class="nav-mob-menu">
+<li>
+<a href="/events">Events</a>
+</li>
+<li><a href="/" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Navigation" data-event-label="News" data-event-non-interaction="true">News</a></li><li><a href="/conference/" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Navigation" data-event-label="TNW 2020" data-event-non-interaction="true">TNW 2020</a></li><li><a href="/programs" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Navigation" data-event-label="Programs" data-event-non-interaction="true">Programs</a></li><li><a href="https://index.co/" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Navigation" data-event-label="Index" data-event-non-interaction="true">Index</a></li><li><a href="https://thenextweb.com/spaces" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Navigation" data-event-label="Spaces" data-event-non-interaction="true">Spaces</a></li><li><a href="https://deals.thenextweb.com/" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Navigation" data-event-label="Deals" data-event-non-interaction="true">Deals</a></li><li><a href="https://answers.thenextweb.com/" target="_blank" rel="noopener" data-event-category="Top" data-event-action="Navigation" data-event-label="Answers" data-event-non-interaction="true">Answers</a></li> </ul>
+</div>
+</div>
+</div>
+</div>
+</nav> <main class="main">
+<script type="application/ld+json">
+{"@context":"https:\/\/schema.org","@id":"#MainEntity","@type":"ItemList","url":"https:\/\/thenextweb.com\/media\/","mainEntityOfPage":{"@id":"https:\/\/thenextweb.com\/media\/","@type":"CollectionPage","name":"Media | The Next Web","description":"This is our bolthole for talking about things happening in the media industry. Here you\u2019ll find stories about companies who produce the shows or maintain the sites you know and love.","inLanguage":"en-US","breadcrumb":{"@id":"#Breadcrumb"},"about":{"@type":"thing","name":"Media","sameAs":"https:\/\/en.wikipedia.org\/wiki\/Media_(communication)"},"publisher":{"@id":"#Publisher","@type":"Organization","name":"The Next Web","logo":{"@type":"ImageObject","url":"https:\/\/cdn0.tnwcdn.com\/wp-content\/blogs.dir\/1\/files\/2020\/09\/tnw-logo-black-248x60.png","width":"248","height":"60"},"sameAs":["https:\/\/en.wikipedia.org\/wiki\/The_Next_Web","https:\/\/www.facebook.com\/thenextweb","https:\/\/www.twitter.com\/thenextweb","https:\/\/plus.google.com\/+TheNextWeb\/","https:\/\/instagram.com\/thenextweb","https:\/\/www.youtube.com\/user\/thenextweb","https:\/\/www.pinterest.com\/thenextweb\/","https:\/\/www.linkedin.com\/company\/the-next-web","https:\/\/vine.co\/thenextweb","https:\/\/thenextweb.tumblr.com","https:\/\/soundcloud.com\/thenextweb","https:\/\/vimeo.com\/thenextweb","https:\/\/vk.com\/thenextweb","https:\/\/www.slideshare.net\/thenextweb","https:\/\/flipboard.com\/@thenextweb","https:\/\/storify.com\/thenextweb","https:\/\/www.stumbleupon.com\/channel\/thenextweb","https:\/\/www.flickr.com\/photos\/thenextweb\/","https:\/\/foursquare.com\/thenextweb"]},"copyrightHolder":{"@id":"#Publisher"}},"itemListElement":[{"@type":"ListItem","position":1,"item":{"type":"NewsArticle","url":"https:\/\/thenextweb.com\/media\/2020\/12\/11\/why-hbo-max-is-causing-a-major-rift-in-hollywood\/","mainEntityOfPage":"https:\/\/thenextweb.com\/media\/2020\/12\/11\/why-hbo-max-is-causing-a-major-rift-in-hollywood\/","headline":"Why HBO Max is causing a major rift in Hollywood","description":"The decision to release the 17 films onto HBO Max in 2021, while perhaps well-intentioned, is causing a rift between filmmakers and the major distributor behind it. Here's the skinny on what everyone is so upset about.\r\n\r\nWarnerMedia, the parent company behind the HBO Max streaming ...","datePublished":"2020-12-11 09:20:09","inLanguage":"en-US","image":{"@type":"ImageObject","url":"https:\/\/cdn0.tnwcdn.com\/wp-content\/blogs.dir\/1\/files\/2020\/05\/HBO-Max-Queue-259x135.jpg","width":259,"height":135},"author":{"@type":"Person","url":"https:\/\/thenextweb.com\/author\/rachelkaser\/","name":"Rachel Kaser"},"publisher":{"@id":"#Publisher"},"copyrightHolder":{"@id":"#Publisher"},"dateModified":"2020-12-11 09:20:09"}},{"@type":"ListItem","position":2,"item":{"type":"NewsArticle","url":"https:\/\/thenextweb.com\/plugged\/2020\/12\/07\/youtube-streaming-james-bond-movies-free\/","mainEntityOfPage":"https:\/\/thenextweb.com\/plugged\/2020\/12\/07\/youtube-streaming-james-bond-movies-free\/","headline":"YouTube is now streaming James Bond movies for FREE (in the US)","description":"Looking for something to do for the rest of December? Well, how about watching a load of James Bond movies YouTube is streaming for FREE?!","datePublished":"2020-12-07 09:25:00","inLanguage":"en-US","image":{"@type":"ImageObject","url":"https:\/\/cdn0.tnwcdn.com\/wp-content\/blogs.dir\/1\/files\/2020\/12\/header-image-free-james-bond-movies-258x135.png","width":258,"height":135},"author":{"@type":"Person","url":"https:\/\/thenextweb.com\/author\/callum-booth\/","name":"Callum Booth"},"publisher":{"@id":"#Publisher"},"copyrightHolder":{"@id":"#Publisher"},"dateModified":"2020-12-07 09:25:00"}},{"@type":"ListItem","position":3,"item":{"type":"NewsArticle","url":"https:\/\/thenextweb.com\/media\/2020\/12\/03\/warner-drop-2021-films-hbo-max-theaters-same-time\/","mainEntityOfPage":"https:\/\/thenextweb.com\/media\/2020\/12\/03\/warner-drop-2021-films-hbo-max-theaters-same-time\/","headline":"Warner to drop its 2021 films on HBO Max and theaters at the same time","description":"WarnerMedia today announced plans to release its entire 2021 film library on its streaming service HBO Max at the same time they drop in theaters. That means 17 upcoming films, including the likes of\u00a0Dune and\u00a0Godzilla vs Kong will be available on the small screen alongside the big ...","datePublished":"2020-12-04 09:32:36","inLanguage":"en-US","image":{"@type":"ImageObject","url":"https:\/\/cdn0.tnwcdn.com\/wp-content\/blogs.dir\/1\/files\/2020\/04\/HBO-Max-258x135.jpg","width":258,"height":135},"author":{"@type":"Person","url":"https:\/\/thenextweb.com\/author\/rachelkaser\/","name":"Rachel Kaser"},"publisher":{"@id":"#Publisher"},"copyrightHolder":{"@id":"#Publisher"},"dateModified":"2020-12-04 09:32:36"}},{"@type":"ListItem","position":4,"item":{"type":"NewsArticle","url":"https:\/\/thenextweb.com\/media\/2020\/11\/19\/wonder-woman-1984-christmas-debut-hbo-max\/","mainEntityOfPage":"https:\/\/thenextweb.com\/media\/2020\/11\/19\/wonder-woman-1984-christmas-debut-hbo-max\/","headline":"Wonder Woman 1984 gets a Christmas debut on HBO Max","description":"WarnerMedia today announced that its next big superhero movie,\u00a0Wonder Woman 1984, will debut in global theaters on December 16. And if you live in an area where the theaters are still closed because of COVID, relax -- the company is releasing the film on HBO Max exclusively for one ...","datePublished":"2020-11-19 09:44:33","inLanguage":"en-US","image":{"@type":"ImageObject","url":"https:\/\/cdn0.tnwcdn.com\/wp-content\/blogs.dir\/1\/files\/2020\/11\/Wonder-Woman-1984-258x135.jpg","width":258,"height":135},"author":{"@type":"Person","url":"https:\/\/thenextweb.com\/author\/rachelkaser\/","name":"Rachel Kaser"},"publisher":{"@id":"#Publisher"},"copyrightHolder":{"@id":"#Publisher"},"dateModified":"2020-11-19 09:44:33"}},{"@type":"ListItem","position":5,"item":{"type":"NewsArticle","url":"https:\/\/thenextweb.com\/media\/2020\/11\/12\/wandavision-finally-coming-disney-plus-on-january-15\/","mainEntityOfPage":"https:\/\/thenextweb.com\/media\/2020\/11\/12\/wandavision-finally-coming-disney-plus-on-january-15\/","headline":"WandaVision is finally coming to Disney+ on January 15","description":"Disney+ is finally getting another big tentpole release, as\u00a0WandaVision\u00a0is set to arrive on the service next January -- delaying its original December release, but not enough to really be angry about. Maybe now Baby Yoda can finally stop carrying everything on his tiny, green shoulders.\r\n\r\nhttps:\/\/twitter.com\/disneyplus\/status\/1326932774557790208\r\n\r\nTo ...","datePublished":"2020-11-13 09:39:24","inLanguage":"en-US","image":{"@type":"ImageObject","url":"https:\/\/cdn0.tnwcdn.com\/wp-content\/blogs.dir\/1\/files\/2020\/11\/WandaVision-258x135.jpg","width":258,"height":135},"author":{"@type":"Person","url":"https:\/\/thenextweb.com\/author\/rachelkaser\/","name":"Rachel Kaser"},"publisher":{"@id":"#Publisher"},"copyrightHolder":{"@id":"#Publisher"},"dateModified":"2020-11-13 09:39:24"}},{"@type":"ListItem","position":6,"item":{"type":"NewsArticle","url":"https:\/\/thenextweb.com\/media\/2020\/11\/04\/pokimane-twitch-donation-cap-big-deal\/","mainEntityOfPage":"https:\/\/thenextweb.com\/media\/2020\/11\/04\/pokimane-twitch-donation-cap-big-deal\/","headline":"Why Pokimane's Twitch donation cap is a big deal","description":"Popular streamer Pokimane becomes one of the first to set a limit on how high a donation her Twitch community can give her. Will it catch on?","datePublished":"2020-11-05 09:22:18","inLanguage":"en-US","image":{"@type":"ImageObject","url":"https:\/\/cdn0.tnwcdn.com\/wp-content\/blogs.dir\/1\/files\/2019\/08\/Twitch-Pixellated-258x135.jpg","width":258,"height":135},"author":{"@type":"Person","url":"https:\/\/thenextweb.com\/author\/rachelkaser\/","name":"Rachel Kaser"},"publisher":{"@id":"#Publisher"},"copyrightHolder":{"@id":"#Publisher"},"dateModified":"2020-11-05 09:22:18"}},{"@type":"ListItem","position":7,"item":{"type":"NewsArticle","url":"https:\/\/thenextweb.com\/media\/2020\/10\/27\/netflix-making-assassins-creed-series-hope-its-good\/","mainEntityOfPage":"https:\/\/thenextweb.com\/media\/2020\/10\/27\/netflix-making-assassins-creed-series-hope-its-good\/","headline":"Netflix is making an Assassin's Creed series -- I hope it's actually good","description":"Netflix today announced it's making a live-action adaptation of Assassin's Creed, and I hope it follows in the Witcher's footsteps in quality.","datePublished":"2020-10-27 22:39:23","inLanguage":"en-US","image":{"@type":"ImageObject","url":"https:\/\/cdn0.tnwcdn.com\/wp-content\/blogs.dir\/1\/files\/2020\/10\/Netflix-Assassins-Creed-258x135.jpg","width":258,"height":135},"author":{"@type":"Person","url":"https:\/\/thenextweb.com\/author\/rachelkaser\/","name":"Rachel Kaser"},"publisher":{"@id":"#Publisher"},"copyrightHolder":{"@id":"#Publisher"},"dateModified":"2020-10-27 22:39:23"}},{"@type":"ListItem","position":8,"item":{"type":"NewsArticle","url":"https:\/\/thenextweb.com\/media\/2020\/10\/21\/rip-quibi-streaming-service-shuts-down-after-less-than-a-year\/","mainEntityOfPage":"https:\/\/thenextweb.com\/media\/2020\/10\/21\/rip-quibi-streaming-service-shuts-down-after-less-than-a-year\/","headline":"RIP Quibi: Streaming service shuts down after less than a year","description":"Quibi, the streaming service that boasted it let you watch things in portrait mode, has, shockingly, failed to set the world alight.","datePublished":"2020-10-21 23:27:31","inLanguage":"en-US","image":{"@type":"ImageObject","url":"https:\/\/cdn0.tnwcdn.com\/wp-content\/blogs.dir\/1\/files\/2020\/03\/Quibi-hed-256x135.jpg","width":256,"height":135},"author":{"@type":"Person","url":"https:\/\/thenextweb.com\/author\/rachelkaser\/","name":"Rachel Kaser"},"publisher":{"@id":"#Publisher"},"copyrightHolder":{"@id":"#Publisher"},"dateModified":"2020-10-21 23:27:31"}},{"@type":"ListItem","position":9,"item":{"type":"NewsArticle","url":"https:\/\/thenextweb.com\/media\/2020\/10\/21\/aoc-among-us-stream-now-twitch-legend\/","mainEntityOfPage":"https:\/\/thenextweb.com\/media\/2020\/10\/21\/aoc-among-us-stream-now-twitch-legend\/","headline":"AOC's Among Us stream is now a Twitch legend","description":"Congresswoman Alexandria Ocasio-Cortez streamed on Twitch to get the vote out. The stream, with the help of other streamers, was a runaway success.","datePublished":"2020-10-21 22:27:42","inLanguage":"en-US","image":{"@type":"ImageObject","url":"https:\/\/cdn0.tnwcdn.com\/wp-content\/blogs.dir\/1\/files\/2016\/12\/twitch-e1491600114230-270x135.jpg","width":270,"height":135},"author":{"@type":"Person","url":"https:\/\/thenextweb.com\/author\/rachelkaser\/","name":"Rachel Kaser"},"publisher":{"@id":"#Publisher"},"copyrightHolder":{"@id":"#Publisher"},"dateModified":"2020-10-21 22:27:42"}},{"@type":"ListItem","position":10,"item":{"type":"NewsArticle","url":"https:\/\/thenextweb.com\/media\/2020\/10\/19\/disney-adds-a-stronger-content-warning-ahead-of-its-problematic-films\/","mainEntityOfPage":"https:\/\/thenextweb.com\/media\/2020\/10\/19\/disney-adds-a-stronger-content-warning-ahead-of-its-problematic-films\/","headline":"Disney+ adds a stronger warning ahead of films with racist stereotypes","description":"Disney has quietly introduced a new disclaimer to some of its films. When you start watching these films, you'll be treated to an unskippable content warning, informing you that the film will contain \"negative depictions\" of certain people and cultures. While the films themselves ...","datePublished":"2020-10-20 14:13:16","inLanguage":"en-US","image":{"@type":"ImageObject","url":"https:\/\/cdn0.tnwcdn.com\/wp-content\/blogs.dir\/1\/files\/2020\/10\/Disney-Dumbo-Crows-258x135.jpg","width":258,"height":135},"author":{"@type":"Person","url":"https:\/\/thenextweb.com\/author\/rachelkaser\/","name":"Rachel Kaser"},"publisher":{"@id":"#Publisher"},"copyrightHolder":{"@id":"#Publisher"},"dateModified":"2020-10-20 14:13:16"}},{"@type":"ListItem","position":11,"item":{"type":"NewsArticle","url":"https:\/\/thenextweb.com\/media\/2020\/10\/13\/netflix-no-longer-offers-free-trial\/","mainEntityOfPage":"https:\/\/thenextweb.com\/media\/2020\/10\/13\/netflix-no-longer-offers-free-trial\/","headline":"Netflix no longer offers a free trial -- pay up or fuck off","description":"Netflix has quietly eliminated its free trial, meaning you have to sign up for its paid plans or you won't be able to access Netflix. Given the site has more value than ever, in terms of original content, it's a smart business decision -- but still feels like a slap in the face to ...","datePublished":"2020-10-14 06:36:06","inLanguage":"en-US","image":{"@type":"ImageObject","url":"https:\/\/cdn0.tnwcdn.com\/wp-content\/blogs.dir\/1\/files\/2020\/10\/netflix-feat-1-258x135.png","width":258,"height":135},"author":{"@type":"Person","url":"https:\/\/thenextweb.com\/author\/rachelkaser\/","name":"Rachel Kaser"},"publisher":{"@id":"#Publisher"},"copyrightHolder":{"@id":"#Publisher"},"dateModified":"2020-10-14 06:36:06"}},{"@type":"ListItem","position":12,"item":{"type":"NewsArticle","url":"https:\/\/thenextweb.com\/media\/2020\/10\/07\/resident-evil-film-adaptation-on-the-way\/","mainEntityOfPage":"https:\/\/thenextweb.com\/media\/2020\/10\/07\/resident-evil-film-adaptation-on-the-way\/","headline":"Wait, we're getting yet more Resident Evil movies?","description":"Resident Evil is getting its hundredth or so film adaptation, and this one purports to be a faithful adaptation -- for better or worse.","datePublished":"2020-10-07 17:37:11","inLanguage":"en-US","image":{"@type":"ImageObject","url":"https:\/\/cdn0.tnwcdn.com\/wp-content\/blogs.dir\/1\/files\/2019\/01\/re2review7-240x135.jpg","width":240,"height":135},"author":{"@type":"Person","url":"https:\/\/thenextweb.com\/author\/rachelkaser\/","name":"Rachel Kaser"},"publisher":{"@id":"#Publisher"},"copyrightHolder":{"@id":"#Publisher"},"dateModified":"2020-10-07 17:37:11"}}]}</script>
+<section class="cover cover--grid4">
+<article class="cover-story" data-post-id="1330942">
+<div class="cover-image lazy" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/HBO-Max-Queue-796x415.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/HBO-Max-Queue-796x415.jpg 796w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/HBO-Max-Queue-280x146.jpg 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/HBO-Max-Queue-517x270.jpg 517w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/HBO-Max-Queue-259x135.jpg 259w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/05/HBO-Max-Queue.jpg 1184w" sizes="(max-width: 796px) 100vw, 796px" width="796" height="415"></div>
+<a class="cover-trigger" href="https://thenextweb.com/media/2020/12/11/why-hbo-max-is-causing-a-major-rift-in-hollywood/" data-event-category="Homepage" data-event-action="Top story" data-event-label="Post" data-event-non-interaction="true"></a>
+<div class="cover-gradient"></div>
+<h1 class="cover-title">Media</h1>
+<header class="cover-header">
+<h5 class="cover-section"><a href="/section/play">Play</a></h5>
+<h2 class="cover-title"><a href="https://thenextweb.com/media/2020/12/11/why-hbo-max-is-causing-a-major-rift-in-hollywood/">Why HBO Max is causing a major rift in Hollywood</a></h2>
+<ul class="cover-byline">
+<li>by <a href="https://thenextweb.com/author/rachelkaser/">Rachel Kaser</a></li>
+<li><i class="icon icon--clock--light"></i><time datetime="2020-12-11T00:48:06+00:00" class="timeago"></time></li>
+<li><i class="icon icon--share--light"></i>22</li>
+</ul>
+</header>
+</article>
+<article class="cover-story" data-post-id="1330669">
+<div class="cover-image lazy" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/12/header-image-free-james-bond-movies-796x417.png" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/12/header-image-free-james-bond-movies-796x417.png 796w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/12/header-image-free-james-bond-movies-280x147.png 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/12/header-image-free-james-bond-movies-516x270.png 516w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/12/header-image-free-james-bond-movies-258x135.png 258w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/12/header-image-free-james-bond-movies.png 1200w" sizes="(max-width: 796px) 100vw, 796px" width="796" height="417"></div>
+<a class="cover-trigger" href="https://thenextweb.com/plugged/2020/12/07/youtube-streaming-james-bond-movies-free/" data-event-category="Homepage" data-event-action="Top story" data-event-label="Post" data-event-non-interaction="true"></a>
+<header class="cover-header">
+<h5 class="cover-section"><a href="/section/apps">Apps</a></h5>
+<h2 class="cover-title"><a href="https://thenextweb.com/plugged/2020/12/07/youtube-streaming-james-bond-movies-free/">YouTube is now streaming James Bond movies for FREE (in the US)</a></h2>
+<ul class="cover-byline">
+<li>by <a href="https://thenextweb.com/author/callum-booth/">Callum Booth</a></li>
+<li><i class="icon icon--clock--light"></i><time datetime="2020-12-07T09:20:03+00:00" class="timeago"></time></li>
+<li><i class="icon icon--share--light"></i>51</li>
+</ul>
+</header>
+</article>
+<article class="cover-story" data-post-id="1329904">
+<div class="cover-image lazy" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/HBO-Max-796x417.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/HBO-Max-796x417.jpg 796w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/HBO-Max-280x147.jpg 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/HBO-Max-516x270.jpg 516w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/HBO-Max-258x135.jpg 258w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/HBO-Max.jpg 1200w" sizes="(max-width: 796px) 100vw, 796px" width="796" height="417"></div>
+<a class="cover-trigger" href="https://thenextweb.com/media/2020/12/03/warner-drop-2021-films-hbo-max-theaters-same-time/" data-event-category="Homepage" data-event-action="Top story" data-event-label="Post" data-event-non-interaction="true"></a>
+<header class="cover-header">
+<h5 class="cover-section"><a href="/section/play">Play</a></h5>
+<h2 class="cover-title"><a href="https://thenextweb.com/media/2020/12/03/warner-drop-2021-films-hbo-max-theaters-same-time/">Warner to drop its 2021 films on HBO Max and theaters at the same time</a></h2>
+<ul class="cover-byline">
+<li>by <a href="https://thenextweb.com/author/rachelkaser/">Rachel Kaser</a></li>
+<li><i class="icon icon--clock--light"></i><time datetime="2020-12-03T22:45:01+00:00" class="timeago"></time></li>
+<li><i class="icon icon--share--light"></i>25</li>
+</ul>
+</header>
+</article>
+<article class="cover-story" data-post-id="1328640">
+<div class="cover-image lazy" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/Wonder-Woman-1984-796x417.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/Wonder-Woman-1984-796x417.jpg 796w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/Wonder-Woman-1984-280x147.jpg 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/Wonder-Woman-1984-516x270.jpg 516w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/Wonder-Woman-1984-258x135.jpg 258w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/Wonder-Woman-1984.jpg 1200w" sizes="(max-width: 796px) 100vw, 796px" width="796" height="417"></div>
+<a class="cover-trigger" href="https://thenextweb.com/media/2020/11/19/wonder-woman-1984-christmas-debut-hbo-max/" data-event-category="Homepage" data-event-action="Top story" data-event-label="Post" data-event-non-interaction="true"></a>
+<header class="cover-header">
+<h5 class="cover-section"><a href="/section/play">Play</a></h5>
+<h2 class="cover-title"><a href="https://thenextweb.com/media/2020/11/19/wonder-woman-1984-christmas-debut-hbo-max/">Wonder Woman 1984 gets a Christmas debut on HBO Max</a></h2>
+<ul class="cover-byline">
+<li>by <a href="https://thenextweb.com/author/rachelkaser/">Rachel Kaser</a></li>
+<li><i class="icon icon--clock--light"></i><time datetime="2020-11-19T05:53:19+00:00" class="timeago"></time></li>
+<li><i class="icon icon--share--light"></i>28</li>
+</ul>
+</header>
+</article>
+</section>
+<div class="wrapper">
+<section class="channel">
+<div class="tnw-ad ad-unit-TNW_ROS_TOP" id="TNW_ROS_TOP" data-ad-block-id="TNW_ROS_TOP">
+
+</div>
+<h2>All stories in Media</h2>
+<ul class="u-row">
+<li class=" u-col-xs-6 u-col-m-6 u-col-l-3">
+<div class="story story--large">
+<a class="lazy story-image" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/WandaVision-516x270.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/WandaVision-516x270.jpg 516w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/WandaVision-280x147.jpg 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/WandaVision-258x135.jpg 258w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/WandaVision-796x417.jpg 796w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/11/WandaVision.jpg 1200w" sizes="(max-width: 516px) 100vw, 516px" width="516" height="270" href="https://thenextweb.com/media/2020/11/12/wandavision-finally-coming-disney-plus-on-january-15/" data-event-category="Category" data-event-action="Loop Posts" data-event-label="Post - Article" data-event-non-interaction="true"></a>
+<div class="story-text">
+<h4 class="story-title">
+<a href="https://thenextweb.com/media/2020/11/12/wandavision-finally-coming-disney-plus-on-january-15/" data-event-category="Category" data-event-action="Loop Posts" data-event-label="Post - Article" data-event-non-interaction="true">
+WandaVision is finally coming to Disney+ on January 15 </a>
+</h4>
+<p class="story-chunk">
+Disney+ is finally getting another big tentpole release, as WandaVision is set to arrive on the service next January -- delaying its original December release, but not enough to really be angry about. Maybe now Baby Yoda can finally stop carrying everything on his tiny, green shoulders.
+https://twitter.com/disneyplus/status/1326932774557790208
+To ... </p>
+<ul class="story-byline">
+<li><a href="https://thenextweb.com/author/rachelkaser/">
+Rachel Kaser </a></li>
+<li><time datetime="2020-11-12T23:24:06+00:00" class="timeago"></time></li>
+</ul>
+</div>
+</div>
+</li>
+<li class=" u-col-xs-6 u-col-m-6 u-col-l-3">
+<div class="story story--large">
+<a class="lazy story-image" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/Twitch-Pixellated-516x270.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/Twitch-Pixellated-516x270.jpg 516w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/Twitch-Pixellated-280x147.jpg 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/Twitch-Pixellated-258x135.jpg 258w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/Twitch-Pixellated-796x417.jpg 796w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/Twitch-Pixellated.jpg 1200w" sizes="(max-width: 516px) 100vw, 516px" width="516" height="270" href="https://thenextweb.com/media/2020/11/04/pokimane-twitch-donation-cap-big-deal/" data-event-category="Category" data-event-action="Loop Posts" data-event-label="Post - Article" data-event-non-interaction="true"></a>
+<div class="story-text">
+<h4 class="story-title">
+<a href="https://thenextweb.com/media/2020/11/04/pokimane-twitch-donation-cap-big-deal/" data-event-category="Category" data-event-action="Loop Posts" data-event-label="Post - Article" data-event-non-interaction="true">
+Why Pokimane's Twitch donation cap is a big deal </a>
+</h4>
+<p class="story-chunk">
+Popular streamer Pokimane becomes one of the first to set a limit on how high a donation her Twitch community can give her. ... </p>
+<ul class="story-byline">
+<li><a href="https://thenextweb.com/author/rachelkaser/">
+Rachel Kaser </a></li>
+<li><time datetime="2020-11-04T23:09:45+00:00" class="timeago"></time></li>
+</ul>
+</div>
+</div>
+</li>
+<li class=" u-col-xs-6 u-col-m-6 u-col-l-3">
+<div class="story story--large">
+<a class="lazy story-image" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Netflix-Assassins-Creed-516x270.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Netflix-Assassins-Creed-516x270.jpg 516w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Netflix-Assassins-Creed-280x147.jpg 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Netflix-Assassins-Creed-258x135.jpg 258w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Netflix-Assassins-Creed-796x417.jpg 796w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Netflix-Assassins-Creed.jpg 1200w" sizes="(max-width: 516px) 100vw, 516px" width="516" height="270" href="https://thenextweb.com/media/2020/10/27/netflix-making-assassins-creed-series-hope-its-good/" data-event-category="Category" data-event-action="Loop Posts" data-event-label="Post - Article" data-event-non-interaction="true"></a>
+<div class="story-text">
+<h4 class="story-title">
+<a href="https://thenextweb.com/media/2020/10/27/netflix-making-assassins-creed-series-hope-its-good/" data-event-category="Category" data-event-action="Loop Posts" data-event-label="Post - Article" data-event-non-interaction="true">
+Netflix is making an Assassin's Creed series -- I hope it's actually good </a>
+</h4>
+<p class="story-chunk">
+Netflix today announced it's making a live-action adaptation of Assassin's Creed, and I hope it follows in the Witcher's ... </p>
+<ul class="story-byline">
+<li><a href="https://thenextweb.com/author/rachelkaser/">
+Rachel Kaser </a></li>
+<li><time datetime="2020-10-27T22:39:21+00:00" class="timeago"></time></li>
+</ul>
+</div>
+</div>
+</li>
+<li class=" u-col-xs-6 u-col-m-6 u-col-l-3">
+<div class="story story--large">
+<a class="lazy story-image" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Quibi-hed-513x270.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Quibi-hed-513x270.jpg 513w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Quibi-hed-280x147.jpg 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Quibi-hed-256x135.jpg 256w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Quibi-hed-796x419.jpg 796w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Quibi-hed-1376x726.jpg 1376w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Quibi-hed.jpg 1379w" sizes="(max-width: 513px) 100vw, 513px" width="513" height="270" href="https://thenextweb.com/media/2020/10/21/rip-quibi-streaming-service-shuts-down-after-less-than-a-year/" data-event-category="Category" data-event-action="Loop Posts" data-event-label="Post - Article" data-event-non-interaction="true"></a>
+<div class="story-text">
+<h4 class="story-title">
+<a href="https://thenextweb.com/media/2020/10/21/rip-quibi-streaming-service-shuts-down-after-less-than-a-year/" data-event-category="Category" data-event-action="Loop Posts" data-event-label="Post - Article" data-event-non-interaction="true">
+RIP Quibi: Streaming service shuts down after less than a year </a>
+</h4>
+<p class="story-chunk">
+Quibi, the streaming service that boasted it let you watch things in portrait mode, has, shockingly, failed to set the world ... </p>
+<ul class="story-byline">
+<li><a href="https://thenextweb.com/author/rachelkaser/">
+Rachel Kaser </a></li>
+<li><time datetime="2020-10-21T23:27:19+00:00" class="timeago"></time></li>
+</ul>
+</div>
+</div>
+</li>
+</ul>
+<ul class="u-row">
+<li class=" u-col-xs-6 u-col-m-6 u-col-l-3">
+<div class="story story--large">
+<a class="lazy story-image" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2016/12/twitch-e1491600114230-540x270.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2016/12/twitch-e1491600114230-540x270.jpg 540w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2016/12/twitch-e1491600114230-280x140.jpg 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2016/12/twitch-e1491600114230-270x135.jpg 270w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2016/12/twitch-e1491600114230-796x398.jpg 796w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2016/12/twitch-e1491600114230-1592x796.jpg 1592w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2016/12/twitch-e1491600114230.jpg 1600w" sizes="(max-width: 540px) 100vw, 540px" width="540" height="270" href="https://thenextweb.com/media/2020/10/21/aoc-among-us-stream-now-twitch-legend/" data-event-category="Category" data-event-action="Loop Posts" data-event-label="Post - Article" data-event-non-interaction="true"></a>
+<div class="story-text">
+<h4 class="story-title">
+<a href="https://thenextweb.com/media/2020/10/21/aoc-among-us-stream-now-twitch-legend/" data-event-category="Category" data-event-action="Loop Posts" data-event-label="Post - Article" data-event-non-interaction="true">
+AOC's Among Us stream is now a Twitch legend </a>
+</h4>
+<p class="story-chunk">
+Congresswoman Alexandria Ocasio-Cortez streamed on Twitch to get the vote out. The stream, with the help of other streamers, ... </p>
+<ul class="story-byline">
+<li><a href="https://thenextweb.com/author/rachelkaser/">
+Rachel Kaser </a></li>
+<li><time datetime="2020-10-21T22:27:40+00:00" class="timeago"></time></li>
+</ul>
+</div>
+</div>
+</li>
+<li class=" u-col-xs-6 u-col-m-6 u-col-l-3">
+<div class="story story--large">
+<a class="lazy story-image" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Disney-Dumbo-Crows-516x270.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Disney-Dumbo-Crows-516x270.jpg 516w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Disney-Dumbo-Crows-280x147.jpg 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Disney-Dumbo-Crows-258x135.jpg 258w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Disney-Dumbo-Crows-796x417.jpg 796w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/Disney-Dumbo-Crows.jpg 1200w" sizes="(max-width: 516px) 100vw, 516px" width="516" height="270" href="https://thenextweb.com/media/2020/10/19/disney-adds-a-stronger-content-warning-ahead-of-its-problematic-films/" data-event-category="Category" data-event-action="Loop Posts" data-event-label="Post - Article" data-event-non-interaction="true"></a>
+<div class="story-text">
+<h4 class="story-title">
+<a href="https://thenextweb.com/media/2020/10/19/disney-adds-a-stronger-content-warning-ahead-of-its-problematic-films/" data-event-category="Category" data-event-action="Loop Posts" data-event-label="Post - Article" data-event-non-interaction="true">
+Disney+ adds a stronger warning ahead of films with racist stereotypes </a>
+</h4>
+<p class="story-chunk">
+Disney has quietly introduced a new disclaimer to some of its films. When you start watching these films, you'll be treated to an unskippable content warning, informing you that the film will contain "negative depictions" of certain people and cultures. While the films themselves ... </p>
+<ul class="story-byline">
+<li><a href="https://thenextweb.com/author/rachelkaser/">
+Rachel Kaser </a></li>
+<li><time datetime="2020-10-19T20:24:28+00:00" class="timeago"></time></li>
+</ul>
+</div>
+</div>
+</li>
+<li class=" u-col-xs-6 u-col-m-6 u-col-l-3">
+<div class="story story--large">
+<a class="lazy story-image" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/netflix-feat-1-516x270.png" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/netflix-feat-1-516x270.png 516w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/netflix-feat-1-280x147.png 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/netflix-feat-1-258x135.png 258w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/netflix-feat-1-796x417.png 796w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/10/netflix-feat-1.png 1200w" sizes="(max-width: 516px) 100vw, 516px" width="516" height="270" href="https://thenextweb.com/media/2020/10/13/netflix-no-longer-offers-free-trial/" data-event-category="Category" data-event-action="Loop Posts" data-event-label="Post - Article" data-event-non-interaction="true"></a>
+<div class="story-text">
+<h4 class="story-title">
+<a href="https://thenextweb.com/media/2020/10/13/netflix-no-longer-offers-free-trial/" data-event-category="Category" data-event-action="Loop Posts" data-event-label="Post - Article" data-event-non-interaction="true">
+Netflix no longer offers a free trial -- pay up or fuck off </a>
+</h4>
+<p class="story-chunk">
+Netflix has quietly eliminated its free trial, meaning you have to sign up for its paid plans or you won't be able to access Netflix. Given the site has more value than ever, in terms of original content, it's a smart business decision -- but still feels like a slap in the face to ... </p>
+<ul class="story-byline">
+<li><a href="https://thenextweb.com/author/rachelkaser/">
+Rachel Kaser </a></li>
+<li><time datetime="2020-10-13T19:47:21+00:00" class="timeago"></time></li>
+</ul>
+</div>
+</div>
+</li>
+<li class=" u-col-xs-6 u-col-m-6 u-col-l-3">
+<div class="story story--large">
+<a class="lazy story-image" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/re2review7-480x270.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/re2review7-480x270.jpg 480w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/re2review7-280x158.jpg 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/re2review7-240x135.jpg 240w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/re2review7-796x448.jpg 796w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/re2review7-1592x896.jpg 1592w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/01/re2review7-1200x675.jpg 1200w" sizes="(max-width: 480px) 100vw, 480px" width="480" height="270" href="https://thenextweb.com/media/2020/10/07/resident-evil-film-adaptation-on-the-way/" data-event-category="Category" data-event-action="Loop Posts" data-event-label="Post - Article" data-event-non-interaction="true"></a>
+<div class="story-text">
+<h4 class="story-title">
+<a href="https://thenextweb.com/media/2020/10/07/resident-evil-film-adaptation-on-the-way/" data-event-category="Category" data-event-action="Loop Posts" data-event-label="Post - Article" data-event-non-interaction="true">
+Wait, we're getting yet more Resident Evil movies? </a>
+</h4>
+<p class="story-chunk">
+Resident Evil is getting its hundredth or so film adaptation, and this one purports to be a faithful adaptation -- for better ... </p>
+<ul class="story-byline">
+<li><a href="https://thenextweb.com/author/rachelkaser/">
+Rachel Kaser </a></li>
+<li><time datetime="2020-10-07T17:33:44+00:00" class="timeago"></time></li>
+</ul>
+</div>
+</div>
+</li>
+</ul>
+<ul class="u-row">
+<li class=" u-col-xs-6 u-col-m-6 u-col-l-3">
+<div class="story story--large">
+<a class="lazy story-image" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Nick-Fury-516x270.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Nick-Fury-516x270.jpg 516w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Nick-Fury-280x147.jpg 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Nick-Fury-258x135.jpg 258w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Nick-Fury-796x417.jpg 796w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/09/Nick-Fury.jpg 1200w" sizes="(max-width: 516px) 100vw, 516px" width="516" height="270" href="https://thenextweb.com/media/2020/09/25/report-disney-plus-adds-nick-fury-lineup-marvel-shows/" data-event-category="Category" data-event-action="Loop Posts" data-event-label="Post - Article" data-event-non-interaction="true"></a>
+<div class="story-text">
+<h4 class="story-title">
+<a href="https://thenextweb.com/media/2020/09/25/report-disney-plus-adds-nick-fury-lineup-marvel-shows/" data-event-category="Category" data-event-action="Loop Posts" data-event-label="Post - Article" data-event-non-interaction="true">
+Report: Disney+ adds Nick Fury to its lineup of Marvel shows </a>
+</h4>
+<p class="story-chunk">
+A new rumor reveals the next recipient of the Disney+ treatment might be none other than Nick Fury of SHIELD -- and we can't ... </p>
+<ul class="story-byline">
+<li><a href="https://thenextweb.com/author/rachelkaser/">
+Rachel Kaser </a></li>
+<li><time datetime="2020-09-25T22:31:28+00:00" class="timeago"></time></li>
+</ul>
+</div>
+</div>
+</li>
+<li class=" u-col-xs-6 u-col-m-6 u-col-l-3">
+<div class="story story--large">
+<a class="lazy story-image" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/08/Ninja-Twitter-516x270.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/08/Ninja-Twitter-516x270.jpg 516w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/08/Ninja-Twitter-280x147.jpg 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/08/Ninja-Twitter-258x135.jpg 258w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/08/Ninja-Twitter-796x417.jpg 796w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/08/Ninja-Twitter.jpg 1200w" sizes="(max-width: 516px) 100vw, 516px" width="516" height="270" href="https://thenextweb.com/gaming/2020/09/10/ninja-is-back-on-twitch-for-real-this-time/" data-event-category="Category" data-event-action="Loop Posts" data-event-label="Post - Article" data-event-non-interaction="true"></a>
+<div class="story-text">
+<h4 class="story-title">
+<a href="https://thenextweb.com/gaming/2020/09/10/ninja-is-back-on-twitch-for-real-this-time/" data-event-category="Category" data-event-action="Loop Posts" data-event-label="Post - Article" data-event-non-interaction="true">
+Ninja is back on Twitch -- for real this time </a>
+</h4>
+<p class="story-chunk">
+From Twitch to Mixer, and now back to Twitch once more: Tyler "Ninja" Blevins today revealed that, after his rather public ... </p>
+<ul class="story-byline">
+<li><a href="https://thenextweb.com/author/rachelkaser/">
+Rachel Kaser </a></li>
+<li><time datetime="2020-09-10T19:09:56+00:00" class="timeago"></time></li>
+</ul>
+</div>
+</div>
+</li>
+<li class=" u-col-xs-6 u-col-m-6 u-col-l-3">
+<div class="story story--large">
+<a class="lazy story-image" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/10/Twitch-Sings-Karaoke-516x270.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/10/Twitch-Sings-Karaoke-516x270.jpg 516w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/10/Twitch-Sings-Karaoke-280x147.jpg 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/10/Twitch-Sings-Karaoke-258x135.jpg 258w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/10/Twitch-Sings-Karaoke-796x417.jpg 796w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/10/Twitch-Sings-Karaoke.jpg 1200w" sizes="(max-width: 516px) 100vw, 516px" width="516" height="270" href="https://thenextweb.com/media/2020/09/04/twitch-karaoke-game-twitch-sings-shut-down-new-years/" data-event-category="Category" data-event-action="Loop Posts" data-event-label="Post - Article" data-event-non-interaction="true"></a>
+<div class="story-text">
+<h4 class="story-title">
+<a href="https://thenextweb.com/media/2020/09/04/twitch-karaoke-game-twitch-sings-shut-down-new-years/" data-event-category="Category" data-event-action="Loop Posts" data-event-label="Post - Article" data-event-non-interaction="true">
+Twitch's karaoke game, Twitch Sings, will shut down by New Years </a>
+</h4>
+<p class="story-chunk">
+Twitch unexpectedly announced it'll sunset its karaoke game, Twitch Sings. The game will be gone by January 1, and clips ... </p>
+<ul class="story-byline">
+<li><a href="https://thenextweb.com/author/rachelkaser/">
+Rachel Kaser </a></li>
+<li><time datetime="2020-09-04T23:29:42+00:00" class="timeago"></time></li>
+</ul>
+</div>
+</div>
+</li>
+<li class=" u-col-xs-6 u-col-m-6 u-col-l-3">
+<div class="story story--large">
+<a class="lazy story-image" data-src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/08/Mulan-516x270.jpg" data-srcset="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/08/Mulan-516x270.jpg 516w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/08/Mulan-280x147.jpg 280w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/08/Mulan-258x135.jpg 258w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/08/Mulan-796x417.jpg 796w, https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/08/Mulan.jpg 1200w" sizes="(max-width: 516px) 100vw, 516px" width="516" height="270" href="https://thenextweb.com/media/2020/09/02/disney-sets-date-mulan-non-premium-streaming-debut/" data-event-category="Category" data-event-action="Loop Posts" data-event-label="Post - Article" data-event-non-interaction="true"></a>
+<div class="story-text">
+<h4 class="story-title">
+<a href="https://thenextweb.com/media/2020/09/02/disney-sets-date-mulan-non-premium-streaming-debut/" data-event-category="Category" data-event-action="Loop Posts" data-event-label="Post - Article" data-event-non-interaction="true">
+Disney sets a date for Mulan's non-premium streaming debut </a>
+</h4>
+<p class="story-chunk">
+Don't want to pay $30 extra to see Mulan when it debuts. According to Disney+, the film will be available for all subscribers ... </p>
+<ul class="story-byline">
+<li><a href="https://thenextweb.com/author/rachelkaser/">
+Rachel Kaser </a></li>
+<li><time datetime="2020-09-02T23:03:09+00:00" class="timeago"></time></li>
+</ul>
+</div>
+</div>
+</li>
+</ul>
+<div class="tnw-ad ad-unit-TNW_ROS_TOP" id="TNW_ROS_TOP_1" data-ad-block-id="TNW_ROS_TOP">
+
+</div>
+<div class="page-beacon" data-page-idx="1"></div>
+</section>
+<a href="#" class="pager pager-next">Load more articles</a> </div>
+<div class="load-modules" data-modules="grid-pager"></div>
+</main>
+<footer class="footer">
+<div class="footer-links">
+<div class="wrapper">
+<ul class="footer-links-social">
+<li><a href="https://www.facebook.com/thenextweb" target="_blank" rel="noopener" data-event-category="Footer" data-event-action="Social" data-event-label="Facebook" data-event-non-interaction="true"><i class="icon icon--facebook--light"></i></a>
+<li><a href="https://twitter.com/thenextweb" target="_blank" rel="noopener" data-event-category="Footer" data-event-action="Social" data-event-label="Twitter" data-event-non-interaction="true"><i class="icon icon--twitter--light"></i></a>
+<li><a href="https://www.youtube.com/user/thenextweb" target="_blank" rel="noopener" data-event-category="Footer" data-event-action="Social" data-event-label="YouTube" data-event-non-interaction="true"><i class="icon icon--youtube--light"></i></a>
+<li><a href="https://www.instagram.com/thenextweb" target="_blank" rel="noopener" data-event-category="Footer" data-event-action="Social" data-event-label="Instagram" data-event-non-interaction="true"><i class="icon icon--instagram--light"></i></a>
+<li><a href="https://www.pinterest.com/thenextweb" target="_blank" rel="noopener" data-event-category="Footer" data-event-action="Social" data-event-label="Pinterest" data-event-non-interaction="true"><i class="icon icon--pinterest--light"></i></a>
+<li><a href="https://thenextweb.com/feed/" target="_blank" rel="noopener" data-event-category="Footer" data-event-action="Social" data-event-label="Feed" data-event-non-interaction="true"><i class="icon icon--rss--light"></i></a>
+<li><a data-modal="modalStayTuned" href="#" data-event-category="Footer" data-event-action="Social" data-event-label="Newsletter" data-event-non-interaction="true"><i class="icon icon--mail--light"></i></a>
+</ul>
+<ul class="footer-links-menu">
+<li><a href="/conference/" data-event-category="Footer" data-event-action="Conference" data-event-label="" data-event-non-interaction="true">Events</a></li>
+ <li><a href="/about" data-event-category="Footer" data-event-action="About" data-event-label="" data-event-non-interaction="true">About</a></li>
+<li><a href="/advertise" target="_blank" data-event-category="Footer" data-event-action="Advertise" data-event-label="" data-event-non-interaction="true">Advertise</a></li>
+<li><a href="https://thenextweb.homerun.hr/" target="_blank" rel="noopener" data-event-category="Footer" data-event-action="Jobs" data-event-label="" data-event-non-interaction="true">Jobs</a></li>
+<li><a href="/about#contact" data-event-category="Footer" data-event-action="Contact" data-event-label="" data-event-non-interaction="true">Contact</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-legal">
+<div class="wrapper">
+<span>
+<a href="/"><img alt="The Next Web" class="footer-legal-logoTNW" src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg"></a>
+&copy; 2006&ndash;2020 The Next Web B.V.
+</span>
+<span>Made with <3 in Amsterdam.</span>
+<span>
+Powered by
+<a href="https://www.stackpath.com?utm_campaign=Partner%20Display&utm_source=Partner%20Display&utm_medium=thenextweb" target="_blank" rel="noopener"><img alt="StackPath" class="footer-legal-logoStackPath" src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/stackpath.svg"></a>
+</span>
+</div>
+</div>
+</div>
+</footer>
+<div class="js-modal modal modalStayTuned" id="modalStayTuned">
+<div class="modal-window modal-window--noFooter">
+<header class="modal-header">
+<h3>Stay tuned</h3>
+<a href="#close" title="Esc"><i class="ss-pika ss-delete" onclick="if (!window.__cfRLUnblockHandlers) return false; dataLayer.push( {'event':'email','eventCategory':'Email','eventAction':'Close','eventLabel':'Modal','eventNonInteraction':1} )" data-cf-modified-1676d7e1dd0d3ef17d52d505-=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path fill="#99A1AA" d="M31 19.2l-1.5-1.4-5.3 5.3-5.2-5.3-1.5 1.4 5.3 5.3-5.3 5.3 1.5 1.4 5.2-5.3 5.3 5.3 1.5-1.4-5.3-5.3" /></svg></i></a>
+</header>
+<div class="modal-body">
+<h2 class="modalStayTuned-title u-m-0_5 u-text-center">
+Treat yourself
+</h2>
+<p class="lead u-m-1_5 u-text-center">
+Sit back and let the hottest tech news come to you by the magic of electronic mail.
+</p>
+<form action="https://thenextweb.com/wp-content/themes/cyberdelia/ajax/form/newsletter.php" class="u-m-1" method="post" data-xhr data-xhr-fail="newsletterFail" data-xhr-success="newsletterSuccess" onsubmit="if (!window.__cfRLUnblockHandlers) return false; dataLayer.push( {'event':'email','eventCategory':'Email','eventAction':'Sign up','eventLabel':'Modal','eventNonInteraction':1} );" data-cf-modified-1676d7e1dd0d3ef17d52d505-="">
+<div class="modalStayTuned-success">
+<b>T</b><b>h</b><b>a</b><b>n</b><b>k</b><b>&nbsp;</b><b>y</b><b>o</b><b>u</b><b>!</b>
+</div>
+<div class="formField">
+<div class="formField-withButton">
+<div class="formField-withIcon u-float-left u-w-xs-75">
+<input class="formInput formInput--text" name="email" placeholder="Email" type="email" required="">
+<input class="" name="source" hidden id="source-newsletter" style="display: none" value="thenextweb.com/media/">
+<i class="icon icon--mail"></i>
+</div>
+<button class="button u-float-left u-w-xs-25" type="submit">Sign up</button>
+</div>
+</div>
+</form>
+<p class="u-color-light u-fontSize-xs u-m-1 u-text-center">
+Prefer to get the news as it happens? Follow us on social media.
+</p>
+<ul class="modalStayTuned-channels u-row">
+<li class="u-col-xs-6 u-m-0">
+<div class="modalStayTuned-channels-channel modalStayTuned-channels-channel--twitter">
+<div class="modalStayTuned-channels-icon"><a href="https://twitter.com/thenextweb" target="_blank" rel="noopener"><img alt="Twitter" src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icon-twitter.svg"></a></div>
+<p class="modalStayTuned-channels-followers">
+<b>1.76M</b> followers
+</p>
+<a class="twitter-follow-button" data-show-count="false" data-show-screen-name="false" href="https://twitter.com/thenextweb"></a>
+</div>
+</li>
+<li class="u-col-xs-6 u-m-0">
+<div class="modalStayTuned-channels-channel modalStayTuned-channels-channel--facebook">
+<div class="modalStayTuned-channels-icon"><a href="https://www.facebook.com/thenextweb" target="_blank" rel="noopener"><img alt="Facebook" src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icon-facebook.svg"></a></div>
+<p class="modalStayTuned-channels-followers">
+<b>1M</b> likes
+</p>
+<div class="fb-like" data-href="https://www.facebook.com/thenextweb" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="js-modal modal modalStayTuned" id="modalSurvey">
+<div class="modal-window modal-window--noFooter">
+<header class="modal-header">
+<h3>Help us out</h3>
+<a href="#close" title="Esc" rel="modal:close"><i class="ss-pika ss-delete" onclick="if (!window.__cfRLUnblockHandlers) return false; dataLayer.push( {'event':'email','eventCategory':'Email','eventAction':'Close','eventLabel':'Modal','eventNonInteraction':1} )" data-cf-modified-1676d7e1dd0d3ef17d52d505-=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path fill="#99A1AA" d="M31 19.2l-1.5-1.4-5.3 5.3-5.2-5.3-1.5 1.4 5.3 5.3-5.3 5.3 1.5 1.4 5.2-5.3 5.3 5.3 1.5-1.4-5.3-5.3" /></svg></i></a>
+</header>
+<div class="modal-body">
+<h2 class="modalStayTuned-title u-m-0_5 u-text-center">
+Who are you?
+</h2>
+<p class="lead u-m-1_5 u-text-center">
+Got two minutes to spare? We'd love to know a bit more about our readers.<br /><br />
+<a class="button u-w-xs-25" href="#">Start!</a>
+</p>
+<p class="u-color-light u-fontSize-xs u-m-1 u-text-center">
+All data collected in the survey is anonymous.
+</p>
+</div>
+</div>
+</div>
+<div class="search" id="search">
+<header class="search-header">
+<a class="search-header-logo" href="/">
+<img alt="The Next Web" src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw-black.svg">
+</a>
+<a id="search--close" class="search--close" href="#"><i class="icon icon--close"></i></a>
+</header>
+<form action="/" class="search-form" method="get">
+<input autocomplete="off" id="search-input" name="q" value="" placeholder="Search" type="text" onfocus="if (!window.__cfRLUnblockHandlers) return false; this.value = this.value;" data-cf-modified-1676d7e1dd0d3ef17d52d505-="">
+<a id="search-clear" class="search-clear" href="#"><i class="icon icon--close icon--close-white icon--close-small"></i></a>
+</form>
+<div class="search-results" id="searchResults"></div>
+<div class="search-nav-hints">
+<div class="search-nav-hint">
+<span class="search-nav-hint-key">↑</span> <span class="search-nav-hint-key">↓</span> Navigate up/down
+</div>
+<div class="search-nav-hint">
+<span class="search-nav-hint-key">Enter</span> Go to article
+</div>
+<div class="search-nav-hint">
+<span class="search-nav-hint-key">/</span> Search new term
+</div>
+<div class="search-nav-hint">
+<span class="search-nav-hint-key">Esc</span> Close search
+</div>
+</div>
+</div>
+<script type="1676d7e1dd0d3ef17d52d505-text/javascript">
+                dataLayer.push({
+                        'sponsor': '',
+                        'sponsored': 'yes'
+                    }
+                );
+            </script>
+<script type="1676d7e1dd0d3ef17d52d505-text/javascript" src="/wp-content/advertisement.js" async></script>
+<script type="1676d7e1dd0d3ef17d52d505-text/javascript">
+        var adBlocker = true;
+        var APP_ENV = {"theme":"cyberdelia","permalink":"https:\/\/thenextweb.com\/media","template":"category","paths":{"site":"https:\/\/thenextweb.com\/","base":"https:\/\/thenextweb.com\/wp-content\/themes\/cyberdelia\/","assets":"https:\/\/cdn0.tnwcdn.com\/wp-content\/themes\/cyberdelia\/assets\/"},"pageIdx":1,"currentPost":null,"activePostIdx":null,"postRack":[],"layout":{"siteskin":false},"category":"media","categoryId":6,"section":"play","sectionId":40276,"adTargeting":{"sponsorName":false,"isSponsoredCategory":false},"taxo":"category","slug":"media"}    </script>
+<script type="1676d7e1dd0d3ef17d52d505-text/javascript">
+
+        function getTheCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        if (getTheCookie("tuid") !== "") {
+            dataLayer.push({
+                'tuid': getTheCookie("tuid")
+            });
+        }
+
+    </script>
+<script src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/js/app.min.js?v=1606324563" type="1676d7e1dd0d3ef17d52d505-text/javascript" async></script>
+<script type="1676d7e1dd0d3ef17d52d505-text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/thenextweb.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.16"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+<script type="1676d7e1dd0d3ef17d52d505-text/javascript">
+/* <![CDATA[ */
+var leadin_wordpress = {"userRole":"visitor","pageType":"archive","leadinPluginVersion":"7.34.4"};
+/* ]]> */
+</script>
+<script async defer id="hs-script-loader" type="1676d7e1dd0d3ef17d52d505-text/javascript" src='//js.hs-scripts.com/.js?integration=WordPress'></script>
+<script type="1676d7e1dd0d3ef17d52d505-text/javascript">
+/* <![CDATA[ */
+var wlSettings = {"ajaxUrl":"https:\/\/thenextweb.com\/wp-admin\/admin-ajax.php","apiUrl":"https:\/\/thenextweb.com\/wl-api\/","jsonld_url":"https:\/\/thenextweb.com\/wp-json\/wordlift\/v1\/jsonld\/","jsonld_enabled":""};
+var wordliftAnalyticsConfigData = {"entity_uri_dimension":"1","entity_type_dimension":"2"};
+var wordliftAnalyticsEntityData = {"1176225":{"uri":"http:\/\/data.thenextweb.com\/tnw\/entity\/hbo","type":"http:\/\/schema.org\/Organization","label":"HBO"},"1263982":{"uri":"http:\/\/data.thenextweb.com\/tnw\/entity\/hbo_max","type":"http:\/\/schema.org\/Thing","label":"HBO Max"}};
+/* ]]> */
+</script>
+<script type="1676d7e1dd0d3ef17d52d505-text/javascript" src='https://thenextweb.com/wp-content/plugins/wordlift/js/dist/bundle.js?ver=3.25.5.1'></script>
+<script type="1676d7e1dd0d3ef17d52d505-text/javascript">
+/* <![CDATA[ */
+var wlCloudContextCards = {"selector":"a.wl-entity-page-link","baseUrl":"https:\/\/thenextweb.com\/wp-json\/wordlift\/v1\/context-card"};
+/* ]]> */
+</script>
+<script type="1676d7e1dd0d3ef17d52d505-text/javascript" src='https://thenextweb.com/wp-content/plugins/wordlift/js/dist/wordlift-cloud.js?ver=3.25.5.1'></script>
+<script type="1676d7e1dd0d3ef17d52d505-text/javascript" src='https://thenextweb.com/wp-includes/js/underscore.min.js?ver=1.8.3'></script>
+<script type="1676d7e1dd0d3ef17d52d505-text/javascript" src='https://thenextweb.com/wp-content/plugins/elasticpress/dist/js/facets.min.js?ver=3.0.3'></script>
+<script type="1676d7e1dd0d3ef17d52d505-text/javascript">
+            (new Image()).src = "//sync.search.spotxchange.com/partner?source=204258";
+        </script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="1676d7e1dd0d3ef17d52d505-|49" defer=""></script></body>
+</html>
