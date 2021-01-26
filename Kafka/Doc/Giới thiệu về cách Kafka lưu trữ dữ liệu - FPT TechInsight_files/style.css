@@ -1,0 +1,209 @@
+@media screen and (min-width: 48em) {
+    .wrap {
+        max-width: 1200px!important;
+    }
+    .has-sidebar:not(.error404) #primary {
+        width: 66.67%!important;
+    }
+
+    .has-sidebar #secondary {
+        padding-left: 2em;
+        width: 33.33%!important;
+    }
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.clear:before {
+    content: "";
+    display: table;
+    table-layout: fixed;
+}
+.clear:after {
+    clear: both;
+    content: "";
+    display: table;
+    table-layout: fixed;
+}
+.lightbox {
+    display: none;
+}
+.media, .media-body {
+    overflow: hidden;
+    zoom: 1;
+}
+
+.media-body, .media-left, .media-right {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.media-object {
+    display: block;
+}
+
+.media-body {
+    width: 10000px;
+}
+.specialists {
+    padding: 1em;
+    background-color: #F2F2F2;
+}
+.specialists li {
+    display: block;
+    margin: 0;
+    padding: .5em;
+    width: 33.33%;
+    list-style: none;
+    float: left;
+}
+
+.specialists li figure {
+    margin: 0;
+    padding: 1em;
+    border: 2px solid #ddd;
+    background-color: #fff;
+    color: #888;
+    font-family: 'Open Sans',arial,sans-serif;
+    box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.specialists li figure:hover {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.specialists li figure h4 {
+    font-size: 18px;
+    line-height: 1.25;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: .25em 0 0 0;
+}
+
+.specialist > a {
+    display: block!important;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.specialist > a img {
+    display: block!important;
+    height: 0;
+    padding-bottom: 100%;
+}
+
+.specialists li figure p {
+    margin: 0;
+}
+
+.specialists li figure a {
+    border: none;
+    color: #888;
+    box-shadow: none;
+}
+
+.specialists li figure figcaption {
+    position: relative;
+    min-height: 195px;
+    font-size: 14px;
+}
+
+.specialists li figure figcaption a {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: .8rem;
+    text-transform: uppercase;
+}
+
+.specialists li figure a:hover {
+    box-shadow: none;
+}
+
+.specialist-details {
+    font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.66;
+    max-width: 1068px;
+}
+
+.specialist-details .media-left {
+    width: 30%;
+}
+
+.specialist-details .media-left .media-object {
+    max-width: 100%;
+    min-width: 90%;
+}
+
+.specialist-details .media-body {
+    padding: 1em;
+}
+
+.specialist-details .media-body h2 {
+    margin: 0;
+    color: #262626;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.specialist-details .media-body p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.specialist-details .media-body .lead {
+    font-size: 15px;
+    vertical-align: middle;
+    line-height: 20px;
+}
+
+.specialist-details .media-body .position {
+    margin-bottom: 0em;
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.specialist-details .media-body .description {
+    position: relative;
+    text-align: justify;
+    line-height: 1.5;
+    max-height: 10rem;
+    overflow: hidden;
+}
+@media (min-width: 1185px) {
+    .specialist-details .media-body .description {
+        max-height: 12.5rem;
+    }
+}
+
+.specialist-details .level {
+    margin-bottom: 0;
+}
+
+.featherlight .featherlight-content {
+    padding: 0;
+    border-bottom: 0;
+}
+
+.featherlight .featherlight-close-icon {
+    background-color: #262626;
+    color: #fff;
+    border-radius: 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 45px;
+    line-height: 45px;
+}
+
+.level {
+    margin-bottom: 1.2em;
+}
+
+.level .dashicons:before {
+    color: #fcae00;
+}

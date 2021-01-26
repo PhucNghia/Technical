@@ -1,0 +1,6 @@
+jQuery(document).ready(function($) {
+    $.featherlight.defaults.afterOpen = function () {
+        $('[data-scrollbar]', this.$content).perfectScrollbar('destroy');
+        $('[data-scrollbar]', this.$content).perfectScrollbar();
+    };
+});

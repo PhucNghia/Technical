@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://vsudo.net/blog/kafka-la-gi.html -->
+<html lang="en-US" prefix="og: http://ogp.me/ns#" class=" td-md-is-chrome"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Apache Kafka là gì? Tất cả mọi thứ bạn cần biết - VSUDO Blog</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="pingback" href="https://vsudo.net/blog/xmlrpc.php">
+<meta name="description" content="Kafka là nền tảng streaming sự kiện phân tán mã nguồn mở. Xem thêm để biết kafka là gì và các ứng dụng xử lý stream real-time ra sao">
+<link rel="canonical" href="https://vsudo.net/blog/kafka-la-gi.html">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Apache Kafka là gì? Tất cả mọi thứ bạn cần biết - VSUDO Blog">
+<meta property="og:description" content="Kafka là nền tảng streaming sự kiện phân tán mã nguồn mở. Xem thêm để biết kafka là gì và các ứng dụng xử lý stream real-time ra sao">
+<meta property="og:url" content="https://vsudo.net/blog/kafka-la-gi.html">
+<meta property="og:site_name" content="VSUDO Blog">
+<meta property="article:author" content="https://facebook.com/quanghn96">
+<meta property="article:section" content="Cloud - Virtualization">
+<meta property="article:published_time" content="2019-12-25T17:16:31+00:00">
+<meta property="article:modified_time" content="2020-09-13T16:32:23+00:00">
+<meta property="og:updated_time" content="2020-09-13T16:32:23+00:00">
+<meta property="og:image" content="https://vsudo.net/blog/wp-content/uploads/2019/12/kafka-la-gi.jpg">
+<meta property="og:image:secure_url" content="https://vsudo.net/blog/wp-content/uploads/2019/12/kafka-la-gi.jpg">
+<meta property="og:image:width" content="1069">
+<meta property="og:image:height" content="899">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="Kafka là nền tảng streaming sự kiện phân tán mã nguồn mở. Xem thêm để biết kafka là gì và các ứng dụng xử lý stream real-time ra sao">
+<meta name="twitter:title" content="Apache Kafka là gì? Tất cả mọi thứ bạn cần biết - VSUDO Blog">
+<meta name="twitter:image" content="https://vsudo.net/blog/wp-content/uploads/2019/12/kafka-la-gi.jpg">
+<script type="text/javascript" id="www-widgetapi-script" src="./Apache Kafka là gì_ Tất cả mọi thứ bạn cần biết - VSUDO Blog_files/www-widgetapi.js.download" async=""></script><script src="./Apache Kafka là gì_ Tất cả mọi thứ bạn cần biết - VSUDO Blog_files/iframe_api"></script><script src="./Apache Kafka là gì_ Tất cả mọi thứ bạn cần biết - VSUDO Blog_files/player.js.download"></script><script type="text/javascript" async="" src="./Apache Kafka là gì_ Tất cả mọi thứ bạn cần biết - VSUDO Blog_files/analytics.js.download"></script><script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","url":"https://vsudo.net/blog","sameAs":[],"@id":"#person","name":"VSUDO Blog"}</script>
+<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+<link rel="alternate" type="application/rss+xml" title="VSUDO Blog » Feed" href="https://vsudo.net/blog/feed">
+<link rel="alternate" type="application/rss+xml" title="VSUDO Blog » Comments Feed" href="https://vsudo.net/blog/comments/feed">
+<link rel="alternate" type="application/rss+xml" title="VSUDO Blog » Apache Kafka là gì? Tất cả mọi thứ bạn cần biết Comments Feed" href="https://vsudo.net/blog/kafka-la-gi.html/feed">
+<link rel="stylesheet" type="text/css" href="./Apache Kafka là gì_ Tất cả mọi thứ bạn cần biết - VSUDO Blog_files/9xcai.css" media="all">
+<style id="td-theme-inline-css">@media(max-width:767px){
+.td-header-desktop-wrap{display:none;}
+}
+@media(min-width:767px){
+.td-header-mobile-wrap{display:none;}
+}</style>
+<link rel="stylesheet" type="text/css" href="./Apache Kafka là gì_ Tất cả mọi thứ bạn cần biết - VSUDO Blog_files/9xcai(1).css" media="all">
+<link rel="https://api.w.org/" href="https://vsudo.net/blog/wp-json/"><link rel="alternate" type="application/json" href="https://vsudo.net/blog/wp-json/wp/v2/posts/1724"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://vsudo.net/blog/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://vsudo.net/blog/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.6">
+<link rel="shortlink" href="https://vsudo.net/blog/?p=1724">
+<link rel="alternate" type="application/json+oembed" href="https://vsudo.net/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fvsudo.net%2Fblog%2Fkafka-la-gi.html">
+<link rel="alternate" type="text/xml+oembed" href="https://vsudo.net/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fvsudo.net%2Fblog%2Fkafka-la-gi.html&amp;format=xml">
+<style></style>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Person","name":"Quang V\u0169","address":{"@type":"PostalAddress","addressLocality":"Ph\u01b0\u1eddng 5, Qu\u1eadn 3","addressRegion":"H\u1ed3 Ch\u00ed Minh","postalCode":"700000","streetAddress":"432 Nguy\u1ec5n Th\u1ecb Minh Khai"},"email":"quangvublog@gmail.com","gender":"Male","birthDate":"1996.12.29","telephone":"097 768 97 33","url":"https:\/\/blog.vu-review.com","sameAs":["https:\/\/www.facebook.com\/quanghn.96","https:\/\/vn.linkedin.com\/in\/quanghnn","https:\/\/stackoverflow.com\/users\/10532627\/quang-v%C5%A9"]}</script><script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"LocalBusiness","name":"VSUDO Blog","image":{"@type":"ImageObject","url":"https:\/\/vsudo.net\/blog\/wp-content\/uploads\/2019\/12\/kafka-la-gi.jpg","width":1069,"height":899},"telephone":"097 768 97 33","url":"https:\/\/vsudo.net\/blog","address":{"@type":"PostalAddress","streetAddress":"432 Nguy\u1ec5n Th\u1ecb Minh Khai","addressLocality":"Ph\u01b0\u1eddng 5, Qu\u1eadn 3","postalCode":"700000","addressRegion":"H\u1ed3 Ch\u00ed Minh","addressCountry":"VN"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.3","reviewCount":"10"},"priceRange":"100 \u0111","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"12:00"}]}</script><script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/vsudo.net\/blog\/kafka-la-gi.html"},"headline":"Apache Kafka l\u00e0 g\u00ec? T\u1ea5t c\u1ea3 m\u1ecdi th\u1ee9 b\u1ea1n c\u1ea7n bi\u1ebft","image":{"@type":"ImageObject","url":"https:\/\/vsudo.net\/blog\/wp-content\/uploads\/2019\/12\/kafka-la-gi.jpg","width":1069,"height":899},"datePublished":"2019-12-25T17:16:31","dateModified":"2020-09-13T16:32:23","author":{"@type":"Person","name":"Quang V\u0169"},"publisher":{"@type":"Organization","name":"VSUDO Blog","logo":{"@type":"ImageObject","url":"https:\/\/blog.vu-review.com\/wp-content\/uploads\/2019\/05\/logo.jpg"}}}</script><script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"organization","name":"VSUDO Blog","url":"https:\/\/vsudo.net\/blog","logo":{"@type":"ImageObject","url":"https:\/\/vsudo.net\/blog\/wp-content\/uploads\/2019\/05\/logo.jpg","width":1000,"height":957},"sameAs":["https:\/\/www.facebook.com\/QuangVuBlog\/","https:\/\/twitter.com\/QuangVuBlog","https:\/\/www.crunchbase.com\/organization\/quang-v%C5%A9-blog","https:\/\/www.youtube.com\/channel\/UCgxQYHLKaCDeFbK_AKCH9xA","https:\/\/www.linkedin.com\/company\/quangvublog\/","https:\/\/www.pinterest.com\/quangvublog"]}</script><script type="application/ld+json">{"@context":"https:\/\/schema.org","@graph":[{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"H\u1ec7 \u0111i\u1ec1u h\u00e0nh","url":"https:\/\/vsudo.net\/blog\/he-dieu-hanh"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Linux","url":"https:\/\/vsudo.net\/blog\/he-dieu-hanh\/linux"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Windows","url":"https:\/\/vsudo.net\/blog\/he-dieu-hanh\/windows"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"macOS","url":"https:\/\/vsudo.net\/blog\/he-dieu-hanh\/macos"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Thi\u1ebft k\u1ebf","url":"https:\/\/vsudo.net\/blog\/thiet-ke"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Thi\u1ebft k\u1ebf website","url":"https:\/\/vsudo.net\/thiet-ke-website"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Marketing","url":"https:\/\/vsudo.net\/blog\/marketing"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Security","url":"https:\/\/vsudo.net\/blog\/security"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Cloud\/Virtual","url":"https:\/\/vsudo.net\/blog\/cloud-virtualization"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Storage","url":"https:\/\/vsudo.net\/blog\/cloud-virtualization\/storage"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Docker","url":"https:\/\/vsudo.net\/blog\/cloud-virtualization\/docker"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Kh\u00e1c","url":"#"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Th\u1ee7 thu\u1eadt m\u00e1y t\u00ednh","url":"https:\/\/vsudo.net\/blog\/kien-thuc\/thu-thuat-may-tinh"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Book","url":"https:\/\/vsudo.net\/blog\/download\/book"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Software","url":"https:\/\/vsudo.net\/blog\/download\/software"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"TOOLS","url":"https:\/\/vsudo.net\/tools\/vi"}]}</script><script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"WebSite","name":"VSUDO Blog","url":"https:\/\/vsudo.net\/blog","potentialAction":[{"@type":"SearchAction","target":"https:\/\/vsudo.net\/blog\/?s={search_term_string}","query-input":"required name=search_term_string"}]}</script><script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/vsudo.net\/blog\/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@id":"https:\/\/vsudo.net\/blog\/kafka-la-gi.html","name":"Apache Kafka l\u00e0 g\u00ec? T\u1ea5t c\u1ea3 m\u1ecdi th\u1ee9 b\u1ea1n c\u1ea7n bi\u1ebft"}}]}</script>
+<style>.block-title > span,
+.block-title > span > a,
+.block-title > a,
+.block-title > label,
+.widgettitle,
+.widgettitle:after,
+.td-trending-now-title,
+.td-trending-now-wrapper:hover .td-trending-now-title,
+.wpb_tabs li.ui-tabs-active a,
+.wpb_tabs li:hover a,
+.vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container .vc_tta-tab.vc_active > a,
+.vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container .vc_tta-tab:hover > a,
+.td_block_template_1 .td-related-title .td-cur-simple-item,
+.woocommerce .product .products h2:not(.woocommerce-loop-product__title),
+.td-subcat-filter .td-subcat-dropdown:hover .td-subcat-more,
+.td-weather-information:before,
+.td-weather-week:before,
+.td_block_exchange .td-exchange-header:before,
+.td-theme-wrap .td_block_template_3 .td-block-title > *,
+.td-theme-wrap .td_block_template_4 .td-block-title > *,
+.td-theme-wrap .td_block_template_7 .td-block-title > *,
+.td-theme-wrap .td_block_template_9 .td-block-title:after,
+.td-theme-wrap .td_block_template_10 .td-block-title::before,
+.td-theme-wrap .td_block_template_11 .td-block-title::before,
+.td-theme-wrap .td_block_template_11 .td-block-title::after,
+.td-theme-wrap .td_block_template_14 .td-block-title,
+.td-theme-wrap .td_block_template_15 .td-block-title:before,
+.td-theme-wrap .td_block_template_17 .td-block-title:before{background-color:#222222;}
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active{background-color:#222222 !important;}
+.block-title,
+.td_block_template_1 .td-related-title,
+.wpb_tabs .wpb_tabs_nav,
+.vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container,
+.woocommerce div.product .woocommerce-tabs ul.tabs:before,
+.td-theme-wrap .td_block_template_5 .td-block-title > *,
+.td-theme-wrap .td_block_template_17 .td-block-title,
+.td-theme-wrap .td_block_template_17 .td-block-title::before{border-color:#222222;}
+.td-theme-wrap .td_block_template_4 .td-block-title > *:before,
+.td-theme-wrap .td_block_template_17 .td-block-title::after{border-color:#222222 transparent transparent transparent;}
+.td-theme-wrap .td_block_template_4 .td-related-title .td-cur-simple-item:before{border-color:#222222 transparent transparent transparent !important;}.td-header-bg:before{background-size:100% auto;}
+.td-header-bg:before{background-position:center center;}
+.td-footer-wrapper,
+.td-footer-wrapper .td_block_template_7 .td-block-title > *,
+.td-footer-wrapper .td_block_template_17 .td-block-title,
+.td-footer-wrapper .td-block-title-wrap .td-wrapper-pulldown-filter{background-color:#111111;}
+.td-footer-wrapper::before{background-size:cover;}
+.td-footer-wrapper::before{background-position:center center;}
+.td-footer-wrapper::before{opacity:0.1;}
+.block-title > span,
+.block-title > span > a,
+.block-title > a,
+.block-title > label,
+.widgettitle,
+.widgettitle:after,
+.td-trending-now-title,
+.td-trending-now-wrapper:hover .td-trending-now-title,
+.wpb_tabs li.ui-tabs-active a,
+.wpb_tabs li:hover a,
+.vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container .vc_tta-tab.vc_active > a,
+.vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container .vc_tta-tab:hover > a,
+.td_block_template_1 .td-related-title .td-cur-simple-item,
+.woocommerce .product .products h2:not(.woocommerce-loop-product__title),
+.td-subcat-filter .td-subcat-dropdown:hover .td-subcat-more,
+.td-weather-information:before,
+.td-weather-week:before,
+.td_block_exchange .td-exchange-header:before,
+.td-theme-wrap .td_block_template_3 .td-block-title > *,
+.td-theme-wrap .td_block_template_4 .td-block-title > *,
+.td-theme-wrap .td_block_template_7 .td-block-title > *,
+.td-theme-wrap .td_block_template_9 .td-block-title:after,
+.td-theme-wrap .td_block_template_10 .td-block-title::before,
+.td-theme-wrap .td_block_template_11 .td-block-title::before,
+.td-theme-wrap .td_block_template_11 .td-block-title::after,
+.td-theme-wrap .td_block_template_14 .td-block-title,
+.td-theme-wrap .td_block_template_15 .td-block-title:before,
+.td-theme-wrap .td_block_template_17 .td-block-title:before{background-color:#222222;}
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active{background-color:#222222 !important;}
+.block-title,
+.td_block_template_1 .td-related-title,
+.wpb_tabs .wpb_tabs_nav,
+.vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container,
+.woocommerce div.product .woocommerce-tabs ul.tabs:before,
+.td-theme-wrap .td_block_template_5 .td-block-title > *,
+.td-theme-wrap .td_block_template_17 .td-block-title,
+.td-theme-wrap .td_block_template_17 .td-block-title::before{border-color:#222222;}
+.td-theme-wrap .td_block_template_4 .td-block-title > *:before,
+.td-theme-wrap .td_block_template_17 .td-block-title::after{border-color:#222222 transparent transparent transparent;}
+.td-theme-wrap .td_block_template_4 .td-related-title .td-cur-simple-item:before{border-color:#222222 transparent transparent transparent !important;}.td-header-bg:before{background-size:100% auto;}
+.td-header-bg:before{background-position:center center;}
+.td-footer-wrapper,
+.td-footer-wrapper .td_block_template_7 .td-block-title > *,
+.td-footer-wrapper .td_block_template_17 .td-block-title,
+.td-footer-wrapper .td-block-title-wrap .td-wrapper-pulldown-filter{background-color:#111111;}
+.td-footer-wrapper::before{background-size:cover;}
+.td-footer-wrapper::before{background-position:center center;}
+.td-footer-wrapper::before{opacity:0.1;}</style>
+<script type="application/ld+json">{
+"@context": "http://schema.org",
+"@type": "BreadcrumbList",
+"itemListElement": [
+{
+"@type": "ListItem",
+"position": 1,
+"item": {
+"@type": "WebSite",
+"@id": "https://vsudo.net/blog/",
+"name": "Home"
+}},
+{
+"@type": "ListItem",
+"position": 2,
+"item": {
+"@type": "WebPage",
+"@id": "https://vsudo.net/blog/cloud-virtualization",
+"name": "Cloud - Virtualization"
+}}
+,{
+"@type": "ListItem",
+"position": 3,
+"item": {
+"@type": "WebPage",
+"@id": "https://vsudo.net/blog/kafka-la-gi.html",
+"name": "Apache Kafka là gì? Tất cả mọi thứ bạn cần biết"
+}}
+]
+}</script>
+<style></style>
+<style id="tdw-css-placeholder"></style>
+<script data-wpfc-render="false">var Wpfcll={s:[],osl:0,i:function(){Wpfcll.ss();window.addEventListener('load',function(){window.addEventListener("DOMSubtreeModified",function(e){Wpfcll.osl=Wpfcll.s.length;Wpfcll.ss();if(Wpfcll.s.length > Wpfcll.osl){Wpfcll.ls(false);}},false);Wpfcll.ls(true);});window.addEventListener('scroll',function(){Wpfcll.ls(false);});window.addEventListener('resize',function(){Wpfcll.ls(false);});window.addEventListener('click',function(){Wpfcll.ls(false);});},c:function(e,pageload){var w=document.documentElement.clientHeight || body.clientHeight;var n=pageload ? 0:800;var er=e.getBoundingClientRect();var t=0;var p=e.parentNode;if(typeof p.getBoundingClientRect=="undefined"){var pr=false;}else{var pr=p.getBoundingClientRect();}if(er.x==0 && er.y==0){for(var i=0;i < 10;i++){if(p){if(pr.x==0 && pr.y==0){p=p.parentNode;if(typeof p.getBoundingClientRect=="undefined"){pr=false;}else{pr=p.getBoundingClientRect();}}else{t=pr.top;break;}}};}else{t=er.top;}if(w - t+n > 0){return true;}return false;},r:function(e,pageload){var s=this;var oc,ot;try{oc=e.getAttribute("data-wpfc-original-src");ot=e.getAttribute("data-wpfc-original-srcset");if(s.c(e,pageload)){if(oc || ot){if(e.tagName=="DIV" || e.tagName=="A"){e.style.backgroundImage="url("+oc+")";e.removeAttribute("data-wpfc-original-src");e.removeAttribute("data-wpfc-original-srcset");e.removeAttribute("onload");}else{if(oc){e.setAttribute('src',oc);}if(ot){e.setAttribute('srcset',ot);}e.removeAttribute("data-wpfc-original-src");e.removeAttribute("data-wpfc-original-srcset");e.removeAttribute("onload");if(e.tagName=="IFRAME"){e.onload=function(){if(typeof window.jQuery !="undefined"){if(jQuery.fn.fitVids){jQuery(e).parent().fitVids({customSelector:"iframe[src]"});}}var s=e.getAttribute("src").match(/templates\/youtube\.html\#(.+)/);var y="https://www.youtube.com/embed/";if(s){try{var i=e.contentDocument || e.contentWindow;if(i.location.href=="about:blank"){e.setAttribute('src',y+s[1]);}}catch(err){e.setAttribute('src',y+s[1]);}}}}}}else{if(e.tagName=="NOSCRIPT"){if(jQuery(e).attr("data-type")=="wpfc"){e.removeAttribute("data-type");jQuery(e).after(jQuery(e).text());}}}}}catch(error){console.log(error);console.log("==>",e);}},ss:function(){var i=Array.prototype.slice.call(document.getElementsByTagName("img"));var f=Array.prototype.slice.call(document.getElementsByTagName("iframe"));var d=Array.prototype.slice.call(document.getElementsByTagName("div"));var a=Array.prototype.slice.call(document.getElementsByTagName("a"));var n=Array.prototype.slice.call(document.getElementsByTagName("noscript"));this.s=i.concat(f).concat(d).concat(a).concat(n);},ls:function(pageload){var s=this;[].forEach.call(s.s,function(e,index){s.r(e,pageload);});}};document.addEventListener('DOMContentLoaded',function(){wpfci();});function wpfci(){Wpfcll.i();}</script>
+</head>
+<body data-rsssl="1" class="post-template-default single single-post postid-1724 single-format-standard td-standard-pack wp-schema-pro-1.3.2 kafka-la-gi global-block-template-1 td-animation-stack-type2 td-full-layout td-js-loaded body-td-affix" itemscope="itemscope" itemtype="https://schema.org/WebPage" data-new-gr-c-s-check-loaded="14.990.0" data-gr-ext-installed="">
+<div class="td-scroll-up td-scroll-up-visible"><i class="td-icon-menu-up"></i></div><div class="td-menu-background"></div><div id="td-mobile-nav">
+<div class="td-mobile-container">
+<div class="td-menu-socials-wrap">
+<div class="td-menu-socials"> <span class="td-social-icon-wrap"> <a target="_blank" href="https://www.facebook.com/QuangVuBlog/" title="Facebook"> <i class="td-icon-font td-icon-facebook"></i> </a> </span> <span class="td-social-icon-wrap"> <a target="_blank" href="https://www.instagram.com/quangvu.blog/" title="Instagram"> <i class="td-icon-font td-icon-instagram"></i> </a> </span> <span class="td-social-icon-wrap"> <a target="_blank" href="https://twitter.com/quangvublog" title="Twitter"> <i class="td-icon-font td-icon-twitter"></i> </a> </span> <span class="td-social-icon-wrap"> <a target="_blank" href="https://www.youtube.com/channel/UCgxQYHLKaCDeFbK_AKCH9xA" title="Youtube"> <i class="td-icon-font td-icon-youtube"></i> </a> </span></div><div class="td-mobile-close"> <a href="https://vsudo.net/blog/kafka-la-gi.html#"><i class="td-icon-close-mobile"></i></a></div></div><div class="td-mobile-content">
+<div class="menu-td-demo-header-menu-container"><ul id="menu-td-demo-header-menu" class="td-mobile-main-menu"><li id="menu-item-276" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-first menu-item-276 td_mobile_submenu td_mobile_elem_with_submenu_0"><a href="https://vsudo.net/blog/he-dieu-hanh" class="td-link-element-after">Hệ điều hành<i class="td-icon-menu-right td-element-after"></i></a> <ul class="sub-menu"> <li id="menu-item-59" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-59"><a href="https://vsudo.net/blog/he-dieu-hanh/linux">Linux</a></li> <li id="menu-item-58" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-58"><a href="https://vsudo.net/blog/he-dieu-hanh/windows">Windows</a></li> <li id="menu-item-2931" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2931"><a href="https://vsudo.net/blog/he-dieu-hanh/macos">macOS</a></li> </ul> </li> <li id="menu-item-2884" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2884 td_mobile_submenu td_mobile_elem_with_submenu_1"><a href="https://vsudo.net/blog/thiet-ke" class="td-link-element-after">Thiết kế<i class="td-icon-menu-right td-element-after"></i></a> <ul class="sub-menu"> <li id="menu-item-3566" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3566"><a href="https://vsudo.net/thiet-ke-website">Thiết kế website</a></li> </ul> </li> <li id="menu-item-2250" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2250"><a href="https://vsudo.net/blog/marketing">Marketing</a></li> <li id="menu-item-251" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-251"><a href="https://vsudo.net/blog/security">Security</a></li> <li id="menu-item-214" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-214 td_mobile_submenu td_mobile_elem_with_submenu_2"><a href="https://vsudo.net/blog/cloud-virtualization" class="td-link-element-after">Cloud/Virtual<i class="td-icon-menu-right td-element-after"></i></a> <ul class="sub-menu"> <li id="menu-item-3748" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3748"><a href="https://vsudo.net/blog/cloud-virtualization/storage">Storage</a></li> <li id="menu-item-3747" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3747"><a href="https://vsudo.net/blog/cloud-virtualization/docker">Docker</a></li> </ul> </li> <li id="menu-item-60" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-60 td_mobile_submenu td_mobile_elem_with_submenu_3"><a href="https://vsudo.net/blog/kafka-la-gi.html#" target="_blank" rel="nofollow" class="td-link-element-after">Khác<i class="td-icon-menu-right td-element-after"></i></a> <ul class="sub-menu"> <li id="menu-item-270" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-270"><a href="https://vsudo.net/blog/kien-thuc/thu-thuat-may-tinh">Thủ thuật máy tính</a></li> <li id="menu-item-352" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-352"><a href="https://vsudo.net/blog/download/book">Book</a></li> <li id="menu-item-353" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-353"><a href="https://vsudo.net/blog/download/software">Software</a></li> </ul> </li> <li id="menu-item-3116" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3116"><a href="https://vsudo.net/tools/vi">TOOLS</a></li> </ul></div></div></div><div id="login-form-mobile" class="td-register-section">
+<div id="td-login-mob" class="td-login-animation td-login-hide-mob">
+<div class="td-login-close">
+<a href="https://vsudo.net/blog/kafka-la-gi.html#" class="td-back-button"><i class="td-icon-read-down"></i></a>
+<div class="td-login-title">Sign in</div><div class="td-mobile-close"> <a href="https://vsudo.net/blog/kafka-la-gi.html#"><i class="td-icon-close-mobile"></i></a></div></div><div class="td-login-form-wrap">
+<div class="td-login-panel-title"><span>Welcome!</span>Log into your account</div><div class="td_display_err"></div><div class="td-login-inputs"><input class="td-login-input" type="text" name="login_email" id="login_email-mob" value="" required=""><label>your username</label></div><div class="td-login-inputs"><input class="td-login-input" type="password" name="login_pass" id="login_pass-mob" value="" required=""><label>your password</label></div><input type="button" name="login_button" id="login_button-mob" class="td-login-button" value="LOG IN">
+<div class="td-login-info-text"> <a href="https://vsudo.net/blog/kafka-la-gi.html#" id="forgot-pass-link-mob">Forgot your password?</a></div><div class="td-login-register-link"></div></div></div><div id="td-forgot-pass-mob" class="td-login-animation td-login-hide-mob">
+<div class="td-forgot-pass-close">
+<a href="https://vsudo.net/blog/kafka-la-gi.html#" class="td-back-button"><i class="td-icon-read-down"></i></a>
+<div class="td-login-title">Password recovery</div></div><div class="td-login-form-wrap">
+<div class="td-login-panel-title">Recover your password</div><div class="td_display_err"></div><div class="td-login-inputs"><input class="td-login-input" type="text" name="forgot_email" id="forgot_email-mob" value="" required=""><label>your email</label></div><input type="button" name="forgot_button" id="forgot_button-mob" class="td-login-button" value="Send My Pass"></div></div></div></div><div class="td-search-background"></div><div class="td-search-wrap-mob">
+<div class="td-drop-down-search">
+<form method="get" class="td-search-form" action="https://vsudo.net/blog/">
+<div class="td-search-close"> <a href="https://vsudo.net/blog/kafka-la-gi.html#"><i class="td-icon-close-mobile"></i></a></div><div role="search" class="td-search-input"> <span>Search</span> <input id="td-header-search-mob" type="text" value="" name="s" autocomplete="off"></div></form>
+<div id="td-aj-search-mob" class="td-ajax-search-flex"></div></div></div><div id="td-outer-wrap" class="td-theme-wrap">
+<div class="tdc-header-wrap">
+<div class="td-header-wrap td-header-style-10">
+<div class="td-header-top-menu-full td-container-wrap">
+<div class="td-container td-header-row td-header-top-menu">
+<div class="top-bar-style-1">
+<div class="td-header-sp-top-menu">
+<div class="td_data_time">
+<div> Sunday, December 27, 2020</div></div><div class="menu-top-container"><ul id="menu-td-demo-top-menu" class="top-header-menu sf-js-enabled"><li id="menu-item-659" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-first td-menu-item td-normal-menu menu-item-659"><a href="https://vsudo.net/blog/gioi-thieu">Giới thiệu</a></li> <li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-page td-menu-item td-normal-menu menu-item-37"><a href="https://vsudo.net/blog/contact">Liên hệ</a></li> </ul></div></div><div class="td-header-sp-top-widget"> <span class="td-social-icon-wrap"> <a target="_blank" href="https://www.facebook.com/QuangVuBlog/" title="Facebook"> <i class="td-icon-font td-icon-facebook"></i> </a> </span> <span class="td-social-icon-wrap"> <a target="_blank" href="https://www.instagram.com/quangvu.blog/" title="Instagram"> <i class="td-icon-font td-icon-instagram"></i> </a> </span> <span class="td-social-icon-wrap"> <a target="_blank" href="https://twitter.com/quangvublog" title="Twitter"> <i class="td-icon-font td-icon-twitter"></i> </a> </span> <span class="td-social-icon-wrap"> <a target="_blank" href="https://www.youtube.com/channel/UCgxQYHLKaCDeFbK_AKCH9xA" title="Youtube"> <i class="td-icon-font td-icon-youtube"></i> </a> </span></div></div><div id="login-form" class="white-popup-block mfp-hide mfp-with-anim">
+<div class="td-login-wrap">
+<a href="https://vsudo.net/blog/kafka-la-gi.html#" class="td-back-button"><i class="td-icon-modal-back"></i></a>
+<div id="td-login-div" class="td-login-form-div td-display-block">
+<div class="td-login-panel-title">Sign in</div><div class="td-login-panel-descr">Welcome! Log into your account</div><div class="td_display_err"></div><div class="td-login-inputs"><input class="td-login-input" type="text" name="login_email" id="login_email" value="" required=""><label>your username</label></div><div class="td-login-inputs"><input class="td-login-input" type="password" name="login_pass" id="login_pass" value="" required=""><label>your password</label></div><input type="button" name="login_button" id="login_button" class="wpb_button btn td-login-button" value="Login">
+<div class="td-login-info-text"><a href="https://vsudo.net/blog/kafka-la-gi.html#" id="forgot-pass-link">Forgot your password? Get help</a></div></div><div id="td-forgot-pass-div" class="td-login-form-div td-display-none">
+<div class="td-login-panel-title">Password recovery</div><div class="td-login-panel-descr">Recover your password</div><div class="td_display_err"></div><div class="td-login-inputs"><input class="td-login-input" type="text" name="forgot_email" id="forgot_email" value="" required=""><label>your email</label></div><input type="button" name="forgot_button" id="forgot_button" class="wpb_button btn td-login-button" value="Send My Password">
+<div class="td-login-info-text">A password will be e-mailed to you.</div></div></div></div></div></div><div class="td-banner-wrap-full td-logo-wrap-full td-container-wrap">
+<div class="td-header-sp-logo"> <a class="td-main-logo" href="https://vsudo.net/blog/"> <img src="./Apache Kafka là gì_ Tất cả mọi thứ bạn cần biết - VSUDO Blog_files/banner.jpg" alt=""> <span class="td-visual-hidden">VSUDO Blog</span> </a></div></div><div class="td-header-menu-wrap-full td-container-wrap" style="height: 48px;">
+<div class="td-header-menu-wrap td-header-gradient td-affix" style="transform: translate3d(0px, -48px, 0px);">
+<div class="td-container td-header-row td-header-main-menu">
+<div id="td-header-menu" role="navigation">
+<div id="td-top-mobile-toggle"><a href="https://vsudo.net/blog/kafka-la-gi.html#"><i class="td-icon-font td-icon-mobile"></i></a></div><div class="td-main-menu-logo td-logo-in-header td-logo-sticky"> <a class="td-main-logo" href="https://vsudo.net/blog/"> <img src="./Apache Kafka là gì_ Tất cả mọi thứ bạn cần biết - VSUDO Blog_files/banner.jpg" alt=""> </a></div><div class="menu-td-demo-header-menu-container"><ul id="menu-td-demo-header-menu-1" class="sf-menu sf-js-enabled"><li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-first td-menu-item td-normal-menu menu-item-276"><a href="https://vsudo.net/blog/he-dieu-hanh" class="sf-with-ul">Hệ điều hành<i class="td-icon-menu-down"></i></a> <ul class="sub-menu" style="float: none; width: 10em; display: none;"> <li class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-59" style="white-space: normal; float: left; width: 100%;"><a href="https://vsudo.net/blog/he-dieu-hanh/linux" style="float: none; width: auto;">Linux</a></li> <li class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-58" style="white-space: normal; float: left; width: 100%;"><a href="https://vsudo.net/blog/he-dieu-hanh/windows" style="float: none; width: auto;">Windows</a></li> <li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-2931" style="white-space: normal; float: left; width: 100%;"><a href="https://vsudo.net/blog/he-dieu-hanh/macos" style="float: none; width: auto;">macOS</a></li> </ul> </li> <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children td-menu-item td-normal-menu menu-item-2884"><a href="https://vsudo.net/blog/thiet-ke" class="sf-with-ul">Thiết kế<i class="td-icon-menu-down"></i></a> <ul class="sub-menu" style="float: none; width: 11.7143em; display: none;"> <li class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-3566" style="white-space: normal; float: left; width: 100%;"><a href="https://vsudo.net/thiet-ke-website" style="float: none; width: auto;">Thiết kế website</a></li> </ul> </li> <li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-2250"><a href="https://vsudo.net/blog/marketing">Marketing</a></li> <li class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-251"><a href="https://vsudo.net/blog/security">Security</a></li> <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children td-menu-item td-normal-menu menu-item-214"><a href="https://vsudo.net/blog/cloud-virtualization" class="sf-with-ul">Cloud/Virtual<i class="td-icon-menu-down"></i></a> <ul class="sub-menu" style="float: none; width: 10em; display: none;"> <li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-3748" style="white-space: normal; float: left; width: 100%;"><a href="https://vsudo.net/blog/cloud-virtualization/storage" style="float: none; width: auto;">Storage</a></li> <li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-3747" style="white-space: normal; float: left; width: 100%;"><a href="https://vsudo.net/blog/cloud-virtualization/docker" style="float: none; width: auto;">Docker</a></li> </ul> </li> <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children td-menu-item td-normal-menu menu-item-60"><a href="https://vsudo.net/blog/kafka-la-gi.html#" target="_blank" rel="nofollow" class="sf-with-ul">Khác<i class="td-icon-menu-down"></i></a> <ul class="sub-menu" style="float: none; width: 12.8571em; display: none;"> <li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-270" style="white-space: normal; float: left; width: 100%;"><a href="https://vsudo.net/blog/kien-thuc/thu-thuat-may-tinh" style="float: none; width: auto;">Thủ thuật máy tính</a></li> <li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-352" style="white-space: normal; float: left; width: 100%;"><a href="https://vsudo.net/blog/download/book" style="float: none; width: auto;">Book</a></li> <li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-353" style="white-space: normal; float: left; width: 100%;"><a href="https://vsudo.net/blog/download/software" style="float: none; width: auto;">Software</a></li> </ul> </li> <li class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-3116"><a href="https://vsudo.net/tools/vi">TOOLS</a></li> </ul></div></div><div class="header-search-wrap">
+<div class="td-search-btns-wrap"> <a id="td-header-search-button" href="https://vsudo.net/blog/kafka-la-gi.html#" role="button" class="dropdown-toggle" data-toggle="dropdown"><i class="td-icon-search"></i></a> <a id="td-header-search-button-mob" href="https://vsudo.net/blog/kafka-la-gi.html#" class="dropdown-toggle" data-toggle="dropdown"><i class="td-icon-search"></i></a></div><div class="td-drop-down-search" aria-labelledby="td-header-search-button">
+<form method="get" class="td-search-form" action="https://vsudo.net/blog/">
+<div role="search" class="td-head-form-search-wrap"> <input id="td-header-search" type="text" value="" name="s" autocomplete="off"><input class="wpb_button wpb_btn-inverse btn" type="submit" id="td-header-search-top" value="Search"></div></form>
+<div id="td-aj-search"></div></div></div></div></div></div></div></div><div class="td-main-content-wrap td-container-wrap">
+<div class="td-container td-post-template-default">
+<div class="td-crumb-container"><div class="entry-crumbs"><span><a title="" class="entry-crumb" href="https://vsudo.net/blog/">Home</a></span> <i class="td-icon-right td-bread-sep"></i> <span><a title="View all posts in Cloud - Virtualization" class="entry-crumb" href="https://vsudo.net/blog/cloud-virtualization">Cloud - Virtualization</a></span> <i class="td-icon-right td-bread-sep td-bred-no-url-last"></i> <span class="td-bred-no-url-last">Apache Kafka là gì? Tất cả mọi thứ bạn cần biết</span></div></div><div class="td-pb-row">
+<div class="td-pb-span8 td-main-content" role="main">
+<div class="td-ss-main-content"><div class="clearfix"></div>
+<article id="post-1724" class="post-1724 post type-post status-publish format-standard has-post-thumbnail category-cloud-virtualization" itemscope="" itemtype="https://schema.org/Article" 47="">
+<div class="td-post-header">
+<ul class="td-category"><li class="entry-category"><a href="https://vsudo.net/blog/cloud-virtualization">Cloud - Virtualization</a></li></ul>
+<header class="td-post-title">
+<h1 class="entry-title">Apache Kafka là gì? Tất cả mọi thứ bạn cần biết</h1>
+<div class="td-module-meta-info">
+<div class="td-post-author-name"><div class="td-author-by">By</div><a href="https://vsudo.net/blog/author/admin">Quang Vũ</a></div><div class="td-post-comments"><a href="https://vsudo.net/blog/kafka-la-gi.html#respond"><i class="td-icon-comments"></i>0</a></div><div class="td-post-views"><i class="td-icon-views"></i><span class="td-nr-views-1724">950</span></div></div></header></div><div class="td-post-sharing-top"><div id="td_social_sharing_article_top" class="td-post-sharing td-ps-bg td-ps-notext td-post-sharing-style1"><div class="td-post-sharing-visible"><div class="td-social-sharing-button td-social-sharing-button-js td-social-handler td-social-share-text" style="transition: opacity 0.2s ease 0s; opacity: 1;">
+<div class="td-social-but-icon"><i class="td-icon-share"></i></div><div class="td-social-but-text">Share</div></div><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-facebook" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fvsudo.net%2Fblog%2Fkafka-la-gi.html" style="transition: opacity 0.2s ease 0s; opacity: 1;">
+<div class="td-social-but-icon"><i class="td-icon-facebook"></i></div><div class="td-social-but-text">Facebook</div></a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-twitter" href="https://twitter.com/intent/tweet?text=Apache+Kafka+l%C3%A0+g%C3%AC%3F+T%E1%BA%A5t+c%E1%BA%A3+m%E1%BB%8Di+th%E1%BB%A9+b%E1%BA%A1n+c%E1%BA%A7n+bi%E1%BA%BFt&amp;url=https%3A%2F%2Fvsudo.net%2Fblog%2Fkafka-la-gi.html&amp;via=quangvublog" style="transition: opacity 0.2s ease 0s; opacity: 1;">
+<div class="td-social-but-icon"><i class="td-icon-twitter"></i></div><div class="td-social-but-text">Twitter</div></a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-pinterest" href="https://pinterest.com/pin/create/button/?url=https://vsudo.net/blog/kafka-la-gi.html&amp;media=https://vsudo.net/blog/wp-content/uploads/2019/12/kafka-la-gi.jpg&amp;description=Kafka%20l%C3%A0%20n%E1%BB%81n%20t%E1%BA%A3ng%20streaming%20s%E1%BB%B1%20ki%E1%BB%87n%20ph%C3%A2n%20t%C3%A1n%20m%C3%A3%20ngu%E1%BB%93n%20m%E1%BB%9F.%20Xem%20th%C3%AAm%20%C4%91%E1%BB%83%20bi%E1%BA%BFt%20kafka%20l%C3%A0%20g%C3%AC%20v%C3%A0%20c%C3%A1c%20%E1%BB%A9ng%20d%E1%BB%A5ng%20x%E1%BB%AD%20l%C3%BD%20stream%20real-time%20ra%20sao" style="transition: opacity 0.2s ease 0s; opacity: 1;">
+<div class="td-social-but-icon"><i class="td-icon-pinterest"></i></div><div class="td-social-but-text">Pinterest</div></a></div><div class="td-social-sharing-hidden" style="display: none;"><ul class="td-pulldown-filter-list"></ul><a class="td-social-sharing-button td-social-handler td-social-expand-tabs" href="https://vsudo.net/blog/kafka-la-gi.html#" data-block-uid="td_social_sharing_article_top">
+<div class="td-social-but-icon"><i class="td-icon-plus td-social-expand-tabs-icon"></i></div></a></div></div></div><div class="td-post-content tagdiv-type">
+<div class="td-post-featured-image"><img width="696" height="585" class="entry-thumb td-animation-stack-type2-2" src="./Apache Kafka là gì_ Tất cả mọi thứ bạn cần biết - VSUDO Blog_files/kafka-la-gi-696x585.jpg" srcset="https://vsudo.net/blog/wp-content/uploads/2019/12/kafka-la-gi-696x585.jpg 696w, https://vsudo.net/blog/wp-content/uploads/2019/12/kafka-la-gi-300x252.jpg 300w, https://vsudo.net/blog/wp-content/uploads/2019/12/kafka-la-gi-768x646.jpg 768w, https://vsudo.net/blog/wp-content/uploads/2019/12/kafka-la-gi-800x673.jpg 800w, https://vsudo.net/blog/wp-content/uploads/2019/12/kafka-la-gi-1068x898.jpg 1068w, https://vsudo.net/blog/wp-content/uploads/2019/12/kafka-la-gi-499x420.jpg 499w, https://vsudo.net/blog/wp-content/uploads/2019/12/kafka-la-gi.jpg 1069w" sizes="(max-width: 696px) 100vw, 696px" alt="kafka là gì" title="kafka-la-gi"></div><p>Kafka là một từ ngữ khá thông dụng trong hầu hết các nghành nghề thuộc lĩnh vực công nghiệp ngày nay. Hầu như mọi công ty hàng đầu trên thế giới đều đang sử dụng kafka trong nền tảng cơ sở hạ tầng của mình. Nhưng câu hỏi đặt ra nó là gì và sức ảnh hưởng của nó ra sao?</p>
+<h2>Kafka là gì?</h2>
+<p><a href="https://vsudo.net/blog/kafka-la-gi.html" data-type="URL" data-id="https://vsudo.net/blog/kafka-la-gi.html">Kafka</a> là nền tảng streaming phân tán, có thể mở rộng và là sản phẩm mã nguồn mở. Dự án Kafka ban đầu được phát triển bởi Linkedin sau đó trở thành dự án Apache mã nguồn mở vào năm 2011. Kafka được viết bằng ngôn ngữ Scala và Java. Nó được viết ra nhằm mục đích cung cấp một nền tảng mà có độ trễ thấp và thông lượng cao cho việc xử lý các nguồn cấp dữ liệu theo thời gian thực.</p>
+<h2>Kafka hoạt động như thế nào?</h2>
+<p>Kafka được xây dựng dựa trên mô hình publish/subcribe, tương tự như bất kỳ hệ thống message nào khác. Các ứng dụng (<strong>đóng vai trò là producer</strong>) gửi các messages (<strong>records</strong>) tới một node kafka (<strong>broker</strong>) và nói rằng những messages này sẽ được xử lý bởi các ứng dụng khác gọi là <strong>consumers</strong>. Các messages được gửi tới kafka node sẽ được lưu trữ trong một nơi gọi là <strong>topic</strong> và sau đó consumer có thể subcribe tới topic đó và lắng nghe những messages này. Messages có thể là bất cứ thông tin gì như giá trị cảm biến, hành động người dùng,…</p>
+<figure class="wp-block-image"><img loading="lazy" width="800" height="637" src="./Apache Kafka là gì_ Tất cả mọi thứ bạn cần biết - VSUDO Blog_files/kien-truc-kafka-800x637.jpg" alt="cách kafka hoạt động" class="wp-image-1745 td-animation-stack-type2-2" srcset="https://vsudo.net/blog/wp-content/uploads/2019/12/kien-truc-kafka-800x637.jpg 800w, https://vsudo.net/blog/wp-content/uploads/2019/12/kien-truc-kafka-300x239.jpg 300w, https://vsudo.net/blog/wp-content/uploads/2019/12/kien-truc-kafka-768x611.jpg 768w, https://vsudo.net/blog/wp-content/uploads/2019/12/kien-truc-kafka-696x554.jpg 696w, https://vsudo.net/blog/wp-content/uploads/2019/12/kien-truc-kafka-528x420.jpg 528w, https://vsudo.net/blog/wp-content/uploads/2019/12/kien-truc-kafka.jpg 847w" sizes="(max-width: 800px) 100vw, 800px"></figure>
+<p>Topic có thể được xem như là tên của một danh mục mà các messages sẽ được lưu trữ và được đẩy vào.</p>
+<h3>Partition</h3>
+<p>Topics trong kafka có thể có kích cỡ rất lớn, như vậy không nên lưu trữ tất cả dữ liệu của một topic trên một node, dữ liệu cần đươc phân chia ra thành nhiều partition sẽ giúp bảo toàn dữ liệu cũng như xử lý dữ liệu dễ dàng hơn. Partitions cho phép chúng ta thực hiện subcribe song song tới một topic cụ thể bằng cách phân chia dữ liệu trong một topic cụ thể ra cho nhiều broker khác nhau (<strong>kafka node</strong>), mỗi partition có thể được đặt trên một máy riêng biệt – cho phép nhiều consumer đọc dữ liệu từ một topic diễn ra một cách song song.</p>
+<p>Để tăng tính khả dụng (<strong>availability</strong>) của partition, mỗi partition cũng có giá trị replicas của riêng nó. Để dễ hiểu hơn về kafka, mình sẽ trình bày bằng ví dụ với 3 node/broker.</p>
+<p>Bây giờ, một topic sẽ được chia ra thành 3 partitions và mỗi broker sẽ có một bản copy của partition. Trong số những bản copy partition này, sẽ có một bản copy được bầu chọn làm leader, trong khi những bản copy khác chỉ thực hiện đồng bộ dữ liệu với partition leader.</p>
+<figure class="wp-block-image"><img loading="lazy" width="800" height="378" src="./Apache Kafka là gì_ Tất cả mọi thứ bạn cần biết - VSUDO Blog_files/partition-kafka-800x378.jpg" alt="partition kafka" class="wp-image-1746 td-animation-stack-type2-2" srcset="https://vsudo.net/blog/wp-content/uploads/2019/12/partition-kafka-800x378.jpg 800w, https://vsudo.net/blog/wp-content/uploads/2019/12/partition-kafka-300x142.jpg 300w, https://vsudo.net/blog/wp-content/uploads/2019/12/partition-kafka-768x363.jpg 768w, https://vsudo.net/blog/wp-content/uploads/2019/12/partition-kafka-696x329.jpg 696w, https://vsudo.net/blog/wp-content/uploads/2019/12/partition-kafka-1068x505.jpg 1068w, https://vsudo.net/blog/wp-content/uploads/2019/12/partition-kafka-888x420.jpg 888w, https://vsudo.net/blog/wp-content/uploads/2019/12/partition-kafka.jpg 1330w" sizes="(max-width: 800px) 100vw, 800px"></figure>
+<p>Tất cả các hành động ghi và đọc tới một topic sẽ đều phải đi qua partition leader tương ứng và leader sẽ phối hợp để cập nhật dữ liệu mới tới các replica parition khác. Nếu leader bị hỏng, một trong các replica partition sẽ đảm nhận vai trò là một leader mới.</p>
+<figure class="wp-block-image"><img loading="lazy" width="800" height="488" src="./Apache Kafka là gì_ Tất cả mọi thứ bạn cần biết - VSUDO Blog_files/leader-replica-kafka-800x488.jpg" alt="replicas trong kafka" class="wp-image-1747 td-animation-stack-type2-2" srcset="https://vsudo.net/blog/wp-content/uploads/2019/12/leader-replica-kafka-800x488.jpg 800w, https://vsudo.net/blog/wp-content/uploads/2019/12/leader-replica-kafka-300x183.jpg 300w, https://vsudo.net/blog/wp-content/uploads/2019/12/leader-replica-kafka-768x468.jpg 768w, https://vsudo.net/blog/wp-content/uploads/2019/12/leader-replica-kafka-696x424.jpg 696w, https://vsudo.net/blog/wp-content/uploads/2019/12/leader-replica-kafka-1068x651.jpg 1068w, https://vsudo.net/blog/wp-content/uploads/2019/12/leader-replica-kafka-689x420.jpg 689w, https://vsudo.net/blog/wp-content/uploads/2019/12/leader-replica-kafka.jpg 1312w" sizes="(max-width: 800px) 100vw, 800px"></figure>
+<p>Để một producer/consumer ghi/đọc message từ một partition, chắc chắn chúng cần phải biết leader là ai phải không? Thông tin này cần phải có sẵn ở một vị trí nào đó.</p>
+<p>Kafka lưu trữ những thông tin như vậy là metadata trong một dịch vụ gọi là Zookeeper.</p>
+<h2>Cấu trúc dữ liệu log trong Kafka</h2>
+<p>Chìa khóa chính dẫn tới khả năng mở rộng và hiệu suất của kafka chính là log. Thường thì các developer khi mới tiếp cận kafka cảm thấy khá rối khi lần đầu tiên nghe đến “<strong>log</strong>“, bởi vì chúng ta thường hiểu “<strong>log</strong>” chính là thuật nghữ được sử dụng trong log ứng dụng. Tuy nhiên, những gì mình đang nói ở đây, <strong>là cấu trúc dữ liệu log</strong>. Log là một cấu trúc dữ liệu có thứ tự nhất quán mà chỉ hỗ trợ dạng nối thêm (append). Bạn không thể chỉnh sửa hay xóa các records từ nó. Nó được đọc từ trái sang phải và được đảm bảo thứ tự các item.</p>
+<figure class="wp-block-image"><img loading="lazy" width="782" height="346" src="./Apache Kafka là gì_ Tất cả mọi thứ bạn cần biết - VSUDO Blog_files/log-structure.jpg" alt="" class="wp-image-1748 td-animation-stack-type2-2" srcset="https://vsudo.net/blog/wp-content/uploads/2019/12/log-structure.jpg 782w, https://vsudo.net/blog/wp-content/uploads/2019/12/log-structure-300x133.jpg 300w, https://vsudo.net/blog/wp-content/uploads/2019/12/log-structure-768x340.jpg 768w, https://vsudo.net/blog/wp-content/uploads/2019/12/log-structure-696x308.jpg 696w" sizes="(max-width: 782px) 100vw, 782px"></figure>
+<p>Một nguồn dữ liệu sẽ ghi message vào log và một hoặc nhiều consumer khác sẽ đọc message từ log tại thời điểm họ lựa chọn.</p>
+<p>Mỗi entry trong log được định danh bởi một con số gọi là offset, hay nói một cách dễ hiểu hơn, offset giống như chỉ số tuần tự trong một array vậy.</p>
+<p>Vì chuỗi/offset chỉ có thể được duy trì trên từng node/broker cụ thể và không thể được duy trì đối với toàn bộ cluster, do đó Kafka chỉ đảm bảo sắp xếp thứ tự dữ liệu cho mỗi partition.</p>
+<h2>Parsistence data trong Kafa</h2>
+<p>Kafka lưu trữ tất cả message vào disk (không hề lưu trên RAM) và được sắp xếp có thứ tự trong cấu trúc log cho phép kafka tận dụng tối đa khả năng đọc và ghi lên disk một cách tuần tự.</p>
+<p>Nó là một cách lựa chọn khá phổ biến để lưu trữ dữ liệu trên disk mà vẫn có thể sử dụng tối đa hóa hiệu năng, có một số lý do chính dưới đây:</p>
+<ol><li>Kafka có một giao thức mà nhóm các message lại với nhau. Điều này cho phép các request network nhóm các message lại với nhau, giúp giảm thiểu chi phí sử dụng tài nguyên mạng, server, gom các message lại thành một cục và consumer sẽ tìm nạp một khối message cùng một lúc – do đó sẽ giảm tải disk cho <a href="https://vsudo.net/blog/he-dieu-hanh" data-type="URL" data-id="https://vsudo.net/blog/he-dieu-hanh">hệ điều hành</a>.</li><li>Kafka phụ thuộc khá nhiều vào pagecache của hệ điều hành cho việc lưu trữ dữ liệu, sử dụng RAM trên máy một cách hiệu quả.</li><li>Kafka lưu trữ các messages dưới định dạng nhị phân xuyên suốt quá trình (<strong>producer &gt; broker &gt; consumer</strong>), làm cho nó có thể tận dụng tối ưu hóa khả năng zero-copy. Nghĩa là khi hệ điều hành copy dữ liệu từ pagecache trực tiếp sang socket, hoàn toàn bỏ qua ứng dụng trung gian là kafka.</li><li>Đọc/ghi dữ liệu tuyến tính trên disk nhanh. Vấn đề làm cho disk chậm hiện nay thường là do quá trình tìm kiếm trên disk nhiều lần. Kafka đọc và ghi trên disk tuyến tính, do đó nó có thể tận dụng tối đa hóa hiệu suất trên disk.</li></ol>
+<h2>Consumer và Consumer Group</h2>
+<p>Consumer đọc các messages từ bất kỳ partition nào, cho phép bạn mở rộng lượng message được sử dụng tương tự như cách các producer cung cấp message.</p>
+<p>Consumer cũng được tổ chức thành các consumer groups cho một topic cụ thể – mỗi consumer bên trong group đọc message từ một partition duy nhất, để tránh việc có 2 consumer cùng xử lý đọc cùng một message 2 lần và toàn bộ group xử lý tất cả các message từ toàn bộ topic.</p>
+<ul><li>Nếu bạn có số consumer<strong> &gt;</strong> số partition, khi đó một số consumer sẽ ở chế độ rảnh rỗi bởi vì chúng không có partition nào để xử lý.</li><li>Nếu bạn có số partition &gt; số consumer, khi đó consumer sẽ nhận các message từ nhiều partition. </li><li>Nếu bạn có số consumer = số partition, mỗi consumer sẽ đọc message theo thứ tự từ 1 partition.</li></ul>
+<p>Để dễ hiểu hơn, các bạn xem qua hình ảnh dưới đây</p>
+<figure class="wp-block-image"><img loading="lazy" width="800" height="349" src="./Apache Kafka là gì_ Tất cả mọi thứ bạn cần biết - VSUDO Blog_files/group-consumer-800x349.jpg" alt="group consumer" class="wp-image-1749 td-animation-stack-type2-2" srcset="https://vsudo.net/blog/wp-content/uploads/2019/12/group-consumer-800x349.jpg 800w, https://vsudo.net/blog/wp-content/uploads/2019/12/group-consumer-300x131.jpg 300w, https://vsudo.net/blog/wp-content/uploads/2019/12/group-consumer-768x335.jpg 768w, https://vsudo.net/blog/wp-content/uploads/2019/12/group-consumer-696x304.jpg 696w, https://vsudo.net/blog/wp-content/uploads/2019/12/group-consumer-1068x466.jpg 1068w, https://vsudo.net/blog/wp-content/uploads/2019/12/group-consumer-962x420.jpg 962w, https://vsudo.net/blog/wp-content/uploads/2019/12/group-consumer.jpg 1127w" sizes="(max-width: 800px) 100vw, 800px"></figure>
+<p>Trong bức ảnh ở trên, Server 1 giữ partition 0 và 3 và server 2 giữ các partition 1 và 2. Chúng ta có 2 consumer groups là A và B. Group A có 2 consumer và group B có 4 consumer. Consumer group A có 2 consumer, vậy nên mỗi consumer sẽ đọc message từ 2 partition.Trong consumer group B, số lượng consumer bằng số partition nên mỗi consumer sẽ đọc message từ 1 partition.</p>
+<p>Kafka tuân theo các quy tắc được cung cấp bởi broker và consumer. Nghĩa là kafka không theo dõi các record được đọc bởi consumer và do đó không biết gì về hành vi của consumer. Việc giữ lại các messages trong một khoảng thời gian được cấu hình trước và nó tùy thuộc vào consumer, để điều chỉnh thời gian sao cho phù hợp. Bản thân consumer sẽ thăm dò xem Kafa có message nào mới hay không và cho Kafka biết những record nào chúng muốn đọc. Điều này cho phép chúng tăng/giảm offset mà  consumer muốn, do đó nó có thể đọc lại các message đã được đọc rồi và tái xử lý các sự kiện trong trường hợp gặp sự cố.</p>
+<p><strong>Ví dụ:</strong> nếu Kafka được cấu hình để giữ các messages tồn tại trong một ngày và consumer bị down lâu hơn 1 ngày, khi đó consumer sẽ mất message. Tuy nhiên, nếu consumer chỉ bị down trong khoảng 1 giờ đồng hồ, khi đó nó hoàn toàn có thể bắt đầu đọc lại message từ offset mới nhất.</p>
+<h2>Vai trò của Zookeeper</h2>
+<p>Zookeeper đóng vai trò là nơi lưu trữ dữ liệu phân tán dạng key-value. Nó được tối ưu hóa cho tác vụ đọc nhanh nhưng ghi chậm. Kafka sử dụng Zookeeper để thực hiện việc bầu chọn leader của Kafka broker và topic partition. Zookeeper cũng được thiết kế cho khả năng chịu lỗi cao, do đó Kafka phụ thuộc khá nhiều vào Zookeeper.</p>
+<p>Nó cũng được sử dụng để lưu trữ tất cả metadata như là:</p>
+<ul><li>Offset cho mỗi partition của consumer group</li><li>ACL (Access control list) – được sử dụng cho việc giới hạn truy cập/ủy quyền</li><li>Quota của consumer/producer – số lượng message tối đa mỗi giây</li><li>Partition Leader và trạng thái của chúng</li></ul>
+<p>Producer và consumer không tương tác trực tiếp với Zookeeper để biết leader của partition hay những metadata khác, thay vào đó chúng sẽ truy vấn metadata tới Kafka broker – sau đó Kafka tương tác với Zookeeper và gửi phản hồi metadata về lại cho chúng.</p>
+<h2>Kết luận</h2>
+<p>Kafka đang nhanh chóng trở thành trụ cột của đường ống dữ liệu đối với bất kỳ tổ chức nào. Kafka cho phép bạn có một lượng lớn các messages đi qua một phương tiện tập trung và lưu trữ chúng mà không cần phải lo lắng gì về những vấn đề như hiệu suất hay mất mát dữ liệu. Kafka có thể là thành phần trung tâm trong mô hình kiến trúc hướng sự kiện (event-driven) và cho phép bạn phân tách giữa ứng dụng này với ứng dụng khác.</p>
+<h3>Các câu hỏi thường gặp về Apache Kafka</h3>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"FAQPage","name":"Apache Kafka l\u00e0 g\u00ec? T\u1ea5t c\u1ea3 m\u1ecdi th\u1ee9 b\u1ea1n c\u1ea7n bi\u1ebft","mainEntity":[{"@type":"Question","name":"Apache Kafka l\u00e0 g\u00ec?","answerCount":1,"acceptedAnswer":{"@type":"Answer","text":"Kafka Kafka l\u00e0 n\u1ec1n t\u1ea3ng streaming ph\u00e2n t\u00e1n, c\u00f3 th\u1ec3 m\u1edf r\u1ed9ng v\u00e0 l\u00e0 s\u1ea3n ph\u1ea9m m\u00e3 ngu\u1ed3n m\u1edf."}},{"@type":"Question","name":"Apache Kafka c\u00f3 kh\u1ea3 n\u0103ng g\u00ec?","answerCount":1,"acceptedAnswer":{"@type":"Answer","text":"N\u00f3 c\u00f3 th\u1ec3 th\u1ef1c hi\u1ec7n 3 kh\u1ea3 n\u0103ng ch\u00ednh nh\u01b0 sau:1. C\u01a1 ch\u1ebf publish\/subcribe t\u01b0\u01a1ng t\u1ef1 nh\u01b0 c\u00e1c h\u1ec7 th\u1ed1ng message queue doanh nghi\u1ec7p kh\u00e1c.2. C\u01a1 ch\u1ebf l\u01b0u tr\u1eef stream c\u00e1c b\u1ea3n ghi tr\u00ean nhi\u1ec1u node broker kh\u00e1c nhau, gi\u00fap kh\u1eafc ph\u1ee5c l\u1ed7i x\u1ea3y ra.3. X\u1eed l\u00fd stream c\u00e1c b\u1ea3n ghi ngay khi n\u00f3 v\u1eeba \u0111\u1ebfn."}},{"@type":"Question","name":"C\u00e1c th\u00e0nh ph\u1ea7n ch\u00ednh trong Kafka l\u00e0 g\u00ec?","answerCount":1,"acceptedAnswer":{"@type":"Answer","text":"N\u00f3 c\u00f3 4 th\u00e0nh ph\u1ea7n kh\u00e1c nhau nh\u01b0 sau:1. Kakfa Broker2. Zookeeper3. Producer4. Consumer"}},{"@type":"Question","name":"M\u1ee5c \u0111\u00edch ch\u00ednh khi s\u1eed d\u1ee5ng Apache Kafka l\u00e0 g\u00ec?","answerCount":1,"acceptedAnswer":{"@type":"Answer","text":"1. S\u1eed d\u1ee5ng \u0111\u1ec3 theo d\u00f5i l\u01b0u l\u01b0\u1ee3ng truy c\u1eadp, gi\u00e1m s\u00e1t web server.2. X\u1eed l\u00fd s\u1ef1 ki\u1ec7n"}}]}</script>
+<div class="schema-faq wp-block-yoast-faq-block"><div class="schema-faq-section"><strong class="schema-faq-question">Apache Kafka là gì?</strong> <p class="schema-faq-answer">Kafka Kafka là nền tảng streaming phân tán, có thể mở rộng và là sản phẩm mã nguồn mở.</p></div><div class="schema-faq-section"><strong class="schema-faq-question">Apache Kafka có khả năng gì?</strong> <p class="schema-faq-answer">Nó có thể thực hiện 3 khả năng chính như sau:<br>1. Cơ chế publish/subcribe tương tự như các hệ thống message queue doanh nghiệp khác.<br>2. Cơ chế lưu trữ stream các bản ghi trên nhiều node broker khác nhau, giúp khắc phục lỗi xảy ra.<br>3. Xử lý stream các bản ghi ngay khi nó vừa đến.</p></div><div class="schema-faq-section"><strong class="schema-faq-question">Các thành phần chính trong Kafka là gì?</strong> <p class="schema-faq-answer">Nó có 4 thành phần khác nhau như sau:<br>1. Kakfa Broker<br>2. Zookeeper<br>3. Producer<br>4. Consumer</p></div><div class="schema-faq-section"><strong class="schema-faq-question">Mục đích chính khi sử dụng Apache Kafka là gì?</strong> <p class="schema-faq-answer">1. Sử dụng để theo dõi lưu lượng truy cập, giám sát web server.<br>2. Xử lý sự kiện</p></div></div><h3><strong>Xem thêm:</strong></h3>
+<ul><li><a href="https://vsudo.net/blog/kafka-la-gi.html" data-type="URL" data-id="https://vsudo.net/blog/kafka-la-gi.html">Kafka là gì? Tất cả mọi thứ bạn cần biết</a></li><li><a href="https://vsudo.net/blog/gia-tri-mac-dinh-kafka.html" data-type="URL" data-id="https://vsudo.net/blog/gia-tri-mac-dinh-kafka.html">Những giá trị mặc định trong Kafka bạn nên quan tâm</a></li><li><a href="https://vsudo.net/blog/log-compacted-topic-trong-kafka.html" data-type="URL" data-id="https://vsudo.net/blog/log-compacted-topic-trong-kafka.html">Log compacted Topic trong Kafka</a></li><li><a href="https://vsudo.net/blog/luu-giu-va-don-dep-log-kafka.html" data-type="URL" data-id="https://vsudo.net/blog/luu-giu-va-don-dep-log-kafka.html">Cơ chế lưu giữ và dọn dẹp Log trong Kafka</a></li><li><a href="https://vsudo.net/blog/kafka-consumer.html" data-type="URL" data-id="https://vsudo.net/blog/kafka-consumer.html">Consumer đọc dữ liệu từ Kafka Broker như thế nào?</a></li></ul>
+<div class="aiosrs-rating-wrap" data-schema-id="635">
+<div class="aiosrs-star-rating-wrap"><span class="aiosrs-star-rating dashicons dashicons-star-filled" data-index="1"></span><span class="aiosrs-star-rating dashicons dashicons-star-filled" data-index="2"></span><span class="aiosrs-star-rating dashicons dashicons-star-filled" data-index="3"></span><span class="aiosrs-star-rating dashicons dashicons-star-filled" data-index="4"></span><span class="aiosrs-star-rating dashicons dashicons-star-half" data-index="5"></span></div><div class="aiosrs-rating-summary-wrap"> <span class="aiosrs-rating"> 4.3/5 </span> <span class="aiosrs-rating-count"> (10 Reviews) </span></div></div></div><footer>
+<div class="td-post-source-tags"></div><div class="td-post-sharing-bottom"><div id="td_social_sharing_article_bottom" class="td-post-sharing td-ps-bg td-ps-notext td-post-sharing-style1"><div class="td-post-sharing-visible"><div class="td-social-sharing-button td-social-sharing-button-js td-social-handler td-social-share-text" style="transition: opacity 0.2s ease 0s; opacity: 1;">
+<div class="td-social-but-icon"><i class="td-icon-share"></i></div><div class="td-social-but-text">Share</div></div><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-facebook" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fvsudo.net%2Fblog%2Fkafka-la-gi.html" style="transition: opacity 0.2s ease 0s; opacity: 1;">
+<div class="td-social-but-icon"><i class="td-icon-facebook"></i></div><div class="td-social-but-text">Facebook</div></a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-twitter" href="https://twitter.com/intent/tweet?text=Apache+Kafka+l%C3%A0+g%C3%AC%3F+T%E1%BA%A5t+c%E1%BA%A3+m%E1%BB%8Di+th%E1%BB%A9+b%E1%BA%A1n+c%E1%BA%A7n+bi%E1%BA%BFt&amp;url=https%3A%2F%2Fvsudo.net%2Fblog%2Fkafka-la-gi.html&amp;via=quangvublog" style="transition: opacity 0.2s ease 0s; opacity: 1;">
+<div class="td-social-but-icon"><i class="td-icon-twitter"></i></div><div class="td-social-but-text">Twitter</div></a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-pinterest" href="https://pinterest.com/pin/create/button/?url=https://vsudo.net/blog/kafka-la-gi.html&amp;media=https://vsudo.net/blog/wp-content/uploads/2019/12/kafka-la-gi.jpg&amp;description=Kafka%20l%C3%A0%20n%E1%BB%81n%20t%E1%BA%A3ng%20streaming%20s%E1%BB%B1%20ki%E1%BB%87n%20ph%C3%A2n%20t%C3%A1n%20m%C3%A3%20ngu%E1%BB%93n%20m%E1%BB%9F.%20Xem%20th%C3%AAm%20%C4%91%E1%BB%83%20bi%E1%BA%BFt%20kafka%20l%C3%A0%20g%C3%AC%20v%C3%A0%20c%C3%A1c%20%E1%BB%A9ng%20d%E1%BB%A5ng%20x%E1%BB%AD%20l%C3%BD%20stream%20real-time%20ra%20sao" style="transition: opacity 0.2s ease 0s; opacity: 1;">
+<div class="td-social-but-icon"><i class="td-icon-pinterest"></i></div><div class="td-social-but-text">Pinterest</div></a></div><div class="td-social-sharing-hidden" style="display: none;"><ul class="td-pulldown-filter-list"></ul><a class="td-social-sharing-button td-social-handler td-social-expand-tabs" href="https://vsudo.net/blog/kafka-la-gi.html#" data-block-uid="td_social_sharing_article_bottom">
+<div class="td-social-but-icon"><i class="td-icon-plus td-social-expand-tabs-icon"></i></div></a></div></div></div><div class="td-block-row td-post-next-prev"><div class="td-block-span6 td-post-prev-post"><div class="td-post-next-prev-content"><span>Bài viết trước đó</span><a href="https://vsudo.net/blog/huong-dan-fail2ban.html">Hướng dẫn bảo mật server Linux bằng Fail2ban</a></div></div><div class="td-next-prev-separator"></div><div class="td-block-span6 td-post-next-post"><div class="td-post-next-prev-content"><span>Bài viết tiếp theo</span><a href="https://vsudo.net/blog/gia-tri-mac-dinh-kafka.html">Những giá trị mặc định trong Kafka bạn nên quan tâm</a></div></div></div><div class="author-box-wrap"><a href="https://vsudo.net/blog/author/admin"><img src="./Apache Kafka là gì_ Tất cả mọi thứ bạn cần biết - VSUDO Blog_files/9989718873afeed47ef3139c0e820566.jpeg" alt="" class="avatar avatar-96 photo" height="96" width="96" loading="lazy" srcset="https://secure.gravatar.com/avatar/9989718873afeed47ef3139c0e820566?s=192&amp;d=mm&amp;r=g 2x"></a><div class="desc"><div class="td-author-name vcard author"><span class="fn"><a href="https://vsudo.net/blog/author/admin">Quang Vũ</a></span></div><div class="td-author-description">Quang Vũ là chuyên gia phát triển, quản lý và vận hành hệ thống object storage. Anh có nhiều năm kinh nghiệm triển khai và vận hành hệ thống server (SRE), technical SEO, CMS. Đặc biệt yêu thích WordPress và đã dùng nó hơn 5 năm nay. Sở thích của anh là đọc, viết blog và chia sẻ kiến thức.</div><div class="td-author-social"> <span class="td-social-icon-wrap"> <a target="_blank" href="https://facebook.com/quanghn96" title="Facebook"> <i class="td-icon-font td-icon-facebook"></i> </a> </span></div><div class="clearfix"></div></div></div><span class="td-page-meta" itemprop="author" itemscope="" itemtype="https://schema.org/Person"><meta itemprop="name" content="Quang Vũ"></span><meta itemprop="datePublished" content="2019-12-25T17:16:31+00:00"><meta itemprop="dateModified" content="2020-09-13T16:32:23+00:00"><meta itemscope="" itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://vsudo.net/blog/kafka-la-gi.html"><span class="td-page-meta" itemprop="publisher" itemscope="" itemtype="https://schema.org/Organization"><span class="td-page-meta" itemprop="logo" itemscope="" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://vsudo.net/blog/wp-content/uploads/2019/05/banner.jpg"></span><meta itemprop="name" content="VSUDO Blog"></span><meta itemprop="headline" content="Apache Kafka là gì? Tất cả mọi thứ bạn cần biết"><span class="td-page-meta" itemprop="image" itemscope="" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://vsudo.net/blog/wp-content/uploads/2019/12/kafka-la-gi.jpg"><meta itemprop="width" content="1069"><meta itemprop="height" content="899"></span>        </footer>
+</article> 
+<div class="td_block_wrap td_block_related_posts tdi_2_610 td_with_ajax_pagination td-pb-border-top td_block_template_1" data-td-block-uid="tdi_2_610"><h4 class="td-related-title td-block-title"><a id="tdi_3_fb6" class="td-related-left td-cur-simple-item" data-td_filter_value="" data-td_block_id="tdi_2_610" href="https://vsudo.net/blog/kafka-la-gi.html#">Bài viết liên quan</a><a id="tdi_4_596" class="td-related-right" data-td_filter_value="td_related_more_from_author" data-td_block_id="tdi_2_610" href="https://vsudo.net/blog/kafka-la-gi.html#">Xem thêm từ tác giả</a></h4><div id="tdi_2_610" class="td_block_inner">
+<div class="td-related-row">
+<div class="td-related-span4">
+<div class="td_module_related_posts td-animation-stack td_mod_related_posts">
+<div class="td-module-image">
+<div class="td-module-thumb"><a href="https://vsudo.net/blog/minio-ubuntu-20-04.html" rel="bookmark" class="td-image-wrap" title="Hướng dẫn cài đặt Minio trên Ubuntu 20.04"><img class="entry-thumb td-animation-stack-type2-2" src="./Apache Kafka là gì_ Tất cả mọi thứ bạn cần biết - VSUDO Blog_files/cai-dat-minio-tren-ubuntu-218x150.jpg" alt="cài đặt minio" title="Hướng dẫn cài đặt Minio trên Ubuntu 20.04" data-type="image_tag" data-img-url="https://vsudo.net/blog/wp-content/uploads/2020/08/cai-dat-minio-tren-ubuntu-218x150.jpg" width="218" height="150"></a></div><a href="https://vsudo.net/blog/cloud-virtualization" class="td-post-category">Cloud - Virtualization</a></div><div class="item-details"> <h3 class="entry-title td-module-title"><a href="https://vsudo.net/blog/minio-ubuntu-20-04.html" rel="bookmark" title="Hướng dẫn cài đặt Minio trên Ubuntu 20.04">Hướng dẫn cài đặt Minio trên Ubuntu 20.04</a></h3></div></div></div><div class="td-related-span4">
+<div class="td_module_related_posts td-animation-stack td_mod_related_posts">
+<div class="td-module-image">
+<div class="td-module-thumb"><a href="https://vsudo.net/blog/kafka-consumer.html" rel="bookmark" class="td-image-wrap" title="Consumer đọc dữ liệu từ Kafka Broker như thế nào?"><img class="entry-thumb td-animation-stack-type2-2" src="./Apache Kafka là gì_ Tất cả mọi thứ bạn cần biết - VSUDO Blog_files/kakfa-consumer-218x150.jpg" alt="kafka consumer" title="Consumer đọc dữ liệu từ Kafka Broker như thế nào?" data-type="image_tag" data-img-url="https://vsudo.net/blog/wp-content/uploads/2020/05/kakfa-consumer-218x150.jpg" width="218" height="150"></a></div><a href="https://vsudo.net/blog/cloud-virtualization" class="td-post-category">Cloud - Virtualization</a></div><div class="item-details"> <h3 class="entry-title td-module-title"><a href="https://vsudo.net/blog/kafka-consumer.html" rel="bookmark" title="Consumer đọc dữ liệu từ Kafka Broker như thế nào?">Consumer đọc dữ liệu từ Kafka Broker như thế nào?</a></h3></div></div></div><div class="td-related-span4">
+<div class="td_module_related_posts td-animation-stack td_mod_related_posts">
+<div class="td-module-image">
+<div class="td-module-thumb"><a href="https://vsudo.net/blog/onedrive.html" rel="bookmark" class="td-image-wrap" title="OneDrive là gì? Tại sao chúng ta nên sử dụng nó"><img class="entry-thumb td-animation-stack-type2-2" src="./Apache Kafka là gì_ Tất cả mọi thứ bạn cần biết - VSUDO Blog_files/onedrive-218x150.jpg" alt="onedrive" title="OneDrive là gì? Tại sao chúng ta nên sử dụng nó" data-type="image_tag" data-img-url="https://vsudo.net/blog/wp-content/uploads/2020/04/onedrive-218x150.jpg" width="218" height="150"></a></div><a href="https://vsudo.net/blog/cloud-virtualization" class="td-post-category">Cloud - Virtualization</a></div><div class="item-details"> <h3 class="entry-title td-module-title"><a href="https://vsudo.net/blog/onedrive.html" rel="bookmark" title="OneDrive là gì? Tại sao chúng ta nên sử dụng nó">OneDrive là gì? Tại sao chúng ta nên sử dụng nó</a></h3></div></div></div></div></div><div class="td-next-prev-wrap"><a href="https://vsudo.net/blog/kafka-la-gi.html#" class="td-ajax-prev-page ajax-page-disabled" id="prev-page-tdi_2_610" data-td_block_id="tdi_2_610"><i class="td-icon-font td-icon-menu-left"></i></a><a href="https://vsudo.net/blog/kafka-la-gi.html#" class="td-ajax-next-page" id="next-page-tdi_2_610" data-td_block_id="tdi_2_610"><i class="td-icon-font td-icon-menu-right"></i></a></div></div><div class="comments" id="comments">
+<div id="respond" class="comment-respond">
+<h3 id="reply-title" class="comment-reply-title">Để lại một bình luận <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://vsudo.net/blog/kafka-la-gi.html#respond" style="display:none;">Cancel reply</a></small></h3><form action="https://vsudo.net/blog/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate=""><div class="clearfix"></div><div class="comment-form-input-wrap td-form-comment">
+<textarea placeholder="Bình luận:" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
+<div class="td-warning-comment">Please enter your comment!</div></div><div class="comment-form-input-wrap td-form-author">
+<input class="" id="author" name="author" placeholder="Tên:*" type="text" value="" size="30" aria-required="true">
+<div class="td-warning-author">Please enter your name here</div></div><div class="comment-form-input-wrap td-form-email">
+<input class="" id="email" name="email" placeholder="Email:*" type="text" value="" size="30" aria-required="true">
+<div class="td-warning-email-error">You have entered an incorrect email address!</div><div class="td-warning-email">Please enter your email address here</div></div><div class="comment-form-input-wrap td-form-url"> <input class="" id="url" name="url" placeholder="Website:" type="text" value="" size="30"></div><p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"><label for="wp-comment-cookies-consent">Lưu lại tên, email và website trong trình duyệt cho lần tiếp theo.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Gửi bình luận"> <input type="hidden" name="comment_post_ID" value="1724" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p></form></div></div><div class="clearfix"></div></div></div><div class="td-pb-span4 td-main-sidebar" role="complementary">
+<div class="td-ss-main-sidebar" style="width: 324px; position: fixed; top: 20px; bottom: auto;"><div class="clearfix"></div>
+<div class="td_block_wrap td_block_7 td_block_widget tdi_5_811 td_with_ajax_pagination td-pb-border-top td_block_template_1 td-column-1 td_block_padding" data-td-block-uid="tdi_5_811"><div class="td-block-title-wrap"><h4 class="block-title td-block-title"><span class="td-pulldown-size">Bài viết nổi bật</span></h4></div><div id="tdi_5_811" class="td_block_inner">
+<div class="td-block-span12">
+<div class="td_module_6 td_module_wrap td-animation-stack">
+<div class="td-module-thumb"><a href="https://vsudo.net/blog/kich-thuoc-hoan-hao-cho-youtube.html" rel="bookmark" class="td-image-wrap" title="Kích thước hoàn hảo cho hình ảnh trên kênh youtube"><img class="entry-thumb td-animation-stack-type2-2" src="./Apache Kafka là gì_ Tất cả mọi thứ bạn cần biết - VSUDO Blog_files/kich-thuoc-hoan-hao-cho-hinh-anh-tren-kenh-youtube-100x70.jpg" alt="kích thước hoàn hảo cho hình ảnh trên kênh youtube" title="Kích thước hoàn hảo cho hình ảnh trên kênh youtube" data-type="image_tag" data-img-url="https://vsudo.net/blog/wp-content/uploads/2020/08/kich-thuoc-hoan-hao-cho-hinh-anh-tren-kenh-youtube-100x70.jpg" width="100" height="70"></a></div><div class="item-details">
+<h3 class="entry-title td-module-title"><a href="https://vsudo.net/blog/kich-thuoc-hoan-hao-cho-youtube.html" rel="bookmark" title="Kích thước hoàn hảo cho hình ảnh trên kênh youtube">Kích thước hoàn hảo cho hình ảnh trên kênh youtube</a></h3>            <div class="td-module-meta-info"> <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2020-08-28T11:13:00+00:00">August 28, 2020</time></span></div></div></div></div><div class="td-block-span12">
+<div class="td_module_6 td_module_wrap td-animation-stack">
+<div class="td-module-thumb"><a href="https://vsudo.net/blog/minio-ubuntu-20-04.html" rel="bookmark" class="td-image-wrap" title="Hướng dẫn cài đặt Minio trên Ubuntu 20.04"><img class="entry-thumb td-animation-stack-type2-2" src="./Apache Kafka là gì_ Tất cả mọi thứ bạn cần biết - VSUDO Blog_files/cai-dat-minio-tren-ubuntu-100x70.jpg" alt="cài đặt minio" title="Hướng dẫn cài đặt Minio trên Ubuntu 20.04" data-type="image_tag" data-img-url="https://vsudo.net/blog/wp-content/uploads/2020/08/cai-dat-minio-tren-ubuntu-100x70.jpg" width="100" height="70"></a></div><div class="item-details">
+<h3 class="entry-title td-module-title"><a href="https://vsudo.net/blog/minio-ubuntu-20-04.html" rel="bookmark" title="Hướng dẫn cài đặt Minio trên Ubuntu 20.04">Hướng dẫn cài đặt Minio trên Ubuntu 20.04</a></h3>            <div class="td-module-meta-info"> <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2020-09-02T01:45:37+00:00">September 2, 2020</time></span></div></div></div></div><div class="td-block-span12">
+<div class="td_module_6 td_module_wrap td-animation-stack">
+<div class="td-module-thumb"><a href="https://vsudo.net/blog/curl-ubuntu.html" rel="bookmark" class="td-image-wrap" title="Hướng dẫn cài đặt CURL trên Ubuntu"><img class="entry-thumb td-animation-stack-type2-2" src="./Apache Kafka là gì_ Tất cả mọi thứ bạn cần biết - VSUDO Blog_files/curl-100x70.jpg" alt="curl" title="Hướng dẫn cài đặt CURL trên Ubuntu" data-type="image_tag" data-img-url="https://vsudo.net/blog/wp-content/uploads/2020/09/curl-100x70.jpg" width="100" height="70"></a></div><div class="item-details">
+<h3 class="entry-title td-module-title"><a href="https://vsudo.net/blog/curl-ubuntu.html" rel="bookmark" title="Hướng dẫn cài đặt CURL trên Ubuntu">Hướng dẫn cài đặt CURL trên Ubuntu</a></h3>            <div class="td-module-meta-info"> <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2020-10-31T08:27:09+00:00">October 31, 2020</time></span></div></div></div></div><div class="td-block-span12">
+<div class="td_module_6 td_module_wrap td-animation-stack">
+<div class="td-module-thumb"><a href="https://vsudo.net/blog/dia-chi-mac.html" rel="bookmark" class="td-image-wrap" title="Địa chỉ mac là gì? Tác dụng của nó ra sao"><img class="entry-thumb td-animation-stack-type2-2" src="./Apache Kafka là gì_ Tất cả mọi thứ bạn cần biết - VSUDO Blog_files/dia-chi-mac-100x70.png" alt="địa chỉ mac là gì" title="Địa chỉ mac là gì? Tác dụng của nó ra sao" data-type="image_tag" data-img-url="https://vsudo.net/blog/wp-content/uploads/2019/08/dia-chi-mac-100x70.png" width="100" height="70"></a></div><div class="item-details">
+<h3 class="entry-title td-module-title"><a href="https://vsudo.net/blog/dia-chi-mac.html" rel="bookmark" title="Địa chỉ mac là gì? Tác dụng của nó ra sao">Địa chỉ mac là gì? Tác dụng của nó ra sao</a></h3>            <div class="td-module-meta-info"> <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2019-08-09T15:22:40+00:00">August 9, 2019</time></span></div></div></div></div></div><div class="td-load-more-wrap"><a href="https://vsudo.net/blog/kafka-la-gi.html#" class="td_ajax_load_more td_ajax_load_more_js" id="next-page-tdi_5_811" data-td_block_id="tdi_5_811">Load more<i class="td-icon-font td-icon-menu-down"></i></a></div></div><div class="clearfix"></div></div></div></div></div></div><div class="tdc-footer-wrap">
+<div class="td-footer-wrapper td-footer-container td-container-wrap">
+<div class="td-container">
+<div class="td-pb-row">
+<div class="td-pb-span12"></div></div><div class="td-pb-row">
+<div class="td-pb-span12"></div></div></div><div class="td-footer-bottom-full">
+<div class="td-container">
+<div class="td-pb-row">
+<div class="td-pb-span3"><aside class="footer-logo-wrap"><a href="https://vsudo.net/blog/"><img src="./Apache Kafka là gì_ Tất cả mọi thứ bạn cần biết - VSUDO Blog_files/logo-300x287.jpg" alt="vsudo" title="vsudo"></a></aside></div><div class="td-pb-span5"><aside class="footer-text-wrap"><div class="block-title"><span>ABOUT US</span></div>VSUDO Blog là nơi chia sẻ các kiến thức về công nghệ thông tin
+<br>
+<br>
+<a href="https://www.dmca.com/Protection/Status.aspx?ID=a9a601f5-e730-4330-b8bd-660a4ed1fe20&amp;refurl=https://vsudo.net/blog/kafka-la-gi.html" title="DMCA.com Protection Status" class="dmca-badge"> <img src="./Apache Kafka là gì_ Tất cả mọi thứ bạn cần biết - VSUDO Blog_files/dmca_protected_sml_120n.png" alt="DMCA.com Protection Status"></a>  
+<br>
+<br>
+<a href="https://vsudo.net/review">VSUDO Review</a><div class="footer-email-wrap">Contact us: <a href="mailto:contact@vsudo.net">contact@vsudo.net</a></div></aside></div><div class="td-pb-span4"><aside class="footer-social-wrap td-social-style-2"><div class="block-title"><span>FOLLOW US</span></div><span class="td-social-icon-wrap">
+<a target="_blank" href="https://www.facebook.com/QuangVuBlog/" title="Facebook">
+<i class="td-icon-font td-icon-facebook"></i>
+</a>
+</span>
+<span class="td-social-icon-wrap">
+<a target="_blank" href="https://www.instagram.com/quangvu.blog/" title="Instagram">
+<i class="td-icon-font td-icon-instagram"></i>
+</a>
+</span>
+<span class="td-social-icon-wrap">
+<a target="_blank" href="https://twitter.com/quangvublog" title="Twitter">
+<i class="td-icon-font td-icon-twitter"></i>
+</a>
+</span>
+<span class="td-social-icon-wrap">
+<a target="_blank" href="https://www.youtube.com/channel/UCgxQYHLKaCDeFbK_AKCH9xA" title="Youtube">
+<i class="td-icon-font td-icon-youtube"></i>
+</a>
+</span></aside></div></div></div></div></div><div class="td-sub-footer-container td-container-wrap">
+<div class="td-container">
+<div class="td-pb-row">
+<div class="td-pb-span td-sub-footer-menu">
+<div class="menu-td-demo-footer-menu-container"><ul id="menu-td-demo-footer-menu" class="td-subfooter-menu"><li id="menu-item-40" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-first td-menu-item td-normal-menu menu-item-40"><a href="https://vsudo.net/chinh-sach-bao-mat">Chính sách bảo mật</a></li> <li id="menu-item-42" class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-42"><a href="https://vsudo.net/dieu-khoan-dich-vu">Điều khoản</a></li> <li id="menu-item-3708" class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-3708"><a href="https://vsudo.net/review">Review</a></li> </ul></div></div><div class="td-pb-span td-sub-footer-copy"> © Blog by <a href="https://vsudo.net/">vsudo.net</a></div></div></div></div></div></div><div class="td-more-articles-box td-front-end-display-block">
+<i class="td-icon-close td-close-more-articles-box"></i>
+<span class="td-more-articles-box-title">MORE STORIES</span>
+<div class="td-content-more-articles-box">
+<div class="td_module_6 td_module_wrap td-animation-stack">
+<div class="td-module-thumb"><a href="https://vsudo.net/blog/cloud-computing.html" rel="bookmark" class="td-image-wrap" title="Cloud computing là gì?"><img class="entry-thumb td-animation-stack-type2-2" src="./Apache Kafka là gì_ Tất cả mọi thứ bạn cần biết - VSUDO Blog_files/cloud-computing-100x70.png" alt="điện toán đám mây" title="Cloud computing là gì?" data-type="image_tag" data-img-url="https://vsudo.net/blog/wp-content/uploads/2019/07/cloud-computing-100x70.png" width="100" height="70"></a></div><div class="item-details">
+<h3 class="entry-title td-module-title"><a href="https://vsudo.net/blog/cloud-computing.html" rel="bookmark" title="Cloud computing là gì?">Cloud computing là gì?</a></h3>            <div class="td-module-meta-info"> <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2019-07-28T04:28:06+00:00">July 28, 2019</time></span></div></div></div><div class="td_module_6 td_module_wrap td-animation-stack">
+<div class="td-module-thumb"><a href="https://vsudo.net/blog/docker-toan-tap.html" rel="bookmark" class="td-image-wrap" title="Hướng dẫn docker toàn tập"><img class="entry-thumb td-animation-stack-type2-2" src="./Apache Kafka là gì_ Tất cả mọi thứ bạn cần biết - VSUDO Blog_files/docker-100x70.jpg" alt="docker là gì" title="Hướng dẫn docker toàn tập" data-type="image_tag" data-img-url="https://vsudo.net/blog/wp-content/uploads/2019/06/docker-100x70.jpg" width="100" height="70"></a></div><div class="item-details">
+<h3 class="entry-title td-module-title"><a href="https://vsudo.net/blog/docker-toan-tap.html" rel="bookmark" title="Hướng dẫn docker toàn tập">Hướng dẫn docker toàn tập</a></h3>            <div class="td-module-meta-info"> <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2019-06-15T15:40:56+00:00">June 15, 2019</time></span></div></div></div></div></div><style>.aiosrs-rating-wrap .aiosrs-star-rating-wrap{display:inline-block;vertical-align:middle;}
+.aiosrs-rating-wrap .aiosrs-star-rating-wrap ~ .aiosrs-star-rating-wrap{float:right}
+.aiosrs-rating-wrap .aiosrs-star-rating-wrap .aiosrs-star-rating{color:#ffd700;}
+.aiosrs-rating-wrap .aiosrs-star-rating-wrap:not(.disabled) .aiosrs-star-rating{cursor:pointer;}
+.aiosrs-rating-wrap .success-msg{color:green;margin-left:5px;}
+.aiosrs-rating-wrap .aiosrs-star-rating-wrap .aiosrs-star-rating.dashicons{font-family:dashicons;}</style>
+<script async="" src="./Apache Kafka là gì_ Tất cả mọi thứ bạn cần biết - VSUDO Blog_files/js"></script>
+<script>window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-113200585-2');</script>
+<script data-ad-client="ca-pub-8385274982660351" async="" src="./Apache Kafka là gì_ Tất cả mọi thứ bạn cần biết - VSUDO Blog_files/f.txt"></script>
+<noscript id="wpfc-google-fonts"><link rel='stylesheet' id='google-fonts-style-css' href='https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C600%2C700%7CRoboto%3A400%2C500%2C700&#038;display=swap&#038;ver=10.3.3' type='text/css' media='all'/>
+</noscript>
+<script id="wp-schema-pro-fontend-script-js-extra">var AIOSRS_Frontend={"ajaxurl":"https:\/\/vsudo.net\/blog\/wp-admin\/admin-ajax.php","post_id":"1724","user_rating_nonce":"cbbe99b3a1","success_msg":"Thanks!"};</script>
+<script>if(document.location.protocol!="https:"){document.location=document.URL.replace(/^http:/i, "https:");}</script>
+<script src="./Apache Kafka là gì_ Tất cả mọi thứ bạn cần biết - VSUDO Blog_files/9qi0h.js.download"></script>
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<script>window.tdb_globals={"wpRestNonce":"51a8068139","wpRestUrl":"https:\/\/vsudo.net\/blog\/wp-json\/","permalinkStructure":"\/%postname%.html","isAjax":false,"isAdminBarShowing":false,"autoloadScrollPercent":50,"postAutoloadStatus":"off","origPostEditUrl":null};</script>
+<script>window.tdwGlobal={"adminUrl":"https:\/\/vsudo.net\/blog\/wp-admin\/","wpRestNonce":"51a8068139","wpRestUrl":"https:\/\/vsudo.net\/blog\/wp-json\/","permalinkStructure":"\/%postname%.html"};</script>
+<script>var tdBlocksArray=[];
+function tdBlock(){
+this.id='';
+this.block_type=1;
+this.atts='';
+this.td_column_number='';
+this.td_current_page=1;
+this.post_count=0;
+this.found_posts=0;
+this.max_num_pages=0;
+this.td_filter_value='';
+this.is_ajax_running=false;
+this.td_user_action='';
+this.header_color='';
+this.ajax_pagination_infinite_stop='';
+}
+(function(){
+var htmlTag=document.getElementsByTagName("html")[0];
+if(navigator.userAgent.indexOf("MSIE 10.0") > -1){
+htmlTag.className +=' ie10';
+}
+if(!!navigator.userAgent.match(/Trident.*rv\:11\./)){
+htmlTag.className +=' ie11';
+}
+if(navigator.userAgent.indexOf("Edge") > -1){
+htmlTag.className +=' ieEdge';
+}
+if(/(iPad|iPhone|iPod)/g.test(navigator.userAgent)){
+htmlTag.className +=' td-md-is-ios';
+}
+var user_agent=navigator.userAgent.toLowerCase();
+if(user_agent.indexOf("android") > -1){
+htmlTag.className +=' td-md-is-android';
+}
+if(-1!==navigator.userAgent.indexOf('Mac OS X')){
+htmlTag.className +=' td-md-is-os-x';
+}
+if(/chrom(e|ium)/.test(navigator.userAgent.toLowerCase())){
+htmlTag.className +=' td-md-is-chrome';
+}
+if(-1!==navigator.userAgent.indexOf('Firefox')){
+htmlTag.className +=' td-md-is-firefox';
+}
+if(-1!==navigator.userAgent.indexOf('Safari')&&-1===navigator.userAgent.indexOf('Chrome')){
+htmlTag.className +=' td-md-is-safari';
+}
+if(-1!==navigator.userAgent.indexOf('IEMobile')){
+htmlTag.className +=' td-md-is-iemobile';
+}})();
+var tdLocalCache={};
+(function (){
+"use strict";
+tdLocalCache={
+data: {},
+remove: function (resource_id){
+delete tdLocalCache.data[resource_id];
+},
+exist: function (resource_id){
+return tdLocalCache.data.hasOwnProperty(resource_id)&&tdLocalCache.data[resource_id]!==null;
+},
+get: function (resource_id){
+return tdLocalCache.data[resource_id];
+},
+set: function (resource_id, cachedData){
+tdLocalCache.remove(resource_id);
+tdLocalCache.data[resource_id]=cachedData;
+}};})();
+var td_viewport_interval_list=[{"limitBottom":767,"sidebarWidth":228},{"limitBottom":1018,"sidebarWidth":300},{"limitBottom":1140,"sidebarWidth":324}];
+var td_animation_stack_effect="type2";
+var tds_animation_stack=true;
+var td_animation_stack_specific_selectors=".entry-thumb, img[class*=\"wp-image-\"], a.td-sml-link-to-image > img";
+var td_animation_stack_general_selectors=".td-animation-stack .entry-thumb, .post .entry-thumb, .post img[class*=\"wp-image-\"], a.td-sml-link-to-image > img";
+var tdc_is_installed="yes";
+var td_ajax_url="https:\/\/vsudo.net\/blog\/wp-admin\/admin-ajax.php?td_theme_name=Newspaper&v=10.3.3";
+var td_get_template_directory_uri="https:\/\/vsudo.net\/blog\/wp-content\/plugins\/td-composer\/legacy\/common";
+var tds_snap_menu="smart_snap_always";
+var tds_logo_on_sticky="show_header_logo";
+var tds_header_style="10";
+var td_please_wait="Please wait...";
+var td_email_user_pass_incorrect="User or password incorrect!";
+var td_email_user_incorrect="Email or username incorrect!";
+var td_email_incorrect="Email incorrect!";
+var tds_more_articles_on_post_enable="show";
+var tds_more_articles_on_post_time_to_wait="";
+var tds_more_articles_on_post_pages_distance_from_top=0;
+var tds_theme_color_site_wide="#4db2ec";
+var tds_smart_sidebar="enabled";
+var tdThemeName="Newspaper";
+var td_magnific_popup_translation_tPrev="Previous (Left arrow key)";
+var td_magnific_popup_translation_tNext="Next (Right arrow key)";
+var td_magnific_popup_translation_tCounter="%curr% of %total%";
+var td_magnific_popup_translation_ajax_tError="The content from %url% could not be loaded.";
+var td_magnific_popup_translation_image_tError="The image #%curr% could not be loaded.";
+var tdBlockNonce="b792f4b4f6";
+var tdDateNamesI18n={"month_names":["January","February","March","April","May","June","July","August","September","October","November","December"],"month_names_short":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"day_names":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"day_names_short":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]};
+var td_ad_background_click_link="";
+var td_ad_background_click_target="";</script>
+<script>var block_tdi_2_610=new tdBlock();
+block_tdi_2_610.id="tdi_2_610";
+block_tdi_2_610.atts='{"limit":3,"ajax_pagination":"next_prev","live_filter":"cur_post_same_categories","td_ajax_filter_type":"td_custom_related","class":"tdi_2_610","td_column_number":3,"live_filter_cur_post_id":1724,"live_filter_cur_post_author":"1","block_template_id":"","header_color":"","ajax_pagination_infinite_stop":"","offset":"","td_ajax_preloading":"","td_filter_default_txt":"","td_ajax_filter_ids":"","el_class":"","color_preset":"","border_top":"","css":"","tdc_css":"","tdc_css_class":"tdi_2_610","tdc_css_class_style":"tdi_2_610_rand_style"}';
+block_tdi_2_610.td_column_number="3";
+block_tdi_2_610.block_type="td_block_related_posts";
+block_tdi_2_610.post_count="3";
+block_tdi_2_610.found_posts="14";
+block_tdi_2_610.header_color="";
+block_tdi_2_610.ajax_pagination_infinite_stop="";
+block_tdi_2_610.max_num_pages="5";
+tdBlocksArray.push(block_tdi_2_610);</script>
+<script>var block_tdi_5_811=new tdBlock();
+block_tdi_5_811.id="tdi_5_811";
+block_tdi_5_811.atts='{"custom_title":"B\u00e0i vi\u1ebft n\u1ed5i b\u1eadt","custom_url":"","block_template_id":"","header_color":"#","header_text_color":"#","accent_text_color":"#","m6_tl":"","limit":"4","offset":"","el_class":"","post_ids":"","category_id":"","category_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","sort":"random_posts","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","td_ajax_preloading":"","ajax_pagination":"load_more","ajax_pagination_infinite_stop":"","class":"td_block_widget tdi_5_811","separator":"","show_modified_date":"","f_header_font_header":"","f_header_font_title":"Block header","f_header_font_settings":"","f_header_font_family":"","f_header_font_size":"","f_header_font_line_height":"","f_header_font_style":"","f_header_font_weight":"","f_header_font_transform":"","f_header_font_spacing":"","f_header_":"","f_ajax_font_title":"Ajax categories","f_ajax_font_settings":"","f_ajax_font_family":"","f_ajax_font_size":"","f_ajax_font_line_height":"","f_ajax_font_style":"","f_ajax_font_weight":"","f_ajax_font_transform":"","f_ajax_font_spacing":"","f_ajax_":"","f_more_font_title":"Load more button","f_more_font_settings":"","f_more_font_family":"","f_more_font_size":"","f_more_font_line_height":"","f_more_font_style":"","f_more_font_weight":"","f_more_font_transform":"","f_more_font_spacing":"","f_more_":"","m6f_title_font_header":"","m6f_title_font_title":"Article title","m6f_title_font_settings":"","m6f_title_font_family":"","m6f_title_font_size":"","m6f_title_font_line_height":"","m6f_title_font_style":"","m6f_title_font_weight":"","m6f_title_font_transform":"","m6f_title_font_spacing":"","m6f_title_":"","m6f_cat_font_title":"Article category tag","m6f_cat_font_settings":"","m6f_cat_font_family":"","m6f_cat_font_size":"","m6f_cat_font_line_height":"","m6f_cat_font_style":"","m6f_cat_font_weight":"","m6f_cat_font_transform":"","m6f_cat_font_spacing":"","m6f_cat_":"","m6f_meta_font_title":"Article meta info","m6f_meta_font_settings":"","m6f_meta_font_family":"","m6f_meta_font_size":"","m6f_meta_font_line_height":"","m6f_meta_font_style":"","m6f_meta_font_weight":"","m6f_meta_font_transform":"","m6f_meta_font_spacing":"","m6f_meta_":"","css":"","tdc_css":"","td_column_number":1,"color_preset":"","border_top":"","tdc_css_class":"tdi_5_811","tdc_css_class_style":"tdi_5_811_rand_style"}';
+block_tdi_5_811.td_column_number="1";
+block_tdi_5_811.block_type="td_block_7";
+block_tdi_5_811.post_count="4";
+block_tdi_5_811.found_posts="206";
+block_tdi_5_811.header_color="#";
+block_tdi_5_811.ajax_pagination_infinite_stop="";
+block_tdi_5_811.max_num_pages="52";
+tdBlocksArray.push(block_tdi_5_811);</script>
+<script defer="" src="./Apache Kafka là gì_ Tất cả mọi thứ bạn cần biết - VSUDO Blog_files/DMCABadgeHelper.min.js.download"> </script>
+<script defer="" src="./Apache Kafka là gì_ Tất cả mọi thứ bạn cần biết - VSUDO Blog_files/9xcai.js.download"></script>
+<script>document.addEventListener('DOMContentLoaded',function(){});</script>
+<script>document.addEventListener('DOMContentLoaded',function(){function wpfcgl(){var wgh=document.querySelector('noscript#wpfc-google-fonts').innerText, wgha=wgh.match(/<link[^\>]+>/gi);for(i=0;i<wgha.length;i++){var wrpr=document.createElement('div');wrpr.innerHTML=wgha[i];document.body.appendChild(wrpr.firstChild);}}wpfcgl();});</script>
+
+<link rel="stylesheet" id="google-fonts-style-css" href="./Apache Kafka là gì_ Tất cả mọi thứ bạn cần biết - VSUDO Blog_files/css" type="text/css" media="all"><div class="td-close-video-fixed"><i class="td-icon-modal-close"></i></div></body></html>

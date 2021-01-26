@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://vsudo.net/blog/kafka-consumer.html -->
+<html lang="en-US" prefix="og: http://ogp.me/ns#" class=" td-md-is-chrome"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Consumer đọc dữ liệu từ Kafka Broker như thế nào? - VSUDO Blog</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="pingback" href="https://vsudo.net/blog/xmlrpc.php">
+<meta name="description" content="Kafka Consumer đọc dữ liệu từ Kafka Broker như thế nào? Bài viết chia sẻ tổng hợp các kiến thức liên quan đến xử lý dữ liệu trong Kafka.">
+<link rel="canonical" href="https://vsudo.net/blog/kafka-consumer.html">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Consumer đọc dữ liệu từ Kafka Broker như thế nào? - VSUDO Blog">
+<meta property="og:description" content="Kafka Consumer đọc dữ liệu từ Kafka Broker như thế nào? Bài viết chia sẻ tổng hợp các kiến thức liên quan đến xử lý dữ liệu trong Kafka.">
+<meta property="og:url" content="https://vsudo.net/blog/kafka-consumer.html">
+<meta property="og:site_name" content="VSUDO Blog">
+<meta property="article:author" content="https://facebook.com/quanghn96">
+<meta property="article:section" content="Cloud - Virtualization">
+<meta property="article:published_time" content="2020-05-14T15:57:09+00:00">
+<meta property="article:modified_time" content="2020-09-13T15:54:09+00:00">
+<meta property="og:updated_time" content="2020-09-13T15:54:09+00:00">
+<meta property="og:image" content="https://vsudo.net/blog/wp-content/uploads/2020/05/kakfa-consumer.jpg">
+<meta property="og:image:secure_url" content="https://vsudo.net/blog/wp-content/uploads/2020/05/kakfa-consumer.jpg">
+<meta property="og:image:width" content="1030">
+<meta property="og:image:height" content="741">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="Kafka Consumer đọc dữ liệu từ Kafka Broker như thế nào? Bài viết chia sẻ tổng hợp các kiến thức liên quan đến xử lý dữ liệu trong Kafka.">
+<meta name="twitter:title" content="Consumer đọc dữ liệu từ Kafka Broker như thế nào? - VSUDO Blog">
+<meta name="twitter:image" content="https://vsudo.net/blog/wp-content/uploads/2020/05/kakfa-consumer.jpg">
+<script type="text/javascript" id="www-widgetapi-script" src="./Consumer đọc dữ liệu từ Kafka Broker như thế nào_ - VSUDO Blog_files/www-widgetapi.js.download" async=""></script><script type="text/javascript" async="" src="./Consumer đọc dữ liệu từ Kafka Broker như thế nào_ - VSUDO Blog_files/analytics.js.download"></script><script src="./Consumer đọc dữ liệu từ Kafka Broker như thế nào_ - VSUDO Blog_files/iframe_api"></script><script src="./Consumer đọc dữ liệu từ Kafka Broker như thế nào_ - VSUDO Blog_files/player.js.download"></script><script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","url":"https://vsudo.net/blog","sameAs":[],"@id":"#person","name":"VSUDO Blog"}</script>
+<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+<link rel="alternate" type="application/rss+xml" title="VSUDO Blog » Feed" href="https://vsudo.net/blog/feed">
+<link rel="alternate" type="application/rss+xml" title="VSUDO Blog » Comments Feed" href="https://vsudo.net/blog/comments/feed">
+<link rel="alternate" type="application/rss+xml" title="VSUDO Blog » Consumer đọc dữ liệu từ Kafka Broker như thế nào? Comments Feed" href="https://vsudo.net/blog/kafka-consumer.html/feed">
+<link rel="stylesheet" type="text/css" href="./Consumer đọc dữ liệu từ Kafka Broker như thế nào_ - VSUDO Blog_files/9xcai.css" media="all">
+<style id="td-theme-inline-css">@media(max-width:767px){
+.td-header-desktop-wrap{display:none;}
+}
+@media(min-width:767px){
+.td-header-mobile-wrap{display:none;}
+}</style>
+<link rel="stylesheet" type="text/css" href="./Consumer đọc dữ liệu từ Kafka Broker như thế nào_ - VSUDO Blog_files/9xcai(1).css" media="all">
+<link rel="https://api.w.org/" href="https://vsudo.net/blog/wp-json/"><link rel="alternate" type="application/json" href="https://vsudo.net/blog/wp-json/wp/v2/posts/2486"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://vsudo.net/blog/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://vsudo.net/blog/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.6">
+<link rel="shortlink" href="https://vsudo.net/blog/?p=2486">
+<link rel="alternate" type="application/json+oembed" href="https://vsudo.net/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fvsudo.net%2Fblog%2Fkafka-consumer.html">
+<link rel="alternate" type="text/xml+oembed" href="https://vsudo.net/blog/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fvsudo.net%2Fblog%2Fkafka-consumer.html&amp;format=xml">
+<style></style>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Person","name":"Quang V\u0169","address":{"@type":"PostalAddress","addressLocality":"Ph\u01b0\u1eddng 5, Qu\u1eadn 3","addressRegion":"H\u1ed3 Ch\u00ed Minh","postalCode":"700000","streetAddress":"432 Nguy\u1ec5n Th\u1ecb Minh Khai"},"email":"quangvublog@gmail.com","gender":"Male","birthDate":"1996.12.29","telephone":"097 768 97 33","url":"https:\/\/blog.vu-review.com","sameAs":["https:\/\/www.facebook.com\/quanghn.96","https:\/\/vn.linkedin.com\/in\/quanghnn","https:\/\/stackoverflow.com\/users\/10532627\/quang-v%C5%A9"]}</script><script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"LocalBusiness","name":"VSUDO Blog","image":{"@type":"ImageObject","url":"https:\/\/vsudo.net\/blog\/wp-content\/uploads\/2020\/05\/kakfa-consumer.jpg","width":1030,"height":741},"telephone":"097 768 97 33","url":"https:\/\/vsudo.net\/blog","address":{"@type":"PostalAddress","streetAddress":"432 Nguy\u1ec5n Th\u1ecb Minh Khai","addressLocality":"Ph\u01b0\u1eddng 5, Qu\u1eadn 3","postalCode":"700000","addressRegion":"H\u1ed3 Ch\u00ed Minh","addressCountry":"VN"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"1"},"priceRange":"100 \u0111","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"12:00"}]}</script><script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/vsudo.net\/blog\/kafka-consumer.html"},"headline":"Consumer \u0111\u1ecdc d\u1eef li\u1ec7u t\u1eeb Kafka Broker nh\u01b0 th\u1ebf n\u00e0o?","image":{"@type":"ImageObject","url":"https:\/\/vsudo.net\/blog\/wp-content\/uploads\/2020\/05\/kakfa-consumer.jpg","width":1030,"height":741},"datePublished":"2020-05-14T15:57:09","dateModified":"2020-09-13T15:54:09","author":{"@type":"Person","name":"Quang V\u0169"},"publisher":{"@type":"Organization","name":"VSUDO Blog","logo":{"@type":"ImageObject","url":"https:\/\/blog.vu-review.com\/wp-content\/uploads\/2019\/05\/logo.jpg"}}}</script><script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"organization","name":"VSUDO Blog","url":"https:\/\/vsudo.net\/blog","logo":{"@type":"ImageObject","url":"https:\/\/vsudo.net\/blog\/wp-content\/uploads\/2019\/05\/logo.jpg","width":1000,"height":957},"sameAs":["https:\/\/www.facebook.com\/QuangVuBlog\/","https:\/\/twitter.com\/QuangVuBlog","https:\/\/www.crunchbase.com\/organization\/quang-v%C5%A9-blog","https:\/\/www.youtube.com\/channel\/UCgxQYHLKaCDeFbK_AKCH9xA","https:\/\/www.linkedin.com\/company\/quangvublog\/","https:\/\/www.pinterest.com\/quangvublog"]}</script><script type="application/ld+json">{"@context":"https:\/\/schema.org","@graph":[{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"H\u1ec7 \u0111i\u1ec1u h\u00e0nh","url":"https:\/\/vsudo.net\/blog\/he-dieu-hanh"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Linux","url":"https:\/\/vsudo.net\/blog\/he-dieu-hanh\/linux"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Windows","url":"https:\/\/vsudo.net\/blog\/he-dieu-hanh\/windows"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"macOS","url":"https:\/\/vsudo.net\/blog\/he-dieu-hanh\/macos"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Thi\u1ebft k\u1ebf","url":"https:\/\/vsudo.net\/blog\/thiet-ke"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Thi\u1ebft k\u1ebf website","url":"https:\/\/vsudo.net\/thiet-ke-website"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Marketing","url":"https:\/\/vsudo.net\/blog\/marketing"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Security","url":"https:\/\/vsudo.net\/blog\/security"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Cloud\/Virtual","url":"https:\/\/vsudo.net\/blog\/cloud-virtualization"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Storage","url":"https:\/\/vsudo.net\/blog\/cloud-virtualization\/storage"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Docker","url":"https:\/\/vsudo.net\/blog\/cloud-virtualization\/docker"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Kh\u00e1c","url":"#"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Th\u1ee7 thu\u1eadt m\u00e1y t\u00ednh","url":"https:\/\/vsudo.net\/blog\/kien-thuc\/thu-thuat-may-tinh"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Book","url":"https:\/\/vsudo.net\/blog\/download\/book"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"Software","url":"https:\/\/vsudo.net\/blog\/download\/software"},{"@context":"https:\/\/schema.org","@type":"SiteNavigationElement","id":"site-navigation","name":"TOOLS","url":"https:\/\/vsudo.net\/tools\/vi"}]}</script><script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"WebSite","name":"VSUDO Blog","url":"https:\/\/vsudo.net\/blog","potentialAction":[{"@type":"SearchAction","target":"https:\/\/vsudo.net\/blog\/?s={search_term_string}","query-input":"required name=search_term_string"}]}</script><script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/vsudo.net\/blog\/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@id":"https:\/\/vsudo.net\/blog\/kafka-consumer.html","name":"Consumer \u0111\u1ecdc d\u1eef li\u1ec7u t\u1eeb Kafka Broker nh\u01b0 th\u1ebf n\u00e0o?"}}]}</script>
+<style>.block-title > span,
+.block-title > span > a,
+.block-title > a,
+.block-title > label,
+.widgettitle,
+.widgettitle:after,
+.td-trending-now-title,
+.td-trending-now-wrapper:hover .td-trending-now-title,
+.wpb_tabs li.ui-tabs-active a,
+.wpb_tabs li:hover a,
+.vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container .vc_tta-tab.vc_active > a,
+.vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container .vc_tta-tab:hover > a,
+.td_block_template_1 .td-related-title .td-cur-simple-item,
+.woocommerce .product .products h2:not(.woocommerce-loop-product__title),
+.td-subcat-filter .td-subcat-dropdown:hover .td-subcat-more,
+.td-weather-information:before,
+.td-weather-week:before,
+.td_block_exchange .td-exchange-header:before,
+.td-theme-wrap .td_block_template_3 .td-block-title > *,
+.td-theme-wrap .td_block_template_4 .td-block-title > *,
+.td-theme-wrap .td_block_template_7 .td-block-title > *,
+.td-theme-wrap .td_block_template_9 .td-block-title:after,
+.td-theme-wrap .td_block_template_10 .td-block-title::before,
+.td-theme-wrap .td_block_template_11 .td-block-title::before,
+.td-theme-wrap .td_block_template_11 .td-block-title::after,
+.td-theme-wrap .td_block_template_14 .td-block-title,
+.td-theme-wrap .td_block_template_15 .td-block-title:before,
+.td-theme-wrap .td_block_template_17 .td-block-title:before{background-color:#222222;}
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active{background-color:#222222 !important;}
+.block-title,
+.td_block_template_1 .td-related-title,
+.wpb_tabs .wpb_tabs_nav,
+.vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container,
+.woocommerce div.product .woocommerce-tabs ul.tabs:before,
+.td-theme-wrap .td_block_template_5 .td-block-title > *,
+.td-theme-wrap .td_block_template_17 .td-block-title,
+.td-theme-wrap .td_block_template_17 .td-block-title::before{border-color:#222222;}
+.td-theme-wrap .td_block_template_4 .td-block-title > *:before,
+.td-theme-wrap .td_block_template_17 .td-block-title::after{border-color:#222222 transparent transparent transparent;}
+.td-theme-wrap .td_block_template_4 .td-related-title .td-cur-simple-item:before{border-color:#222222 transparent transparent transparent !important;}.td-header-bg:before{background-size:100% auto;}
+.td-header-bg:before{background-position:center center;}
+.td-footer-wrapper,
+.td-footer-wrapper .td_block_template_7 .td-block-title > *,
+.td-footer-wrapper .td_block_template_17 .td-block-title,
+.td-footer-wrapper .td-block-title-wrap .td-wrapper-pulldown-filter{background-color:#111111;}
+.td-footer-wrapper::before{background-size:cover;}
+.td-footer-wrapper::before{background-position:center center;}
+.td-footer-wrapper::before{opacity:0.1;}
+.block-title > span,
+.block-title > span > a,
+.block-title > a,
+.block-title > label,
+.widgettitle,
+.widgettitle:after,
+.td-trending-now-title,
+.td-trending-now-wrapper:hover .td-trending-now-title,
+.wpb_tabs li.ui-tabs-active a,
+.wpb_tabs li:hover a,
+.vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container .vc_tta-tab.vc_active > a,
+.vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container .vc_tta-tab:hover > a,
+.td_block_template_1 .td-related-title .td-cur-simple-item,
+.woocommerce .product .products h2:not(.woocommerce-loop-product__title),
+.td-subcat-filter .td-subcat-dropdown:hover .td-subcat-more,
+.td-weather-information:before,
+.td-weather-week:before,
+.td_block_exchange .td-exchange-header:before,
+.td-theme-wrap .td_block_template_3 .td-block-title > *,
+.td-theme-wrap .td_block_template_4 .td-block-title > *,
+.td-theme-wrap .td_block_template_7 .td-block-title > *,
+.td-theme-wrap .td_block_template_9 .td-block-title:after,
+.td-theme-wrap .td_block_template_10 .td-block-title::before,
+.td-theme-wrap .td_block_template_11 .td-block-title::before,
+.td-theme-wrap .td_block_template_11 .td-block-title::after,
+.td-theme-wrap .td_block_template_14 .td-block-title,
+.td-theme-wrap .td_block_template_15 .td-block-title:before,
+.td-theme-wrap .td_block_template_17 .td-block-title:before{background-color:#222222;}
+.woocommerce div.product .woocommerce-tabs ul.tabs li.active{background-color:#222222 !important;}
+.block-title,
+.td_block_template_1 .td-related-title,
+.wpb_tabs .wpb_tabs_nav,
+.vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container,
+.woocommerce div.product .woocommerce-tabs ul.tabs:before,
+.td-theme-wrap .td_block_template_5 .td-block-title > *,
+.td-theme-wrap .td_block_template_17 .td-block-title,
+.td-theme-wrap .td_block_template_17 .td-block-title::before{border-color:#222222;}
+.td-theme-wrap .td_block_template_4 .td-block-title > *:before,
+.td-theme-wrap .td_block_template_17 .td-block-title::after{border-color:#222222 transparent transparent transparent;}
+.td-theme-wrap .td_block_template_4 .td-related-title .td-cur-simple-item:before{border-color:#222222 transparent transparent transparent !important;}.td-header-bg:before{background-size:100% auto;}
+.td-header-bg:before{background-position:center center;}
+.td-footer-wrapper,
+.td-footer-wrapper .td_block_template_7 .td-block-title > *,
+.td-footer-wrapper .td_block_template_17 .td-block-title,
+.td-footer-wrapper .td-block-title-wrap .td-wrapper-pulldown-filter{background-color:#111111;}
+.td-footer-wrapper::before{background-size:cover;}
+.td-footer-wrapper::before{background-position:center center;}
+.td-footer-wrapper::before{opacity:0.1;}</style>
+<script type="application/ld+json">{
+"@context": "http://schema.org",
+"@type": "BreadcrumbList",
+"itemListElement": [
+{
+"@type": "ListItem",
+"position": 1,
+"item": {
+"@type": "WebSite",
+"@id": "https://vsudo.net/blog/",
+"name": "Home"
+}},
+{
+"@type": "ListItem",
+"position": 2,
+"item": {
+"@type": "WebPage",
+"@id": "https://vsudo.net/blog/cloud-virtualization",
+"name": "Cloud - Virtualization"
+}}
+,{
+"@type": "ListItem",
+"position": 3,
+"item": {
+"@type": "WebPage",
+"@id": "https://vsudo.net/blog/kafka-consumer.html",
+"name": "Consumer đọc dữ liệu từ Kafka Broker như thế nào?"
+}}
+]
+}</script>
+<style></style>
+<style id="tdw-css-placeholder"></style>
+<script data-wpfc-render="false">var Wpfcll={s:[],osl:0,i:function(){Wpfcll.ss();window.addEventListener('load',function(){window.addEventListener("DOMSubtreeModified",function(e){Wpfcll.osl=Wpfcll.s.length;Wpfcll.ss();if(Wpfcll.s.length > Wpfcll.osl){Wpfcll.ls(false);}},false);Wpfcll.ls(true);});window.addEventListener('scroll',function(){Wpfcll.ls(false);});window.addEventListener('resize',function(){Wpfcll.ls(false);});window.addEventListener('click',function(){Wpfcll.ls(false);});},c:function(e,pageload){var w=document.documentElement.clientHeight || body.clientHeight;var n=pageload ? 0:800;var er=e.getBoundingClientRect();var t=0;var p=e.parentNode;if(typeof p.getBoundingClientRect=="undefined"){var pr=false;}else{var pr=p.getBoundingClientRect();}if(er.x==0 && er.y==0){for(var i=0;i < 10;i++){if(p){if(pr.x==0 && pr.y==0){p=p.parentNode;if(typeof p.getBoundingClientRect=="undefined"){pr=false;}else{pr=p.getBoundingClientRect();}}else{t=pr.top;break;}}};}else{t=er.top;}if(w - t+n > 0){return true;}return false;},r:function(e,pageload){var s=this;var oc,ot;try{oc=e.getAttribute("data-wpfc-original-src");ot=e.getAttribute("data-wpfc-original-srcset");if(s.c(e,pageload)){if(oc || ot){if(e.tagName=="DIV" || e.tagName=="A"){e.style.backgroundImage="url("+oc+")";e.removeAttribute("data-wpfc-original-src");e.removeAttribute("data-wpfc-original-srcset");e.removeAttribute("onload");}else{if(oc){e.setAttribute('src',oc);}if(ot){e.setAttribute('srcset',ot);}e.removeAttribute("data-wpfc-original-src");e.removeAttribute("data-wpfc-original-srcset");e.removeAttribute("onload");if(e.tagName=="IFRAME"){e.onload=function(){if(typeof window.jQuery !="undefined"){if(jQuery.fn.fitVids){jQuery(e).parent().fitVids({customSelector:"iframe[src]"});}}var s=e.getAttribute("src").match(/templates\/youtube\.html\#(.+)/);var y="https://www.youtube.com/embed/";if(s){try{var i=e.contentDocument || e.contentWindow;if(i.location.href=="about:blank"){e.setAttribute('src',y+s[1]);}}catch(err){e.setAttribute('src',y+s[1]);}}}}}}else{if(e.tagName=="NOSCRIPT"){if(jQuery(e).attr("data-type")=="wpfc"){e.removeAttribute("data-type");jQuery(e).after(jQuery(e).text());}}}}}catch(error){console.log(error);console.log("==>",e);}},ss:function(){var i=Array.prototype.slice.call(document.getElementsByTagName("img"));var f=Array.prototype.slice.call(document.getElementsByTagName("iframe"));var d=Array.prototype.slice.call(document.getElementsByTagName("div"));var a=Array.prototype.slice.call(document.getElementsByTagName("a"));var n=Array.prototype.slice.call(document.getElementsByTagName("noscript"));this.s=i.concat(f).concat(d).concat(a).concat(n);},ls:function(pageload){var s=this;[].forEach.call(s.s,function(e,index){s.r(e,pageload);});}};document.addEventListener('DOMContentLoaded',function(){wpfci();});function wpfci(){Wpfcll.i();}</script>
+</head>
+<body data-rsssl="1" class="post-template-default single single-post postid-2486 single-format-standard td-standard-pack wp-schema-pro-1.3.2 kafka-consumer global-block-template-1 td-animation-stack-type2 td-full-layout td-js-loaded body-td-affix" itemscope="itemscope" itemtype="https://schema.org/WebPage" data-new-gr-c-s-check-loaded="14.990.0" data-gr-ext-installed="">
+<div class="td-scroll-up td-scroll-up-visible"><i class="td-icon-menu-up"></i></div><div class="td-menu-background"></div><div id="td-mobile-nav">
+<div class="td-mobile-container">
+<div class="td-menu-socials-wrap">
+<div class="td-menu-socials"> <span class="td-social-icon-wrap"> <a target="_blank" href="https://www.facebook.com/QuangVuBlog/" title="Facebook"> <i class="td-icon-font td-icon-facebook"></i> </a> </span> <span class="td-social-icon-wrap"> <a target="_blank" href="https://www.instagram.com/quangvu.blog/" title="Instagram"> <i class="td-icon-font td-icon-instagram"></i> </a> </span> <span class="td-social-icon-wrap"> <a target="_blank" href="https://twitter.com/quangvublog" title="Twitter"> <i class="td-icon-font td-icon-twitter"></i> </a> </span> <span class="td-social-icon-wrap"> <a target="_blank" href="https://www.youtube.com/channel/UCgxQYHLKaCDeFbK_AKCH9xA" title="Youtube"> <i class="td-icon-font td-icon-youtube"></i> </a> </span></div><div class="td-mobile-close"> <a href="https://vsudo.net/blog/kafka-consumer.html#"><i class="td-icon-close-mobile"></i></a></div></div><div class="td-mobile-content">
+<div class="menu-td-demo-header-menu-container"><ul id="menu-td-demo-header-menu" class="td-mobile-main-menu"><li id="menu-item-276" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-first menu-item-276 td_mobile_submenu td_mobile_elem_with_submenu_0"><a href="https://vsudo.net/blog/he-dieu-hanh" class="td-link-element-after">Hệ điều hành<i class="td-icon-menu-right td-element-after"></i></a> <ul class="sub-menu"> <li id="menu-item-59" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-59"><a href="https://vsudo.net/blog/he-dieu-hanh/linux">Linux</a></li> <li id="menu-item-58" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-58"><a href="https://vsudo.net/blog/he-dieu-hanh/windows">Windows</a></li> <li id="menu-item-2931" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2931"><a href="https://vsudo.net/blog/he-dieu-hanh/macos">macOS</a></li> </ul> </li> <li id="menu-item-2884" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2884 td_mobile_submenu td_mobile_elem_with_submenu_1"><a href="https://vsudo.net/blog/thiet-ke" class="td-link-element-after">Thiết kế<i class="td-icon-menu-right td-element-after"></i></a> <ul class="sub-menu"> <li id="menu-item-3566" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3566"><a href="https://vsudo.net/thiet-ke-website">Thiết kế website</a></li> </ul> </li> <li id="menu-item-2250" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2250"><a href="https://vsudo.net/blog/marketing">Marketing</a></li> <li id="menu-item-251" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-251"><a href="https://vsudo.net/blog/security">Security</a></li> <li id="menu-item-214" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-214 td_mobile_submenu td_mobile_elem_with_submenu_2"><a href="https://vsudo.net/blog/cloud-virtualization" class="td-link-element-after">Cloud/Virtual<i class="td-icon-menu-right td-element-after"></i></a> <ul class="sub-menu"> <li id="menu-item-3748" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3748"><a href="https://vsudo.net/blog/cloud-virtualization/storage">Storage</a></li> <li id="menu-item-3747" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3747"><a href="https://vsudo.net/blog/cloud-virtualization/docker">Docker</a></li> </ul> </li> <li id="menu-item-60" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-60 td_mobile_submenu td_mobile_elem_with_submenu_3"><a href="https://vsudo.net/blog/kafka-consumer.html#" target="_blank" rel="nofollow" class="td-link-element-after">Khác<i class="td-icon-menu-right td-element-after"></i></a> <ul class="sub-menu"> <li id="menu-item-270" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-270"><a href="https://vsudo.net/blog/kien-thuc/thu-thuat-may-tinh">Thủ thuật máy tính</a></li> <li id="menu-item-352" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-352"><a href="https://vsudo.net/blog/download/book">Book</a></li> <li id="menu-item-353" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-353"><a href="https://vsudo.net/blog/download/software">Software</a></li> </ul> </li> <li id="menu-item-3116" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3116"><a href="https://vsudo.net/tools/vi">TOOLS</a></li> </ul></div></div></div><div id="login-form-mobile" class="td-register-section">
+<div id="td-login-mob" class="td-login-animation td-login-hide-mob">
+<div class="td-login-close">
+<a href="https://vsudo.net/blog/kafka-consumer.html#" class="td-back-button"><i class="td-icon-read-down"></i></a>
+<div class="td-login-title">Sign in</div><div class="td-mobile-close"> <a href="https://vsudo.net/blog/kafka-consumer.html#"><i class="td-icon-close-mobile"></i></a></div></div><div class="td-login-form-wrap">
+<div class="td-login-panel-title"><span>Welcome!</span>Log into your account</div><div class="td_display_err"></div><div class="td-login-inputs"><input class="td-login-input" type="text" name="login_email" id="login_email-mob" value="" required=""><label>your username</label></div><div class="td-login-inputs"><input class="td-login-input" type="password" name="login_pass" id="login_pass-mob" value="" required=""><label>your password</label></div><input type="button" name="login_button" id="login_button-mob" class="td-login-button" value="LOG IN">
+<div class="td-login-info-text"> <a href="https://vsudo.net/blog/kafka-consumer.html#" id="forgot-pass-link-mob">Forgot your password?</a></div><div class="td-login-register-link"></div></div></div><div id="td-forgot-pass-mob" class="td-login-animation td-login-hide-mob">
+<div class="td-forgot-pass-close">
+<a href="https://vsudo.net/blog/kafka-consumer.html#" class="td-back-button"><i class="td-icon-read-down"></i></a>
+<div class="td-login-title">Password recovery</div></div><div class="td-login-form-wrap">
+<div class="td-login-panel-title">Recover your password</div><div class="td_display_err"></div><div class="td-login-inputs"><input class="td-login-input" type="text" name="forgot_email" id="forgot_email-mob" value="" required=""><label>your email</label></div><input type="button" name="forgot_button" id="forgot_button-mob" class="td-login-button" value="Send My Pass"></div></div></div></div><div class="td-search-background"></div><div class="td-search-wrap-mob">
+<div class="td-drop-down-search">
+<form method="get" class="td-search-form" action="https://vsudo.net/blog/">
+<div class="td-search-close"> <a href="https://vsudo.net/blog/kafka-consumer.html#"><i class="td-icon-close-mobile"></i></a></div><div role="search" class="td-search-input"> <span>Search</span> <input id="td-header-search-mob" type="text" value="" name="s" autocomplete="off"></div></form>
+<div id="td-aj-search-mob" class="td-ajax-search-flex"></div></div></div><div id="td-outer-wrap" class="td-theme-wrap">
+<div class="tdc-header-wrap">
+<div class="td-header-wrap td-header-style-10">
+<div class="td-header-top-menu-full td-container-wrap">
+<div class="td-container td-header-row td-header-top-menu">
+<div class="top-bar-style-1">
+<div class="td-header-sp-top-menu">
+<div class="td_data_time">
+<div> Sunday, December 27, 2020</div></div><div class="menu-top-container"><ul id="menu-td-demo-top-menu" class="top-header-menu sf-js-enabled"><li id="menu-item-659" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-first td-menu-item td-normal-menu menu-item-659"><a href="https://vsudo.net/blog/gioi-thieu">Giới thiệu</a></li> <li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-page td-menu-item td-normal-menu menu-item-37"><a href="https://vsudo.net/blog/contact">Liên hệ</a></li> </ul></div></div><div class="td-header-sp-top-widget"> <span class="td-social-icon-wrap"> <a target="_blank" href="https://www.facebook.com/QuangVuBlog/" title="Facebook"> <i class="td-icon-font td-icon-facebook"></i> </a> </span> <span class="td-social-icon-wrap"> <a target="_blank" href="https://www.instagram.com/quangvu.blog/" title="Instagram"> <i class="td-icon-font td-icon-instagram"></i> </a> </span> <span class="td-social-icon-wrap"> <a target="_blank" href="https://twitter.com/quangvublog" title="Twitter"> <i class="td-icon-font td-icon-twitter"></i> </a> </span> <span class="td-social-icon-wrap"> <a target="_blank" href="https://www.youtube.com/channel/UCgxQYHLKaCDeFbK_AKCH9xA" title="Youtube"> <i class="td-icon-font td-icon-youtube"></i> </a> </span></div></div><div id="login-form" class="white-popup-block mfp-hide mfp-with-anim">
+<div class="td-login-wrap">
+<a href="https://vsudo.net/blog/kafka-consumer.html#" class="td-back-button"><i class="td-icon-modal-back"></i></a>
+<div id="td-login-div" class="td-login-form-div td-display-block">
+<div class="td-login-panel-title">Sign in</div><div class="td-login-panel-descr">Welcome! Log into your account</div><div class="td_display_err"></div><div class="td-login-inputs"><input class="td-login-input" type="text" name="login_email" id="login_email" value="" required=""><label>your username</label></div><div class="td-login-inputs"><input class="td-login-input" type="password" name="login_pass" id="login_pass" value="" required=""><label>your password</label></div><input type="button" name="login_button" id="login_button" class="wpb_button btn td-login-button" value="Login">
+<div class="td-login-info-text"><a href="https://vsudo.net/blog/kafka-consumer.html#" id="forgot-pass-link">Forgot your password? Get help</a></div></div><div id="td-forgot-pass-div" class="td-login-form-div td-display-none">
+<div class="td-login-panel-title">Password recovery</div><div class="td-login-panel-descr">Recover your password</div><div class="td_display_err"></div><div class="td-login-inputs"><input class="td-login-input" type="text" name="forgot_email" id="forgot_email" value="" required=""><label>your email</label></div><input type="button" name="forgot_button" id="forgot_button" class="wpb_button btn td-login-button" value="Send My Password">
+<div class="td-login-info-text">A password will be e-mailed to you.</div></div></div></div></div></div><div class="td-banner-wrap-full td-logo-wrap-full td-container-wrap">
+<div class="td-header-sp-logo"> <a class="td-main-logo" href="https://vsudo.net/blog/"> <img src="./Consumer đọc dữ liệu từ Kafka Broker như thế nào_ - VSUDO Blog_files/banner.jpg" alt=""> <span class="td-visual-hidden">VSUDO Blog</span> </a></div></div><div class="td-header-menu-wrap-full td-container-wrap" style="height: 48px;">
+<div class="td-header-menu-wrap td-header-gradient td-affix" style="transform: translate3d(0px, 0px, 0px);">
+<div class="td-container td-header-row td-header-main-menu">
+<div id="td-header-menu" role="navigation">
+<div id="td-top-mobile-toggle"><a href="https://vsudo.net/blog/kafka-consumer.html#"><i class="td-icon-font td-icon-mobile"></i></a></div><div class="td-main-menu-logo td-logo-in-header td-logo-sticky"> <a class="td-main-logo" href="https://vsudo.net/blog/"> <img src="./Consumer đọc dữ liệu từ Kafka Broker như thế nào_ - VSUDO Blog_files/banner.jpg" alt=""> </a></div><div class="menu-td-demo-header-menu-container"><ul id="menu-td-demo-header-menu-1" class="sf-menu sf-js-enabled"><li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-first td-menu-item td-normal-menu menu-item-276"><a href="https://vsudo.net/blog/he-dieu-hanh" class="sf-with-ul">Hệ điều hành<i class="td-icon-menu-down"></i></a> <ul class="sub-menu" style="float: none; width: 10em; display: none;"> <li class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-59" style="white-space: normal; float: left; width: 100%;"><a href="https://vsudo.net/blog/he-dieu-hanh/linux" style="float: none; width: auto;">Linux</a></li> <li class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-58" style="white-space: normal; float: left; width: 100%;"><a href="https://vsudo.net/blog/he-dieu-hanh/windows" style="float: none; width: auto;">Windows</a></li> <li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-2931" style="white-space: normal; float: left; width: 100%;"><a href="https://vsudo.net/blog/he-dieu-hanh/macos" style="float: none; width: auto;">macOS</a></li> </ul> </li> <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children td-menu-item td-normal-menu menu-item-2884"><a href="https://vsudo.net/blog/thiet-ke" class="sf-with-ul">Thiết kế<i class="td-icon-menu-down"></i></a> <ul class="sub-menu" style="float: none; width: 11.7143em; display: none;"> <li class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-3566" style="white-space: normal; float: left; width: 100%;"><a href="https://vsudo.net/thiet-ke-website" style="float: none; width: auto;">Thiết kế website</a></li> </ul> </li> <li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-2250"><a href="https://vsudo.net/blog/marketing">Marketing</a></li> <li class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-251"><a href="https://vsudo.net/blog/security">Security</a></li> <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children td-menu-item td-normal-menu menu-item-214"><a href="https://vsudo.net/blog/cloud-virtualization" class="sf-with-ul">Cloud/Virtual<i class="td-icon-menu-down"></i></a> <ul class="sub-menu" style="float: none; width: 10em; display: none;"> <li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-3748" style="white-space: normal; float: left; width: 100%;"><a href="https://vsudo.net/blog/cloud-virtualization/storage" style="float: none; width: auto;">Storage</a></li> <li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-3747" style="white-space: normal; float: left; width: 100%;"><a href="https://vsudo.net/blog/cloud-virtualization/docker" style="float: none; width: auto;">Docker</a></li> </ul> </li> <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children td-menu-item td-normal-menu menu-item-60"><a href="https://vsudo.net/blog/kafka-consumer.html#" target="_blank" rel="nofollow" class="sf-with-ul">Khác<i class="td-icon-menu-down"></i></a> <ul class="sub-menu" style="float: none; width: 12.8571em; display: none;"> <li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-270" style="white-space: normal; float: left; width: 100%;"><a href="https://vsudo.net/blog/kien-thuc/thu-thuat-may-tinh" style="float: none; width: auto;">Thủ thuật máy tính</a></li> <li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-352" style="white-space: normal; float: left; width: 100%;"><a href="https://vsudo.net/blog/download/book" style="float: none; width: auto;">Book</a></li> <li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-353" style="white-space: normal; float: left; width: 100%;"><a href="https://vsudo.net/blog/download/software" style="float: none; width: auto;">Software</a></li> </ul> </li> <li class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-3116"><a href="https://vsudo.net/tools/vi">TOOLS</a></li> </ul></div></div><div class="header-search-wrap">
+<div class="td-search-btns-wrap"> <a id="td-header-search-button" href="https://vsudo.net/blog/kafka-consumer.html#" role="button" class="dropdown-toggle" data-toggle="dropdown"><i class="td-icon-search"></i></a> <a id="td-header-search-button-mob" href="https://vsudo.net/blog/kafka-consumer.html#" class="dropdown-toggle" data-toggle="dropdown"><i class="td-icon-search"></i></a></div><div class="td-drop-down-search" aria-labelledby="td-header-search-button">
+<form method="get" class="td-search-form" action="https://vsudo.net/blog/">
+<div role="search" class="td-head-form-search-wrap"> <input id="td-header-search" type="text" value="" name="s" autocomplete="off"><input class="wpb_button wpb_btn-inverse btn" type="submit" id="td-header-search-top" value="Search"></div></form>
+<div id="td-aj-search"></div></div></div></div></div></div></div></div><div class="td-main-content-wrap td-container-wrap">
+<div class="td-container td-post-template-default">
+<div class="td-crumb-container"><div class="entry-crumbs"><span><a title="" class="entry-crumb" href="https://vsudo.net/blog/">Home</a></span> <i class="td-icon-right td-bread-sep"></i> <span><a title="View all posts in Cloud - Virtualization" class="entry-crumb" href="https://vsudo.net/blog/cloud-virtualization">Cloud - Virtualization</a></span> <i class="td-icon-right td-bread-sep td-bred-no-url-last"></i> <span class="td-bred-no-url-last">Consumer đọc dữ liệu từ Kafka Broker như thế nào?</span></div></div><div class="td-pb-row">
+<div class="td-pb-span8 td-main-content" role="main">
+<div class="td-ss-main-content"><div class="clearfix"></div>
+<article id="post-2486" class="post-2486 post type-post status-publish format-standard has-post-thumbnail category-cloud-virtualization" itemscope="" itemtype="https://schema.org/Article" 47="">
+<div class="td-post-header">
+<ul class="td-category"><li class="entry-category"><a href="https://vsudo.net/blog/cloud-virtualization">Cloud - Virtualization</a></li></ul>
+<header class="td-post-title">
+<h1 class="entry-title">Consumer đọc dữ liệu từ Kafka Broker như thế nào?</h1>
+<div class="td-module-meta-info">
+<div class="td-post-author-name"><div class="td-author-by">By</div><a href="https://vsudo.net/blog/author/admin">Quang Vũ</a></div><div class="td-post-comments"><a href="https://vsudo.net/blog/kafka-consumer.html#respond"><i class="td-icon-comments"></i>0</a></div><div class="td-post-views"><i class="td-icon-views"></i><span class="td-nr-views-2486">422</span></div></div></header></div><div class="td-post-sharing-top"><div id="td_social_sharing_article_top" class="td-post-sharing td-ps-bg td-ps-notext td-post-sharing-style1"><div class="td-post-sharing-visible"><div class="td-social-sharing-button td-social-sharing-button-js td-social-handler td-social-share-text" style="transition: opacity 0.2s ease 0s; opacity: 1;">
+<div class="td-social-but-icon"><i class="td-icon-share"></i></div><div class="td-social-but-text">Share</div></div><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-facebook" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fvsudo.net%2Fblog%2Fkafka-consumer.html" style="transition: opacity 0.2s ease 0s; opacity: 1;">
+<div class="td-social-but-icon"><i class="td-icon-facebook"></i></div><div class="td-social-but-text">Facebook</div></a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-twitter" href="https://twitter.com/intent/tweet?text=Consumer+%C4%91%E1%BB%8Dc+d%E1%BB%AF+li%E1%BB%87u+t%E1%BB%AB+Kafka+Broker+nh%C6%B0+th%E1%BA%BF+n%C3%A0o%3F&amp;url=https%3A%2F%2Fvsudo.net%2Fblog%2Fkafka-consumer.html&amp;via=quangvublog" style="transition: opacity 0.2s ease 0s; opacity: 1;">
+<div class="td-social-but-icon"><i class="td-icon-twitter"></i></div><div class="td-social-but-text">Twitter</div></a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-pinterest" href="https://pinterest.com/pin/create/button/?url=https://vsudo.net/blog/kafka-consumer.html&amp;media=https://vsudo.net/blog/wp-content/uploads/2020/05/kakfa-consumer.jpg&amp;description=Kafka%20Consumer%20%C4%91%E1%BB%8Dc%20d%E1%BB%AF%20li%E1%BB%87u%20t%E1%BB%AB%20Kafka%20Broker%20nh%C6%B0%20th%E1%BA%BF%20n%C3%A0o?%20B%C3%A0i%20vi%E1%BA%BFt%20chia%20s%E1%BA%BB%20t%E1%BB%95ng%20h%E1%BB%A3p%20c%C3%A1c%20ki%E1%BA%BFn%20th%E1%BB%A9c%20li%C3%AAn%20quan%20%C4%91%E1%BA%BFn%20x%E1%BB%AD%20l%C3%BD%20d%E1%BB%AF%20li%E1%BB%87u%20trong%20Kafka." style="transition: opacity 0.2s ease 0s; opacity: 1;">
+<div class="td-social-but-icon"><i class="td-icon-pinterest"></i></div><div class="td-social-but-text">Pinterest</div></a></div><div class="td-social-sharing-hidden" style="display: none;"><ul class="td-pulldown-filter-list"></ul><a class="td-social-sharing-button td-social-handler td-social-expand-tabs" href="https://vsudo.net/blog/kafka-consumer.html#" data-block-uid="td_social_sharing_article_top">
+<div class="td-social-but-icon"><i class="td-icon-plus td-social-expand-tabs-icon"></i></div></a></div></div></div><div class="td-post-content tagdiv-type">
+<div class="td-post-featured-image"><img width="696" height="501" class="entry-thumb td-animation-stack-type2-2" src="./Consumer đọc dữ liệu từ Kafka Broker như thế nào_ - VSUDO Blog_files/kakfa-consumer-696x501.jpg" srcset="https://vsudo.net/blog/wp-content/uploads/2020/05/kakfa-consumer-696x501.jpg 696w, https://vsudo.net/blog/wp-content/uploads/2020/05/kakfa-consumer-300x216.jpg 300w, https://vsudo.net/blog/wp-content/uploads/2020/05/kakfa-consumer-800x576.jpg 800w, https://vsudo.net/blog/wp-content/uploads/2020/05/kakfa-consumer-768x553.jpg 768w, https://vsudo.net/blog/wp-content/uploads/2020/05/kakfa-consumer-584x420.jpg 584w, https://vsudo.net/blog/wp-content/uploads/2020/05/kakfa-consumer.jpg 1030w" sizes="(max-width: 696px) 100vw, 696px" alt="kafka consumer" title="kakfa-consumer"></div><p>Các ứng dụng cần đọc dữ liệu từ Kafka sử dụng <a href="https://vsudo.net/blog/kafka-consumer.html" data-type="URL" data-id="https://vsudo.net/blog/kafka-consumer.html">KafkaConsumer</a> để <em><strong>subcribe</strong></em> tới các <strong>topics</strong> và nhận các messages về từ những topics này. Việc đọc dữ liệu từ Kafka có một chút khác biệt so với việc đọc dữ liệu từ các hệ thống message khác, và có một số khái niệm và ý tưởng độc đáo liên quan đến quá trình này. Rất khó để có thể hiểu cách sử dụng Consumer API mà chưa hiểu được những khái niệm này trước. Mình sẽ bắt đầu giải thích một số khái niệm quan trọng, sau đó sẽ đi qua một số ví dụ thể hiện các cách khác nhau mà Consumer API có thể được sử dụng để triển khai các ứng dụng với các yêu cầu khác nhau.</p>
+<h2>Các khái niệm về Kafka Consumer</h2>
+<p>Để hiểu cách đọc dữ liệu từ <a href="https://vsudo.net/blog/kafka-la-gi.html" data-type="URL" data-id="https://vsudo.net/blog/kafka-la-gi.html">Kafka</a>, đầu tiên bạn cần hiểu <strong><em>consumer</em></strong> và <strong><em>consumer groups</em></strong> là gì trước đã. Các phần mình viết dưới đây sẽ giải thích rõ các khái niệm này.</p>
+<h3>#1. Consumer và Consumer Group</h3>
+<p>Giả sử bạn có một ứng dụng cần đọc các message từ một topic, xử lý validation chúng và sau đó ghi kết quả tới một nguồn dữ liệu khác như Elasticsearch chẳng hạn. Trong trường hợp này, ứng dụng của bạn sẽ tạo ra một <strong>consumer object</strong>, nó subcribe tới topic tương ứng, và bắt đầu nhận về các message, validate các message này và ghi ra các kết qủa. Quá trình này có thể hoạt động tốt trong một thời gian, tuy nhiên điều gì sẽ xảy ra nếu như tỷ lệ các producer ghi message tới topic vượt quá tốc độ mà ứng dụng consumer của bạn có thể validate? Nếu bạn bị giới hạn ở tỷ lệ một consumer đọc và xử lý dữ liệu, ứng dụng của bạn có thể sẽ bị hãm phanh lại, giống như kiểu ngày càng chậm chạp hơn, không thể đuổi kịp các message đến. Rõ ràng là bạn sẽ cần phải mở rộng việc đọc message từ topic này rồi. Vì có nhiều producer có thể ghi message tới cùng một topic tại một thời điểm, chúng ta cũng sẽ cần cho phép nhiều consumer đọc message từ cùng một topic này, phân tách dữ liệu ra cho nhiều consumer cùng đọc (hay còn gọi là scaling).</p>
+<p>Kafka Consumer thường là một phần của <strong>Consumer Group</strong>. Khi nhiều consumer subcribe tới một topic và đều thuộc về một<strong> </strong><em><strong>Consumer Group</strong></em> này, mỗi consumer trong consumer group sẽ nhận về các message từ một tập các partition khác nhau trong topic.</p>
+<p>Giả sử mình sẽ có một topic gọi là T1 với bốn partition. Bây giờ, mình sẽ tạo ra một consumer gọi là C1 – là consumer duy nhất trong group G1, và dùng nó để subcribe tới topic T1. Consumer C1 sẽ nhận tất cả các message từ bốn partition trong topic T1.</p>
+<figure class="wp-block-image size-large"><img src="./Consumer đọc dữ liệu từ Kafka Broker như thế nào_ - VSUDO Blog_files/1-consumer-4-partition.jpg" loading="lazy" width="704" height="488" alt="một consumer group với bốn partition" class="wp-image-2513 td-animation-stack-type2-2" sizes="(max-width: 704px) 100vw, 704px" srcset="https://vsudo.net/blog/wp-content/uploads/2020/05/1-consumer-4-partition.jpg 704w, https://vsudo.net/blog/wp-content/uploads/2020/05/1-consumer-4-partition-300x208.jpg 300w, https://vsudo.net/blog/wp-content/uploads/2020/05/1-consumer-4-partition-218x150.jpg 218w, https://vsudo.net/blog/wp-content/uploads/2020/05/1-consumer-4-partition-696x482.jpg 696w, https://vsudo.net/blog/wp-content/uploads/2020/05/1-consumer-4-partition-606x420.jpg 606w, https://vsudo.net/blog/wp-content/uploads/2020/05/1-consumer-4-partition-100x70.jpg 100w"></figure>
+<p>Nếu như mình thêm một consumer khác – C2 tới group G1, mỗi consumer sẽ chỉ nhận các message từ hai partition. Có thể các message từ partition 0 và 2 sẽ đi tới C1 và các message từ partition 1 và 3 sẽ tới consumer C2.</p>
+<figure class="wp-block-image size-large"><img src="./Consumer đọc dữ liệu từ Kafka Broker như thế nào_ - VSUDO Blog_files/2-consumer-4-partition.jpg" loading="lazy" width="708" height="498" alt="2 consumer với bốn partition" class="wp-image-2514 td-animation-stack-type2-2" sizes="(max-width: 708px) 100vw, 708px" srcset="https://vsudo.net/blog/wp-content/uploads/2020/05/2-consumer-4-partition.jpg 708w, https://vsudo.net/blog/wp-content/uploads/2020/05/2-consumer-4-partition-300x211.jpg 300w, https://vsudo.net/blog/wp-content/uploads/2020/05/2-consumer-4-partition-696x490.jpg 696w, https://vsudo.net/blog/wp-content/uploads/2020/05/2-consumer-4-partition-597x420.jpg 597w, https://vsudo.net/blog/wp-content/uploads/2020/05/2-consumer-4-partition-100x70.jpg 100w"></figure>
+<p>Nếu group C1 có bốn consumer, khi đó mỗi consumer sẽ đọc các message từ chỉ một partition như hình bên dưới đây mà thôi.</p>
+<figure class="wp-block-image size-large"><img src="./Consumer đọc dữ liệu từ Kafka Broker như thế nào_ - VSUDO Blog_files/4-consumer-4-partition.jpg" loading="lazy" width="706" height="499" alt="bốn consumer bốn partition" class="wp-image-2515 td-animation-stack-type2-2" sizes="(max-width: 706px) 100vw, 706px" srcset="https://vsudo.net/blog/wp-content/uploads/2020/05/4-consumer-4-partition.jpg 706w, https://vsudo.net/blog/wp-content/uploads/2020/05/4-consumer-4-partition-300x212.jpg 300w, https://vsudo.net/blog/wp-content/uploads/2020/05/4-consumer-4-partition-696x492.jpg 696w, https://vsudo.net/blog/wp-content/uploads/2020/05/4-consumer-4-partition-594x420.jpg 594w, https://vsudo.net/blog/wp-content/uploads/2020/05/4-consumer-4-partition-100x70.jpg 100w"></figure>
+<p>Nếu chúng ta thêm nhiều consumer hơn nữa vào group G1 này nhiều hơn số partition mà chúng ta có trong một topic, khi đó một số consumer sẽ không nhận được message nào.</p>
+<figure class="wp-block-image size-large"><img loading="lazy" width="708" height="587" src="./Consumer đọc dữ liệu từ Kafka Broker như thế nào_ - VSUDO Blog_files/5-consumer-4-partition.jpg" alt="5 consumer 4 partition" class="wp-image-2516 td-animation-stack-type2-2" srcset="https://vsudo.net/blog/wp-content/uploads/2020/05/5-consumer-4-partition.jpg 708w, https://vsudo.net/blog/wp-content/uploads/2020/05/5-consumer-4-partition-300x249.jpg 300w, https://vsudo.net/blog/wp-content/uploads/2020/05/5-consumer-4-partition-696x577.jpg 696w, https://vsudo.net/blog/wp-content/uploads/2020/05/5-consumer-4-partition-507x420.jpg 507w" sizes="(max-width: 708px) 100vw, 708px"></figure>
+<p>Cách để scale việc tiêu thụ các message từ một topic chính là thêm nhiều consumer hơn vào một consumer group. Thường thì Kafka Consumer sẽ thực hiện các hoạt động trên các message sẽ dẫn đến độ trễ cao cho consumer như là ghi kết quả dữ liệu tới database hay tốn thời gian tính toán trên dữ liệu nhận được. Trong những trường hợp như vậy, chỉ một consumer duy nhất sẽ không thể nào giúp đảm bảo tốc độ xử lý dữ liệu trong một topic được, và việc thêm nhiều consumer vào consumer group sẽ giúp chia tải cho hệ thống – và đây chính là phương thức scaling chính trong Kafka.</p>
+<p>Có một lý do mà chúng ta nên tạo các topics với số partition lớn là – nó cho phép thêm nhiều consumer khi tải hệ thống tăng. Nên nhớ, không nên để tình trạng số consumer lớn hơn số partition mà bạn có trong một topic – một số consumer sẽ rơi vào trạng thái rảnh rỗi.</p>
+<p>Ngoài việc thêm các consumer để mở rộng cho một ứng dụng, thường khá phổ biến trên các hệ thống chính là: có nhiều ứng dụng sẽ đọc dữ liệu từ cùng một topic. Trong thực tế, một trong những mục tiêu thiết kế chính trong Kafka chính là đảm bảo dữ liệu được tạo ra tới các topics luôn có sẵn cho nhiều trường hợp sử dụng cho toàn bộ tổ chức. Trong những trường hợp như vậy, chúng ta luôn muốn mỗi ứng dụng sẽ nhận được tất cả các message trong một topic, đảm bảo ứng dụng có consumer group của riêng nó. Không giống như các hệ thống message truyền thống, Kafka mở rộng tới một số lượng lớn các consumer và consumer groups mà không hề làm giảm performance.</p>
+<p>Trong ví dụ trước đó, nếu chúng ta thêm một consumer groups mới G2 với chỉ hai consumer, consumer này sẽ nhận tất cả các message trong topic T1, độc lập với những gì G1 đang thực hiện. G2 có thể có nhiều consumer, trong trường hợp này, mỗi consumer sẽ nhận được một tập các partition, giống như cách mình đã chỉ ra bên trên cho G1, nhưng G2 vẫn sẽ nhận được toàn bộ các message, bất chấp các consumer group khác thế nào đi nữa.</p>
+<figure class="wp-block-image size-large"><img loading="lazy" width="706" height="824" src="./Consumer đọc dữ liệu từ Kafka Broker như thế nào_ - VSUDO Blog_files/2-consumer-groups.jpg" alt="một topic hai consumer groups" class="wp-image-2517 td-animation-stack-type2-2" srcset="https://vsudo.net/blog/wp-content/uploads/2020/05/2-consumer-groups.jpg 706w, https://vsudo.net/blog/wp-content/uploads/2020/05/2-consumer-groups-257x300.jpg 257w, https://vsudo.net/blog/wp-content/uploads/2020/05/2-consumer-groups-696x812.jpg 696w, https://vsudo.net/blog/wp-content/uploads/2020/05/2-consumer-groups-360x420.jpg 360w" sizes="(max-width: 706px) 100vw, 706px"></figure>
+<p>Tóm lại, bạn tạo ra một consumer group cho mỗi ứng dụng cần tất cả các message từ một hoặc nhiều topic. Bạn thêm nhiều consumer tới một consumer group đang tồn tại để mở rộng việc đọc và xử lý các message từ topics, vì vậy mỗi consumer bổ sung trong một group sẽ chỉ nhận được một tập của các message đó.</p>
+<h2>#2. Consumer Groups và Partition Rebalance</h2>
+<p>Như mình đã nói ở phần trước đó, các consumer trong một consumer group chia sẽ quyền sở hữu các partition trong một topic mà chúng subcribe tới. Khi chúng ta thêm một consumer mới tới group, nó bắt đầu tiêu thụ các message từ các partitions trước đó mà đã được tiêu thụ bởi consumer khác. Điều tương tự cũng xảy ra khi một consumer bị shutdown hay crash. Nó rời khỏi group, và các partitions nó đã sử dụng sẽ được tiêu tiêu thụ bởi một trong những consumer còn lại trong consumer group. Quá trình sắp xếp lại các partition (<strong><em>Reasssignment</em></strong>) tới các consumers cũng xảy ra khi các topics mà consumer group đang tiêu thụ được chỉnh sửa (nếu người quản trị thêm các partition mới vào topic).</p>
+<p>Quá trình di chuyển các partitions được liên kết tới từ consumer này tới consumer khác được gọi là quá trình <strong><em>rebalance</em></strong>. Rebalance rất quan trọng vì chúng cung cấp cho consumer group khả năng sẵn sàng và tính mở rộng cao (cho phép chúng ta thêm và xóa consumer dễ dàng và an toàn), nhưng trong quá trình sử dụng bình thường, quá trình này không nên xảy ra. Trong quá trình rebalance, consumer không thể tiêu thụ các message được, do đó, việc rebalance về cơ bản sẽ làm cho toàn bộ consumer trong consumer group không thể tiêu thụ message được. Ngoài ra, khi các partitions được di chuyển từ consumer này tới consumer khác, consumer sẽ mất đi trạng thái hiện tại của nó. Nếu như nó đã cache dữ liệu sẵn rồi, nó sẽ cần phải làm mới lại cache – dẫn đến làm chậm ứng dụng cho đến khi consumer thiết lập lại trạng thái của nó.</p>
+<p>Cách mà consumer duy thì tư cách thành viên trong một consumer group và sở hữu các partitions được gán tới chúng được thực hiện bằng cách gửi <strong><em>heartsbeats</em></strong> tới <strong>Kafka Broker</strong> – được chỉ định làm <strong><em>Kafka Coordinator</em></strong> hay điều phối viên (broker này có thể khác consumer groups khác). Miễn là consumer gửi heartbeats đều đặn, nó sẽ được coi là <strong>alive</strong> (đang còn khỏe) và đang xử lý các message từ các partitions của nó. Heartbeats được gửi khi một <strong>consumer polls </strong>(nhận các record về) diễn ra và khi nó <strong><em>commit records</em></strong> mà nó đã tiêu thụ.</p>
+<p>Nếu như consumer ngừng gửi heartbeats trong một khoảng thời gian được quy định, khi đó phiên làm việc của nó sẽ hết hạn và group coordinator sẽ coi như nó đã chết và kích hoạt quá trình rebalance. Nếu một consumer gặp sự cố và ngừng xử lý các message, sẽ mất vài giây để group coordinator quyết định rằng nó đã chết hay chưa và kích hoạt quá trình rebalance. Trong những giây này, không có message nào được xử lý từ các partitions thuộc sở hữu bởi consumer đã chết. Khi đóng một consumer, consumer sẽ thông báo cho group coodinator rằng nó sẽ đang đi, và group coordinator sẽ kích hoạt quá trình rebalance ngay lập tức, giảm thiểu khoảng cách trong xử lý.</p>
+<p><strong>Xem thêm:</strong></p>
+<ul><li><a href="https://vsudo.net/blog/kafka-la-gi.html" data-type="URL" data-id="https://vsudo.net/blog/kafka-la-gi.html">Kafka là gì? Tất cả mọi thứ bạn cần biết</a></li><li><a href="https://vsudo.net/blog/gia-tri-mac-dinh-kafka.html" data-type="URL" data-id="https://vsudo.net/blog/gia-tri-mac-dinh-kafka.html">Những giá trị mặc định trong Kafka bạn nên quan tâm</a></li><li><a href="https://vsudo.net/blog/log-compacted-topic-trong-kafka.html" data-type="URL" data-id="https://vsudo.net/blog/log-compacted-topic-trong-kafka.html">Log compacted Topic trong Kafka</a></li><li><a href="https://vsudo.net/blog/luu-giu-va-don-dep-log-kafka.html" data-type="URL" data-id="https://vsudo.net/blog/luu-giu-va-don-dep-log-kafka.html">Cơ chế lưu giữ và dọn dẹp Log trong Kafka</a></li></ul>
+<div class="aiosrs-rating-wrap" data-schema-id="635">
+<div class="aiosrs-star-rating-wrap"><span class="aiosrs-star-rating dashicons dashicons-star-filled" data-index="1"></span><span class="aiosrs-star-rating dashicons dashicons-star-filled" data-index="2"></span><span class="aiosrs-star-rating dashicons dashicons-star-filled" data-index="3"></span><span class="aiosrs-star-rating dashicons dashicons-star-filled" data-index="4"></span><span class="aiosrs-star-rating dashicons dashicons-star-filled" data-index="5"></span></div><div class="aiosrs-rating-summary-wrap"> <span class="aiosrs-rating"> 5/5 </span> <span class="aiosrs-rating-count"> (1 Review) </span></div></div></div><footer>
+<div class="td-post-source-tags"></div><div class="td-post-sharing-bottom"><div id="td_social_sharing_article_bottom" class="td-post-sharing td-ps-bg td-ps-notext td-post-sharing-style1"><div class="td-post-sharing-visible"><div class="td-social-sharing-button td-social-sharing-button-js td-social-handler td-social-share-text" style="transition: opacity 0.2s ease 0s; opacity: 1;">
+<div class="td-social-but-icon"><i class="td-icon-share"></i></div><div class="td-social-but-text">Share</div></div><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-facebook" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fvsudo.net%2Fblog%2Fkafka-consumer.html" style="transition: opacity 0.2s ease 0s; opacity: 1;">
+<div class="td-social-but-icon"><i class="td-icon-facebook"></i></div><div class="td-social-but-text">Facebook</div></a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-twitter" href="https://twitter.com/intent/tweet?text=Consumer+%C4%91%E1%BB%8Dc+d%E1%BB%AF+li%E1%BB%87u+t%E1%BB%AB+Kafka+Broker+nh%C6%B0+th%E1%BA%BF+n%C3%A0o%3F&amp;url=https%3A%2F%2Fvsudo.net%2Fblog%2Fkafka-consumer.html&amp;via=quangvublog" style="transition: opacity 0.2s ease 0s; opacity: 1;">
+<div class="td-social-but-icon"><i class="td-icon-twitter"></i></div><div class="td-social-but-text">Twitter</div></a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-pinterest" href="https://pinterest.com/pin/create/button/?url=https://vsudo.net/blog/kafka-consumer.html&amp;media=https://vsudo.net/blog/wp-content/uploads/2020/05/kakfa-consumer.jpg&amp;description=Kafka%20Consumer%20%C4%91%E1%BB%8Dc%20d%E1%BB%AF%20li%E1%BB%87u%20t%E1%BB%AB%20Kafka%20Broker%20nh%C6%B0%20th%E1%BA%BF%20n%C3%A0o?%20B%C3%A0i%20vi%E1%BA%BFt%20chia%20s%E1%BA%BB%20t%E1%BB%95ng%20h%E1%BB%A3p%20c%C3%A1c%20ki%E1%BA%BFn%20th%E1%BB%A9c%20li%C3%AAn%20quan%20%C4%91%E1%BA%BFn%20x%E1%BB%AD%20l%C3%BD%20d%E1%BB%AF%20li%E1%BB%87u%20trong%20Kafka." style="transition: opacity 0.2s ease 0s; opacity: 1;">
+<div class="td-social-but-icon"><i class="td-icon-pinterest"></i></div><div class="td-social-but-text">Pinterest</div></a></div><div class="td-social-sharing-hidden" style="display: none;"><ul class="td-pulldown-filter-list"></ul><a class="td-social-sharing-button td-social-handler td-social-expand-tabs" href="https://vsudo.net/blog/kafka-consumer.html#" data-block-uid="td_social_sharing_article_bottom">
+<div class="td-social-but-icon"><i class="td-icon-plus td-social-expand-tabs-icon"></i></div></a></div></div></div><div class="td-block-row td-post-next-prev"><div class="td-block-span6 td-post-prev-post"><div class="td-post-next-prev-content"><span>Bài viết trước đó</span><a href="https://vsudo.net/blog/check-tcp-udp-real-time.html">Hướng dẫn kiểm tra port TCP và UDP real time</a></div></div><div class="td-next-prev-separator"></div><div class="td-block-span6 td-post-next-post"><div class="td-post-next-prev-content"><span>Bài viết tiếp theo</span><a href="https://vsudo.net/blog/visual-studio-code-linux.html">Hướng dẫn cài đặt Visual Studio Code trên Linux</a></div></div></div><div class="author-box-wrap"><a href="https://vsudo.net/blog/author/admin"><img src="./Consumer đọc dữ liệu từ Kafka Broker như thế nào_ - VSUDO Blog_files/9989718873afeed47ef3139c0e820566.jpeg" alt="" class="avatar avatar-96 photo" height="96" width="96" loading="lazy" srcset="https://secure.gravatar.com/avatar/9989718873afeed47ef3139c0e820566?s=192&amp;d=mm&amp;r=g 2x"></a><div class="desc"><div class="td-author-name vcard author"><span class="fn"><a href="https://vsudo.net/blog/author/admin">Quang Vũ</a></span></div><div class="td-author-description">Quang Vũ là chuyên gia phát triển, quản lý và vận hành hệ thống object storage. Anh có nhiều năm kinh nghiệm triển khai và vận hành hệ thống server (SRE), technical SEO, CMS. Đặc biệt yêu thích WordPress và đã dùng nó hơn 5 năm nay. Sở thích của anh là đọc, viết blog và chia sẻ kiến thức.</div><div class="td-author-social"> <span class="td-social-icon-wrap"> <a target="_blank" href="https://facebook.com/quanghn96" title="Facebook"> <i class="td-icon-font td-icon-facebook"></i> </a> </span></div><div class="clearfix"></div></div></div><span class="td-page-meta" itemprop="author" itemscope="" itemtype="https://schema.org/Person"><meta itemprop="name" content="Quang Vũ"></span><meta itemprop="datePublished" content="2020-05-14T15:57:09+00:00"><meta itemprop="dateModified" content="2020-09-13T15:54:09+00:00"><meta itemscope="" itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://vsudo.net/blog/kafka-consumer.html"><span class="td-page-meta" itemprop="publisher" itemscope="" itemtype="https://schema.org/Organization"><span class="td-page-meta" itemprop="logo" itemscope="" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://vsudo.net/blog/wp-content/uploads/2019/05/banner.jpg"></span><meta itemprop="name" content="VSUDO Blog"></span><meta itemprop="headline" content="Consumer đọc dữ liệu từ Kafka Broker như thế nào?"><span class="td-page-meta" itemprop="image" itemscope="" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://vsudo.net/blog/wp-content/uploads/2020/05/kakfa-consumer.jpg"><meta itemprop="width" content="1030"><meta itemprop="height" content="741"></span>        </footer>
+</article> 
+<div class="td_block_wrap td_block_related_posts tdi_2_aca td_with_ajax_pagination td-pb-border-top td_block_template_1" data-td-block-uid="tdi_2_aca"><h4 class="td-related-title td-block-title"><a id="tdi_3_fe6" class="td-related-left td-cur-simple-item" data-td_filter_value="" data-td_block_id="tdi_2_aca" href="https://vsudo.net/blog/kafka-consumer.html#">Bài viết liên quan</a><a id="tdi_4_efe" class="td-related-right" data-td_filter_value="td_related_more_from_author" data-td_block_id="tdi_2_aca" href="https://vsudo.net/blog/kafka-consumer.html#">Xem thêm từ tác giả</a></h4><div id="tdi_2_aca" class="td_block_inner">
+<div class="td-related-row">
+<div class="td-related-span4">
+<div class="td_module_related_posts td-animation-stack td_mod_related_posts">
+<div class="td-module-image">
+<div class="td-module-thumb"><a href="https://vsudo.net/blog/minio-ubuntu-20-04.html" rel="bookmark" class="td-image-wrap" title="Hướng dẫn cài đặt Minio trên Ubuntu 20.04"><img class="entry-thumb td-animation-stack-type2-2" src="./Consumer đọc dữ liệu từ Kafka Broker như thế nào_ - VSUDO Blog_files/cai-dat-minio-tren-ubuntu-218x150.jpg" alt="cài đặt minio" title="Hướng dẫn cài đặt Minio trên Ubuntu 20.04" data-type="image_tag" data-img-url="https://vsudo.net/blog/wp-content/uploads/2020/08/cai-dat-minio-tren-ubuntu-218x150.jpg" width="218" height="150"></a></div><a href="https://vsudo.net/blog/cloud-virtualization" class="td-post-category">Cloud - Virtualization</a></div><div class="item-details"> <h3 class="entry-title td-module-title"><a href="https://vsudo.net/blog/minio-ubuntu-20-04.html" rel="bookmark" title="Hướng dẫn cài đặt Minio trên Ubuntu 20.04">Hướng dẫn cài đặt Minio trên Ubuntu 20.04</a></h3></div></div></div><div class="td-related-span4">
+<div class="td_module_related_posts td-animation-stack td_mod_related_posts">
+<div class="td-module-image">
+<div class="td-module-thumb"><a href="https://vsudo.net/blog/onedrive.html" rel="bookmark" class="td-image-wrap" title="OneDrive là gì? Tại sao chúng ta nên sử dụng nó"><img class="entry-thumb td-animation-stack-type2-2" src="./Consumer đọc dữ liệu từ Kafka Broker như thế nào_ - VSUDO Blog_files/onedrive-218x150.jpg" alt="onedrive" title="OneDrive là gì? Tại sao chúng ta nên sử dụng nó" data-type="image_tag" data-img-url="https://vsudo.net/blog/wp-content/uploads/2020/04/onedrive-218x150.jpg" width="218" height="150"></a></div><a href="https://vsudo.net/blog/cloud-virtualization" class="td-post-category">Cloud - Virtualization</a></div><div class="item-details"> <h3 class="entry-title td-module-title"><a href="https://vsudo.net/blog/onedrive.html" rel="bookmark" title="OneDrive là gì? Tại sao chúng ta nên sử dụng nó">OneDrive là gì? Tại sao chúng ta nên sử dụng nó</a></h3></div></div></div><div class="td-related-span4">
+<div class="td_module_related_posts td-animation-stack td_mod_related_posts">
+<div class="td-module-image">
+<div class="td-module-thumb"><a href="https://vsudo.net/blog/heroku-la-gi.html" rel="bookmark" class="td-image-wrap" title="Heroku là gì? Chúng hoạt động ra sao"><img class="entry-thumb td-animation-stack-type2-2" src="./Consumer đọc dữ liệu từ Kafka Broker như thế nào_ - VSUDO Blog_files/heroku-la-gi-218x150.jpg" alt="heroku là gì" title="Heroku là gì? Chúng hoạt động ra sao" data-type="image_tag" data-img-url="https://vsudo.net/blog/wp-content/uploads/2020/04/heroku-la-gi-218x150.jpg" width="218" height="150"></a></div><a href="https://vsudo.net/blog/cloud-virtualization" class="td-post-category">Cloud - Virtualization</a></div><div class="item-details"> <h3 class="entry-title td-module-title"><a href="https://vsudo.net/blog/heroku-la-gi.html" rel="bookmark" title="Heroku là gì? Chúng hoạt động ra sao">Heroku là gì? Chúng hoạt động ra sao</a></h3></div></div></div></div></div><div class="td-next-prev-wrap"><a href="https://vsudo.net/blog/kafka-consumer.html#" class="td-ajax-prev-page ajax-page-disabled" id="prev-page-tdi_2_aca" data-td_block_id="tdi_2_aca"><i class="td-icon-font td-icon-menu-left"></i></a><a href="https://vsudo.net/blog/kafka-consumer.html#" class="td-ajax-next-page" id="next-page-tdi_2_aca" data-td_block_id="tdi_2_aca"><i class="td-icon-font td-icon-menu-right"></i></a></div></div><div class="comments" id="comments">
+<div id="respond" class="comment-respond">
+<h3 id="reply-title" class="comment-reply-title">Để lại một bình luận <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://vsudo.net/blog/kafka-consumer.html#respond" style="display:none;">Cancel reply</a></small></h3><form action="https://vsudo.net/blog/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate=""><div class="clearfix"></div><div class="comment-form-input-wrap td-form-comment">
+<textarea placeholder="Bình luận:" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>
+<div class="td-warning-comment">Please enter your comment!</div></div><div class="comment-form-input-wrap td-form-author">
+<input class="" id="author" name="author" placeholder="Tên:*" type="text" value="" size="30" aria-required="true">
+<div class="td-warning-author">Please enter your name here</div></div><div class="comment-form-input-wrap td-form-email">
+<input class="" id="email" name="email" placeholder="Email:*" type="text" value="" size="30" aria-required="true">
+<div class="td-warning-email-error">You have entered an incorrect email address!</div><div class="td-warning-email">Please enter your email address here</div></div><div class="comment-form-input-wrap td-form-url"> <input class="" id="url" name="url" placeholder="Website:" type="text" value="" size="30"></div><p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"><label for="wp-comment-cookies-consent">Lưu lại tên, email và website trong trình duyệt cho lần tiếp theo.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Gửi bình luận"> <input type="hidden" name="comment_post_ID" value="2486" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p></form></div></div><div class="clearfix"></div></div></div><div class="td-pb-span4 td-main-sidebar" role="complementary">
+<div class="td-ss-main-sidebar" style="width: 324px; position: fixed; top: 68px; bottom: auto;"><div class="clearfix"></div>
+<div class="td_block_wrap td_block_7 td_block_widget tdi_5_811 td_with_ajax_pagination td-pb-border-top td_block_template_1 td-column-1 td_block_padding" data-td-block-uid="tdi_5_811"><div class="td-block-title-wrap"><h4 class="block-title td-block-title"><span class="td-pulldown-size">Bài viết nổi bật</span></h4></div><div id="tdi_5_811" class="td_block_inner">
+<div class="td-block-span12">
+<div class="td_module_6 td_module_wrap td-animation-stack">
+<div class="td-module-thumb"><a href="https://vsudo.net/blog/kich-thuoc-hoan-hao-cho-youtube.html" rel="bookmark" class="td-image-wrap" title="Kích thước hoàn hảo cho hình ảnh trên kênh youtube"><img class="entry-thumb td-animation-stack-type2-2" src="./Consumer đọc dữ liệu từ Kafka Broker như thế nào_ - VSUDO Blog_files/kich-thuoc-hoan-hao-cho-hinh-anh-tren-kenh-youtube-100x70.jpg" alt="kích thước hoàn hảo cho hình ảnh trên kênh youtube" title="Kích thước hoàn hảo cho hình ảnh trên kênh youtube" data-type="image_tag" data-img-url="https://vsudo.net/blog/wp-content/uploads/2020/08/kich-thuoc-hoan-hao-cho-hinh-anh-tren-kenh-youtube-100x70.jpg" width="100" height="70"></a></div><div class="item-details">
+<h3 class="entry-title td-module-title"><a href="https://vsudo.net/blog/kich-thuoc-hoan-hao-cho-youtube.html" rel="bookmark" title="Kích thước hoàn hảo cho hình ảnh trên kênh youtube">Kích thước hoàn hảo cho hình ảnh trên kênh youtube</a></h3>            <div class="td-module-meta-info"> <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2020-08-28T11:13:00+00:00">August 28, 2020</time></span></div></div></div></div><div class="td-block-span12">
+<div class="td_module_6 td_module_wrap td-animation-stack">
+<div class="td-module-thumb"><a href="https://vsudo.net/blog/minio-ubuntu-20-04.html" rel="bookmark" class="td-image-wrap" title="Hướng dẫn cài đặt Minio trên Ubuntu 20.04"><img class="entry-thumb td-animation-stack-type2-2" src="./Consumer đọc dữ liệu từ Kafka Broker như thế nào_ - VSUDO Blog_files/cai-dat-minio-tren-ubuntu-100x70.jpg" alt="cài đặt minio" title="Hướng dẫn cài đặt Minio trên Ubuntu 20.04" data-type="image_tag" data-img-url="https://vsudo.net/blog/wp-content/uploads/2020/08/cai-dat-minio-tren-ubuntu-100x70.jpg" width="100" height="70"></a></div><div class="item-details">
+<h3 class="entry-title td-module-title"><a href="https://vsudo.net/blog/minio-ubuntu-20-04.html" rel="bookmark" title="Hướng dẫn cài đặt Minio trên Ubuntu 20.04">Hướng dẫn cài đặt Minio trên Ubuntu 20.04</a></h3>            <div class="td-module-meta-info"> <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2020-09-02T01:45:37+00:00">September 2, 2020</time></span></div></div></div></div><div class="td-block-span12">
+<div class="td_module_6 td_module_wrap td-animation-stack">
+<div class="td-module-thumb"><a href="https://vsudo.net/blog/curl-ubuntu.html" rel="bookmark" class="td-image-wrap" title="Hướng dẫn cài đặt CURL trên Ubuntu"><img class="entry-thumb td-animation-stack-type2-2" src="./Consumer đọc dữ liệu từ Kafka Broker như thế nào_ - VSUDO Blog_files/curl-100x70.jpg" alt="curl" title="Hướng dẫn cài đặt CURL trên Ubuntu" data-type="image_tag" data-img-url="https://vsudo.net/blog/wp-content/uploads/2020/09/curl-100x70.jpg" width="100" height="70"></a></div><div class="item-details">
+<h3 class="entry-title td-module-title"><a href="https://vsudo.net/blog/curl-ubuntu.html" rel="bookmark" title="Hướng dẫn cài đặt CURL trên Ubuntu">Hướng dẫn cài đặt CURL trên Ubuntu</a></h3>            <div class="td-module-meta-info"> <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2020-10-31T08:27:09+00:00">October 31, 2020</time></span></div></div></div></div><div class="td-block-span12">
+<div class="td_module_6 td_module_wrap td-animation-stack">
+<div class="td-module-thumb"><a href="https://vsudo.net/blog/dia-chi-mac.html" rel="bookmark" class="td-image-wrap" title="Địa chỉ mac là gì? Tác dụng của nó ra sao"><img class="entry-thumb td-animation-stack-type2-2" src="./Consumer đọc dữ liệu từ Kafka Broker như thế nào_ - VSUDO Blog_files/dia-chi-mac-100x70.png" alt="địa chỉ mac là gì" title="Địa chỉ mac là gì? Tác dụng của nó ra sao" data-type="image_tag" data-img-url="https://vsudo.net/blog/wp-content/uploads/2019/08/dia-chi-mac-100x70.png" width="100" height="70"></a></div><div class="item-details">
+<h3 class="entry-title td-module-title"><a href="https://vsudo.net/blog/dia-chi-mac.html" rel="bookmark" title="Địa chỉ mac là gì? Tác dụng của nó ra sao">Địa chỉ mac là gì? Tác dụng của nó ra sao</a></h3>            <div class="td-module-meta-info"> <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2019-08-09T15:22:40+00:00">August 9, 2019</time></span></div></div></div></div></div><div class="td-load-more-wrap"><a href="https://vsudo.net/blog/kafka-consumer.html#" class="td_ajax_load_more td_ajax_load_more_js" id="next-page-tdi_5_811" data-td_block_id="tdi_5_811">Load more<i class="td-icon-font td-icon-menu-down"></i></a></div></div><div class="clearfix"></div></div></div></div></div></div><div class="tdc-footer-wrap">
+<div class="td-footer-wrapper td-footer-container td-container-wrap">
+<div class="td-container">
+<div class="td-pb-row">
+<div class="td-pb-span12"></div></div><div class="td-pb-row">
+<div class="td-pb-span12"></div></div></div><div class="td-footer-bottom-full">
+<div class="td-container">
+<div class="td-pb-row">
+<div class="td-pb-span3"><aside class="footer-logo-wrap"><a href="https://vsudo.net/blog/"><img src="./Consumer đọc dữ liệu từ Kafka Broker như thế nào_ - VSUDO Blog_files/logo-300x287.jpg" alt="vsudo" title="vsudo"></a></aside></div><div class="td-pb-span5"><aside class="footer-text-wrap"><div class="block-title"><span>ABOUT US</span></div>VSUDO Blog là nơi chia sẻ các kiến thức về công nghệ thông tin
+<br>
+<br>
+<a href="https://www.dmca.com/Protection/Status.aspx?ID=a9a601f5-e730-4330-b8bd-660a4ed1fe20&amp;refurl=https://vsudo.net/blog/kafka-consumer.html" title="DMCA.com Protection Status" class="dmca-badge"> <img src="./Consumer đọc dữ liệu từ Kafka Broker như thế nào_ - VSUDO Blog_files/dmca_protected_sml_120n.png" alt="DMCA.com Protection Status"></a>  
+<br>
+<br>
+<a href="https://vsudo.net/review">VSUDO Review</a><div class="footer-email-wrap">Contact us: <a href="mailto:contact@vsudo.net">contact@vsudo.net</a></div></aside></div><div class="td-pb-span4"><aside class="footer-social-wrap td-social-style-2"><div class="block-title"><span>FOLLOW US</span></div><span class="td-social-icon-wrap">
+<a target="_blank" href="https://www.facebook.com/QuangVuBlog/" title="Facebook">
+<i class="td-icon-font td-icon-facebook"></i>
+</a>
+</span>
+<span class="td-social-icon-wrap">
+<a target="_blank" href="https://www.instagram.com/quangvu.blog/" title="Instagram">
+<i class="td-icon-font td-icon-instagram"></i>
+</a>
+</span>
+<span class="td-social-icon-wrap">
+<a target="_blank" href="https://twitter.com/quangvublog" title="Twitter">
+<i class="td-icon-font td-icon-twitter"></i>
+</a>
+</span>
+<span class="td-social-icon-wrap">
+<a target="_blank" href="https://www.youtube.com/channel/UCgxQYHLKaCDeFbK_AKCH9xA" title="Youtube">
+<i class="td-icon-font td-icon-youtube"></i>
+</a>
+</span></aside></div></div></div></div></div><div class="td-sub-footer-container td-container-wrap">
+<div class="td-container">
+<div class="td-pb-row">
+<div class="td-pb-span td-sub-footer-menu">
+<div class="menu-td-demo-footer-menu-container"><ul id="menu-td-demo-footer-menu" class="td-subfooter-menu"><li id="menu-item-40" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-first td-menu-item td-normal-menu menu-item-40"><a href="https://vsudo.net/chinh-sach-bao-mat">Chính sách bảo mật</a></li> <li id="menu-item-42" class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-42"><a href="https://vsudo.net/dieu-khoan-dich-vu">Điều khoản</a></li> <li id="menu-item-3708" class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-3708"><a href="https://vsudo.net/review">Review</a></li> </ul></div></div><div class="td-pb-span td-sub-footer-copy"> © Blog by <a href="https://vsudo.net/">vsudo.net</a></div></div></div></div></div></div><div class="td-more-articles-box" style="display: none;">
+<i class="td-icon-close td-close-more-articles-box"></i>
+<span class="td-more-articles-box-title">MORE STORIES</span>
+<div class="td-content-more-articles-box">
+<div class="td_module_6 td_module_wrap td-animation-stack">
+<div class="td-module-thumb"><a href="https://vsudo.net/blog/kafka-la-gi.html" rel="bookmark" class="td-image-wrap" title="Apache Kafka là gì? Tất cả mọi thứ bạn cần biết"><img class="entry-thumb td-animation-stack-type2-2" src="./Consumer đọc dữ liệu từ Kafka Broker như thế nào_ - VSUDO Blog_files/kafka-la-gi-100x70.jpg" alt="kafka là gì" title="Apache Kafka là gì? Tất cả mọi thứ bạn cần biết" data-type="image_tag" data-img-url="https://vsudo.net/blog/wp-content/uploads/2019/12/kafka-la-gi-100x70.jpg" width="100" height="70"></a></div><div class="item-details">
+<h3 class="entry-title td-module-title"><a href="https://vsudo.net/blog/kafka-la-gi.html" rel="bookmark" title="Apache Kafka là gì? Tất cả mọi thứ bạn cần biết">Apache Kafka là gì? Tất cả mọi thứ bạn cần biết</a></h3>            <div class="td-module-meta-info"> <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2019-12-25T17:16:31+00:00">December 25, 2019</time></span></div></div></div><div class="td_module_6 td_module_wrap td-animation-stack">
+<div class="td-module-thumb"><a href="https://vsudo.net/blog/gia-tri-mac-dinh-kafka.html" rel="bookmark" class="td-image-wrap" title="Những giá trị mặc định trong Kafka bạn nên quan tâm"><img class="entry-thumb td-animation-stack-type2-2" src="./Consumer đọc dữ liệu từ Kafka Broker như thế nào_ - VSUDO Blog_files/gia-tri-mac-dinh-kafka-100x70.jpg" alt="giá trị mặc định trong kafka" title="Những giá trị mặc định trong Kafka bạn nên quan tâm" data-type="image_tag" data-img-url="https://vsudo.net/blog/wp-content/uploads/2020/01/gia-tri-mac-dinh-kafka-100x70.jpg" width="100" height="70"></a></div><div class="item-details">
+<h3 class="entry-title td-module-title"><a href="https://vsudo.net/blog/gia-tri-mac-dinh-kafka.html" rel="bookmark" title="Những giá trị mặc định trong Kafka bạn nên quan tâm">Những giá trị mặc định trong Kafka bạn nên quan tâm</a></h3>            <div class="td-module-meta-info"> <span class="td-post-date"><time class="entry-date updated td-module-date" datetime="2020-01-04T03:30:38+00:00">January 4, 2020</time></span></div></div></div></div></div><style>.aiosrs-rating-wrap .aiosrs-star-rating-wrap{display:inline-block;vertical-align:middle;}
+.aiosrs-rating-wrap .aiosrs-star-rating-wrap ~ .aiosrs-star-rating-wrap{float:right}
+.aiosrs-rating-wrap .aiosrs-star-rating-wrap .aiosrs-star-rating{color:#ffd700;}
+.aiosrs-rating-wrap .aiosrs-star-rating-wrap:not(.disabled) .aiosrs-star-rating{cursor:pointer;}
+.aiosrs-rating-wrap .success-msg{color:green;margin-left:5px;}
+.aiosrs-rating-wrap .aiosrs-star-rating-wrap .aiosrs-star-rating.dashicons{font-family:dashicons;}</style>
+<script async="" src="./Consumer đọc dữ liệu từ Kafka Broker như thế nào_ - VSUDO Blog_files/js"></script>
+<script>window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-113200585-2');</script>
+<script data-ad-client="ca-pub-8385274982660351" async="" src="./Consumer đọc dữ liệu từ Kafka Broker như thế nào_ - VSUDO Blog_files/f.txt"></script>
+<noscript id="wpfc-google-fonts"><link rel='stylesheet' id='google-fonts-style-css' href='https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C600%2C700%7CRoboto%3A400%2C500%2C700&#038;display=swap&#038;ver=10.3.3' type='text/css' media='all'/>
+</noscript>
+<script id="wp-schema-pro-fontend-script-js-extra">var AIOSRS_Frontend={"ajaxurl":"https:\/\/vsudo.net\/blog\/wp-admin\/admin-ajax.php","post_id":"2486","user_rating_nonce":"cbbe99b3a1","success_msg":"Thanks!"};</script>
+<script>if(document.location.protocol!="https:"){document.location=document.URL.replace(/^http:/i, "https:");}</script>
+<script src="./Consumer đọc dữ liệu từ Kafka Broker như thế nào_ - VSUDO Blog_files/9qi0h.js.download"></script>
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<script>window.tdb_globals={"wpRestNonce":"51a8068139","wpRestUrl":"https:\/\/vsudo.net\/blog\/wp-json\/","permalinkStructure":"\/%postname%.html","isAjax":false,"isAdminBarShowing":false,"autoloadScrollPercent":50,"postAutoloadStatus":"off","origPostEditUrl":null};</script>
+<script>window.tdwGlobal={"adminUrl":"https:\/\/vsudo.net\/blog\/wp-admin\/","wpRestNonce":"51a8068139","wpRestUrl":"https:\/\/vsudo.net\/blog\/wp-json\/","permalinkStructure":"\/%postname%.html"};</script>
+<script>var tdBlocksArray=[];
+function tdBlock(){
+this.id='';
+this.block_type=1;
+this.atts='';
+this.td_column_number='';
+this.td_current_page=1;
+this.post_count=0;
+this.found_posts=0;
+this.max_num_pages=0;
+this.td_filter_value='';
+this.is_ajax_running=false;
+this.td_user_action='';
+this.header_color='';
+this.ajax_pagination_infinite_stop='';
+}
+(function(){
+var htmlTag=document.getElementsByTagName("html")[0];
+if(navigator.userAgent.indexOf("MSIE 10.0") > -1){
+htmlTag.className +=' ie10';
+}
+if(!!navigator.userAgent.match(/Trident.*rv\:11\./)){
+htmlTag.className +=' ie11';
+}
+if(navigator.userAgent.indexOf("Edge") > -1){
+htmlTag.className +=' ieEdge';
+}
+if(/(iPad|iPhone|iPod)/g.test(navigator.userAgent)){
+htmlTag.className +=' td-md-is-ios';
+}
+var user_agent=navigator.userAgent.toLowerCase();
+if(user_agent.indexOf("android") > -1){
+htmlTag.className +=' td-md-is-android';
+}
+if(-1!==navigator.userAgent.indexOf('Mac OS X')){
+htmlTag.className +=' td-md-is-os-x';
+}
+if(/chrom(e|ium)/.test(navigator.userAgent.toLowerCase())){
+htmlTag.className +=' td-md-is-chrome';
+}
+if(-1!==navigator.userAgent.indexOf('Firefox')){
+htmlTag.className +=' td-md-is-firefox';
+}
+if(-1!==navigator.userAgent.indexOf('Safari')&&-1===navigator.userAgent.indexOf('Chrome')){
+htmlTag.className +=' td-md-is-safari';
+}
+if(-1!==navigator.userAgent.indexOf('IEMobile')){
+htmlTag.className +=' td-md-is-iemobile';
+}})();
+var tdLocalCache={};
+(function (){
+"use strict";
+tdLocalCache={
+data: {},
+remove: function (resource_id){
+delete tdLocalCache.data[resource_id];
+},
+exist: function (resource_id){
+return tdLocalCache.data.hasOwnProperty(resource_id)&&tdLocalCache.data[resource_id]!==null;
+},
+get: function (resource_id){
+return tdLocalCache.data[resource_id];
+},
+set: function (resource_id, cachedData){
+tdLocalCache.remove(resource_id);
+tdLocalCache.data[resource_id]=cachedData;
+}};})();
+var td_viewport_interval_list=[{"limitBottom":767,"sidebarWidth":228},{"limitBottom":1018,"sidebarWidth":300},{"limitBottom":1140,"sidebarWidth":324}];
+var td_animation_stack_effect="type2";
+var tds_animation_stack=true;
+var td_animation_stack_specific_selectors=".entry-thumb, img[class*=\"wp-image-\"], a.td-sml-link-to-image > img";
+var td_animation_stack_general_selectors=".td-animation-stack .entry-thumb, .post .entry-thumb, .post img[class*=\"wp-image-\"], a.td-sml-link-to-image > img";
+var tdc_is_installed="yes";
+var td_ajax_url="https:\/\/vsudo.net\/blog\/wp-admin\/admin-ajax.php?td_theme_name=Newspaper&v=10.3.3";
+var td_get_template_directory_uri="https:\/\/vsudo.net\/blog\/wp-content\/plugins\/td-composer\/legacy\/common";
+var tds_snap_menu="smart_snap_always";
+var tds_logo_on_sticky="show_header_logo";
+var tds_header_style="10";
+var td_please_wait="Please wait...";
+var td_email_user_pass_incorrect="User or password incorrect!";
+var td_email_user_incorrect="Email or username incorrect!";
+var td_email_incorrect="Email incorrect!";
+var tds_more_articles_on_post_enable="show";
+var tds_more_articles_on_post_time_to_wait="";
+var tds_more_articles_on_post_pages_distance_from_top=0;
+var tds_theme_color_site_wide="#4db2ec";
+var tds_smart_sidebar="enabled";
+var tdThemeName="Newspaper";
+var td_magnific_popup_translation_tPrev="Previous (Left arrow key)";
+var td_magnific_popup_translation_tNext="Next (Right arrow key)";
+var td_magnific_popup_translation_tCounter="%curr% of %total%";
+var td_magnific_popup_translation_ajax_tError="The content from %url% could not be loaded.";
+var td_magnific_popup_translation_image_tError="The image #%curr% could not be loaded.";
+var tdBlockNonce="b792f4b4f6";
+var tdDateNamesI18n={"month_names":["January","February","March","April","May","June","July","August","September","October","November","December"],"month_names_short":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"day_names":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"day_names_short":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]};
+var td_ad_background_click_link="";
+var td_ad_background_click_target="";</script>
+<script>var block_tdi_2_aca=new tdBlock();
+block_tdi_2_aca.id="tdi_2_aca";
+block_tdi_2_aca.atts='{"limit":3,"ajax_pagination":"next_prev","live_filter":"cur_post_same_categories","td_ajax_filter_type":"td_custom_related","class":"tdi_2_aca","td_column_number":3,"live_filter_cur_post_id":2486,"live_filter_cur_post_author":"1","block_template_id":"","header_color":"","ajax_pagination_infinite_stop":"","offset":"","td_ajax_preloading":"","td_filter_default_txt":"","td_ajax_filter_ids":"","el_class":"","color_preset":"","border_top":"","css":"","tdc_css":"","tdc_css_class":"tdi_2_aca","tdc_css_class_style":"tdi_2_aca_rand_style"}';
+block_tdi_2_aca.td_column_number="3";
+block_tdi_2_aca.block_type="td_block_related_posts";
+block_tdi_2_aca.post_count="3";
+block_tdi_2_aca.found_posts="14";
+block_tdi_2_aca.header_color="";
+block_tdi_2_aca.ajax_pagination_infinite_stop="";
+block_tdi_2_aca.max_num_pages="5";
+tdBlocksArray.push(block_tdi_2_aca);</script>
+<script>var block_tdi_5_811=new tdBlock();
+block_tdi_5_811.id="tdi_5_811";
+block_tdi_5_811.atts='{"custom_title":"B\u00e0i vi\u1ebft n\u1ed5i b\u1eadt","custom_url":"","block_template_id":"","header_color":"#","header_text_color":"#","accent_text_color":"#","m6_tl":"","limit":"4","offset":"","el_class":"","post_ids":"","category_id":"","category_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","sort":"random_posts","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","td_ajax_preloading":"","ajax_pagination":"load_more","ajax_pagination_infinite_stop":"","class":"td_block_widget tdi_5_811","separator":"","show_modified_date":"","f_header_font_header":"","f_header_font_title":"Block header","f_header_font_settings":"","f_header_font_family":"","f_header_font_size":"","f_header_font_line_height":"","f_header_font_style":"","f_header_font_weight":"","f_header_font_transform":"","f_header_font_spacing":"","f_header_":"","f_ajax_font_title":"Ajax categories","f_ajax_font_settings":"","f_ajax_font_family":"","f_ajax_font_size":"","f_ajax_font_line_height":"","f_ajax_font_style":"","f_ajax_font_weight":"","f_ajax_font_transform":"","f_ajax_font_spacing":"","f_ajax_":"","f_more_font_title":"Load more button","f_more_font_settings":"","f_more_font_family":"","f_more_font_size":"","f_more_font_line_height":"","f_more_font_style":"","f_more_font_weight":"","f_more_font_transform":"","f_more_font_spacing":"","f_more_":"","m6f_title_font_header":"","m6f_title_font_title":"Article title","m6f_title_font_settings":"","m6f_title_font_family":"","m6f_title_font_size":"","m6f_title_font_line_height":"","m6f_title_font_style":"","m6f_title_font_weight":"","m6f_title_font_transform":"","m6f_title_font_spacing":"","m6f_title_":"","m6f_cat_font_title":"Article category tag","m6f_cat_font_settings":"","m6f_cat_font_family":"","m6f_cat_font_size":"","m6f_cat_font_line_height":"","m6f_cat_font_style":"","m6f_cat_font_weight":"","m6f_cat_font_transform":"","m6f_cat_font_spacing":"","m6f_cat_":"","m6f_meta_font_title":"Article meta info","m6f_meta_font_settings":"","m6f_meta_font_family":"","m6f_meta_font_size":"","m6f_meta_font_line_height":"","m6f_meta_font_style":"","m6f_meta_font_weight":"","m6f_meta_font_transform":"","m6f_meta_font_spacing":"","m6f_meta_":"","css":"","tdc_css":"","td_column_number":1,"color_preset":"","border_top":"","tdc_css_class":"tdi_5_811","tdc_css_class_style":"tdi_5_811_rand_style"}';
+block_tdi_5_811.td_column_number="1";
+block_tdi_5_811.block_type="td_block_7";
+block_tdi_5_811.post_count="4";
+block_tdi_5_811.found_posts="206";
+block_tdi_5_811.header_color="#";
+block_tdi_5_811.ajax_pagination_infinite_stop="";
+block_tdi_5_811.max_num_pages="52";
+tdBlocksArray.push(block_tdi_5_811);</script>
+<script defer="" src="./Consumer đọc dữ liệu từ Kafka Broker như thế nào_ - VSUDO Blog_files/DMCABadgeHelper.min.js.download"> </script>
+<script defer="" src="./Consumer đọc dữ liệu từ Kafka Broker như thế nào_ - VSUDO Blog_files/9xcai.js.download"></script>
+<script>document.addEventListener('DOMContentLoaded',function(){});</script>
+<script>document.addEventListener('DOMContentLoaded',function(){function wpfcgl(){var wgh=document.querySelector('noscript#wpfc-google-fonts').innerText, wgha=wgh.match(/<link[^\>]+>/gi);for(i=0;i<wgha.length;i++){var wrpr=document.createElement('div');wrpr.innerHTML=wgha[i];document.body.appendChild(wrpr.firstChild);}}wpfcgl();});</script>
+
+<link rel="stylesheet" id="google-fonts-style-css" href="./Consumer đọc dữ liệu từ Kafka Broker như thế nào_ - VSUDO Blog_files/css" type="text/css" media="all"><div class="td-close-video-fixed"><i class="td-icon-modal-close"></i></div></body></html>
